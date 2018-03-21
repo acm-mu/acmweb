@@ -24,8 +24,7 @@ highlighter: rouge
 theme:       jekyll-theme-hydeout
 
 # set pagination
-paginate:         5
-paginate_path:    '/page/:num'
+paginate: 5
 
 # posts
 plugins:
