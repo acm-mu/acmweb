@@ -1,15 +1,3 @@
----
-layout: question
-compyear: 2017
-question: 4
-title: "Question 4: -- --- .-. ... ."
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="color: Lime;">LIGHT GREEN</t>] -- --- .-. ... .
 
 ### Problem Description
@@ -38,6 +26,8 @@ Here is a table of Morse code to help you.
 
 Enter your solution in the body of this method in the given code skeleton:
 
+You can download the skeletons here([java](/download/java/s4), [python](/download/python/s4))
+
 #### Method Signature
 
 Java:
@@ -56,13 +46,13 @@ def decodeMorse(morse):
 
 ### Samlpe Method Calls
 
-`decodeMorse(".-.");`
+`decodeMorse(".-.");`  
 Returns: `R`
 
-`decodeMorse(".... . .-.. .-.. --- / .-- --- .-. .-.. -..");`
+`decodeMorse(".... . .-.. .-.. --- / .-- --- .-. .-.. -..");`  
 Returns: `HELLO WORLD`
 
-`decodeMorse("-.. .- .-. -.- / .-.. --- .-. -.. / -..- .. -. ..- / ... . -. -.. ... / .... .. ... / .-. . --. .- .-. -.. ... !");`
+`decodeMorse("-.. .- .-. -.- / .-.. --- .-. -.. / -..- .. -. ..- / ... . -. -.. ... / .... .. ... / .-. . --. .- .-. -.. ... !");`  
 Returns: `DARK LORD XINU SENDS HIS REGARDS!`
 
 * * *

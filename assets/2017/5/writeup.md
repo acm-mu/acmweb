@@ -1,15 +1,3 @@
----
-layout: question
-compyear: 2017
-question: 5
-title: "Question 5: All your base are belong to us"
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="Color: Blue;">BLUE</t>] All your base are belong to us
 
 ### Problem Description
@@ -63,6 +51,8 @@ Legend
 
 Enter your solution in the body of this method in the given code skeleton:
 
+You can download the skeletons here([java](/download/java/s5), [python](/download/python/s5))
+
 ### Method Signature
 
 Java:
@@ -79,14 +69,14 @@ def baseConvert(num, base):
 
 ### Sample Method Calls
 
-`baseConvert(234,2);`
-Returns: `[1,1,1,0,1,0,1,0]`
+`baseConvert(234,2);`  
+Returns: `[1,1,1,0,1,0,1,0]`  
 
-`baseConvert(234,16);`
-Returns: `[0,0,0,0,0,0,E,A]`
+`baseConvert(234,16);`  
+Returns: `[0,0,0,0,0,0,E,A]`  
 
-`baseConvert(234,8)`
-Returns: `[0,0,0,0,0,3,5,2]`
+`baseConvert(234,8)`  
+Returns: `[0,0,0,0,0,3,5,2]`  
 
 * * *
 
@@ -101,7 +91,7 @@ After writing your program into the given code skeleton, test your solution by r
 
 ### Assumptions
 
-Base ten number `0 <= num <= 4294967295`
+Base ten number `0 <= num <= 4294967295`  
 Given base `2 <= base <= 16`
 
 ### Console Output Format

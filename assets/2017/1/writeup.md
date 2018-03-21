@@ -1,15 +1,3 @@
----
-layout: question
-title: "Question 1: Sunrise"
-compyear: 2017
-question: 1
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="color: Red;">RED</t>] Sunrise
 
 * * *
@@ -30,6 +18,8 @@ Chaz suggests that if Lom enters a 0 as the divisor, the calculator should retur
 
 Enter your solution in the body of this method in the given code skeleton:
 
+You can download the skeletons here([java](/download/java/s1), [python](/download/python/s1))
+
 ### Method Signature
 
 Java:
@@ -48,13 +38,13 @@ def calculate(left, op, right):
 
 ### Sample Method Calls
 
-`calculate(1, "+", 1)`
+`calculate(1, "+", 1)`  
 Returns: `2`
 
-`calculate(4, "*", 2)`
+`calculate(4, "*", 2)`  
 Returns: `8`
 
-`calculate(151, "/", 0)`
+`calculate(151, "/", 0)`  
 Returns: `0`
 
 * * *
@@ -67,12 +57,12 @@ Returns: `0`
 
 -   n Number of Tests
 -   an expression in the form of `left op right`
-    -   where `left` and `right` are integers
-    -   and `op` is a string representing the four main mathematical operators.
-        -   +
-        -   -
-        -   /
-        -   *
+    -   where `left` and `right` are integers  
+    -   and `op` is a string representing the four main mathematical operators.  
+        -   +  
+        -   -  
+        -   /  
+        -   *  
 
 ### Assumptions
 

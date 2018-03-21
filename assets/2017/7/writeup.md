@@ -1,15 +1,3 @@
----
-layout: question
-compyear: 2017
-question: 7
-title: "Question 7: Roll For Initiative"
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="color: darkgreen;">DARK GREEN</t>] Roll For Initiative
 
 ### Problem Description
@@ -24,7 +12,7 @@ roll a specific five-letter word. For example, assume the dice contain the follo
 
 ## Writing Your Solution
 
-Enter your solution in the body of this method in the given code skeleton.
+Enter your solution in the body of this method in the given code skeleton. You can download the skeletons here([java](/download/java/s7), [python](/download/python/s7)).
 
 ### Method Signature
 
@@ -55,7 +43,7 @@ def rollDice(die1, die2, die3, die4, die5, word):
 rollDice("ABGRTY", "EGKOWX", "ABVCXA", "POYEAT", "EITYTJ", "GREAT");
 ```
 
-Returns: `True`
+Returns: `True`  
 
 ```Java
 

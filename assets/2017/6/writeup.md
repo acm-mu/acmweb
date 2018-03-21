@@ -1,16 +1,3 @@
----
-layout: question
-compyear: 2017
-question: 6
-title: "Question 6: Off The Grid"
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-{% raw %}
-
 # [<t style="color: purple;">PURPLE</t>] Off The Grid
 
 ### Problem Description
@@ -23,7 +10,7 @@ Chaz and Lom grab the open container of crackers that Chaz had been snacking on 
 
 To help Lom and Chaz quickly determine the safe ingredients, **write a program to determine if the 4x4 pattern is a valid mini-sudoku solution.**
 
-For Example:
+For Example:  
 ```Text
 
 valid Solution:				Invalid Solution:
@@ -38,7 +25,7 @@ valid Solution:				Invalid Solution:
 
 ## Writing Your Solution
 
-Enter your solution in the body of this method in the given method signature.
+Enter your solution in the body of this method in the given method signature. You can download the skeletons here([java](/download/java/s6), [python](/download/python/s6)).
 
 ### Method Signature
 
@@ -56,12 +43,13 @@ def isValidSolution(solution):
 
 ### Sample Method Calls
 
-`int solution[][] = {{1,2,3,4},{3,4,1,2},{2,1,4,3},{4,3,2,1}};`
-`isValidSolution(solution);`
+
+`int solution[][] = {{1,2,3,4},{3,4,1,2},{2,1,4,3},{4,3,2,1}};`  
+`isValidSolution(solution);`  
 Returns: `True`
 
-`int solution[][] = {{1,2,1,4},{3,4,1,2},{2,1,4,3},{4,2,3,1}};`
-`isValidSolution(solution);`
+`int solution[][] = {{1,2,1,4},{3,4,1,2},{2,1,4,3},{4,2,3,1}};`  
+`isValidSolution(solution);`  
 Returns: `False`
 
 * * *
@@ -109,4 +97,3 @@ False
 
 
 ```
-{% endraw %}

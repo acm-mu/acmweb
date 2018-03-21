@@ -1,15 +1,3 @@
----
-layout: question
-title: "Question 3: One Giant Leap"
-compyear: 2017
-question: 3
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="color: Yellow;">YELLOW</t>] One Giant Leap
 
 ### Problem Description
@@ -29,6 +17,8 @@ Lom and Chaz need your help. **Given a starting and ending year, write a functio
 
 Enter your solution in the body of this method in the given code skeleton:
 
+You can download the skeletons here([java](/download/java/s3), [python](/download/python/s3))
+
 ### Method Signature
 
 Java:
@@ -47,10 +37,10 @@ def findLeapYears(startingYear, endingYear):
 
 ### Sample Method Calls
 
-`findLeapYears(1967, 2004);`
+`findLeapYears(1967, 2004);`  
 Returns: `[1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000]`
 
-`findLeapYears(1299, 1337);`
+`findLeapYears(1299, 1337);`  
 Returns: `[1304, 1308, 1312, 1316, 1320, 1324, 1328, 1332, 1336]`
 
 * * *

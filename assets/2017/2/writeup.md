@@ -1,15 +1,3 @@
----
-layout: question
-title: "Question 2: LCM LCM"
-compyear: 2017
-question: 2
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="color: orange;">ORANGE</t>] LCM LCM
 
 ### Problem Description
@@ -25,6 +13,8 @@ Since Lom and Chaz’s brains are far too consumed with cooking knowledge to und
 ## Writing Your Solution
 
 Enter your solution in the body of this method in the given code skeleton
+
+You can download the skeletons here([java](/download/java/s2), [python](/download/python/s2))
 
 ### Method Signature
 
@@ -44,13 +34,13 @@ def leastCommonMultiple(a, b):
 
 ### Sample Method Calls
 
-`leastCommonMultiple(6, 7);`
+`leastCommonMultiple(6, 7);`  
 Returns: `42`
 
-`leastCommonMultiple(4, 4);`
+`leastCommonMultiple(4, 4);`  
 Returns: `4`
 
-`leastCommonMultiple(100, 125);`
+`leastCommonMultiple(100, 125);`  
 Returns: `500`
 
 <p style="page-break-after:always;"></p>

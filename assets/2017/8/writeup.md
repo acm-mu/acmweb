@@ -1,15 +1,3 @@
----
-layout: question
-compyear: 2017
-question: 8
-title: "Question 8: Allez Cuisine!"
-categories:
-  - "2017 Questions"
-tags:
-  - question
-  - "2017"
----
-
 # [<t style="color: Pink;">PINK</t>] Allez Cuisine!
 
 ### Problem Description
@@ -34,6 +22,8 @@ For example, if Lom and Chaz find that the rectangle they need to fill is 2-by-3
 
 Enter your solution in the body of this method in the given code skeleton:
 
+You can download the skeletons here([java](/download/java/s8), [python](/download/python/s8))
+
 ### Method Signature
 
 Java:
@@ -52,10 +42,10 @@ def countTriominoFittings(rows, columns):
 
 ### Sample Method Calls
 
-`countTriominoFittings(3, 4)`
+`countTriominoFittings(3, 4)`  
 Returns: `23`
 
-`countTriominoFittings(2, 4)`
+`countTriominoFittings(2, 4)`  
 Returns: `-1`
 
 * * *
@@ -75,8 +65,8 @@ After writing your program into the given code skeleton, test your solution by r
 
 ### Assumptions
 
--   `1  < T < 10`
--   `0  < N, M < 9`
+-   `1  < T < 10`  
+-   `0  < N, M < 9`  
 
 ### Console Output Format
 
