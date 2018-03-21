@@ -51,3 +51,8 @@ defaults:
       layout: post
 # Custom vars
 sidebar_home_link:  true
+
+disqus:
+  shortname: muacm-programming-compition
+
+google_analytics: UA-116159842-1
