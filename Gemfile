@@ -28,7 +28,6 @@ end
 group :dev do
   gem 'capistrano'
   gem 'capistrano-rvm'
-  gem 'rvm1-capistrano3', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
