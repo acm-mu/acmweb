@@ -23,11 +23,11 @@ markdown:    kramdown
 highlighter: rouge
 theme:       jekyll-theme-hydeout
 
-
+# set pagination
 paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+paginate_path:    '/page/:num'
 
+# posts
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -40,8 +40,11 @@ exclude:
   - README.md
   - .gitignore
 
-permalink:        /:year/:month/:day/:title.html
+# Configure the path of the urls
+output_ext: .html
+permalink:  /:year/:month/:day/:title:output_ext
 
+# set some defaults
 defaults:
   - scope:
       path: "_posts"
@@ -52,6 +55,7 @@ defaults:
 # Custom vars
 sidebar_home_link:  true
 
+# add comments and analytics
 disqus:
   shortname: muacm-programming-compition
 
