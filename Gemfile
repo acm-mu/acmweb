@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+ruby '2.4.3'
+
+source "http://rubygems.org"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -21,6 +23,12 @@ gem "jekyll-theme-hydeout", "~> 3.4"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-compose'
+end
+
+group :dev do
+  gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'rvm1-capistrano3', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
