@@ -124,41 +124,50 @@ Sample solution:
 
 {% highlight java %}
 
-  import java.util.Scanner;
-  public class Ex2
-  {
-     public static void main(String[] args)
-     {
+package org.taco.syslab;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Ex2 {
+    public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
-        int num_cases = keyboard.`nextInt()`;
+        int num_cases = keyboard.nextInt();
+        int[][] cases = new int[num_cases][];
+
         // Output wants cases numbered from 1
-        for (int c = 1; c <= num_cases; c++)
-        {
-           int num_vals = keyboard.`nextInt()`;
-           int max_val = Integer.MIN_VALUE;
-           int max_count = 0;
-           for (int i = 0; i < num_vals; i++)
-           {
-              	int val = keyboard.`nextInt()`;
-              	if (val == max_val)
-                   max_count++;
-              	else if (val > max_val)
-              	{
-                   max_val = val;
-                   max_count = 1;
-              	}
-           }
-           System.out.println("Case "+c+": "+max_val+","+max_count);
+        for (int c = 0; c < num_cases; c++) {
+            int num_vals = keyboard.nextInt();
+            cases[c] = new int[num_vals];
+            for (int i = 0; i < num_vals; i++)
+                cases[c][i] = keyboard.nextInt();
         }
-     }
-  }
+
+        int[][] res = run(cases);
+        for (int i = 0; i < res.length; i++)
+            System.out.println("Case " + (i + 1) + ": " + res[i][0] + "," + res[i][1]);
+    }
+
+    public static int[][] run(int[][] cases) {
+        int[][] maxs = new int[cases.length][2];
+
+        for (int i = 0; i < cases.length; i++) {
+            int c = Arrays.stream(cases[i]).max().getAsInt();
+            maxs[i][0] = c;
+            maxs[i][1] = (int) Arrays.stream(cases[i]).filter(value -> value == c).count();
+        }
+
+        return maxs;
+    }
+}
 
 {% endhighlight %}
-
 
 ## Exercise 3
 
 Problem: Exercise 1 with numbers. Input is given in width 4 fields, ints between -99 and 999. Output should also use width 4 fields.
+
+This is done without using a skeleton.
 
 Input:
 
@@ -172,6 +181,7 @@ Input:
 ```
 
 Output:
+
 ```Plain
   0   1   1   2   3   5
   0   1   5   0   0   0
