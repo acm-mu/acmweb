@@ -1,7 +1,9 @@
 ---
-layout: post
-title: 2018 Wisconsin-Dairyland Programming Competition
+layout: index
+title: Home
 ---
+
+# 2018 Wisconsin-Dairyland Programming Competition
 
 ![CSTA Logo]({{ "assets/images/WI-CSTA.jpg" | absolute_url }})
 ![UPE Logo]({{ "assets/images/UPELogoSmallTrans.gif" | absolute_url }})
@@ -19,11 +21,11 @@ See examples of problems from previous competitions:
 - [2017]({{site.baseurl}}/2017-questions.html)
 - [2013](http://www.mscs.mu.edu/~mikes/contest2013.html)
 
-You may find it useful to review our [Programming Competition Preparation Notes](/wiki/Programming_Competition_Preparation_Notes "Programming Competition Preparation Notes").
+You may find it useful to review our [Programming Competition Preparation Notes]({{site.baseurl}}preparation.html "Programming Competition Preparation Notes").
 
 ## Open/Scratch Division
 
-Teams of 1 or 2 students will have three hours and one computer to implement a themed [Scratch](https://scratch.mit.edu/) project. Submissions will be judged on creativity, use of key [Scratch](https://scratch.mit.edu/) constructs, and theme correspondence. This division will be suitable for introductory students familiar with [Scratch](https://scratch.mit.edu/).
+Teams of 2 or 3 students will have three hours and one computer to implement a themed [Scratch](https://scratch.mit.edu/) project. Submissions will be judged on creativity, use of key [Scratch](https://scratch.mit.edu/) constructs, and theme correspondence. This division will be suitable for introductory students familiar with [Scratch](https://scratch.mit.edu/).
 
 ## Logistics
 
@@ -33,8 +35,4 @@ Competition date and time: Wednesday, April 18th, 2018, 9am CDT
 
 Registration Fee: $80 / team in Java division (3 or 4 students). $40 / team in Open (Scratch) division.
 
-Registration Deadline: March 21st, Noon CDT. (Coaches who register no later than March 1st, will earn a competition T-shirt for themselves.)
-
-This form is for coaches to register their teams for the competition:
-
-  [http://www.mscs.mu.edu/~brylow/pc.html](http://www.mscs.mu.edu/~brylow/pc.html)
+Registration is now closed.

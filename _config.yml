@@ -23,9 +23,6 @@ markdown:    kramdown
 highlighter: rouge
 theme:       jekyll-theme-hydeout
 
-# set pagination
-paginate: 5
-
 # posts
 plugins:
   - jekyll-feed

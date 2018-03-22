@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Competition Preparation
+title: Java Preparation
 sidebar_link: true
 ---
 
@@ -8,7 +8,7 @@ From Student ACM Wiki
 
 Contest programs are expected to read from System.in and write to System.out and be in the default package. Programs should not prompt for input. For any problem we judge it comparing the output of your program to the expected output file.
 
-All problems will come with skeleton code that will hand input and output. All the work done will be inside a provided method where input comes from the parameters and output is returned from the function. **Use of the skeleton is recomneded but not required**.
+All problems will come with skeleton code that will hand input and output. All the work done will be inside a provided method where input comes from the parameters and output is returned from the function. **Use of the skeleton is recommended but not required**.
 
 Many problems will require working with Strings, especially methods `length()`, `charAt()`, `substring()`, `equals()`, `compareTo()` and `split()`.
 
@@ -22,7 +22,7 @@ Many teams find using a development environment such as [Eclipse](http://www.ecl
 
 # Exercise 1
 
-Problem: Given a list of strings of the same length, flip around the main diagonal (topleft to bottomright). In other words, the symbol in row r, columm c of the input should be in row c, column r of the output. Input will have at most 20 rows and 20 columns.
+Problem: Given a list of strings of the same length, flip around the main diagonal (top left to bottom right). In other words, the symbol in row r, columm c of the input should be in row c, column r of the output. Input will have at most 20 rows and 20 columns.
 
 Input:
 
