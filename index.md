@@ -21,7 +21,7 @@ See examples of problems from previous competitions:
 - [2017]({{site.baseurl}}/2017-questions.html)
 - [2013](http://www.mscs.mu.edu/~mikes/contest2013.html)
 
-You may find it useful to review our [Programming Competition Preparation Notes]({{site.baseurl}}preparation.html "Programming Competition Preparation Notes").
+You may find it useful to review our [Programming Competition Preparation Notes]({{site.baseurl}}/preparation.html).
 
 ## Open/Scratch Division
 
@@ -37,11 +37,3 @@ Registration Fee: $80 / team in Java division (3 or 4 students). $40 / team in O
 
 Registration is now closed.
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116159842-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-116159842-1');
-</script>
