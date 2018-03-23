@@ -4,7 +4,7 @@ title: Scratch Preparation
 sidebar_link: true
 ---
 
-[Download Questions From Previous Years]({{site.baseulr}}/assets/Scratch2017.pdf)
+[Download Questions From Previous Years]({{site.baseurl}}/assets/Scratch2017.pdf)
 
 ## Competition Structure:
 
