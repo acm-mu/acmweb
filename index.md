@@ -36,3 +36,12 @@ Competition date and time: Wednesday, April 18th, 2018, 9am CDT
 Registration Fee: $80 / team in Java division (3 or 4 students). $40 / team in Open (Scratch) division.
 
 Registration is now closed.
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116159842-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116159842-1');
+</script>
