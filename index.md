@@ -22,7 +22,7 @@ See examples of problems from previous competitions:
 - [2013](http://www.mscs.mu.edu/~mikes/contest2013.html)
 
 
-You may find it useful to review our [Java Competition Preparation Notes]({% site_base %}java_preparation.html "Java Competition Preparation Notes") or [Scratch Competition Preparation Notes]({% site_base %}scratch_preperation.html "Scratch Competition Preparation Notes").
+You may find it useful to review our [Java Competition Preparation Notes]({% site_base %}/java_preparation.html "Java Competition Preparation Notes") or [Scratch Competition Preparation Notes]({% site_base %}/scratch_preperation.html "Scratch Competition Preparation Notes").
 
 ## Open/Scratch Division
 
