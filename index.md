@@ -22,6 +22,9 @@ See examples of problems from previous competitions:
 - [2013](http://www.mscs.mu.edu/~mikes/contest2013.html)
 
 You may find it useful to review our [Programming Competition Preparation Notes]({{site.baseurl}}/preparation.html).
+=======
+You may find it useful to review our [Java Competition Preparation Notes]({% site_base %}java_preparation.html "Java Competition Preparation Notes") or [Scratch Competition Preparation Notes]({% site_base %}scratch_preperation.html "Scratch Competition Preparation Notes").
+>>>>>>> kathleensedits:_posts/2018-3-20-2018-Announcement.md
 
 ## Open/Scratch Division
 
@@ -32,8 +35,6 @@ Teams of 2 or 3 students will have three hours and one computer to implement a t
 Competition location: Marquette University campus, in downtown Milwaukee
 
 Competition date and time: Wednesday, April 18th, 2018, 9am CDT
-
-Registration Fee: $80 / team in Java division (3 or 4 students). $40 / team in Open (Scratch) division.
 
 Registration is now closed.
 
