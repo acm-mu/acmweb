@@ -23,6 +23,9 @@ markdown:    kramdown
 highlighter: rouge
 theme:       jekyll-theme-hydeout
 
+sass:
+  sass_dir: _sass
+
 # posts
 plugins:
   - jekyll-feed
@@ -39,6 +42,9 @@ exclude:
 # Configure the path of the urls
 output_ext: .html
 permalink:  /:year/:month/:day/:title:output_ext
+
+sidebar_home_link:  true
+paginate: 5
 
 # set some defaults
 defaults:

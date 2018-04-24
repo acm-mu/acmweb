@@ -1,9 +1,11 @@
 ---
-layout: index
-title: Home
+layout: post
+title: "2018 Wisconsin-Dairyland Programming Competition"
+categories:
+  - "2018"
+tags:
+  - "2018"
 ---
-
-# 2018 Wisconsin-Dairyland Programming Competition
 
 ![CSTA Logo]({{ "assets/images/WI-CSTA.jpg" | absolute_url }})
 ![UPE Logo]({{ "assets/images/UPELogoSmallTrans.gif" | absolute_url }})
