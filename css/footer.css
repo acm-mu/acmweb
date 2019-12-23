@@ -1,0 +1,25 @@
+#social-links {
+  list-style-type: none;
+  display: inline;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+#social-links li {
+  color: #bbb;
+  display: inline;
+  font-size: 3em;
+  padding: 3px;
+}
+
+#social-links li img {
+  height: 30px;
+}
+
+#social-links li:hover {
+  color: #888;
+  cursor: pointer;
+}

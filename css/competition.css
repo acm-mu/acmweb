@@ -1,0 +1,31 @@
+button {
+  font-size: 18px;
+  width: 230px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 0 20px;
+  border-bottom: 5px solid #333;
+  box-shadow: 0px 5px 10px #ddd;
+}
+
+button.comp_button:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px #ccc;
+}
+
+button.register {
+  background: #0b8e00;
+  border-bottom-color: #027209;
+}
+
+button.java {
+  background: #00758f;
+  border-bottom-color: #025f74;
+}
+
+button.scratch {
+  background: #fdb825;
+  border-bottom-color: #c9911b;
+}
