@@ -1,4 +1,6 @@
-<link rel="stylesheet" type="text/css" href="/archive/style.css?">
+<!-- DEVELOPMENT PURPOSES: 
+Link with timestamp in url to prevent browser from caching. -->
+<link rel="stylesheet" type="text/css" href="/archive/style.css?<?php echo date('l jS \of F Y h:i:s A');?>">
 
 <div class="sidebar">
     <span class='select-year'>

@@ -1,6 +1,8 @@
 <?php require_once("header.php"); ?>
 
-<link rel="stylesheet" type="text/css" href="/css/events.css">
+<!-- DEVELOPMENT PURPOSES: 
+Link with timestamp in url to prevent browser from caching. -->
+<link rel="stylesheet" type="text/css" href="/css/events.css?<?php echo date('l jS \of F Y h:i:s A');?>">
 
 <h1 class="title" page="events"> Events </h1>
 
