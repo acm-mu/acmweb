@@ -7,22 +7,24 @@ Link with timestamp in url to prevent browser from caching. -->
 
 </div>
 <div id='footer'>
-    <a target="_blank" href="https://acm.org"><img class="acmlogo" src="/assets/acmlogo.png"></a>
-    <ul id="social-links">
-        <a target="_blank" href="https://github.com/acmmu">
-            <li><img src="/assets/github.png"></li>
+    <a target='_blank' href='https://acm.org'>
+        <img class='acmlogo' src='/assets/acmlogo.png'>
+    </a>
+    <ul id='social-links'>
+        <a target='_blank' href='https://github.com/acmmu'>
+            <li><img src='/assets/github.png'></li>
         </a>
-        <a target="_blank" href="https://twitter.com/acmmu_">
-            <li><img src="/assets/twitter.png"></li>
+        <a target='_blank' href='https://twitter.com/acmmu_'>
+            <li><img src='/assets/twitter.png'></li>
         </a>
-        <a target="_blank" href="https://instagram.com/acm_mu/">
-            <li><img src="/assets/instagram.png"></li>
+        <a target='_blank' href='https://instagram.com/acm_mu/'>
+            <li><img src='/assets/instagram.png'></li>
         </a>
-        <a target="_blank" href="https://facebook.com/acmmu/">
-            <li><img src="/assets/facebook.png"></li>
+        <a target='_blank' href='https://facebook.com/acmmu/'>
+            <li><img src='/assets/facebook.png'></li>
         </a>
-        <a target="_blank" href="https://discord.gg/KHD9dsx">
-            <li><img src="/assets/discord.png"></li>
+        <a target='_blank' href='https://discord.gg/KHD9dsx'>
+            <li><img src='/assets/discord.png'></li>
         </a>
     </ul>
 </div>

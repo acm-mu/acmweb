@@ -10,29 +10,30 @@
         integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>
 </head>
 
-<div id="navbar">
-    <img src="/assets/acmmu.png">
+<div id='navbar'>
+    <img src='/assets/acmmu.png'>
+
     <ul>
-        <a href="/">
-            <li id="home">Home</li>
+        <a href='/' id='home'>
+            <li>Home</li>
         </a>
-        <a href="/about">
-            <li id="about">About</li>
+        <a href='/about' id='about'>
+            <li>About</li>
         </a>
-        <a href="/events">
-            <li id="events">Events</li>
+        <a href='/events' id='events'>
+            <li>Events</li>
         </a>
-        <a href="/competition">
-            <li id="competition">Competition</li>
+        <a href='/competition' id='competition'>
+            <li>Competition</li>
         </a>
     </ul>
 </div>
 
 <script>
 $(document).ready(() => {
-    var page = $("h1.title").attr("page");
-    $("#navbar li#" + page).addClass("active");
+    var page = $('h1.title').attr('page');
+    $('#navbar li#' + page).addClass('active');
 });
 </script>
 
-<div class="container">
+<div class='container'>
