@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="crackfreewalls">Crack-free Walls</h1>
@@ -70,34 +67,28 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
+import java.util.*;
 
-    </pre>
-</script>
+public class Question8 {
 
-<script type="text/template" id="java-skeleton">
-    <pre>
-        import java.util.*;
-
-        public class Question8 {
-
-            public static void main(String[] args) {
-                Scanner keyboard = new Scanner(System.in);
-                for (int cases = keyboard.nextInt(); cases > 0; cases--) {
-                    System.out.println(countBuildConfigurations(keyboard.nextInt(), keyboard.nextInt()));
-                }
-                keyboard.close();
-            }
-
-            public static int countBuildConfigurations(int wallWidth, int wallHeight) {
-                int numOfBuildConfigurations = 0;
-
-                // TODO: set "numOfBuildConfigurations" to the number of ways to assemble the wall of given width and height
-                // out of 2x1 and 3x1 bricks, with no running cracks
-
-                return numOfBuildConfigurations;
-            }
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        for (int cases = keyboard.nextInt(); cases > 0; cases--) {
+            System.out.println(countBuildConfigurations(keyboard.nextInt(), keyboard.nextInt()));
         }
+        keyboard.close();
+    }
+
+    public static int countBuildConfigurations(int wallWidth, int wallHeight) {
+        int numOfBuildConfigurations = 0;
+
+        // TODO: set "numOfBuildConfigurations" to the number of ways to assemble the wall of given width and height
+        // out of 2x1 and 3x1 bricks, with no running cracks
+
+        return numOfBuildConfigurations;
+    }
+}
     </pre>
 </script>

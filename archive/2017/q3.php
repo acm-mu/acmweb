@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="onegiantleap">One Giant Leap</h1>
@@ -91,75 +88,75 @@ require_once("sidebar.php");
 	</div>
 </script>
 
-<script type="text/template" id="java-solution">
+<script type="text/template" id="java-solution-template">
     <pre>
-		import java.util.ArrayList;
-		import java.util.Arrays;
-		import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
-		public class QuestionThree {
+public class QuestionThree {
 
-			// The main method handles standard input and output
-			// You should not change this method
-			public static void main(String [] args){
-				Scanner scanner = new Scanner(System.in);
-				int t= scanner.nextInt();
-				for(int i=0;i<t;i++){
-					int startingYear = scanner.nextInt();
-					int endingYear = scanner.nextInt();
-					ArrayList<Integer> solution = findLeapYears(startingYear, endingYear);
-					Integer solution2[] = new Integer[solution.size()];
-					solution2 = solution.toArray(solution2);
-					//to print your array
-					System.out.println(Arrays.toString(solution2));
-				}
-			}
-			public static ArrayList<Integer> findLeapYears(int startingYear, int endingYear){
-				ArrayList<Integer>  leapYears = new  ArrayList<Integer>();
-				for(int i =startingYear+1; i < endingYear;i++){
-					if((i%4)==0){
-						if(!((i%100==0)&&!(i%400==0))){
-							leapYears.add(i);
-						}
-					}
-					
-				}
-				//TODO: Write your solution in the body of this method
-				return leapYears;
-			}
+	// The main method handles standard input and output
+	// You should not change this method
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		int t= scanner.nextInt();
+		for(int i=0;i<t;i++){
+			int startingYear = scanner.nextInt();
+			int endingYear = scanner.nextInt();
+			ArrayList<Integer> solution = findLeapYears(startingYear, endingYear);
+			Integer solution2[] = new Integer[solution.size()];
+			solution2 = solution.toArray(solution2);
+			//to print your array
+			System.out.println(Arrays.toString(solution2));
 		}
+	}
+	public static ArrayList<Integer> findLeapYears(int startingYear, int endingYear){
+		ArrayList<Integer>  leapYears = new  ArrayList<Integer>();
+		for(int i =startingYear+1; i < endingYear;i++){
+			if((i%4)==0){
+				if(!((i%100==0)&&!(i%400==0))){
+					leapYears.add(i);
+				}
+			}
+			
+		}
+		//TODO: Write your solution in the body of this method
+		return leapYears;
+	}
+}
 	</pre>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-		import java.util.ArrayList;
-		import java.util.Arrays;
-		import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
-		public class QuestionThree {
+public class QuestionThree {
 
-			// The main method handles standard input and output
-			// You should not change this method
-			public static void main(String [] args){
-				Scanner scanner = new Scanner(System.in);
-				int t= scanner.nextInt();
-				for(int i=0;i<t;i++){
-					int startingYear = scanner.nextInt();
-					int endingYear = scanner.nextInt();
-					ArrayList<Integer> solution = findLeapYears(startingYear, endingYear);
-					Integer solution2[] = new Integer[solution.size()];
-					solution2 = solution.toArray(solution2);
-					//to print your array
-					System.out.println(Arrays.toString(solution2));
-				}
-			}
-			public static ArrayList<Integer> findLeapYears(int startingYear, int endingYear){
-				ArrayList<Integer>  leapYears = new  ArrayList<Integer>();
-
-				//TODO: Write your solution in the body of this method
-				return leapYears;
-			}
+	// The main method handles standard input and output
+	// You should not change this method
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		int t= scanner.nextInt();
+		for(int i=0;i<t;i++){
+			int startingYear = scanner.nextInt();
+			int endingYear = scanner.nextInt();
+			ArrayList<Integer> solution = findLeapYears(startingYear, endingYear);
+			Integer solution2[] = new Integer[solution.size()];
+			solution2 = solution.toArray(solution2);
+			//to print your array
+			System.out.println(Arrays.toString(solution2));
 		}
+	}
+	public static ArrayList<Integer> findLeapYears(int startingYear, int endingYear){
+		ArrayList<Integer>  leapYears = new  ArrayList<Integer>();
+
+		//TODO: Write your solution in the body of this method
+		return leapYears;
+	}
+}
 	</pre>
 </script>

@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="practiceproblem">Practice Problem</h1>
@@ -142,79 +139,78 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def isNegative(x):
-        """
-        TODO: Complete this function, which should return whether or not the input number is less than zero.
+def isNegative(x):
+"""
+TODO: Complete this function, which should return whether or not the input number is less than zero.
 
-        Parameters:
-        x --> (integer) the input number
+Parameters:
+x --> (integer) the input number
 
-        Returns:
-        result --> (boolean) True if x is less than zero, and False otherwise
-        """
-        result = False
+Returns:
+result --> (boolean) True if x is less than zero, and False otherwise
+"""
+result = False
 
-        # write your code here to change "result"!
+# write your code here to change "result"!
 
-        return result
+return result
 
 
-        # It is unnecessary to edit the "main" function of each problem's provided code skeleton.
-        # The main function is written for you in order to help you conform to input and output formatting requirements.
-        def main():
-        num_cases = int(input())
+# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
+# The main function is written for you in order to help you conform to input and output formatting requirements.
+def main():
+num_cases = int(input())
 
-        for _ in range(num_cases):
-            x = int(input())
-            x_is_negative = isNegative(x)
+for _ in range(num_cases):
+    x = int(input())
+    x_is_negative = isNegative(x)
 
-            if x_is_negative:
-                print('Negative')
-            else:
-                print('Non-Negative')
+    if x_is_negative:
+        print('Negative')
+    else:
+        print('Non-Negative')
 
-        main()
-
+main()
     </pre>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        // Do NOT include a package statement at the top of your solution.
+// Do NOT include a package statement at the top of your solution.
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class PracticeProblem {
+public class PracticeProblem {
 
-            /*
-            * It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-            * The main method is written for you in order to help you conform to input and output formatting requirements.
-            */
-            public static void main(String[] args) {
-                Scanner kb = new Scanner(System.in);
-                int numCases = kb.nextInt();
-                for (int iCase = 0; iCase < numCases; iCase++) {
-                    int x = kb.nextInt();
-                    boolean xIsNegative = isNegative(x);
-                    if (xIsNegative) {
-                        System.out.println("Negative");
-                    } else {
-                        System.out.println("Non-Negative");
-                    }
-                }
-            }
-
-            public static boolean isNegative(int x) {
-                boolean result = false;
-
-                /*
-                * TODO: Write code that changes result to true if "x" is less than zero.
-                */ 
-
-                return result;
+    /*
+    * It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+    * The main method is written for you in order to help you conform to input and output formatting requirements.
+    */
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int numCases = kb.nextInt();
+        for (int iCase = 0; iCase < numCases; iCase++) {
+            int x = kb.nextInt();
+            boolean xIsNegative = isNegative(x);
+            if (xIsNegative) {
+                System.out.println("Negative");
+            } else {
+                System.out.println("Non-Negative");
             }
         }
+    }
+
+    public static boolean isNegative(int x) {
+        boolean result = false;
+
+        /*
+        * TODO: Write code that changes result to true if "x" is less than zero.
+        */ 
+
+        return result;
+    }
+}
     </pre>
 </script>

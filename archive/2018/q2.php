@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="headsortails">Exclusively Heads or Tails</h1>
@@ -77,38 +74,33 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-    </pre>
-</div>
-</script>
-<script type="text/template" id="java-skeleton">
-    <pre>
-        import java.util.*;
+import java.util.*;
 
-        public class Question2 {
+public class Question2 {
 
-            public static void main(String[] args) {
-                Scanner keyboard = new Scanner(System.in);
-                int cases = keyboard.nextInt();
-                keyboard.nextLine();
-                for (; cases > 0; cases--) {
-                    String aliceResults = keyboard.nextLine();
-                    String bobResults = keyboard.nextLine();
-                    System.out.println(getWinner(aliceResults.toCharArray(), bobResults.toCharArray()));
-                }
-                keyboard.close();
-            }
-
-            public static String getWinner(char[] aliceFlipResults, char[] bobFlipResults) {
-                // both "aliceFlipResults" and "bobFlipResults" will only contain 'H' and 'T' characters, and each array has 8 elements
-
-                String winner = "Alice";
-
-                // TODO: change "winner" to be the name of the player with the most heads ("Alice", "Bob", or "Chaz")
-
-                return winner;
-            }
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        int cases = keyboard.nextInt();
+        keyboard.nextLine();
+        for (; cases > 0; cases--) {
+            String aliceResults = keyboard.nextLine();
+            String bobResults = keyboard.nextLine();
+            System.out.println(getWinner(aliceResults.toCharArray(), bobResults.toCharArray()));
         }
+        keyboard.close();
+    }
+
+    public static String getWinner(char[] aliceFlipResults, char[] bobFlipResults) {
+        // both "aliceFlipResults" and "bobFlipResults" will only contain 'H' and 'T' characters, and each array has 8 elements
+
+        String winner = "Alice";
+
+        // TODO: change "winner" to be the name of the player with the most heads ("Alice", "Bob", or "Chaz")
+
+        return winner;
+    }
+}
     </pre>
 </script>

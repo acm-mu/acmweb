@@ -1,7 +1,4 @@
-<?php
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="bonusquestion">Unit Testing and Test Driven Design</h1>
@@ -115,140 +112,140 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-solution">
+<script type="text/template" id="python-solution-template">
     <pre>
-        from functools import cmp_to_key
+from functools import cmp_to_key
 
-        def formLargestNumber(digits):
-            inputs = [str(digit) for digit in digits]
+def formLargestNumber(digits):
+    inputs = [str(digit) for digit in digits]
 
-            def lengthen_with_loops(string, length):
-                orig_length = len(string)
-                for i in range(int(length / orig_length)):
-                    string += string
-                return string[:length]
+    def lengthen_with_loops(string, length):
+        orig_length = len(string)
+        for i in range(int(length / orig_length)):
+            string += string
+        return string[:length]
 
-            def compare_nums(first, second):
-                if len(first) < len(second):
-                    first = lengthen_with_loops(first, len(second))
-                elif len(second) < len(first):
-                    second = lengthen_with_loops(second, len(first))
-                
-                sorted = [first, second]
-                sorted.sort()
-                if sorted[0] == first:
-                    return -1
-                else:
-                    return 1
+    def compare_nums(first, second):
+        if len(first) < len(second):
+            first = lengthen_with_loops(first, len(second))
+        elif len(second) < len(first):
+            second = lengthen_with_loops(second, len(first))
+        
+        sorted = [first, second]
+        sorted.sort()
+        if sorted[0] == first:
+            return -1
+        else:
+            return 1
 
-            inputs.sort(key=cmp_to_key(compare_nums), reverse=True)
+    inputs.sort(key=cmp_to_key(compare_nums), reverse=True)
 
-            return int(''.join(inputs))
+    return int(''.join(inputs))
     </pre>
 </script>
 
-<script type="text/template" id="java-solution">
+<script type="text/template" id="java-solution-template">
     <pre>
-        import java.util.Arrays;
-        import java.util.Comparator;
+import java.util.Arrays;
+import java.util.Comparator;
 
-        public class LargestNumber {
-            
-            
-            public static int formLargestNumber(int[] digitList) {
-                String[] inputs = new String[digitList.length];
+public class LargestNumber {
+    
+    
+    public static int formLargestNumber(int[] digitList) {
+        String[] inputs = new String[digitList.length];
 
-                for (int i = 0; i < inputs.length; ++i) {
-                    inputs[i] = Integer.toString(digitList[i]);
-                }
-
-                Arrays.sort(inputs, new Comparator<String>() {
-                    @Override
-                    public int compare(String firstString, String secondString) {
-                        if (firstString.length() < secondString.length()) {
-                            firstString = lengthenWithLoops(firstString, secondString.length());
-                        } else if (secondString.length() < firstString.length()){
-                            secondString = lengthenWithLoops(secondString, firstString.length());
-                        }
-                        return secondString.compareTo(firstString);
-                    }
-                });
-
-                int s = 0;
-
-                for (String y : inputs) {
-                    for (int i = 0; i < y.length(); ++i) {
-                        s = y.charAt(i) - '0' + s * 10;
-                    }
-                }
-
-                return s;
-            }
-            
-            public static String lengthenWithLoops(String s, int length) {
-                int origLength = s.length();
-                for (int i = 0; i < length / origLength; i++) {
-                    s += s;
-                }
-                return s.substring(0, length);
-            }
-    }
-    </pre>
-</script>
-
-<script type="text/template" id="python-skeleton">
-    <pre>
-        import unittest
-        from LargestNumber import formLargestNumber
-
-        class TestLargestNumber(unittest.TestCase):
-            
-            # Two test cases are provided for you. You may use them as a template to add additional test
-            # methods to this class.
-
-            def test_1(self):
-                self.assertEqual(83141, formLargestNumber([8, 3, 1, 14]))
-
-            def test_2(self):
-                self.assertNotEqual(14831, formLargestNumber([8, 3, 1, 14]))
-
-            """
-            TODO: Add test cases that prove your understanding of fringe (or unusual) combinations of numbers
-                    that show you've thought about different ways to test the program 
-            """
-
-        # It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-        # The main method is written for you in order to help you conform to input and output formatting requirements.
-        def main():
-            unittest.main()
-        main()            
-    </pre>
-</script>
-
-<script type="text/template" id="java-skeleton">
-    <pre>
-        import static org.junit.jupiter.api.Assertions.*;
-
-        import org.junit.jupiter.api.Test;
-
-        public class LargestNumberTest {
-
-            // Two test cases are provided for you. You may use them as a template to add additional test
-            // methods to this class.
-
-            @Test
-            public void testFormLargestNumber() throws Exception {
-                assertEquals(83141, LargestNumber.formLargestNumber(new int[] {8, 3, 1, 14}));
-            }
-            
-            @Test
-            public void testFormLargestNumber2() throws Exception {
-                assertNotEquals(14831, LargestNumber.formLargestNumber(new int[] {8, 3, 1, 14}));
-            }
-
-            // TODO: Add test cases that prove your understanding of fringe (or unusual) combinations of numbers
-            // that show you've thought about different ways to test the program.
-
+        for (int i = 0; i < inputs.length; ++i) {
+            inputs[i] = Integer.toString(digitList[i]);
         }
+
+        Arrays.sort(inputs, new Comparator<String>() {
+            @Override
+            public int compare(String firstString, String secondString) {
+                if (firstString.length() < secondString.length()) {
+                    firstString = lengthenWithLoops(firstString, secondString.length());
+                } else if (secondString.length() < firstString.length()){
+                    secondString = lengthenWithLoops(secondString, firstString.length());
+                }
+                return secondString.compareTo(firstString);
+            }
+        });
+
+        int s = 0;
+
+        for (String y : inputs) {
+            for (int i = 0; i < y.length(); ++i) {
+                s = y.charAt(i) - '0' + s * 10;
+            }
+        }
+
+        return s;
+    }
+    
+    public static String lengthenWithLoops(String s, int length) {
+        int origLength = s.length();
+        for (int i = 0; i < length / origLength; i++) {
+            s += s;
+        }
+        return s.substring(0, length);
+    }
+}
+    </pre>
+</script>
+
+<script type="text/template" id="python-skeleton-template">
+    <pre>
+import unittest
+from LargestNumber import formLargestNumber
+
+class TestLargestNumber(unittest.TestCase):
+    
+    # Two test cases are provided for you. You may use them as a template to add additional test
+    # methods to this class.
+
+    def test_1(self):
+        self.assertEqual(83141, formLargestNumber([8, 3, 1, 14]))
+
+    def test_2(self):
+        self.assertNotEqual(14831, formLargestNumber([8, 3, 1, 14]))
+
+    """
+    TODO: Add test cases that prove your understanding of fringe (or unusual) combinations of numbers
+            that show you've thought about different ways to test the program 
+    """
+
+# It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+# The main method is written for you in order to help you conform to input and output formatting requirements.
+def main():
+    unittest.main()
+main()            
+    </pre>
+</script>
+
+<script type="text/template" id="java-skeleton-template">
+    <pre>
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class LargestNumberTest {
+
+    // Two test cases are provided for you. You may use them as a template to add additional test
+    // methods to this class.
+
+    @Test
+    public void testFormLargestNumber() throws Exception {
+        assertEquals(83141, LargestNumber.formLargestNumber(new int[] {8, 3, 1, 14}));
+    }
+    
+    @Test
+    public void testFormLargestNumber2() throws Exception {
+        assertNotEquals(14831, LargestNumber.formLargestNumber(new int[] {8, 3, 1, 14}));
+    }
+
+    // TODO: Add test cases that prove your understanding of fringe (or unusual) combinations of numbers
+    // that show you've thought about different ways to test the program.
+
+}
     </pre>
 </script>

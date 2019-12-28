@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="encryption">Encryption</h1>
@@ -116,55 +113,55 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def encrypt(s):
-            """
-            TODO: Implement the "square encryption" scheme
+def encrypt(s):
+    """
+    TODO: Implement the "square encryption" scheme
 
-            Parameters:
-            s --> the message to encrypt, of type String
-            
-            Returns:
-            s --> the encrypted message
-            """
+    Parameters:
+    s --> the message to encrypt, of type String
+    
+    Returns:
+    s --> the encrypted message
+    """
 
-            return s
+    return s
 
-        # It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-        # The main method is written for you in order to help you conform to input and output formatting requirements.
-        def main():
-            for _ in range(int(input())):
-                print("".join(encrypt(input())))
-        main()
+# It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+# The main method is written for you in order to help you conform to input and output formatting requirements.
+def main():
+    for _ in range(int(input())):
+        print("".join(encrypt(input())))
+main()
     </pre>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class Encryption {
+public class Encryption {
 
 
-            /* It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-                * The main method is written for you in order to help you conform to input and output formatting requirements.
-                */	
-            public static void main(String[] args) throws Exception {
-                Scanner in = new Scanner(System.in);
-                int cases = in.nextInt();
-                for(;cases > 0; cases--)
-                    System.out.println(encode(in.next()));
-                in.close();
-            }
-            
-            /* TODO: Implement the "square encryption" scheme 
-                * @param s, the message to encrypt, of type String 
-                * @return s, the encrypted message
-                */ 
-            private static String encode(String s) {
-                return s;
-            }
-        }
+    /* It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+        * The main method is written for you in order to help you conform to input and output formatting requirements.
+        */	
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+        int cases = in.nextInt();
+        for(;cases > 0; cases--)
+            System.out.println(encode(in.next()));
+        in.close();
+    }
+    
+    /* TODO: Implement the "square encryption" scheme 
+        * @param s, the message to encrypt, of type String 
+        * @return s, the encrypted message
+        */ 
+    private static String encode(String s) {
+        return s;
+    }
+}
     </pre>
 </script>

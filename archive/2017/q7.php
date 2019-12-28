@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="rollforinitiative">Roll For Initiative</h1>
@@ -96,117 +93,117 @@ require_once("sidebar.php");
 	</div>
 </script>
 
-<script type="text/template" id="java-solution">
+<script type="text/template" id="java-solution-template">
     <pre>
-		import java.util.Scanner;
+import java.util.Scanner;
 
-		public class AlphabetDice {
+public class AlphabetDice {
 
-			public static void main(String[] args){
-				Scanner sc = new Scanner(System.in);
-				int count = sc.nextInt();
-				sc.nextLine();
-				
-				while(count > 0){
-				String die1, die2, die3, die4, die5, word;
-				die1 = sc.nextLine();
-				die2 = sc.nextLine();
-				die3 = sc.nextLine();
-				die4 = sc.nextLine();
-				die5 = sc.nextLine();
-				word = sc.nextLine();
-				//System.out.println(die1 + "\n" + die2 + "\n" + die3 + 
-				//		"\n" + die4 + "\n" + die5 + "\n" + word);
-				System.out.println(rollDice(die1, die2, die3, die4, die5, word));
-				count -= 1;
-				}
-			}
-			
-			/**
-			* @param d1
-			* @param d2
-			* @param d3
-			* @param d4
-			* @param d5
-			* @param word to check against the dice
-			* @return true if word can be spelt with dice
-			*/
-			public static boolean rollDice(String d1, String d2, String d3, String d4, String d5, String word){
-				char[] die1 = d1.toCharArray();
-				char[] die2 = d2.toCharArray();
-				char[] die3 = d3.toCharArray();
-				char[] die4 = d4.toCharArray();
-				char[] die5 = d5.toCharArray();
-				
-				for(char one:die1){
-					for(char two:die2){
-						for(char three:die3){
-							for(char four:die4){
-								for(char five:die5){
-									//System.out.println("Tops: " + one + " " + two + " " + three + " " + four + " " + five);
-									char[] top = {one, two, three, four, five};
-									if(computeResult(top, word))
-										return true;
-								}
-							}
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int count = sc.nextInt();
+		sc.nextLine();
+		
+		while(count > 0){
+		String die1, die2, die3, die4, die5, word;
+		die1 = sc.nextLine();
+		die2 = sc.nextLine();
+		die3 = sc.nextLine();
+		die4 = sc.nextLine();
+		die5 = sc.nextLine();
+		word = sc.nextLine();
+		//System.out.println(die1 + "\n" + die2 + "\n" + die3 + 
+		//		"\n" + die4 + "\n" + die5 + "\n" + word);
+		System.out.println(rollDice(die1, die2, die3, die4, die5, word));
+		count -= 1;
+		}
+	}
+	
+	/**
+	* @param d1
+	* @param d2
+	* @param d3
+	* @param d4
+	* @param d5
+	* @param word to check against the dice
+	* @return true if word can be spelt with dice
+	*/
+	public static boolean rollDice(String d1, String d2, String d3, String d4, String d5, String word){
+		char[] die1 = d1.toCharArray();
+		char[] die2 = d2.toCharArray();
+		char[] die3 = d3.toCharArray();
+		char[] die4 = d4.toCharArray();
+		char[] die5 = d5.toCharArray();
+		
+		for(char one:die1){
+			for(char two:die2){
+				for(char three:die3){
+					for(char four:die4){
+						for(char five:die5){
+							//System.out.println("Tops: " + one + " " + two + " " + three + " " + four + " " + five);
+							char[] top = {one, two, three, four, five};
+							if(computeResult(top, word))
+								return true;
 						}
 					}
 				}
-				return false;
-			}
-			/**
-			* Checks the permutation of the dice to see if we can spell the word
-			* @param top char[] of the tops of the dice
-			* @param word to check against
-			* @return true if we can spell the word with this permutation
-			*/
-			public static boolean computeResult(char[] top, String word) {
-				for(char c:top){
-					//System.out.println(c);
-					//System.out.println(word);
-					int index = word.indexOf(c);
-					if(index >= 0)
-						word = word.substring(0, index) + word.substring(index+1);
-					else
-						return false;
-				}
-				return true;
 			}
 		}
+		return false;
+	}
+	/**
+	* Checks the permutation of the dice to see if we can spell the word
+	* @param top char[] of the tops of the dice
+	* @param word to check against
+	* @return true if we can spell the word with this permutation
+	*/
+	public static boolean computeResult(char[] top, String word) {
+		for(char c:top){
+			//System.out.println(c);
+			//System.out.println(word);
+			int index = word.indexOf(c);
+			if(index >= 0)
+				word = word.substring(0, index) + word.substring(index+1);
+			else
+				return false;
+		}
+		return true;
+	}
+}
 	</pre>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-		import java.util.Scanner;
+import java.util.Scanner;
 
-		public class QuestionSeven {
+public class QuestionSeven {
 
-			// The main method handles standard input and output
-			// You should not change this method
-			public static void main(String [] args){
-				Scanner scanner = new Scanner(System.in);
-				int count = scanner.nextInt();
-				scanner.nextLine();
-				while(count > 0){
-					String die1 = scanner.nextLine();
-					String die2 = scanner.nextLine();
-					String die3 = scanner.nextLine();
-					String die4 = scanner.nextLine();
-					String die5 = scanner.nextLine();
-					String word = scanner.nextLine();
-					System.out.println(rollDice(die1, die2, die3, die4, die5, word));
-					count -= 1;
-				}
-				
-			}
-			public static boolean rollDice(String die1, String die2, String die3, String die4, String die5, String word){
-				boolean isPossible = true;
-				
-				//TODO: Write your solution in the body of this method
-				
-				return isPossible;
-			}
+	// The main method handles standard input and output
+	// You should not change this method
+	public static void main(String [] args){
+		Scanner scanner = new Scanner(System.in);
+		int count = scanner.nextInt();
+		scanner.nextLine();
+		while(count > 0){
+			String die1 = scanner.nextLine();
+			String die2 = scanner.nextLine();
+			String die3 = scanner.nextLine();
+			String die4 = scanner.nextLine();
+			String die5 = scanner.nextLine();
+			String word = scanner.nextLine();
+			System.out.println(rollDice(die1, die2, die3, die4, die5, word));
+			count -= 1;
 		}
+		
+	}
+	public static boolean rollDice(String die1, String die2, String die3, String die4, String die5, String word){
+		boolean isPossible = true;
+		
+		//TODO: Write your solution in the body of this method
+		
+		return isPossible;
+	}
+}
 	</pre>
 </script>

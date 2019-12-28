@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="allyourbasearebelongtous">All your base are belong to us</h1>
@@ -170,65 +167,64 @@ require_once("sidebar.php");
     </pre>
 </script>
 
-<script type="text/template" id="java-solution">
+<script type="text/template" id="java-solution-template">
     <pre>
-        import java.util.*;
-        public class BaseConversionSolution {
+import java.util.*;
+public class BaseConversionSolution {
 
-            public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-                int t = scanner.nextInt();
-                for(int i = 0; i < t; i++){
-                    long num = scanner.nextLong();
-                    int base = scanner.nextInt();
-                    char[] solution = baseConvert(num,base);
-                    System.out.println(Arrays.toString(solution));
-                }
-            }
-            public static char[] symbols = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
-            public static char[] baseConvert(long num,int base){
-                char[] solution = new char[8];
-                
-                for (int i = 7; i>=0;i--){
-                    int answer = (int) (num/Math.pow(base, i));
-                    num-= answer*Math.pow(base,i);
-                    solution[(7-i)]=symbols[answer];
-                }
-                return solution;
-            }
-
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+        for(int i = 0; i < t; i++){
+            long num = scanner.nextLong();
+            int base = scanner.nextInt();
+            char[] solution = baseConvert(num,base);
+            System.out.println(Arrays.toString(solution));
         }
+    }
+    public static char[] symbols = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    public static char[] baseConvert(long num,int base){
+        char[] solution = new char[8];
+        
+        for (int i = 7; i>=0;i--){
+            int answer = (int) (num/Math.pow(base, i));
+            num-= answer*Math.pow(base,i);
+            solution[(7-i)]=symbols[answer];
+        }
+        return solution;
+    }
+}
     </pre>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class QuestionFive {
+public class QuestionFive {
 
-            // The main method handles standard input and output
-            // You should not change this method
-            public static void main(String [] args){
-                Scanner scanner = new Scanner(System.in);
-                int t = scanner.nextInt();
-                //to print your answer
-                for(int i = 0; i < t; i++){
-                    long num = scanner.nextLong();
-                    int base = scanner.nextInt();
-                    char [] answer = baseConvert(num, base);
-                    for(int j = 0; j < answer.length; j++){
-                        System.out.print(answer[j]);
-                    }
-                }
-            }
-            public static char [] baseConvert(long num, int base){
-                char [] array = null;
-                
-                //TODO: Write your solution in the body of this method
-                
-                return array;
+    // The main method handles standard input and output
+    // You should not change this method
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+        //to print your answer
+        for(int i = 0; i < t; i++){
+            long num = scanner.nextLong();
+            int base = scanner.nextInt();
+            char [] answer = baseConvert(num, base);
+            for(int j = 0; j < answer.length; j++){
+                System.out.print(answer[j]);
             }
         }
+    }
+    public static char [] baseConvert(long num, int base){
+        char [] array = null;
+        
+        //TODO: Write your solution in the body of this method
+        
+        return array;
+    }
+}
     </pre>
 </script>

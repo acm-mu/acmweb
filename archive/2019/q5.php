@@ -1,7 +1,4 @@
-<?php
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="rugby">Rugby</h1>
@@ -104,66 +101,65 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.*;
+import java.util.*;
 
-        public class Rugby {
+public class Rugby {
 
-            /*It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-                * The main method is written for you in order to help you conform to input and output formatting requirements.
-                */
-            public static void main(String[] args) {
-                Scanner in = new Scanner(System.in);
-                int cases = in.nextInt();
-                for(;cases > 0; cases--) {
-                    System.out.println(countCombos(in.nextInt()));
-                }
-            }
-
-            /**  
-                *  TODO: Write a function that counts all combinations of points
-                        a team can score to reach a given total 'score'.
-
-                @param score --> The total score for all points to add up to.
-                @return the number of combinations possible. *
-            */
-            public static int countCombos(int score) {
-
-                // Hint: one way to solve this problem is to write a "generateCombos" method to return
-                // all the combinations, then count them:
-                return generateCombos(score).size();
-            }
+    /*It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+        * The main method is written for you in order to help you conform to input and output formatting requirements.
+        */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int cases = in.nextInt();
+        for(;cases > 0; cases--) {
+            System.out.println(countCombos(in.nextInt()));
         }
-                
+    }
+
+    /**  
+        *  TODO: Write a function that counts all combinations of points
+                a team can score to reach a given total 'score'.
+
+        @param score --> The total score for all points to add up to.
+        @return the number of combinations possible. *
+    */
+    public static int countCombos(int score) {
+
+        // Hint: one way to solve this problem is to write a "generateCombos" method to return
+        // all the combinations, then count them:
+        return generateCombos(score).size();
+    }
+}      
     </pre>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def countCombos(score):
-            """
-                TODO: Write a function that counts all combinations of points
-            a team can score to reach a given total 'score'.
-                
-                Parameters:
-                score --> The total score for all points to add up to.
-                
-                Returns:
-                The number of combinations possible.
-                """
-            
-                # Hint: one way to solve this problem is to write a "generateCombos" method to return
-                # all the combinations, then count them.
+def countCombos(score):
+    """
+        TODO: Write a function that counts all combinations of points
+    a team can score to reach a given total 'score'.
+        
+        Parameters:
+        score --> The total score for all points to add up to.
+        
+        Returns:
+        The number of combinations possible.
+        """
+    
+        # Hint: one way to solve this problem is to write a "generateCombos" method to return
+        # all the combinations, then count them.
 
-            return 0
+    return 0
 
-        # It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-        # The main method is written for you in order to help you conform to input and output formatting requirements.
-        def main():
-            for _ in range(int(input())):
-                print(countCombos(int(input())))
+# It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+# The main method is written for you in order to help you conform to input and output formatting requirements.
+def main():
+    for _ in range(int(input())):
+        print(countCombos(int(input())))
 
-        main()
+main()
     </pre>
 </script>

@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="piglatin">Umericnay Pig Latin</h1>
@@ -91,33 +88,27 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
+import java.util.*;
 
-    </pre>
-</script>
+public class Question3 {
 
-<script type="text/template" id="java-skeleton">
-    <pre>
-        import java.util.*;
-
-        public class Question3 {
-
-            public static void main(String[] args) {
-                Scanner keyboard = new Scanner(System.in);
-                for (int cases = keyboard.nextInt(); cases > 0; cases--) {
-                    System.out.println(convertToPigLatin(keyboard.nextInt()));
-                }
-                keyboard.close();
-            }
-
-            public static int convertToPigLatin(int input) {
-                int convertedInput = 0;
-
-                // TODO: set "convertedInput" to the numeric pig latin version of "input"
-
-                return convertedInput;
-            }
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        for (int cases = keyboard.nextInt(); cases > 0; cases--) {
+            System.out.println(convertToPigLatin(keyboard.nextInt()));
         }
+        keyboard.close();
+    }
+
+    public static int convertToPigLatin(int input) {
+        int convertedInput = 0;
+
+        // TODO: set "convertedInput" to the numeric pig latin version of "input"
+
+        return convertedInput;
+    }
+}
     </pre>
 </script>

@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="sunrise">Sunrise</h1>
@@ -93,75 +90,75 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="java-solution">
+<script type="text/template" id="java-solution-template">
     <pre>
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class solution {
+public class solution {
 
-            //The main method handles standard input and output
-            //You should not change this method
-            public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-                int num = scanner.nextInt();
-                for (int i = 0; i < num; i++) {
-                    int left = scanner.nextInt();
-                    String op = scanner.next();
-                    int right = scanner.nextInt();
-                    System.out.println(calculate(left, op, right));
-                }
-            }
-
-            public static int calculate(int left, String op, int right) {
-                int answer;
-                switch (op) {
-                    case "+":
-                        answer = left + right;
-                        break;
-                    case "-":
-                        answer = left - right;
-                        break;
-                    case "*":
-                        answer = left * right;
-                        break;
-                    case "/":
-                        answer = right == 0 ? 0 : left / right;
-                        break;
-                    default:
-                        answer = 0;
-
-                }
-                return answer;
-            }
+    //The main method handles standard input and output
+    //You should not change this method
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        for (int i = 0; i < num; i++) {
+            int left = scanner.nextInt();
+            String op = scanner.next();
+            int right = scanner.nextInt();
+            System.out.println(calculate(left, op, right));
         }
+    }
+
+    public static int calculate(int left, String op, int right) {
+        int answer;
+        switch (op) {
+            case "+":
+                answer = left + right;
+                break;
+            case "-":
+                answer = left - right;
+                break;
+            case "*":
+                answer = left * right;
+                break;
+            case "/":
+                answer = right == 0 ? 0 : left / right;
+                break;
+            default:
+                answer = 0;
+
+        }
+        return answer;
+    }
+}
     </pre>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-            import java.util.Scanner;
+import java.util.Scanner;
 
-            public class QuestionOne {
-                
-                //The main method handles standard input and output
-                //You should not change this method
-                public static void main(String [] args){
-                    Scanner scanner = new Scanner(System.in);
-                    int num = scanner.nextInt();
-                    for(int i = 0; i < num; i++){
-                        int left = scanner.nextInt();
-                        String op = scanner.next();
-                        int right = scanner.nextInt();
-                        System.out.println(calculate(left, op, right));
-                    }
-                }
-                
-                public static int calculate(int left ,String op, int right){
-                    int answer = 0;
-                    //TODO: Write your solution in the body of this method
-                    
-                    return answer;
-                }
-            }
+public class QuestionOne {
+    
+    //The main method handles standard input and output
+    //You should not change this method
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        for(int i = 0; i < num; i++){
+            int left = scanner.nextInt();
+            String op = scanner.next();
+            int right = scanner.nextInt();
+            System.out.println(calculate(left, op, right));
+        }
+    }
+    
+    public static int calculate(int left ,String op, int right){
+        int answer = 0;
+        //TODO: Write your solution in the body of this method
+        
+        return answer;
+    }
+}
     </pre>
 </script>
