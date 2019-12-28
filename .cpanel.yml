@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/muhosting/public_html/
+    - export DEPLOYPATH=/public_html/
     - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp about.php $DEPLOYPATH
     - /bin/cp competition.php $DEPLOYPATH
