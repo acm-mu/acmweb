@@ -1,4 +1,4 @@
-<?php require_once("header.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
 <h1 class="title">
     Java Preparation
@@ -242,4 +242,4 @@ Sample solution:
     }
 </pre>
 
-<?php require_once("footer.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

@@ -1,4 +1,4 @@
-<?php require_once("header.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
 <h1 class="title">
     Scratch Preparation
@@ -80,4 +80,4 @@ Here are a few Scratch tools to be familiar with:
     <li>Sensing</li>
 </ul>
 
-<?php require_once("footer.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
