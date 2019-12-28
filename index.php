@@ -1,4 +1,4 @@
-<?php require_once("header.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
 <h1 class="title" page="home" id="bash">ACM@MU</h1>
 
@@ -19,4 +19,4 @@
 <p>Membership is open to anyone and everyone who's interested in computing. The easiest way to get involved is to join
     our mailing list.</p>
 
-<?php require_once("footer.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

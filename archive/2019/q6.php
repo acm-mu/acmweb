@@ -1,7 +1,4 @@
-<?php
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <div>
@@ -109,100 +106,101 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def multBaseConverter(base10, lwrBnd, uprBnd):
-            """
-            TODO: Complete this method which converts a decimal to all bases between two bounds
+def multBaseConverter(base10, lwrBnd, uprBnd):
+    """
+    TODO: Complete this method which converts a decimal to all bases between two bounds
 
-            Parameters:
-            base10 --> the number to be converted, given in decimal (base 10)
-            lwrBnd --> the lower bound of bases to which base10 will be converted to
-            uprBnd --> the upper bound of bases to which base10 will be converted to
+    Parameters:
+    base10 --> the number to be converted, given in decimal (base 10)
+    lwrBnd --> the lower bound of bases to which base10 will be converted to
+    uprBnd --> the upper bound of bases to which base10 will be converted to
 
-            Returns:
-            allBases --> an array of base10 converted to bases between the lwrBnd and uprBnd
+    Returns:
+    allBases --> an array of base10 converted to bases between the lwrBnd and uprBnd
 
-            Note: lwrBnd and uprBnd are INCLUDED in the final returned result.
-            Note: Don't worry about null elements in the return array. The main method removes all null elements.        
-            """
+    Note: lwrBnd and uprBnd are INCLUDED in the final returned result.
+    Note: Don't worry about null elements in the return array. The main method removes all null elements.        
+    """
 
-            # Variable Declarations #
-            allBases = []
+    # Variable Declarations #
+    allBases = []
 
-            return allBases
+    return allBases
 
 
-        # It is unnecessary to edit the "main" function of each problem's provided code skeleton.
-        # The main function is written for you in order to help you conform to input and output formatting requirements.
-        def main():
-            
-            for _ in range(int(input())):
-                # User Input #
-                inp = [int(s) for s in input().split(" ")]
+# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
+# The main function is written for you in order to help you conform to input and output formatting requirements.
+def main():
+    
+    for _ in range(int(input())):
+        # User Input #
+        inp = [int(s) for s in input().split(" ")]
 
-                # Terminal Output #
-                print("[%s]" % (', '.join(multBaseConverter(inp[0], inp[1], inp[2])))) # Function call
+        # Terminal Output #
+        print("[%s]" % (', '.join(multBaseConverter(inp[0], inp[1], inp[2])))) # Function call
 
-        main()
+main()
     </pre>
 </script>
-<script type="text/template" id="java-skeleton">
+
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.ArrayList;
-        import java.util.Arrays;
-        import java.util.Collections;
-        import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
-        public class BaseConverter {
+public class BaseConverter {
 
-            /*
-                * It is unnecessary to edit the "main" method of each problem's provided code
-                * skeleton. The main method is written for you in order to help you conform to
-                * input and output formatting requirements.
-                */
-            public static void main(String[] args) {
+    /*
+        * It is unnecessary to edit the "main" method of each problem's provided code
+        * skeleton. The main method is written for you in order to help you conform to
+        * input and output formatting requirements.
+        */
+    public static void main(String[] args) {
 
-                /* Variable Declarations */
-                int num, lwrBnd, uprBnd;
-                ArrayList<String> outputList;
-                Scanner in = new Scanner(System.in);
+        /* Variable Declarations */
+        int num, lwrBnd, uprBnd;
+        ArrayList<String> outputList;
+        Scanner in = new Scanner(System.in);
 
-                int cases = in.nextInt();
-                for (; cases > 0; cases--) {
-                    /* User Input */
-                    num = in.nextInt();
-                    lwrBnd = in.nextInt();
-                    uprBnd = in.nextInt();
+        int cases = in.nextInt();
+        for (; cases > 0; cases--) {
+            /* User Input */
+            num = in.nextInt();
+            lwrBnd = in.nextInt();
+            uprBnd = in.nextInt();
 
-                    /* Function call */
-                    /* Converts the output of multBaseConverter to an ArrayList outputList. */
-                    outputList = new ArrayList<String>(Arrays.asList(multBaseConverter(num, lwrBnd, uprBnd)));
-                    /* Gets rid of any null elements in the ArrayList. */
-                    outputList.removeAll(Collections.singleton(null));
+            /* Function call */
+            /* Converts the output of multBaseConverter to an ArrayList outputList. */
+            outputList = new ArrayList<String>(Arrays.asList(multBaseConverter(num, lwrBnd, uprBnd)));
+            /* Gets rid of any null elements in the ArrayList. */
+            outputList.removeAll(Collections.singleton(null));
 
-                    /* Terminal Output */
-                    System.out.println(outputList.toString());
-                }
-                in.close();
-            }
+            /* Terminal Output */
+            System.out.println(outputList.toString());
+        }
+        in.close();
+    }
 
-            /**
-                * TODO: Complete the following method which converts a decimal to all bases between two bounds
-                * 
-                * Note: lwrBnd and uprBnd are INCLUDED in the final returned result. 
-                * Note: Don't worry about null elements in the return array. The main method removes all null elements.
-                * 
-                * @param base10 --> the number to be converted, given in decimal (base 10)
-                * @param lwrBnd --> the lower bound of bases to which base10 will be converted to
-                * @param uprBnd --> the upper bound of bases to which base10 will be converted to
-                * @return allBases --> an array of base10 converted to bases between the lwrBnd and uprBnd
-                */
-            public static String[] multBaseConverter(int base10, int lwrBnd, int uprBnd) {
-                String[] allBases = new String[63];
+    /**
+        * TODO: Complete the following method which converts a decimal to all bases between two bounds
+        * 
+        * Note: lwrBnd and uprBnd are INCLUDED in the final returned result. 
+        * Note: Don't worry about null elements in the return array. The main method removes all null elements.
+        * 
+        * @param base10 --> the number to be converted, given in decimal (base 10)
+        * @param lwrBnd --> the lower bound of bases to which base10 will be converted to
+        * @param uprBnd --> the upper bound of bases to which base10 will be converted to
+        * @return allBases --> an array of base10 converted to bases between the lwrBnd and uprBnd
+        */
+    public static String[] multBaseConverter(int base10, int lwrBnd, int uprBnd) {
+        String[] allBases = new String[63];
 
-                return allBases;
-            }
-        }    
+        return allBases;
+    }
+}    
     </pre>
 </script>

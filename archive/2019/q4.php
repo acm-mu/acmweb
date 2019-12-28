@@ -1,7 +1,4 @@
-<?php
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="looksay">Look &amp; Say</h1>
@@ -103,67 +100,67 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.*;
+import java.util.*;
 
-        public class LookAndSay {
+public class LookAndSay {
 
-            /** 
-            * TODO: Write a function that applies the look and say sequence 3 times, 
-            * using the previous result as the input for the next sequence.
-            *    @param input --> The initial input.
-            *    @return the result of applying the look and say sequence 3 times. **/
-            public static String lookandsay(String input){
-                return "";
-            }
+    /** 
+    * TODO: Write a function that applies the look and say sequence 3 times, 
+    * using the previous result as the input for the next sequence.
+    *    @param input --> The initial input.
+    *    @return the result of applying the look and say sequence 3 times. **/
+    public static String lookandsay(String input){
+        return "";
+    }
 
-            public static int sum(String input){
-                int sum = 0;
-                for(char c : input.toCharArray())
-                    sum += Integer.parseInt(c + "");
-                return sum;
-            }
+    public static int sum(String input){
+        int sum = 0;
+        for(char c : input.toCharArray())
+            sum += Integer.parseInt(c + "");
+        return sum;
+    }
 
-            /* It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-                * The main method is written for you in order to help you conform to input and output formatting requirements.\
-                */
-            public static void main(String[] args) {
-                Scanner in = new Scanner(System.in);
+    /* It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+        * The main method is written for you in order to help you conform to input and output formatting requirements.\
+        */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
-                int cases = in.nextInt();
-                for(;cases > 0; cases--) {
-                    System.out.println(sum(lookandsay(in.next())));
-                }
-            }
-        }    
+        int cases = in.nextInt();
+        for(;cases > 0; cases--) {
+            System.out.println(sum(lookandsay(in.next())));
+        }
+    }
+}    
     </pre>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def lookandsay(input):
-            """ TODO: Write a function that applies the look and say sequence 3 times, 
-                using the previous result as the input for the next sequence.
-            @param: input [string] --> The initial input.
-            @return [string result] - The result of applying the look and say sequence 3 times.
-            """
+def lookandsay(input):
+    """ TODO: Write a function that applies the look and say sequence 3 times, 
+        using the previous result as the input for the next sequence.
+    @param: input [string] --> The initial input.
+    @return [string result] - The result of applying the look and say sequence 3 times.
+    """
 
-            return ""
+    return ""
 
-        def sum(input):
-        sum = 0
-        for s in input:
-            sum += int(s)
-        return sum
+def sum(input):
+sum = 0
+for s in input:
+    sum += int(s)
+return sum
 
-        # It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-        # The main method is written for you in order to help you conform to input and output formatting requirements.
-        def main():
-        cases = int(input())
-        for _ in range(cases):
-            print(sum(lookandsay(str(input()))))
+# It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+# The main method is written for you in order to help you conform to input and output formatting requirements.
+def main():
+cases = int(input())
+for _ in range(cases):
+    print(sum(lookandsay(str(input()))))
 
-        main()
+main()
     </pre>
 </script>

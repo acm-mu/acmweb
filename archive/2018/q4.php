@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="passwordstrength">Password Strength Checker</h1>
@@ -91,39 +88,33 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
+import java.util.*;
 
-    </pre>
-</script>
+public class Question4 {
 
-<script type="text/template" id="java-skeleton">
-    <pre>
-        import java.util.*;
-
-        public class Question4 {
-
-            public static void main(String[] args) {
-                Scanner keyboard = new Scanner(System.in);
-                int cases = keyboard.nextInt();
-                keyboard.nextLine();
-                for (; cases > 0; cases--) {
-                    String[] arguments = keyboard.nextLine().split(" ");
-                    if (isAcceptablePassword(arguments[0], arguments[1], arguments[2], Integer.parseInt(arguments[3]), Integer.parseInt(arguments[4]), Integer.parseInt(arguments[5])))
-                        System.out.println("OK");
-                    else
-                        System.out.println("INVALID");
-                }
-                keyboard.close();
-            }
-
-            public static boolean isAcceptablePassword(String password, String userFirstName, String userLastName, int birthYear, int birthMonth, int birthDay) {
-                boolean isAcceptable = true;
-
-                // TODO: set "isAcceptable" to false if the password violates any of the requirements, otherwise leave "isAcceptable" true
-
-                return isAcceptable;
-            }
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        int cases = keyboard.nextInt();
+        keyboard.nextLine();
+        for (; cases > 0; cases--) {
+            String[] arguments = keyboard.nextLine().split(" ");
+            if (isAcceptablePassword(arguments[0], arguments[1], arguments[2], Integer.parseInt(arguments[3]), Integer.parseInt(arguments[4]), Integer.parseInt(arguments[5])))
+                System.out.println("OK");
+            else
+                System.out.println("INVALID");
         }
+        keyboard.close();
+    }
+
+    public static boolean isAcceptablePassword(String password, String userFirstName, String userLastName, int birthYear, int birthMonth, int birthDay) {
+        boolean isAcceptable = true;
+
+        // TODO: set "isAcceptable" to false if the password violates any of the requirements, otherwise leave "isAcceptable" true
+
+        return isAcceptable;
+    }
+}
     </pre>
 </script>

@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
- ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="practiceproblem">Practice Problem</h1>
@@ -87,37 +84,31 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
+import java.util.*;
 
-    </pre>
-</script>
+public class Question0 {
 
-<script type="text/template" id="java-skeleton">
-    <pre>
-        import java.util.*;
-
-        public class Question0 {
-
-            public static void main(String[] args) {
-                Scanner keyboard = new Scanner(System.in);
-                for (int cases = keyboard.nextInt(); cases > 0; cases--) {
-                    int input = keyboard.nextInt();
-                    int output = addOne(input);
-                    System.out.println(output);
-                }
-                keyboard.close();
-            }
-
-            public static int addOne(int input) {
-                int output = 0;
-
-                /*
-                * TODO: Change output to be "input + 1".
-                */
-                
-                return output;
-            }
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        for (int cases = keyboard.nextInt(); cases > 0; cases--) {
+            int input = keyboard.nextInt();
+            int output = addOne(input);
+            System.out.println(output);
         }
+        keyboard.close();
+    }
+
+    public static int addOne(int input) {
+        int output = 0;
+
+        /*
+        * TODO: Change output to be "input + 1".
+        */
+        
+        return output;
+    }
+}
     </pre>
 </script>

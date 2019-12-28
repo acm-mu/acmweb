@@ -1,7 +1,4 @@
-<?php 
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="flighttime">Flight Time</h1>
@@ -134,96 +131,97 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def totalFlightTime(distance, velocity, departureHr, departureMin):
-            """
-            TODO: Complete this method that calculates the arrival time of a flight based on the given parameters:
-            
-            Parameters:
-            distance --> the distance in miles of the flight
-            velocity --> how fast the plane is going in mph
-            departureHr --> the hour in which the plane departs
-            departureMin --> the minute in which the plane departs
+def totalFlightTime(distance, velocity, departureHr, departureMin):
+    """
+    TODO: Complete this method that calculates the arrival time of a flight based on the given parameters:
+    
+    Parameters:
+    distance --> the distance in miles of the flight
+    velocity --> how fast the plane is going in mph
+    departureHr --> the hour in which the plane departs
+    departureMin --> the minute in which the plane departs
 
-            Returns:
-            A list with arrivalHr at index 0 and arrivalMin at index 1
+    Returns:
+    A list with arrivalHr at index 0 and arrivalMin at index 1
 
-            Note: You do not need to account for time of day signifiers (AM or PM).
-            Note: You do not need to account for time change between time zones.
-            """
-            return (0, 0)
+    Note: You do not need to account for time of day signifiers (AM or PM).
+    Note: You do not need to account for time change between time zones.
+    """
+    return (0, 0)
 
-        # It is unnecessary to edit the "main" function of each problem's provided code skeleton.
-        # The main function is written for you in order to help you conform to input and output formatting requirements.
-        def main():
+# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
+# The main function is written for you in order to help you conform to input and output formatting requirements.
+def main():
 
-            for _ in range(int(input())):
-                # User Input #
-                inp = [int(s) for s in input().split(" ")]
+    for _ in range(int(input())):
+        # User Input #
+        inp = [int(s) for s in input().split(" ")]
 
-                # Function Call
-                flight = totalFlightTime(inp[0], inp[1], inp[2], inp[3])
+        # Function Call
+        flight = totalFlightTime(inp[0], inp[1], inp[2], inp[3])
 
-                # Terminal Output #
-                print("{}:{:02d}".format(int(flight[0]), int(flight[1])))
+        # Terminal Output #
+        print("{}:{:02d}".format(int(flight[0]), int(flight[1])))
 
-        main()
+main()
     </pre>
 </script>
-<script type="text/template" id="java-skeleton">
+
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class FlightTime {
+public class FlightTime {
 
-            /*
-                * It is unnecessary to edit the "main" method of each problem's provided code
-                * skeleton. The main method is written for you in order to help you conform to
-                * input and output formatting requirements.
-                */
-            public static void main(String[] args) {
+    /*
+        * It is unnecessary to edit the "main" method of each problem's provided code
+        * skeleton. The main method is written for you in order to help you conform to
+        * input and output formatting requirements.
+        */
+    public static void main(String[] args) {
 
-                Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-                int cases = in.nextInt();
-                for (; cases > 0; cases--) {
+        int cases = in.nextInt();
+        for (; cases > 0; cases--) {
 
-                    // User Input
-                    int dist = in.nextInt();
-                    int velo = in.nextInt();
-                    int depHr = in.nextInt();
-                    int depMin = in.nextInt();
+            // User Input
+            int dist = in.nextInt();
+            int velo = in.nextInt();
+            int depHr = in.nextInt();
+            int depMin = in.nextInt();
 
-                    // Function Call
-                    int[] flight = totalFlightTime(dist, velo, depHr, depMin);
+            // Function Call
+            int[] flight = totalFlightTime(dist, velo, depHr, depMin);
 
-                    // Terminal Output
-                    System.out.printf("%d:%02d\n", flight[0], flight[1]);
-                }
-
-                in.close();
-
-            }
-
-            /**
-                * TODO: Complete the following method that calculates the arrival time of a
-                * flight based on the given parameters:
-                * 
-                * Note: You do not need to account for time of day signifiers (AM or PM). Note:
-                * You do not need to account for time change between time zones.
-                * 
-                * @param distance --> the distance in miles of the flight
-                * @param velocity --> how fast the plane is going in mph
-                * @param departureHr --> the hour in which the plane departs
-                * @param departureMin --> the minute in which the plane departs
-                * @return new int[] {arrivalHr, arrivalMin} --> an array with arrivalHr at
-                *         index 0 and arrivalMin at index 1
-                */
-            public static int[] totalFlightTime(int distance, int velocity, int departureHr, int departureMin) {
-                return new int[] {0, 0};
-            }
-
+            // Terminal Output
+            System.out.printf("%d:%02d\n", flight[0], flight[1]);
         }
+
+        in.close();
+
+    }
+
+    /**
+        * TODO: Complete the following method that calculates the arrival time of a
+        * flight based on the given parameters:
+        * 
+        * Note: You do not need to account for time of day signifiers (AM or PM). Note:
+        * You do not need to account for time change between time zones.
+        * 
+        * @param distance --> the distance in miles of the flight
+        * @param velocity --> how fast the plane is going in mph
+        * @param departureHr --> the hour in which the plane departs
+        * @param departureMin --> the minute in which the plane departs
+        * @return new int[] {arrivalHr, arrivalMin} --> an array with arrivalHr at
+        *         index 0 and arrivalMin at index 1
+        */
+    public static int[] totalFlightTime(int distance, int velocity, int departureHr, int departureMin) {
+        return new int[] {0, 0};
+    }
+
+}
     </pre>
 </script>

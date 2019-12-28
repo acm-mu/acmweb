@@ -1,4 +1,4 @@
-<?php require_once("header.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
 <!-- DEVELOPMENT PURPOSES: 
 Link with timestamp in url to prevent browser from caching. -->
@@ -85,4 +85,4 @@ Link with timestamp in url to prevent browser from caching. -->
     <i>More events coming soon!</i>
 </div>
 
-<?php require_once("footer.php"); ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

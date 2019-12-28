@@ -1,7 +1,4 @@
-<?php
-require_once("../../header.php");
-require_once("sidebar.php");
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
     <h1 id="page" page="taylorseries">Taylor Series</h1>
@@ -113,110 +110,110 @@ require_once("sidebar.php");
     </div>
 </script>
 
-<script type="text/template" id="java-skeleton">
+<script type="text/template" id="java-skeleton-template">
     <pre>
-        import java.util.Scanner;
+import java.util.Scanner;
 
-        public class TaylorSeries {
+public class TaylorSeries {
 
-                /*
-                * It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-                * The main method is written for you in order to help you conform to input and output formatting requirements.
-                */
-            public static void main(String[] args) {
-                Scanner in = new Scanner(System.in);
-                int cases = in.nextInt();
-                for (; cases > 0; cases--) {
-                    double a = in.nextDouble();
-                    System.out.printf("%.3f %.3f\n", sin(a), cos(a));
-                }
-                in.close();
+        /*
+        * It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+        * The main method is written for you in order to help you conform to input and output formatting requirements.
+        */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int cases = in.nextInt();
+        for (; cases > 0; cases--) {
+            double a = in.nextDouble();
+            System.out.printf("%.3f %.3f\n", sin(a), cos(a));
+        }
+        in.close();
+    }
+
+    /**
+        * TODO: Complete the following method which calculates the cosine given an angle in degrees
+        * 
+        * @param x --> the angle given in degrees
+        * @return result --> the cosine given in radians
+        */
+    public static double cos(double x) {
+        return 0;
+    }
+
+    /**
+        * TODO: Complete the following method which calculates the sine given an angle in degrees
+        * 
+        * @param x --> the angle given in degrees
+        * @return result --> the sine given in radians
+        */
+    public static double sin(double x) {
+        return 0;
+    }
+
+    /**
+        * 
+        * Note: Use this factorial method when developing your code 
+        * 
+        * @param x --> the value that is used to calculate the factorial
+        * @return result --> the result of x!
+        */
+    public static double factorial(int x) {
+        double result = 1;
+        if (x == 0)
+            result = 1;
+        else {
+            for (int i = 1; i <= x; i++) {
+                result *= i;
             }
-
-            /**
-                * TODO: Complete the following method which calculates the cosine given an angle in degrees
-                * 
-                * @param x --> the angle given in degrees
-                * @return result --> the cosine given in radians
-                */
-            public static double cos(double x) {
-                return 0;
-            }
-
-            /**
-                * TODO: Complete the following method which calculates the sine given an angle in degrees
-                * 
-                * @param x --> the angle given in degrees
-                * @return result --> the sine given in radians
-                */
-            public static double sin(double x) {
-                return 0;
-            }
-
-            /**
-                * 
-                * Note: Use this factorial method when developing your code 
-                * 
-                * @param x --> the value that is used to calculate the factorial
-                * @return result --> the result of x!
-                */
-            public static double factorial(int x) {
-                double result = 1;
-                if (x == 0)
-                    result = 1;
-                else {
-                    for (int i = 1; i <= x; i++) {
-                        result *= i;
-                    }
-                }
-                return result;
-            }
-        }     
+        }
+        return result;
+    }
+}     
     </pre>
 </script>
 
-<script type="text/template" id="python-skeleton">
+<script type="text/template" id="python-skeleton-template">
     <pre>
-        def cos(x):
-            """
-            TODO: Complete this method which calculates the cosine given an angle
+def cos(x):
+    """
+    TODO: Complete this method which calculates the cosine given an angle
 
-            Parameters:
-            x --> the given angle
+    Parameters:
+    x --> the given angle
 
-            Returns:
-            result --> the given cosine in radians
+    Returns:
+    result --> the given cosine in radians
 
-            Note:
-            It is suggested to import the math library and use math.pow(base, exponent), math.pi, and math.factorial(number) for this problem.        
-            """
-            result = 0
+    Note:
+    It is suggested to import the math library and use math.pow(base, exponent), math.pi, and math.factorial(number) for this problem.        
+    """
+    result = 0
 
-            return result
+    return result
 
-        def sin(x):
-            """
-            TODO: Complete this method which calculates the sine given an angle
+def sin(x):
+    """
+    TODO: Complete this method which calculates the sine given an angle
 
-            Parameters:
-            x --> the given angle
+    Parameters:
+    x --> the given angle
 
-            Returns:
-            result --> the given sine in radians
+    Returns:
+    result --> the given sine in radians
 
-            Note:
-            It is suggested to import the math library and use math.pow(base, exponent), math.pi, and math.factorial(number) for this problem.        
-            """
-            result = 0
+    Note:
+    It is suggested to import the math library and use math.pow(base, exponent), math.pi, and math.factorial(number) for this problem.        
+    """
+    result = 0
 
-            return result
+    return result
 
-        # It is unnecessary to edit the "main" method of each problem's provided code skeleton.
-        # The main method is written for you in order to help you conform to input and output formatting requirements.
-        def main(): 
-            for _ in range(int(input())):
-                a = float(input())
-                print(format(sin(a), '.3f') + " " + format(cos(a), '.3f'))
-        main()    
+# It is unnecessary to edit the "main" method of each problem's provided code skeleton.
+# The main method is written for you in order to help you conform to input and output formatting requirements.
+def main(): 
+    for _ in range(int(input())):
+        a = float(input())
+        print(format(sin(a), '.3f') + " " + format(cos(a), '.3f'))
+main()    
     </pre>
 </script>
