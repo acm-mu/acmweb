@@ -1,5 +1,11 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
+<ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/competition">Competition</a></li>
+    <li>Java Preparation</li>
+</ul>
+
 <h1 class="title">
     Java Preparation
 </h1>
@@ -44,40 +50,44 @@
     at most 20 rows and 20 columns.
 </p>
 
-Input:
+<label>
+    Input:
+</label>
 
 <pre>
-    ..##@@..$
-    .##.@@.$.
-    ##..@@$..
-    #...$$...
-    #..$@@...
-    #.$.@@...
+..##@@..$
+.##.@@.$.
+##..@@$..
+#...$$...
+#..$@@...
+#.$.@@...
 </pre>
 
-Output:
+<label>
+    Output:
+</label>
 
 <pre>
-    ..####
-    .##...
-    ##...$
-    #...$.
-    @@@$@@
-    @@@$@@
-    ..$...
-    .$....
-    $.....
+..####
+.##...
+##...$
+#...$.
+@@@$@@
+@@@$@@
+..$...
+.$....
+$.....
 </pre>
 
-Sample solution:
+<label>
+    Sample solution:
+</label>
 
 <pre>
-    import java.util.Scanner;
+import java.util.Scanner;
 
-    public class Ex1
-    {
-    public static void main(String[] args)
-    {
+public class Ex1 {
+    public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String[] rows = new String[20];
         int num_rows = 0;
@@ -110,7 +120,7 @@ Sample solution:
 
         return output;
     }
-    }
+}
 </pre>
 
 <h2>Exercise 2</h2>
@@ -120,64 +130,72 @@ Sample solution:
     case as shown below.
 </p>
 
-Input:
+<label>
+    Input:
+</label>
+
 <pre>
-    5
-    3 0 2 1
-    5 12 12 14 14 14
-    6 -2 -4 -4 -3 -3 -4
-    1 100
-    8 10 11 12 11 12 11 10 9
+5
+3 0 2 1
+5 12 12 14 14 14
+6 -2 -4 -4 -3 -3 -4
+1 100
+8 10 11 12 11 12 11 10 9
 </pre>
 
-Output:
+<label>
+    Output:
+</label>
+
 <pre>
-    Case 1: 2,1
-    Case 2: 14,3
-    Case 3: -2,1
-    Case 4: 100,1
-    Case 5: 12,2
+Case 1: 2,1
+Case 2: 14,3
+Case 3: -2,1
+Case 4: 100,1
+Case 5: 12,2
 </pre>
 
-Sample solution:
+<label>
+    Sample solution:
+</label>
 
 <pre>
-    package org.taco.syslab;
+package org.taco.syslab;
 
-    import java.util.Arrays;
-    import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Scanner;
 
-    public class Ex2 {
-        public static void main(String[] args) {
-            Scanner keyboard = new Scanner(System.in);
-            int num_cases = keyboard.nextInt();
-            int[][] cases = new int[num_cases][];
+public class Ex2 {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        int num_cases = keyboard.nextInt();
+        int[][] cases = new int[num_cases][];
 
-            // Output wants cases numbered from 1
-            for (int c = 0; c < num_cases; c++) {
-                int num_vals = keyboard.nextInt();
-                cases[c] = new int[num_vals];
-                for (int i = 0; i < num_vals; i++)
-                    cases[c][i] = keyboard.nextInt();
-            }
-
-            int[][] res = run(cases);
-            for (int i = 0; i < res.length; i++)
-                System.out.println("Case " + (i + 1) + ": " + res[i][0] + "," + res[i][1]);
+        // Output wants cases numbered from 1
+        for (int c = 0; c < num_cases; c++) {
+            int num_vals = keyboard.nextInt();
+            cases[c] = new int[num_vals];
+            for (int i = 0; i < num_vals; i++)
+                cases[c][i] = keyboard.nextInt();
         }
 
-        public static int[][] run(int[][] cases) {
-            int[][] maxs = new int[cases.length][2];
-
-            for (int i = 0; i < cases.length; i++) {
-                int c = Arrays.stream(cases[i]).max().getAsInt();
-                maxs[i][0] = c;
-                maxs[i][1] = (int) Arrays.stream(cases[i]).filter(value -> value == c).count();
-            }
-
-            return maxs;
-        }
+        int[][] res = run(cases);
+        for (int i = 0; i < res.length; i++)
+            System.out.println("Case " + (i + 1) + ": " + res[i][0] + "," + res[i][1]);
     }
+
+    public static int[][] run(int[][] cases) {
+        int[][] maxs = new int[cases.length][2];
+
+        for (int i = 0; i < cases.length; i++) {
+            int c = Arrays.stream(cases[i]).max().getAsInt();
+            maxs[i][0] = c;
+            maxs[i][1] = (int) Arrays.stream(cases[i]).filter(value -> value == c).count();
+        }
+
+        return maxs;
+    }
+}
 </pre>
 
 <h2>Exercise 3</h2>
@@ -188,58 +206,66 @@ Sample solution:
     This is done without using a skeleton.
 </p>
 
-Input:
+<label>
+    Input:
+</label>
+
 <pre>
-    0   0  -2  24
-    1   1  -1  25
-    1   5   1   0
-    2   0   9 -56
-    3   0   6   0
-    5   0 100   1
+0   0  -2  24
+1   1  -1  25
+1   5   1   0
+2   0   9 -56
+3   0   6   0
+5   0 100   1
 </pre>
 
-Output:
+<label>
+    Output:
+</label>
+
 <pre>
-    0   1   1   2   3   5
-    0   1   5   0   0   0
-    -2  -1   1   9   6 100
-    24  25   0 -56   0   1
+0   1   1   2   3   5
+0   1   5   0   0   0
+-2  -1   1   9   6 100
+24  25   0 -56   0   1
 </pre>
 
-Sample solution:
+<label>
+    Sample solution:
+</label>
 
 <pre>
-    import java.util.Scanner;
+import java.util.Scanner;
 
-    public class Ex3 {
-        public static void main(String[] args) {
+public class Ex3 {
+    public static void main(String[] args) {
 
-            Scanner keyboard = new Scanner(System.in);
-            int[][] vals = new int[20][20];
-            int num_rows = 0;
-            int num_cols = 0;
+        Scanner keyboard = new Scanner(System.in);
+        int[][] vals = new int[20][20];
+        int num_rows = 0;
+        int num_cols = 0;
 
-            while (keyboard.`hasNextLine()`) {
-                String line = keyboard.`nextLine()`;
-                line = line.`trim()`; //otherwise, `split()` gives
-                                    //empty string at beginning
-                String[] line_words = line.split("s+");
-                if (num_rows == 0)
-                    num_cols = line_words.length;
+        while (keyboard.`hasNextLine()`) {
+            String line = keyboard.`nextLine()`;
+            line = line.`trim()`; //otherwise, `split()` gives
+                                //empty string at beginning
+            String[] line_words = line.split("s+");
+            if (num_rows == 0)
+                num_cols = line_words.length;
 
-                for (int c = 0; c < num_cols; c++)
-                    vals[num_rows][c] = Integer.parseInt(line_words[c]);
+            for (int c = 0; c < num_cols; c++)
+                vals[num_rows][c] = Integer.parseInt(line_words[c]);
 
-                num_rows++;
-            }
+            num_rows++;
+        }
 
-            for(int c = 0; c < num_cols; c++) {
-                for(int r = 0; r < num_rows; r++)
-                    System.out.printf("%4d",vals[r][c]);
-                System.out.`println()`;
-            }
+        for(int c = 0; c < num_cols; c++) {
+            for(int r = 0; r < num_rows; r++)
+                System.out.printf("%4d",vals[r][c]);
+            System.out.`println()`;
         }
     }
+}
 </pre>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

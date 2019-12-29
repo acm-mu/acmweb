@@ -1,20 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto|Poppins|Roboto+Slab|Open+Sans:400,400i,600,700|Squada+One|Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Poppins|Open+Sans:400,400i,600,700Ubuntu&display=swap");
 html,
 body {
   margin: 0;
-  scrollbar-width: none;
 }
+
+/*******************
+*  Hide Scrollbar  *
+*******************/
 * {
   scrollbar-width: none;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+/******************/
 
 .container {
   margin-top: 40px;
   width: 60%;
   min-height: 90%;
   padding: 30px 20%;
-  overflow: scroll;
-  /*   height: 90%;      */
 }
 
 h1.title {
@@ -23,6 +30,8 @@ h1.title {
   font-family: "Open Sans";
   font-weight: 400;
 }
+
+/* Underline the headings on pages */
 h1.title:after {
   background-color: rgb(221, 221, 221);
   display: block;
@@ -31,11 +40,8 @@ h1.title:after {
   margin: 18px 0;
   width: 27px;
 }
-h1 {
-  color: rgb(38, 60, 76);
-  font-family: "Open Sans";
-  font-weight: normal;
-}
+
+h1,
 h2,
 h3,
 h4,
@@ -44,21 +50,25 @@ h5 {
   font-family: "Open Sans";
   font-weight: bold;
 }
+
+h1 {
+  font-weight: normal;
+}
+
 a {
   text-decoration: none;
   color: #003366;
   font-weight: 600;
 }
-p {
+
+p,
+li {
   font-family: "Open Sans";
   color: rgb(33, 39, 45);
   font-size: 18px;
   line-height: 27px;
 }
-li {
-  font-family: "Open Sans";
-  font-size: 16px;
-}
+
 code {
   color: #bf616a;
   background: #f9f9f9;
@@ -66,13 +76,28 @@ code {
   border-radius: 3px;
   font-size: 85%;
 }
-pre.prettyprint {
+
+pre {
   background: #f9f9f9;
-  border: none !important;
-  padding: 0.25em 0.5em !important;
-  border-radius: 3px !important;
+  padding: 0.5em 0.5em;
 }
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }

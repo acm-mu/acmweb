@@ -26,11 +26,11 @@
   padding: 3px;
 }
 
-#social-links li img {
-  height: 30px;
-}
-
 #social-links li:hover {
   color: #888;
   cursor: pointer;
+}
+
+#social-links li img {
+  height: 30px;
 }

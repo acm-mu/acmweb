@@ -1,9 +1,15 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
+<ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/competition">Competition</a></li>
+    <li>Scratch Preparation</li>
+</ul>
+
 <h1 class="title">
     Scratch Preparation
 </h1>
-<a href="/assets/2017scratch.pdf">2017 Competition</a>
+<p><a href="/assets/2017scratch.pdf">2017 Competition</a></p>
 
 <h2>Competition Structure:</h2>
 <p>
@@ -69,8 +75,9 @@
         also request you to stop using a specific website or device if they suspect it is being used to
         break the rules of the competition.</li>
 </ul>
-Here are a few Scratch tools to be familiar with:
-
+<p>
+    Here are a few Scratch tools to be familiar with:
+</p>
 <ul>
     <li>Using multiple sprites</li>
     <li>Motion</li>
