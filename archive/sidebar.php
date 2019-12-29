@@ -2,7 +2,7 @@
 
 <!-- DEVELOPMENT PURPOSES: 
 Link with timestamp in url to prevent browser from caching. -->
-<link rel="stylesheet" type="text/css" href="/archive/style.css?<?php echo date('l jS \of F Y h:i:s A');?>">
+<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?<?php echo date('l jS \of F Y h:i:s A');?>">
 
 <div class="sidebar">
     <span class='select-year'>
@@ -55,4 +55,4 @@ Link with timestamp in url to prevent browser from caching. -->
     <div id="content"></div>
 </div>
 
-<script src="/archive/script.js"></script>
+<script src="/archive/sidebar.js"></script>

@@ -11,5 +11,6 @@ deployment:
     - /bin/cp scratch_prep.php $DEPLOYPATH
     - /bin/cp -R include $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R archive $DEPLOYPATH

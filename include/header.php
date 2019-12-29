@@ -8,6 +8,7 @@
     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
     <script src='https://code.jquery.com/jquery-3.4.1.js'
         integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>
+    <script src="/js/header.js"></script>
 </head>
 
 <div id='navbar'>
@@ -28,12 +29,5 @@
         </a>
     </ul>
 </div>
-
-<script>
-$(document).ready(() => {
-    var page = $('h1.title').attr('page');
-    $('#navbar li#' + page).addClass('active');
-});
-</script>
 
 <div class='container'>
