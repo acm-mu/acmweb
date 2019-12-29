@@ -1,0 +1,214 @@
+label {
+  display: block;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin: 5px;
+}
+
+input,
+select.custom-select {
+  background: #eee;
+  padding: 10px;
+  margin: 5px;
+  width: 560px;
+  font-size: 16px;
+  border: none;
+}
+
+input:hover {
+  background: #e7e7e7;
+}
+
+select.custom-select {
+  border-radius: 0px;
+  width: 115px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
+    10% no-repeat #eee;
+}
+
+input:focus {
+  outline: none;
+  background: #ddd;
+}
+
+/*********************
+*       Slider       *
+*********************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 19px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #79bf5d;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+/*********************
+*     End Slider     *
+*********************/
+.teams {
+  display: none;
+}
+
+.teams button {
+  background: #eee;
+  color: #666;
+  width: 26px;
+  height: 26px;
+  font-size: 18px;
+  vertical-align: middle;
+  border: none;
+}
+
+.teams button:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+.teams input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px;
+  background: #eee;
+  font-size: 16px;
+}
+
+.teams input:focus {
+  outline: none;
+}
+
+.teams select.custom-select {
+  border-radius: 0px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  height: 100%;
+  width: 115px;
+}
+
+.teams select.custom-select:focus {
+  outline: none;
+}
+
+/*********************
+*      Checkbox      *
+*********************/
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+}
+
+.checkbox-container input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #79bf5d;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*********************
+*    End Checkbox    *
+*********************/
+
+/*********************
+*   Buttons  *
+*********************/
+
+input.button {
+  width: auto;
+  padding: 10px;
+}
+
+input.button:hover {
+  cursor: pointer;
+}
+
+input.curved.button {
+  border-radius: 5px;
+}
