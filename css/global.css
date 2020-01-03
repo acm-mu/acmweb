@@ -4,18 +4,15 @@ body {
   margin: 0;
 }
 
-/*******************
-*  Hide Scrollbar  *
-*******************/
+/* Hide Scrollbar */
 * {
   scrollbar-width: none;
 }
-
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
-/******************/
+/* */
 
 .container {
   margin-top: 40px;
@@ -24,29 +21,12 @@ body {
   padding: 30px 20%;
 }
 
-h1.title {
-  color: rgb(38, 60, 76);
-  font-size: 37px;
-  font-family: "Open Sans";
-  font-weight: 400;
-}
-
-/* Underline the headings on pages */
-h1.title:after {
-  background-color: rgb(221, 221, 221);
-  display: block;
-  content: " ";
-  height: 3.5px;
-  margin: 18px 0;
-  width: 27px;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5 {
-  color: rgb(38, 60, 76);
+  color: #263c4c;
   font-family: "Open Sans";
   font-weight: bold;
 }
@@ -55,16 +35,30 @@ h1 {
   font-weight: normal;
 }
 
+h1.title {
+  font-size: 37px;
+  font-weight: 400;
+}
+
+h1.title:after {
+  background-color: #ddd;
+  display: block;
+  content: " ";
+  height: 3.5px;
+  margin: 18px 0;
+  width: 27px;
+}
+
 a {
   text-decoration: none;
-  color: #003366;
+  color: #036;
   font-weight: 600;
 }
 
 p,
 li {
   font-family: "Open Sans";
-  color: rgb(33, 39, 45);
+  color: #21272d;
   font-size: 18px;
   line-height: 27px;
 }
@@ -82,22 +76,27 @@ pre {
   padding: 0.5em 0.5em;
 }
 
-/* Style the list */
+/*****************
+*   Breadcrumb   *
+*****************/
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: #eee;
 }
 
-/* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
   font-size: 14px;
 }
 
-/* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li + li:before {
   padding: 8px;
-  color: black;
+  color: #000;
   content: "/\00a0";
 }
+
+/*****************
+* End Breadcrumb *
+*****************/
