@@ -1,19 +1,34 @@
 button {
-  font-size: 18px;
-  width: 230px;
+  font-size: 20px;
+  width: 250px;
   padding: 10px;
   border-radius: 5px;
   border: none;
   color: white;
   margin: 0 20px;
-  border-bottom: 5px solid #333;
-  box-shadow: 0px 5px 10px #ddd;
+  /*border-bottom: 5px solid #333;*/
+  /*box-shadow: 0px 5px 10px #ddd;*/
+  position: relative;
+  /*display:block;*/
+  padding: 5px 5px;
+  color: #244770;
+  border: 2px #244770 solid;
+  border-radius: 4px;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
 }
 
-button.comp_button:hover {
+/*button.comp_button:hover {
   cursor: pointer;
-  box-shadow: 0px 5px 10px #ccc;
-}
+  /*box-shadow: 0px 5px 10px #ccc;
+}*/
 
 button.register {
   background: #0b8e00;
@@ -21,11 +36,97 @@ button.register {
 }
 
 button.java {
-  background: #00758f;
-  border-bottom-color: #025f74;
+  background: transparent;
+  /*border: 2px solid #244770;*/
+  /*color: #244770;*/
+  /*background: #00758f;
+  border-bottom-color: #025f74;*/
 }
 
-button.scratch {
-  background: #fdb825;
+button.java:hover {
+  color: #fff;
+}
+
+button.java:before {
+  content: "";
+  position: absolute;
+  background: #244770;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+button.java:hover:before {
+  top: 0;
+}
+
+/*button.scratch {
+  background: transparent;
+  /*border: 2px solid #244770;
+  color: #244770;*/
+  /*background: #fdb825;
   border-bottom-color: #c9911b;
+}
+
+button.scratch:hover {
+  color: #fff;
+}
+
+button.scratch:before {
+  content: "";
+  position: absolute;
+  background: #fdb825;
+  border: 2px solid #fdb825;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+button.scratch:hover:before {
+  top: 0;
+}*/
+
+button.scratch{
+  -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+}
+
+button.scratch:before{
+  position:absolute;  
+  content:"";
+  background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;*/
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-1;
+  opacity:0;
+  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+button.scratch:after {
+  content: "";
+  position: absolute;
+  background: #d19b26;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -2;
+  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+}
+button.scratch:hover{
+  color:white;
+  border: 2px #d19b26 solid;
+}
+button.scratch:hover:before {
+  opacity: .8;
+}
+button.scratch:hover:after {
+  top: 0;
 }
