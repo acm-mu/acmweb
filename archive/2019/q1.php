@@ -128,6 +128,8 @@
             <li>A flight with a distance of <strong>10</strong> miles, flying at <strong>600</strong> mph, departing at
                 <strong>1:00</strong>, will arrive at <strong>1:01</strong></li>
         </ul>
+        <br />
+        <br />
     </div>
 </script>
 

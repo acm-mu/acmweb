@@ -257,6 +257,8 @@
             first because it lies within a deeper set of parentheses.</p>
 
         <p>The third test case contains no calculation or Order of Operations errors, so "0 0" is printed.</p>
+        <br />
+        <br />
     </div>
 </script>
 

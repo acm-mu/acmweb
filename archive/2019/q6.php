@@ -103,6 +103,8 @@
 
         <p>The first test formats the value <code>10</code> in bases 2, 3, and 4. The second test formats the value
             <code>100</code> in bases 15, 16, 17, 18, 19, and 20.</p>
+        <br />
+        <br />
     </div>
 </script>
 
