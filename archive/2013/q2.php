@@ -43,4 +43,6 @@
         Contest #1: Regis wins
         Contest #2: Tie
     </pre>
+    <br />
+    <br />
 </script>

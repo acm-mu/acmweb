@@ -141,43 +141,6 @@
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton-template">
-    <pre>
-def isNegative(x):
-"""
-TODO: Complete this function, which should return whether or not the input number is less than zero.
-
-Parameters:
-x --> (integer) the input number
-
-Returns:
-result --> (boolean) True if x is less than zero, and False otherwise
-"""
-result = False
-
-# write your code here to change "result"!
-
-return result
-
-
-# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
-# The main function is written for you in order to help you conform to input and output formatting requirements.
-def main():
-num_cases = int(input())
-
-for _ in range(num_cases):
-    x = int(input())
-    x_is_negative = isNegative(x)
-
-    if x_is_negative:
-        print('Negative')
-    else:
-        print('Non-Negative')
-
-main()
-    </pre>
-</script>
-
 <script type="text/template" id="java-skeleton-template">
     <pre>
 // Do NOT include a package statement at the top of your solution.
@@ -214,5 +177,42 @@ public class PracticeProblem {
         return result;
     }
 }
+    </pre>
+</script>
+
+<script type="text/template" id="python-skeleton-template">
+    <pre>
+def isNegative(x):
+"""
+TODO: Complete this function, which should return whether or not the input number is less than zero.
+
+Parameters:
+x --> (integer) the input number
+
+Returns:
+result --> (boolean) True if x is less than zero, and False otherwise
+"""
+result = False
+
+# write your code here to change "result"!
+
+return result
+
+
+# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
+# The main function is written for you in order to help you conform to input and output formatting requirements.
+def main():
+num_cases = int(input())
+
+for _ in range(num_cases):
+    x = int(input())
+    x_is_negative = isNegative(x)
+
+    if x_is_negative:
+        print('Negative')
+    else:
+        print('Non-Negative')
+
+main()
     </pre>
 </script>

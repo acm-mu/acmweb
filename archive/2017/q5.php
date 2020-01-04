@@ -165,6 +165,8 @@
         [0,0,0,0,0,0,E,A]
         [0,0,0,0,0,3,5,2]
     </pre>
+    <br />
+    <br />
 </script>
 
 <script type="text/template" id="java-solution-template">
