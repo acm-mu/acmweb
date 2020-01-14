@@ -3,3 +3,4 @@
 .well-known
 cgi-bin
 error_log
+include/connection.php
