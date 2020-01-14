@@ -1,16 +1,20 @@
-label {
-  display: block;
+label,
+th {
   font-family: Trebuchet, Arial, sans-serif;
   font-size: 14px;
   color: #555;
-  margin: 5px;
 }
 
+label {
+  display: block;
+  margin: 5px;
+}
 div.form-hidden-section {
   display: none;
 }
 
 input,
+textarea,
 select.custom-select {
   background: #eee;
   padding: 10px;
@@ -19,13 +23,18 @@ select.custom-select {
   font-size: 16px;
   border: none;
 }
+textarea {
+  width: 40em;
+  height: 5em;
+}
 
-input:focus {
-  outline: none;
+input:focus,
+button:focus {
   background: #ddd;
 }
 
-input:hover {
+input:hover,
+button:hover {
   cursor: pointer;
   background: #e7e7e7;
 }
@@ -37,7 +46,7 @@ input:hover {
 select.custom-select {
   font-size: 16px;
   border-radius: 0px;
-  padding: 5px 35px 5px 5px;
+  padding-right: 35px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -48,11 +57,9 @@ select.custom-select {
 select.custom-select:hover {
   background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
     10% no-repeat #e7e7e7;
-  cursor: pointer;
 }
 
 select.custom-select:focus {
-  outline: none;
   background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
     10% no-repeat #ddd;
 }
@@ -195,11 +202,6 @@ input:checked + .slider:before {
   font-size: 18px;
   vertical-align: middle;
   border: none;
-}
-
-.form-table button:hover {
-  cursor: pointer;
-  color: #333;
 }
 
 .form-table input {
