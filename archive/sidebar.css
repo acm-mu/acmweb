@@ -1,6 +1,10 @@
+.container {
+  width: 100%;
+}
+
 .sidebar {
   background: #222;
-  width: 15%;
+  width: 13%;
   height: 95%;
   position: relative;
   float: left;
