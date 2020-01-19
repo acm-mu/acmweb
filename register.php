@@ -17,6 +17,22 @@ Link with timestamp in url to prevent browser from caching. -->
         <label>School Name</label>
         <input name="sname" required>
 
+        <label>School Address Line 1</label>
+        <input name="saddl1" required>
+
+        <label>School Address Line 2</label>
+        <input name="saddl2" required>
+
+        <label>School City</label>
+        <input name="scity" required>
+
+        <label>School State</label>
+        <input name="sstate" required>
+
+        <label>School Zip Code</label>
+        <input name="szip" required>
+
+        <h2>Coach Information</h2>
         <label>Coach Name</label>
         <input name="cname" required>
 

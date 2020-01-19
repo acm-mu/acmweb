@@ -13,7 +13,7 @@ function post_get($key, $default) {
 
 $sname = $_POST['sname'];
 
-$sql_school = "INSERT INTO school(sname) VALUES ('$sname')";
+$sql_school = "INSERT INTO school(sname) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip')";
 $mysql->query($sql_school);
 
 $schoolid = $mysql->insert_id;
