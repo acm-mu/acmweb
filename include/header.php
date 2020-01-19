@@ -16,16 +16,16 @@
 
     <ul>
         <a href='/' id='home'>
-            <li>Home</li>
+            <li class="non">Home</li>
         </a>
         <a href='/about' id='about'>
-            <li>About</li>
+            <li class="non">About</li>
         </a>
         <a href='/events' id='events'>
-            <li>Events</li>
+            <li class="non">Events</li>
         </a>
         <a href='/competition' id='competition'>
-            <li>Competition</li>
+            <li class="non">Competition</li>
         </a>
     </ul>
 </div>

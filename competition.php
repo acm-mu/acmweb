@@ -61,12 +61,9 @@ Link with timestamp in url to prevent browser from caching. -->
 <h2>Open/Scratch Division (Gold)</h2>
 <p>
     Teams of two or three students will have three hours and one computer to implement a themed <a
-        href='http://scratch.mit.edu/'>Scratch</a> project. Submissions will be judged on creativity, use of key Scratch
-    constructs, and theme correspondence. This division will be suitable for introductory students familiar with
-    Scratch.
-
-    You may find it useful to review our Scratch Preparation Notes.
+        href='http://scratch.mit.edu/'>Scratch</a> project. Submissions will be judged on creativity, use of key Scratch constructs, and theme correspondence. This division will be suitable for introductory students familiar with Scratch.
 </p>
+<!-- <p>You may find it useful to review our Scratch Preparation Notes.</p> -->
 <h2>AP Computer Science Principles (Eagle)</h2>
 <p>
     Teams of two or three students will be working together to solve challenges and present their results, similar to
@@ -81,7 +78,7 @@ Link with timestamp in url to prevent browser from caching. -->
 
 <h3>Date:</h3>
 <p>
-    TBD (Spring 2020)
+    TBD (Spring 2020),
     Tentative Week Of April 13th
 </p>
 

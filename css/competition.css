@@ -2,7 +2,7 @@ button {
   font-size: 20px;
   width: 250px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
   color: white;
   margin: 0 20px;
@@ -10,7 +10,7 @@ button {
   /*box-shadow: 0px 5px 10px #ddd;*/
   position: relative;
   /*display:block;*/
-  padding: 5px 5px;
+  padding: 10px 24px;
   color: #244770;
   border: 2px #244770 solid;
   border-radius: 4px;
