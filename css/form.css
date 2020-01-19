@@ -33,7 +33,10 @@ button:focus {
   background: #ddd;
 }
 
-input:hover,
+input:hover {
+  cursor: text;
+  background: #e7e7e7;
+}
 button:hover {
   cursor: pointer;
   background: #e7e7e7;
