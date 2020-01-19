@@ -7,7 +7,7 @@ Link with timestamp in url to prevent browser from caching. -->
 <div class="sidebar">
     <span class='select-year'>
         <select class="select-css" onchange="location = this.value;">
-            <option <?php if(strpos($_SERVER['REQUEST_URI'], 'Prep')) echo "selected" ?> value='/archive/prep/q0.php'>
+            <option <?php if(strpos($_SERVER['REQUEST_URI'], 'prep')) echo "selected" ?> value='/archive/prep/q0.php'>
                 Java Prep</option>
             <option <?php if(strpos($_SERVER['REQUEST_URI'], '2019')) echo "selected" ?> value='/archive/2019/q0.php'>
                 2019</option>
@@ -27,7 +27,7 @@ Link with timestamp in url to prevent browser from caching. -->
                     $file = fopen($f, "r");
                     while(!feof($file)) {
                         $line = fgets($file);
-                        if(preg_match('/<h1 id="page" page="(\w+)">([a-zA-Z\ \-\.\!\(\)\']+)<\/h1>/', $line, $matches)) {
+                        if(preg_match('/<h1 id="page" page="([a-zA-Z0-9]+)">([0-9a-zA-Z\ \-\.\!\(\)\']+)<\/h1>/', $line, $matches)) {
                             echo '<a href="' . $f . '"> <li id="' . $matches[1] . '">' . $m[1] . ' - ' . $matches[2] . '</li> </a>';
                             break;
                         }
