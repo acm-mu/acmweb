@@ -12,8 +12,13 @@ function post_get($key, $default) {
  ************************************/
 
 $sname = $_POST['sname'];
+$saddl1 = $_POST['saddl1'];
+$saddl2 = $_POST['saddl2'];
+$scity = $_POST['scity'];
+$sstate = $_POST['sstate'];
+$szip = $_POST['szip'];
 
-$sql_school = "INSERT INTO school(sname) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip')";
+$sql_school = "INSERT INTO school(sname, saddl1, saddl2, scity, sstate, szip) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip')";
 $mysql->query($sql_school);
 
 $schoolid = $mysql->insert_id;
