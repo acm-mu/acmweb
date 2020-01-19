@@ -7,6 +7,8 @@ Link with timestamp in url to prevent browser from caching. -->
 <div class="sidebar">
     <span class='select-year'>
         <select class="select-css" onchange="location = this.value;">
+            <option <?php if(strpos($_SERVER['REQUEST_URI'], 'Prep')) echo "selected" ?> value='/archive/prep/q0.php'>
+                Java Prep</option>
             <option <?php if(strpos($_SERVER['REQUEST_URI'], '2019')) echo "selected" ?> value='/archive/2019/q0.php'>
                 2019</option>
             <option <?php if(strpos($_SERVER['REQUEST_URI'], '2018')) echo "selected" ?> value='/archive/2018/q0.php'>

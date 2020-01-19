@@ -7,7 +7,7 @@ Link with timestamp in url to prevent browser from caching. -->
 </h1>
 
 <center>
-    <a href="/java_prep">
+    <a href="/archive/2019/q0">
         <button class="comp_button java">Java Preparation</button>
     </a>
 
@@ -40,7 +40,7 @@ Link with timestamp in url to prevent browser from caching. -->
     <br /> <br />
 
     See examples of problems from previous competitions:
-    <ul>
+    <!-- <ul>
         <a href="/archive/2019/q0">
             <li>2019</li>
         </a>
@@ -53,7 +53,7 @@ Link with timestamp in url to prevent browser from caching. -->
         <a href="/archive/2013/q1">
             <li>2013</li>
         </a>
-    </ul>
+    </ul> -->
     <p>
         You may find it useful to review our <a href="/assets/2019bluerules.pdf">Competition Rules</a>, and Java
         Preparation Notes <i>(Python Preparation Notes coming soon)</i>.
