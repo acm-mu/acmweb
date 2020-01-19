@@ -7,7 +7,7 @@ Link with timestamp in url to prevent browser from caching. -->
 </h1>
 
 <center>
-    <a href="/archive/2019/q0">
+    <a href="/archive/prep/q0">
         <button class="comp_button java">Java Preparation</button>
     </a>
 
@@ -25,7 +25,7 @@ Link with timestamp in url to prevent browser from caching. -->
 
     This Competition features three divisions:
 
-    <br /> <br />
+    <br /> 
 </p>
 
 <h2>Java/Python Division (Blue)</h2>
@@ -34,12 +34,11 @@ Link with timestamp in url to prevent browser from caching. -->
     Contest. Teams of three or four students will have three hours and two computers to work collaboratively to solve
     problems similar in scope to Advanced Placement Computer Science exam questions. Points will be awarded based on the
     number of problems correctly solved and the time taken to solve, with appropriate penalties for incorrect
-    submissions. Development environments available will most likely include Eclipse, NetBeans, WordPad + JDK, Cygwin
-    tools and BlueJ.
+    submissions. Development environments available will most likely include <a href="https://www.eclipse.org/">Eclipse</a>, <a href="https://netbeans.org/">NetBeans</a>, WordPad + JDK, <a href="https://www.cygwin.com/">Cygwin tools</a>, <a href="https://www.bluej.org/">BlueJ</a>, and <a href="https://www.jetbrains.com/idea/">IntelliJ</a>.
 
-    <br /> <br />
+    <br />
 
-    See examples of problems from previous competitions:
+    <!-- See examples of problems from previous competitions: -->
     <!-- <ul>
         <a href="/archive/2019/q0">
             <li>2019</li>

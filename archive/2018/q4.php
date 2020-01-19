@@ -54,7 +54,7 @@
     <h3>Assumptions</h3>
     <ul>
         <li>
-            <pre>1 <= <code>n</code> <= 10</pre>
+            1 &le; <code>n</code> &le; 10
         </li>
         <li>each argument (password, first name, etc.) will:</li>
         <ul>
@@ -71,19 +71,19 @@
         <h3>Sample Run</h3>
         <h4>Input:</h4>
         <pre>
-            4
-            lightning66% Lom Tazer 1998 1 15
-            X!NUROCK$ Kivani Sholi 1997 2 20
-            wr@tHofvOngLuE Darth Vonglue 1918 12 25
-            science!108 Stephen Hawking 1942 1 8
+4
+lightning66% Lom Tazer 1998 1 15
+X!NUROCK$ Kivani Sholi 1997 2 20
+wr@tHofvOngLuE Darth Vonglue 1918 12 25
+science!108 Stephen Hawking 1942 1 8
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            OK
-            INVALID
-            INVALID
-            INVALID
+OK
+INVALID
+INVALID
+INVALID
         </pre>
         <br />
         <br />

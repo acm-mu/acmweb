@@ -91,29 +91,29 @@
     <h3>Assumptions</h3>
     <ul>
         <li><code>t</code> is the number of test cases</li>
-        <li>0 &lt;= <code>distance</code> &lt;= 5000</li>
-        <li>100 &lt;= <code>velocity</code> &lt;= 600</li>
-        <li>1 &lt;= <code>departureHr</code> &lt;= 12</li>
-        <li>0 &lt;= <code>departureMin</code> &lt;= 59</li>
-        <li>1 &lt;= <code>arrivalHr</code> &lt;= 24, and the hour will not "wrap" around into the next day</li>
-        <li>0 &lt;= <code>arrivalMin</code> &lt;= 59</li>
+        <li>0 &le; <code>distance</code> &le; 5000</li>
+        <li>100 &le; <code>velocity</code> &le; 600</li>
+        <li>1 &le; <code>departureHr</code> &le; 12</li>
+        <li>0 &le; <code>departureMin</code> &le; 59</li>
+        <li>1 &le; <code>arrivalHr</code> &le; 24, and the hour will not "wrap" around into the next day</li>
+        <li>0 &le; <code>arrivalMin</code> &le; 59</li>
     </ul>
     <div>
         <h3>Sample Run</h3>
 
         <h4>Input:</h4>
         <pre>
-            3
-            300 200 7 30
-            1000 450 10 16
-            10 600 1 0
+3
+300 200 7 30
+1000 450 10 16
+10 600 1 0
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            9:00
-            12:29
-            1:01
+9:00
+12:29
+1:01
         </pre>
 
         <h3>Sample Run Explanation</h3>

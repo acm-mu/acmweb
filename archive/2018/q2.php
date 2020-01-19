@@ -18,7 +18,6 @@
                 results for each round, then outputs who wins with the most heads (Alice, Bob, or Chaz).</b></p>
         <p>Chaz has convinced the other two that he deserves an advantage, given how poorly he has played in the past. If
             two or all three people tie for the most number of heads, then Chaz wins.</p>
-        <hr>
     </div>
     <div>
         <h2>Writing Your Solution</h2>
@@ -48,7 +47,7 @@
     <h3>Assumptions</h3>
     <ul>
         <li>
-            <pre>1 <= <code>n</code>  <= 10</pre>
+            1 &le; <code>n</code> &le; 10
         </li>
     </ul>
     <h3>Console Output Format</h3>
@@ -59,17 +58,17 @@
         <h3>Sample Run</h3>
         <h4>Input:</h4>
         <pre>
-            2
-            HTHHHTHT
-            TTTTTHHH
-            HHTTHHTT
-            HHTTHHHH
+2
+HTHHHTHT
+TTTTTHHH
+HHTTHHTT
+HHTTHHHH
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            Alice
-            Chaz
+Alice
+Chaz
         </pre>
         <br />
         <br />

@@ -56,9 +56,7 @@
     </ul>
     <h3>Assumptions</h3>
     <ul>
-        <li>
-            <pre>1 <= <code>n</code> <= 10</pre>
-        </li>
+        <li>1 &le; <code>n</code> &le; 10</li>
         <li>each "card" is between 2 and 14, inclusive</li>
     </ul>
     <h3>Console Output Format</h3>
@@ -71,20 +69,20 @@
 
         <h4>Input:</h4>
         <pre>
-            3
-            9 8 9 7 9
-            14 13 12 11 2
-            5 5 13 13 2
-            6 14 14 6 14
-            2 3 4 5 6
-            5 8 7 9 6
+3
+9 8 9 7 9
+14 13 12 11 2
+5 5 13 13 2
+6 14 14 6 14
+2 3 4 5 6
+5 8 7 9 6
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            First
-            Second
-            Tie
+First
+Second
+Tie
         </pre>
         <br />
         <br />

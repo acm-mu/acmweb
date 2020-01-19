@@ -90,8 +90,8 @@
     </blockquote>
 
     <ul>
-        <li>1 &lt;= <code>t</code> &lt;= 10</li>
-        <li>-1000 &lt;= <code>x</code> &lt;= 1000
+        <li>1 &le; <code>t</code> &le; 10</li>
+        <li>-1000 &le; <code>x</code> &le; 1000
             <ul>
                 <li>A value of <code>x</code> equal to zero is valid input; when <code>x</code> = 0, the program should
                     output that <code>x</code> is non-negative</li>
@@ -120,21 +120,21 @@
 
         <h4>Input:</h4>
         <pre>
-            4
-            -3
-            12
-            0
-            -1
+4
+-3
+12
+0
+-1
         </pre>
 
         <p>(4 is <code>t</code>, and the following values were different <code>x</code> cases)</p>
 
         <h4>Output:</h4>
         <pre>
-            Negative
-            Non-Negative
-            Non-Negative
-            Negative
+Negative
+Non-Negative
+Non-Negative
+Negative
         </pre>
         <br />
         <br />

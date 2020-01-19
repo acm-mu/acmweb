@@ -72,9 +72,9 @@
 
     <h3>Assumptions</h3>
     <ul>
-        <li>0 &lt;= <code>t</code> &lt;= 10</li>
-        <li>2 &lt;= <code>lwrBnd</code> &lt;= 62</li>
-        <li>2 &lt;= <code>uprBnd</code> &lt;= 62</li>
+        <li>0 &le; <code>t</code> &le; 10</li>
+        <li>2 &le; <code>lwrBnd</code> &le; 62</li>
+        <li>2 &le; <code>uprBnd</code> &le; 62</li>
     </ul>
 
     <h3>Console Output Format</h3>
@@ -87,15 +87,15 @@
 
         <h4>Input:</h4>
         <pre>
-            2
-            10 2 4
-            100 15 20
+2
+10 2 4
+100 15 20
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            [1010, 101, 22]
-            [6A, 64, 5F, 5A, 55, 50]
+[1010, 101, 22]
+[6A, 64, 5F, 5A, 55, 50]
         </pre>
 
         <h3>Sample Run Explanation</h3>

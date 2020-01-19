@@ -81,10 +81,10 @@
         <p>As a complete example, consider the evaluation steps shown below:</p>
 
         <pre>
-            Line 0:      (2 + 10 * 4) / 2
-            Line 1:      (2 + 36) / 2
-            Line 2:      38 / 2
-            Line 3:      19
+Line 0:      (2 + 10 * 4) / 2
+Line 1:      (2 + 36) / 2
+Line 2:      38 / 2
+Line 3:      19
         </pre>
 
         <p>The error is a calculation error: the subexpression <code>10 * 4</code> should evaluate to 40, not 36. The
@@ -183,8 +183,8 @@
 
     <h3>Assumptions</h3>
     <ul>
-        <li>1 &lt;= <code>numCases</code> &lt;= 10</li>
-        <li>2 &lt;= <code>numLines</code> &lt;= 100</li>
+        <li>1 &le; <code>numCases</code> &le; 10</li>
+        <li>2 &le; <code>numLines</code> &le; 100</li>
         <li>individual tokens will be integers between -1000 and 1000, inclusive</li>
         <li>expressions will never contain a “divide by zero” subexpression – that is, there will never appear a
             subexpression <code>X / 0</code>, where X is any number</li>
@@ -214,33 +214,33 @@
 
         <h4>Input:</h4>
         <pre>
-            3
-            4
-            (2 + 10 * 4) / 2
-            (2 + 36) / 2
-            38 / 2
-            19
+3
+4
+(2 + 10 * 4) / 2
+(2 + 36) / 2
+38 / 2
+19
 
-            7
-            9 + (2 * (1 - 0) + 3 * (5 – 6))
-            9 + (2 * 1 + 3 * (5 – 6))
-            9 + (2 * 4 * (5 – 6))
-            9 + (2 * 4 * -1)
-            9 + (8 * -1)
-            9 + -8
-            1
+7
+9 + (2 * (1 - 0) + 3 * (5 – 6))
+9 + (2 * 1 + 3 * (5 – 6))
+9 + (2 * 4 * (5 – 6))
+9 + (2 * 4 * -1)
+9 + (8 * -1)
+9 + -8
+1
 
-            3
-            7 + -2 * 3
-            7 + -6
-            1
+3
+7 + -2 * 3
+7 + -6
+1
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            1 3
-            2 5
-            0 0
+1 3
+2 5
+0 0
         </pre>
 
         <h3>Sample Run Explanation</h3>

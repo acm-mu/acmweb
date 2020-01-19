@@ -35,15 +35,9 @@
     </ul>
     <h3>Assumptions</h3>
     <ul>
-        <li>
-            <pre>1 <= <code>n</code> <= 10</pre>
-        </li>
-        <li>
-            <pre>1 <= <code>width</code> <= 30</pre>
-        </li>
-        <li>
-            <pre>1 <= <code>height</code> <= 12</pre>
-        </li>
+        <li>1 &le; <code>n</code> &le; 10</li>
+        <li>1 &le; <code>width</code> &le; 30</li>
+        <li>1 &le; <code>height</code> &le; 12</li>
     </ul>
     <h3>Console Output Format</h3>
     <ul>
@@ -54,15 +48,15 @@
         
         <h4>Input:</h4>
         <pre>
-            2
-            9 3
-            6 2
+2
+9 3
+6 2
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            8
-            2
+8
+2
         </pre>
         <br />
         <br />

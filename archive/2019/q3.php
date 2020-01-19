@@ -35,12 +35,12 @@
         <p>Note: the exclamation mark is the factorial operator:</p>
 
         <pre>
-            0! = 1
-            1! = 1
-            2! = 1 * 2
-            3! = 1 * 2 * 3
-            4! = 1 * 2 * 3 * 4
-            etc.
+0! = 1
+1! = 1
+2! = 1 * 2
+3! = 1 * 2 * 3
+4! = 1 * 2 * 3 * 4
+etc.
         </pre>
     </div>
     <div>
@@ -80,8 +80,8 @@
 
     <h3>Assumptions</h3>
     <ul>
-        <li>0 &lt;= <code>t</code> &lt;= 10</li>
-        <li>0.0 &lt;= <code>x</code> &lt; 360.0</li>
+        <li>0 &le; <code>t</code> &le; 10</li>
+        <li>0.0 &le; <code>x</code> &lt; 360.0</li>
     </ul>
 
     <h3>Console Output Format</h3>
@@ -97,15 +97,15 @@
 
         <h4>Input:</h4>
         <pre>
-            2
-            0.0
-            30.0
+2
+0.0
+30.0
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            0.000 1.000
-            0.500 0.866
+0.000 1.000
+0.500 0.866
         </pre>
         <br />
         <br />

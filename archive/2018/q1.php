@@ -51,8 +51,8 @@
     </ul>
     <h3>Assumptions</h3>
     <ul>
-        <li>1 <= <code>n</code> <= 10</li> 
-        <li><code>x</code> > 0</li>
+        <li>1 &le; <code>n</code> &le; 10</li> 
+        <li><code>x</code> &gt; 0</li>
     </ul>
     <h3>Console Output Format</h3>
     <ul>
@@ -65,16 +65,16 @@
         <h3>Sample Run</h3>
         <h4>Input:</h4>
         <pre>
-            3
-            175
-            20
-            8
+3
+175
+20
+8
         </pre>
         <h4>Output:</h4>
         <pre>
-            7 -1 35 175
-            -1 2 4 20
-            -1 -1 -1 8
+7 -1 35 175
+-1 2 4 20
+-1 -1 -1 8
         </pre>
         <br />
         <br />

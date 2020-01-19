@@ -54,10 +54,11 @@
         <p>For example, the given skeleton already contains a single unit test method, relating to the example from above:
         </p>
 
-        <pre>    @Test
-            public void testFormLargestNumber1() throws Exception {
-                assertEquals(21110, LargestNumber.formLargestNumber(new int[] {10, 11, 2}));
-            }
+        <pre>    
+@Test
+public void testFormLargestNumber1() throws Exception {
+    assertEquals(21110, LargestNumber.formLargestNumber(new int[] {10, 11, 2}));
+}
         </pre>
 
         <h4>Python</h4>
@@ -70,8 +71,8 @@
         </p>
 
         <pre>
-            def test_1(self):
-                self.assertEqual(21110, LargestNumber.formLargestNumber([10, 11, 2]))
+def test_1(self):
+    self.assertEqual(21110, LargestNumber.formLargestNumber([10, 11, 2]))
         </pre>
 
         <h2>Running your Unit Tests</h2>
