@@ -14,51 +14,76 @@ Link with timestamp in url to prevent browser from caching. -->
     ------------------------------------>
     <div>
         <h2>School Information</h2>
-        <label>School Name</label>
-        <input name="sname" required>
+        <div class="input-group">
+            <label>School Name</label>
+            <input name="sname" class="double" required>
+        </div>
 
-        <label>School Address Line 1</label>
-        <input name="saddl1" required>
+        <div class="input-group">
+            <label>School Address Line 1</label>
+            <input name="saddl1" class="double" required>
+        </div>
 
-        <label>School Address Line 2</label>
-        <input name="saddl2" required>
+        <div class="input-group">
+            <label>School Address Line 2</label>
+            <input name="saddl2" class="double" required>
+        </div>
 
-        <label>School City</label>
-        <input name="scity" required>
+        <span class='one-line'>
+            <div class="input-group">
+                <label>School City</label>
+                <input name="scity" required>
+            </div>
 
-        <label>School State</label>
-        <input name="sstate" required>
+            <div class="input-group">
+                <label>School State</label>
+                <input name="sstate" value="WI" disabled required>
+            </div>
 
-        <label>School Zip Code</label>
-        <input name="szip" required>
+            <div class="input-group">
+                <label>School Zip Code</label>
+                <input name="szip" required>
+            </div>
+        </span>
 
         <h2>Coach Information</h2>
-        <label>Coach Name</label>
-        <input name="cname" required>
+        <div class="input-group">
+            <label>Coach Name</label>
+            <input name="cname" required>
+        </div>
 
-        <label>Email Address</label>
-        <input name="email" type="email" required>
+        <div class="input-group">
+            <label>Email Address</label>
+            <input name="email" type="email" required>
+        </div>
 
-        <label>Coach Telephone</label>
-        <input id="phone" name="phone" type="tel" required>
+        <div class="input-group">
+            <label>Coach Telephone</label>
+            <input id="phone" name="phone" type="tel" required>
+        </div>
 
-        <label>Coach T-Shirt Size</label>
-        <select name="coach_shirt" class="custom-select" required>
-            <option disabled="" selected="" value="">Shirt Size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xlarge">X-Large</option>
-            <option value="xxlarge">XX-Large</option>
-        </select>
+        <div class="input-group">
+            <label>Coach T-Shirt Size</label>
+            <select name="coach_shirt" class="custom-select" required>
+                <option disabled="" selected="" value="">Shirt Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+                <option value="xxlarge">XX-Large</option>
+            </select>
+        </div>
 
-        <label>Do you need any additional t-shirts for chaperones?</label>
-        <label class="switch">
-            <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section">
-            <span class="slider"></span>
-        </label>
+        <div class="input-group">
+            <label>Do you need any additional t-shirts for chaperones?</label>
+            <label class="switch">
+                <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section">
+                <span class="slider"></span>
+            </label>
+        </div>
+
         <div class="form-hidden-section" id="additional-shirts-section">
-            <table>
+            <table class="form-table">
                 <thead>
                     <tr>
                         <th>Small</th>
@@ -107,12 +132,13 @@ Link with timestamp in url to prevent browser from caching. -->
         <h2>Team Information</h2>
 
         <h4>Blue Division</h4>
-        <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
 
+        <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
         <label class="switch">
             <input name="blue_division" type="checkbox" data-toggle="blue-section">
             <span class="slider"></span>
         </label>
+        
         <div class="form-hidden-section" id="blue-section">
             <label>Preferred Java Environments</label>
             <label class="checkbox-container">Eclipse

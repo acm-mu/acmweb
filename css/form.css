@@ -9,8 +9,13 @@ label {
   display: block;
   margin: 5px;
 }
-div.form-hidden-section {
-  display: none;
+
+.one-line {
+  display: inline-block;
+}
+
+.one-line .input-group {
+  float: left;
 }
 
 input,
@@ -23,6 +28,21 @@ select.custom-select {
   font-size: 16px;
   border: none;
 }
+
+input.double {
+  width: 400px;
+}
+
+input:disabled {
+  color: #999;
+}
+
+input:disabled:hover, input:disabled:focus {
+  cursor: text;
+  background: #eee;
+}
+
+
 textarea {
   width: 40em;
   height: 5em;
@@ -40,6 +60,10 @@ input:hover {
 button:hover {
   cursor: pointer;
   background: #e7e7e7;
+}
+
+.form-hidden-section {
+  display: none;
 }
 
 /*************
