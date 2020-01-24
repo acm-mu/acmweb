@@ -14,56 +14,57 @@ Link with timestamp in url to prevent browser from caching. -->
     ------------------------------------>
     <div>
         <h2>School Information</h2>
+        <p>We are taking a different approach to invoicing this year to help expedite the registration process! This information will be used on your auto-generated invoice.
         <div class="input-group">
-            <label>School Name</label>
+            <label>School Name<b class="req">*</b></label>
             <input name="sname" class="double" required>
         </div>
 
         <div class="input-group">
-            <label>School Address Line 1</label>
+            <label>School Address Line 1<b class="req">*</b></label>
             <input name="saddl1" class="double" required>
         </div>
 
         <div class="input-group">
             <label>School Address Line 2</label>
-            <input name="saddl2" class="double" required>
+            <input name="saddl2" class="double">
         </div>
 
         <span class='one-line'>
             <div class="input-group">
-                <label>School City</label>
+                <label>School City<b class="req">*</b></label>
                 <input name="scity" required>
             </div>
 
             <div class="input-group">
-                <label>School State</label>
+                <label>School State<b class="req">*</b></label>
                 <input name="sstate" value="WI" disabled required>
             </div>
 
             <div class="input-group">
-                <label>School Zip Code</label>
-                <input name="szip" required>
+                <label>School Zip Code<b class="req">*</b></label>
+                <input name="szip" type="number" required>
             </div>
         </span>
 
         <h2>Coach Information</h2>
         <div class="input-group">
-            <label>Coach Name</label>
+            <label>Coach Name<b class="req">*</b></label>
             <input name="cname" required>
         </div>
 
         <div class="input-group">
-            <label>Email Address</label>
-            <input name="email" type="email" required>
+            <label>Email Address<b class="req">*</b></label>
+            <input name="email" type="email" class="double" required>
         </div>
 
         <div class="input-group">
-            <label>Coach Telephone</label>
+            <label>Coach Telephone<b class="req">*</b></label>
             <input id="phone" name="phone" type="tel" required>
         </div>
 
         <div class="input-group">
-            <label>Coach T-Shirt Size</label>
+            <label>Coach T-Shirt Size<b class="req">*</b></label>
             <select name="coach_shirt" class="custom-select" required>
                 <option disabled="" selected="" value="">Shirt Size</option>
                 <option value="small">Small</option>
@@ -103,7 +104,16 @@ Link with timestamp in url to prevent browser from caching. -->
                 </tbody>
             </table>
         </div>
-        <h4>Team Attendance</h4>
+    </div>
+
+    <!----------------------------------
+    -          TEAM INFORMATION        -
+    ----------------------------------->
+    <!--         BLUE DIVISION       -->
+    <div>
+        <h2>Team Information</h2>
+
+        <h4>Team Attendance<b class="req">*</b></h4>
         <p>The competition has three divisions. Per school, we are accepting
             up to 8 teams in the Blue Division (Java/Python), 8 teams in the Gold Division (Scratch), and 3 teams in
             the
@@ -122,14 +132,6 @@ Link with timestamp in url to prevent browser from caching. -->
             <input name="team_attendance" type="checkbox" required>
             <span class="checkmark">
         </label>
-    </div>
-
-    <!----------------------------------
-    -          TEAM INFORMATION        -
-    ----------------------------------->
-    <!--         BLUE DIVISION       -->
-    <div>
-        <h2>Team Information</h2>
 
         <h4>Blue Division</h4>
 

@@ -29,6 +29,11 @@ select.custom-select {
   border: none;
 }
 
+b.req
+{
+    color: red;
+}
+
 input.double {
   width: 400px;
 }
@@ -38,7 +43,7 @@ input:disabled {
 }
 
 input:disabled:hover, input:disabled:focus {
-  cursor: text;
+  cursor: not-allowed;
   background: #eee;
 }
 
