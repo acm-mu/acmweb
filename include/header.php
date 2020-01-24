@@ -15,16 +15,16 @@
     <img src='/assets/acmmu.png'>
 
     <ul>
-        <a href='/' id='home'>
+        <a href="/" id="home">
             <li class="non">Home</li>
         </a>
-        <a href='/about' id='about'>
+        <a href="/about" id="about">
             <li class="non">About</li>
         </a>
-        <a href='/events' id='events'>
+        <a href="/events" id="events">
             <li class="non">Events</li>
         </a>
-        <a href='/competition' id='competition'>
+        <a href="/competition" id="competition">
             <li class="non">Competition</li>
         </a>
     </ul>

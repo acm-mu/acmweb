@@ -61,7 +61,7 @@
   transform: translateY(0);
 }
 
-#navbar li.active {
-  font-weight: bold;
-  border-bottom: 3px solid #244770;
+#navbar .active {
+  font-weight: bold !important;
+  /*border-bottom: 3px solid #244770;*/
 }

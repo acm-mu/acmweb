@@ -62,20 +62,24 @@ Link with timestamp in url to prevent browser from caching. -->
 
 <h3>Date:</h3>
 <p>
-    Thursday April 16, 2020
+    Thursday, April 16, 2020
 </p>
 
 <h3>Schedule:</h3>
+<p><em>This is a tenative schedule and could change at any time. We will try our best to notify you of any changes.</em></p>
 <ul>
-    <li>Registration/Welcome: 7:30 AM - 8:00 AM CST</li>
-    <li>Competition: 8:00 AM - 12:00 PM CST</li>
-    <li>Lunch/Awards: 12:30 PM - 1:30 PM CST</li>
+    <li>Registration/Welcome: <b>8:00 AM - 8:30 AM</b></li>
+    <li>Practice Problem: <b>8:30 AM - 9:00 AM</b></li>
+    <li>Competition: <b>9:00 AM - 12:00 PM</b></li>
+    <ul>
+        <li>Scoreboard Turns Off: <b>11:30 AM</b></li>
+    </ul>
+    <li>Lunch: <b>12:15 PM - 1:00 PM</b></li>
+    <li>Student Panel: <b>12:30 PM - 1:00 PM</b></li>
+    <li>Awards: <b>1:00 PM - 2:00 PM</b></li>
 </ul>
 
-<h3>Register</h3>
-<!-- <p>
-    Come back later!
-</p> -->
+<!-- <h3>Register</h3> -->
 <a href="/register">
         <button class="register">Register</button>
     </a>
