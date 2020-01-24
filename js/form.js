@@ -3,7 +3,7 @@ var shirtSizes = ["small", "medium", "large", "xlarge", "xxlarge"];
 $(document).ready(() => {
   $(document).on("click", ".add", addTeam);
   $(document).on("click", ".del", delTeam);
-  $(document).on("click", ".switch input", dataToggle);
+  $(document).on("click", "input", dataToggle);
 
   $(document).on("keyup", "input", keyUp);
 });
