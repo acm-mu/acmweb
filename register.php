@@ -326,6 +326,7 @@ Link with timestamp in url to prevent browser from caching. -->
 
             <h4>Any additional questions/concerns/comments?</h4>
             <textarea name="concerns"></textarea>
+            <br>
             <input type="submit" value="Register" disabled>
         </div>
     </div>
