@@ -301,10 +301,8 @@ Link with timestamp in url to prevent browser from caching. -->
             <h4>Will any attending student require special accommodations due to a disability, a food allergy, or
                 another
                 medical condition?</h4>
-            <label>If you answer Yes or Maybe, we will contact you to coordinate the details of accommodating these
-                students
-                once registration closes. A common strategy we use is to organize students' workstations so that you can
-                easily attend to them during the competition, if need be.</label>
+            <label>If you answer Yes, please list them below and we will contact you to coordinate the details
+                of accommodating these students closer to the competition.</label>
 
             <label class="switch">
                 <input name="special_accommodations_toggle" type="checkbox" data-toggle="accommodations-section">
