@@ -6,10 +6,8 @@ button {
   border: none;
   color: white;
   margin: 0 20px;
-  /*border-bottom: 5px solid #333;*/
-  /*box-shadow: 0px 5px 10px #ddd;*/
+  background: transparent;
   position: relative;
-  /*display:block;*/
   padding: 10px 24px;
   color: #244770;
   border: 2px #244770 solid;
@@ -25,29 +23,13 @@ button {
   -webkit-transition: 0.08s ease-in;
 }
 
-/*button.comp_button:hover {
-  cursor: pointer;
-  /*box-shadow: 0px 5px 10px #ccc;
-}*/
-
-button.register {
-  background: #0b8e00;
-  border-bottom-color: #027209;
-}
-
-button.java {
-  background: transparent;
-  /*border: 2px solid #244770;*/
-  /*color: #244770;*/
-  /*background: #00758f;
-  border-bottom-color: #025f74;*/
-}
-
-button.java:hover {
+button.java:hover,
+button.register:hover {
   color: #fff;
 }
 
-button.java:before {
+button.java:before,
+button.register:before {
   content: "";
   position: absolute;
   background: #244770;
@@ -59,38 +41,10 @@ button.java:before {
   -webkit-transition: top 0.09s ease-in;
 }
 
-button.java:hover:before {
+button.java:hover:before,
+button.register:hover:before {
   top: 0;
 }
-
-/*button.scratch {
-  background: transparent;
-  /*border: 2px solid #244770;
-  color: #244770;*/
-  /*background: #fdb825;
-  border-bottom-color: #c9911b;
-}
-
-button.scratch:hover {
-  color: #fff;
-}
-
-button.scratch:before {
-  content: "";
-  position: absolute;
-  background: #fdb825;
-  border: 2px solid #fdb825;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
-}
-
-button.scratch:hover:before {
-  top: 0;
-}*/
 
 button.scratch{
   -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 

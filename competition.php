@@ -37,22 +37,6 @@ Link with timestamp in url to prevent browser from caching. -->
     submissions. Development environments available will most likely include <a href="https://www.eclipse.org/">Eclipse</a>, <a href="https://netbeans.org/">NetBeans</a>, WordPad + JDK, <a href="https://www.cygwin.com/">Cygwin tools</a>, <a href="https://www.bluej.org/">BlueJ</a>, and <a href="https://www.jetbrains.com/idea/">IntelliJ</a>.
 
     <br />
-
-    <!-- See examples of problems from previous competitions: -->
-    <!-- <ul>
-        <a href="/archive/2019/q0">
-            <li>2019</li>
-        </a>
-        <a href="/archive/2018/q0">
-            <li>2018</li>
-        </a>
-        <a href="/archive/2017/q1">
-            <li>2017</li>
-        </a>
-        <a href="/archive/2013/q1">
-            <li>2013</li>
-        </a>
-    </ul> -->
     <p>
         You may find it useful to review our <a href="/assets/2019bluerules.pdf">Competition Rules</a>, and Java
         Preparation Notes <i>(Python Preparation Notes coming soon)</i>.
@@ -73,18 +57,27 @@ Link with timestamp in url to prevent browser from caching. -->
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Marquette University, Milwaukee
+    Marquette University, Milwaukee, WI
 </p>
 
 <h3>Date:</h3>
 <p>
-    TBD (Spring 2020),
-    Tentative Week Of April 13th
+    Thursday April 16, 2020
 </p>
 
+<h3>Schedule:</h3>
+<ul>
+    <li>Registration/Welcome: 7:30 AM - 8:00 AM CST</li>
+    <li>Competition: 8:00 AM - 12:00 PM CST</li>
+    <li>Lunch/Awards: 12:30 PM - 1:30 PM CST</li>
+</ul>
+
 <h3>Register</h3>
-<p>
+<!-- <p>
     Come back later!
-</p>
+</p> -->
+<a href="/register">
+        <button class="register">Register</button>
+    </a>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
