@@ -12,8 +12,7 @@ function addTeam() {
   var table = $(this).closest("table");
   var div = table.attr("division");
   var numRow = table.find("tr.row").length;
-
-  var newRow = $("#row_0").clone();
+  var newRow = $(`#${div}-section #row_0`).clone();
   newRow.attr("id", `row_${numRow}`);
   newRow.find(".name").attr("name", `${div}_${numRow}`);
   $.each(shirtSizes, (_, size) => {

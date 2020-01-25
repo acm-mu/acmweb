@@ -7,6 +7,8 @@ function post_get($key, $default) {
     return $default;
 }
 
+var_dump($_POST);
+
 /*************************************
  *           school table            *
  ************************************/
@@ -15,7 +17,7 @@ $sname = $_POST['sname'];
 $saddl1 = $_POST['saddl1'];
 $saddl2 = $_POST['saddl2'];
 $scity = $_POST['scity'];
-$sstate = $_POST['sstate'];
+$sstate = "WI";
 $szip = $_POST['szip'];
 
 $sql_school = "INSERT INTO school(sname, saddl1, saddl2, scity, sstate, szip) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip')";
@@ -81,20 +83,25 @@ foreach ($divisions as $division) {
  *          details table            *
  ************************************/
 
+ $eagle = 0; // False
  $eagle_platform = NULL;
  $eagle_devices = 0;
 
  if (array_key_exists('eagle_division', $_POST) && $_POST['eagle_division'] == "on") {
+     $eagle = 1; // True
      $eagle_platform = $_POST['eagle_platform'];
      $eagle_devices = $_POST['eagle_devices'];
  } 
 
+ $gold = 0; // False
 $gold_devices = 0;
 
 if (array_key_exists('gold_division', $_POST) && $_POST['gold_division'] == "on") {
+    $gold = 1; // True
     $gold_devices = $_POST['gold_devices'];
 }
 
+$blue = 0; // False
 $java_eclipse = 0;
 $java_netbeans = 0;
 $java_bluej = 0;
@@ -103,6 +110,7 @@ $java_notepad = 0;
 $java_other = NULL;
 
 if (array_key_exists('blue_division', $_POST) && $_POST['blue_division'] == "on") {
+    $blue = 1; // True
     $java_eclipse = post_get("java_eclipse", "off") == "off" ? 0 : 1;
     $java_netbeans = post_get("java_netbeans", "off") == "off" ? 0 : 1;
     $java_bluej = post_get("java_bluej", "off") == "off" ? 0 : 1;
@@ -116,6 +124,7 @@ $python_notepad = 0;
 $python_other = NULL;
 
 if (array_key_exists("blue_division", $_POST) && $_POST["blue_division"] == "on") {
+    $blue = 1; // True
     $python_idle = post_get("python_idle", "off") == "off" ? 0 : 1;
     $python_pycharm = post_get("python_pycharm", "off") == "off" ? 0 : 1;
     $python_notepad = post_get("python_notepad", "off") == "off" ? 0 : 1;
@@ -128,10 +137,10 @@ if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special
 }
 
 $concerns = $_POST["concerns"];
-$csta = post_get("csta_meeting", "off") == "off" ? 0 : 1;
-$qa = post_get("qa_panel", "off") == "off" ? 0 : 1;
 
-$sql_details = "INSERT INTO details(eagle_devices, eagle_platform, gold_devices, java_eclipse, java_netbeans, java_bluej, java_jgrasp, java_notepad, java_other, python_idle, python_pycharm, python_notepad, python_other, csta, qa, accommodations, concerns, schoolid) VALUES ($eagle_devices, '$eagle_platform', $gold_devices, $java_eclipse, $java_netbeans, $java_bluej, $java_jgrasp, $java_notepad, '$java_other', $python_idle, $python_pycharm, $python_notepad, '$python_other', $csta, $qa, '$accommodations', '$concerns', $schoolid)";
-echo($sql_details);
+$sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, gold_devices, blue, java_eclipse, java_netbeans, java_bluej, java_jgrasp, java_notepad, java_other, python_idle, python_pycharm, python_notepad, python_other, accommodations, concerns, schoolid) VALUES ($eagle, $eagle_devices, '$eagle_platform', $gold, $gold_devices, $blue, $java_eclipse, $java_netbeans, $java_bluej, $java_jgrasp, $java_notepad, '$java_other', $python_idle, $python_pycharm, $python_notepad, '$python_other', '$accommodations', '$concerns', $schoolid)";
+
 $mysql->query($sql_details);
+
+header("Location: dev.php?schoolid=$schoolid");
 ?>

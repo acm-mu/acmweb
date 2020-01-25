@@ -4,7 +4,7 @@
 Link with timestamp in url to prevent browser from caching. -->
 <link rel="stylesheet" type="text/css" href="/css/form.css?<?php echo date("l jS \of F Y h:i:s A");?>">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script src="/js/form.js"></script>
+<script src="/js/form.js?<?php echo date("l jS \of F Y h:i:s A");?>"></script>
 
 <form action="/php/register.php" method="POST">
     <h1>2020 Wisconsin-Dairyland Programming Competition Registration</h1>
@@ -282,7 +282,7 @@ Link with timestamp in url to prevent browser from caching. -->
                     <tbody>
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='name' name='blue_0'></td>
+                            <td><input class='name' name='eagle_0'></td>
                             <td><input type='number' class='small' value="0" min="0" name='eagle_small_0'></td>
                             <td><input type='number' class='medium' value="0" min="0" name='eagle_medium_0'></td>
                             <td><input type='number' class='large' value="0" min="0" name='eagle_large_0'></td>
@@ -311,16 +311,6 @@ Link with timestamp in url to prevent browser from caching. -->
             <div class="form-hidden-section" id="accommodations-section">
                 <textarea name="special_accommodations"></textarea>
             </div>
-
-            <h4>Are you interested in any of the following activities?</h4>
-            <label class="checkbox-container">CSTA Chapter Meeting for coaches mid-morning, while teams compete
-                <input name="csta_meeting" type="checkbox">
-                <span class="checkmark">
-            </label>
-            <label class="checkbox-container">Q/A panel session with current CS majors
-                <input name="qa_panel" type="checkbox">
-                <span class="checkmark">
-            </label>
 
             <h4>Any additional questions/concerns/comments?</h4>
             <textarea name="concerns"></textarea>
