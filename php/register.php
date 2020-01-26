@@ -13,10 +13,10 @@ var_dump($_POST);
  *           school table            *
  ************************************/
 
-$sname = $_POST['sname'];
-$saddl1 = $_POST['saddl1'];
-$saddl2 = $_POST['saddl2'];
-$scity = $_POST['scity'];
+$sname = addslashes($_POST['sname']);
+$saddl1 = addslashes($_POST['saddl1']);
+$saddl2 = addslashes($_POST['saddl2']);
+$scity = addslashes($_POST['scity']);
 $sstate = "WI";
 $szip = $_POST['szip'];
 
@@ -29,9 +29,9 @@ $schoolid = $mysql->insert_id;
  *            coach table            *
  ************************************/
 
-$cname = $_POST['cname'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
+$cname = addslashes($_POST['cname']);
+$email = addslashes($_POST['email']);
+$phone = addslashes($_POST['phone']);
 
 $coach_shirt = $_POST['coach_shirt'];
 
@@ -64,12 +64,12 @@ foreach ($divisions as $division) {
         while(true) {
             if (!array_key_exists($division."_".$n, $_POST))
                 break;
-            $tname = $_POST[$division."_$n"];
-            $small = $_POST[$division."_small_$n"];
-            $medium = $_POST[$division."_medium_$n"];
-            $large = $_POST[$division."_large_$n"];
-            $xlarge = $_POST[$division."_xlarge_$n"];
-            $xxlarge = $_POST[$division."_xxlarge_$n"];
+            $tname = addslashes($_POST[$division."_$n"]);
+            $small = addslashes($_POST[$division."_small_$n"]);
+            $medium = addslashes($_POST[$division."_medium_$n"]);
+            $large = addslashes($_POST[$division."_large_$n"]);
+            $xlarge = addslashes($_POST[$division."_xlarge_$n"]);
+            $xxlarge = addslashes($_POST[$division."_xxlarge_$n"]);
             
             $sql_team = "INSERT INTO team(tname, division, schoolid, small, medium, large, xlarge, xxlarge) VALUES ('$tname', '$division', $schoolid, $small, $medium, $large, $xlarge, $xxlarge)";
             $mysql->query($sql_team);
@@ -89,8 +89,8 @@ foreach ($divisions as $division) {
 
  if (array_key_exists('eagle_division', $_POST) && $_POST['eagle_division'] == "on") {
      $eagle = 1; // True
-     $eagle_platform = $_POST['eagle_platform'];
-     $eagle_devices = $_POST['eagle_devices'];
+     $eagle_platform = addslashes($_POST['eagle_platform']);
+     $eagle_devices = addslashes($_POST['eagle_devices']);
  } 
 
  $gold = 0; // False
@@ -115,7 +115,7 @@ if (array_key_exists('blue_division', $_POST) && $_POST['blue_division'] == "on"
     $java_netbeans = post_get("java_netbeans", "off") == "off" ? 0 : 1;
     $java_bluej = post_get("java_bluej", "off") == "off" ? 0 : 1;
     $java_jgrasp = post_get("java_jgrasp", "off") == "off" ? 0 : 1;
-    $java_other = str_replace('\'', '\\\'', post_get("java_other", NULL));
+    $java_other = addslashes(post_get("java_other", NULL));
 }
 
 $python_idle = 0;
@@ -128,15 +128,15 @@ if (array_key_exists("blue_division", $_POST) && $_POST["blue_division"] == "on"
     $python_idle = post_get("python_idle", "off") == "off" ? 0 : 1;
     $python_pycharm = post_get("python_pycharm", "off") == "off" ? 0 : 1;
     $python_notepad = post_get("python_notepad", "off") == "off" ? 0 : 1;
-    $python_other = str_replace('\'', '\\\'', post_get("python_other", NULL));
+    $python_other = addslashes(post_get("python_other", NULL));
 }
 
 $accommodations = NULL;
 if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special_accommodations_toggle"] == "on") {
-    $accommodations = str_replace('\'', '\\\'', $_POST["special_accommodations"]);
+    $accommodations = addslashes($_POST["special_accommodations"]);
 }
 
-$concerns = $_POST["concerns"];
+$concerns = addslashes($_POST["concerns"]);
 
 $sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, gold_devices, blue, java_eclipse, java_netbeans, java_bluej, java_jgrasp, java_notepad, java_other, python_idle, python_pycharm, python_notepad, python_other, accommodations, concerns, schoolid) VALUES ($eagle, $eagle_devices, '$eagle_platform', $gold, $gold_devices, $blue, $java_eclipse, $java_netbeans, $java_bluej, $java_jgrasp, $java_notepad, '$java_other', $python_idle, $python_pycharm, $python_notepad, '$python_other', '$accommodations', '$concerns', $schoolid)";
 
