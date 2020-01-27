@@ -17,12 +17,12 @@ Link with timestamp in url to prevent browser from caching. -->
         <p>We are taking a different approach to invoicing this year to help expedite the registration process! This
             information will be used on your auto-generated invoice.
             <div class="input-group">
-                <label>School Name<b class="req">*</b></label>
+                <label>School Name <b class="req">*</b></label>
                 <input name="sname" class="double" required>
             </div>
 
             <div class="input-group">
-                <label>School Address Line 1<b class="req">*</b></label>
+                <label>School Address Line 1 <b class="req">*</b></label>
                 <input name="saddl1" class="double" required>
             </div>
 
@@ -33,39 +33,39 @@ Link with timestamp in url to prevent browser from caching. -->
 
             <span class='one-line'>
                 <div class="input-group">
-                    <label>School City<b class="req">*</b></label>
+                    <label>School City <b class="req">*</b></label>
                     <input name="scity" required>
                 </div>
 
                 <div class="input-group">
-                    <label>School State<b class="req">*</b></label>
+                    <label>School State <b class="req">*</b></label>
                     <input name="sstate" value="WI" disabled required>
                 </div>
 
                 <div class="input-group">
-                    <label>School Zip Code<b class="req">*</b></label>
+                    <label>School Zip Code <b class="req">*</b></label>
                     <input name="szip" type="number" required>
                 </div>
             </span>
 
             <h2>Coach Information</h2>
             <div class="input-group">
-                <label>Coach Name<b class="req">*</b></label>
+                <label>Coach Name <b class="req">*</b></label>
                 <input name="cname" required>
             </div>
 
             <div class="input-group">
-                <label>Email Address<b class="req">*</b></label>
+                <label>Email Address <b class="req">*</b></label>
                 <input name="email" type="email" class="double" required>
             </div>
 
             <div class="input-group">
-                <label>Coach Telephone<b class="req">*</b></label>
+                <label>Coach Telephone <b class="req">*</b></label>
                 <input id="phone" name="phone" type="tel" required>
             </div>
 
             <div class="input-group">
-                <label>Coach T-Shirt Size<b class="req">*</b></label>
+                <label>Coach T-Shirt Size <b class="req">*</b></label>
                 <select name="coach_shirt" class="custom-select" required>
                     <option disabled="" selected="" value="">Shirt Size</option>
                     <option value="small">Small</option>
@@ -114,7 +114,7 @@ Link with timestamp in url to prevent browser from caching. -->
     <div>
         <h2>Team Information</h2>
 
-        <h4>Team Attendance<b class="req">*</b></h4>
+        <h4>Team Attendance <b class="req">*</b></h4>
         <p>The competition has three divisions. Per school, we are accepting
             up to 8 teams in the Blue Division (Java/Python), 8 teams in the Gold Division (Scratch), and 3 teams in
             the
@@ -198,11 +198,11 @@ Link with timestamp in url to prevent browser from caching. -->
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
                             <td><input class='name' name='blue_0'></td>
-                            <td><input type='number' class='small' value="0" min="0" name='blue_small_0'></td>
-                            <td><input type='number' class='medium' value="0" min="0" name='blue_medium_0'></td>
-                            <td><input type='number' class='large' value="0" min="0" name='blue_large_0'></td>
-                            <td><input type='number' class='xlarge' value="0" min="0" name='blue_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge' value="0" min="0" name='blue_xxlarge_0'></td>
+                            <td><input type='number' class='small' value="0" min="0" max="4" name='blue_small_0'></td>
+                            <td><input type='number' class='medium' value="0" min="0" max="4" name='blue_medium_0'></td>
+                            <td><input type='number' class='large' value="0" min="0" max="4" name='blue_large_0'></td>
+                            <td><input type='number' class='xlarge' value="0" min="0" max="4" name='blue_xlarge_0'></td>
+                            <td><input type='number' class='xxlarge' value="0" min="0" max="4" name='blue_xxlarge_0'></td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
@@ -239,11 +239,11 @@ Link with timestamp in url to prevent browser from caching. -->
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
                             <td><input class='name' name='gold_0'></td>
-                            <td><input type='number' class='small' value="0" min="0" name='gold_small_0'></td>
-                            <td><input type='number' class='medium' value="0" min="0" name='gold_medium_0'></td>
-                            <td><input type='number' class='large' value="0" min="0" name='gold_large_0'></td>
-                            <td><input type='number' class='xlarge' value="0" min="0" name='gold_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge' value="0" min="0" name='gold_xxlarge_0'></td>
+                            <td><input type='number' class='small' value="0" min="0" max="3" name='gold_small_0'></td>
+                            <td><input type='number' class='medium' value="0" min="0" max="3" name='gold_medium_0'></td>
+                            <td><input type='number' class='large' value="0" min="0" max="3" name='gold_large_0'></td>
+                            <td><input type='number' class='xlarge' value="0" min="0" max="3" name='gold_xlarge_0'></td>
+                            <td><input type='number' class='xxlarge' value="0" min="0" max="3" name='gold_xxlarge_0'></td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
@@ -283,11 +283,11 @@ Link with timestamp in url to prevent browser from caching. -->
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
                             <td><input class='name' name='eagle_0'></td>
-                            <td><input type='number' class='small' value="0" min="0" name='eagle_small_0'></td>
-                            <td><input type='number' class='medium' value="0" min="0" name='eagle_medium_0'></td>
-                            <td><input type='number' class='large' value="0" min="0" name='eagle_large_0'></td>
-                            <td><input type='number' class='xlarge' value="0" min="0" name='eagle_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge' value="0" min="0" name='eagle_xxlarge_0'></td>
+                            <td><input type='number' class='small' value="0" min="0" max="3" name='eagle_small_0'></td>
+                            <td><input type='number' class='medium' value="0" min="0" max="3" name='eagle_medium_0'></td>
+                            <td><input type='number' class='large' value="0" min="0" max="3" name='eagle_large_0'></td>
+                            <td><input type='number' class='xlarge' value="0" min="0" max="3" name='eagle_xlarge_0'></td>
+                            <td><input type='number' class='xxlarge' value="0" min="0" max="3" name='eagle_xxlarge_0'></td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
