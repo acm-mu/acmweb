@@ -42,11 +42,11 @@ $xlarge = $coach_shirt == "xlarge" ? 1 : 0;
 $xxlarge = $coach_shirt == "xxlarge" ? 1 : 0;
 
 if(post_get('additional_shirts', "off") == "on") {
-    $small += $_POST['additional_small'];
-    $medium += $_POST['additional_medium'];
-    $large += $_POST['additional_large'];
-    $xlarge += $_POST['additional_xlarge'];
-    $xxlarge += $_POST['additional_xxlarge'];
+    $small += post_get('additional_small', 0);
+    $medium += post_get('additional_medium', 0);
+    $large += post_get('additional_large', 0);
+    $xlarge += post_get('additional_xlarge', 0);
+    $xxlarge += post_get('additional_xxlarge', 0);
 }
 
 $sql_coach = "INSERT INTO coach(cname, email, phone, schoolid, small, medium, large, xlarge, xxlarge) VALUES ('$cname', '$email', '$phone', $schoolid, '$small', '$medium', '$large', '$xlarge', '$xxlarge')";
@@ -64,12 +64,12 @@ foreach ($divisions as $division) {
         while(true) {
             if (!array_key_exists($division."_".$n, $_POST))
                 break;
-            $tname = addslashes($_POST[$division."_$n"]);
-            $small = addslashes($_POST[$division."_small_$n"]);
-            $medium = addslashes($_POST[$division."_medium_$n"]);
-            $large = addslashes($_POST[$division."_large_$n"]);
-            $xlarge = addslashes($_POST[$division."_xlarge_$n"]);
-            $xxlarge = addslashes($_POST[$division."_xxlarge_$n"]);
+            $tname = addslashes(post_get($division."_$n", NULL));
+            $small = post_get($division."_small_$n", 0);
+            $medium = post_get($division."_medium_$n", 0);
+            $large = post_get($division."_large_$n", 0);
+            $xlarge = post_get($division."_xlarge_$n", 0);
+            $xxlarge = post_get($division."_xxlarge_$n", 0);
             
             $sql_team = "INSERT INTO team(tname, division, schoolid, small, medium, large, xlarge, xxlarge) VALUES ('$tname', '$division', $schoolid, $small, $medium, $large, $xlarge, $xxlarge)";
             $mysql->query($sql_team);
@@ -89,8 +89,8 @@ foreach ($divisions as $division) {
 
  if (array_key_exists('eagle_division', $_POST) && $_POST['eagle_division'] == "on") {
      $eagle = 1; // True
-     $eagle_platform = addslashes($_POST['eagle_platform']);
-     $eagle_devices = addslashes($_POST['eagle_devices']);
+     $eagle_platform = addslashes(post_get('eagle_platform', NULL));
+     $eagle_devices = addslashes(post_get('eagle_devices', 0));
  } 
 
  $gold = 0; // False
@@ -98,7 +98,7 @@ $gold_devices = 0;
 
 if (array_key_exists('gold_division', $_POST) && $_POST['gold_division'] == "on") {
     $gold = 1; // True
-    $gold_devices = $_POST['gold_devices'];
+    $gold_devices = post_get('gold_devices', 0);
 }
 
 $blue = 0; // False
@@ -133,7 +133,7 @@ if (array_key_exists("blue_division", $_POST) && $_POST["blue_division"] == "on"
 
 $accommodations = NULL;
 if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special_accommodations_toggle"] == "on") {
-    $accommodations = addslashes($_POST["special_accommodations"]);
+    $accommodations = addslashes(post_get("special_accommodations", NULL));
 }
 
 $concerns = addslashes($_POST["concerns"]);
