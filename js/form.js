@@ -14,9 +14,15 @@ function addTeam() {
   var numRow = table.find("tr.row").length;
   var newRow = $(`#${div}-section #row_0`).clone();
   newRow.attr("id", `row_${numRow}`);
-  newRow.find(".name").attr("name", `${div}_${numRow}`);
+  newRow
+    .find(".name")
+    .attr("name", `${div}_${numRow}`)
+    .val("");
   $.each(shirtSizes, (_, size) => {
-    newRow.find(`.${size}`).attr("name", `${div}_${size}_${numRow}`);
+    newRow
+      .find(`.${size}`)
+      .attr("name", `${div}_${size}_${numRow}`)
+      .val(0);
   });
 
   newRow.insertBefore(
