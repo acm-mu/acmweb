@@ -3,8 +3,7 @@
 <!-- DEVELOPMENT PURPOSES: 
 Link with timestamp in url to prevent browser from caching. -->
 <link rel="stylesheet" type="text/css" href="/css/form.css?<?php echo date("l jS \of F Y h:i:s A");?>">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="/lib/sweetalert2.min.js"></script>
 <script src="/js/form.js?<?php echo date("l jS \of F Y h:i:s A");?>"></script>
 
 <form action="/php/register.php" method="POST" id="registerform">

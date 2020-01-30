@@ -1,4 +1,4 @@
-<script src='https://kit.fontawesome.com/a5c0605531.js'></script>
+<script src='/lib/fontawesome.min.js'></script>
 
 
 <!-- DEVELOPMENT PURPOSES: 
@@ -28,3 +28,4 @@ Link with timestamp in url to prevent browser from caching. -->
         </a>
     </ul>
 </div>
+</body>
