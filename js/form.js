@@ -15,11 +15,13 @@ function addTeam() {
   newRow
     .find(".name")
     .attr("name", `${div}_${numRow}`)
+    .prop("required", true)
     .val("");
   $.each(shirtSizes, (_, size) => {
     newRow
       .find(`.${size}`)
       .attr("name", `${div}_${size}_${numRow}`)
+      .prop("required", true)
       .val(0);
   });
 
@@ -59,25 +61,19 @@ function adjustTable(table) {
 
 function dataToggle() {
   var section = $(this).attr("data-toggle");
+  var toggleRequired = $(this).attr("toggle-required");
+  console.log(toggleRequired);
   if (typeof section !== typeof undefined && section !== false) {
-    var showDiv = $(this).prop("checked");
-    $(`#${section}`).css({
-      display: showDiv ? "block" : "none"
-    });
-  }
-}
+    var show = $(this).prop("checked");
 
-function keyUp() {
-  var empty = false;
-  $("input").each(function() {
-    if ($(this).attr("required") && $(this).val() == "") {
-      empty = true;
+    $(`#${section}`).css("display", show ? "block" : "none");
+    if (
+      typeof toggleRequired !== typeof undefined &&
+      toggleRequired == "true"
+    ) {
+      $(`#${section} .required`).each(function() {
+        $(this).prop("required", show);
+      });
     }
-  });
-
-  if (empty) {
-    $(":submit").attr("disabled", "disabled");
-  } else {
-    $(":submit").removeAttr("disabled");
   }
 }

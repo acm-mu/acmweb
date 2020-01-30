@@ -29,9 +29,8 @@ select.custom-select {
   border: none;
 }
 
-b.req
-{
-    color: red;
+b.req {
+  color: red;
 }
 
 input.double {
@@ -42,11 +41,11 @@ input:disabled {
   color: #999;
 }
 
-input:disabled:hover, input:disabled:focus {
+input:disabled:hover,
+input:disabled:focus {
   cursor: not-allowed;
   background: #eee;
 }
-
 
 textarea {
   width: 40em;

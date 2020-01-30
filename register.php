@@ -139,7 +139,7 @@ Link with timestamp in url to prevent browser from caching. -->
 
             <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
             <label class="switch">
-                <input name="blue_division" type="checkbox" data-toggle="blue-section">
+                <input name="blue_division" type="checkbox" data-toggle="blue-section" toggle-required="true">
                 <span class="slider"></span>
             </label>
 
@@ -197,12 +197,18 @@ Link with timestamp in url to prevent browser from caching. -->
                     <tbody>
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='name' name='blue_0'></td>
-                            <td><input type='number' class='small' value="0" min="0" max="4" name='blue_small_0'></td>
-                            <td><input type='number' class='medium' value="0" min="0" max="4" name='blue_medium_0'></td>
-                            <td><input type='number' class='large' value="0" min="0" max="4" name='blue_large_0'></td>
-                            <td><input type='number' class='xlarge' value="0" min="0" max="4" name='blue_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge' value="0" min="0" max="4" name='blue_xxlarge_0'></td>
+                            <td><input class='name required' name='blue_0'></td>
+                            <td><input type='number' class='small required' value="0" min="0" max="4"
+                                    name='blue_small_0'></td>
+                            <td><input type='number' class='medium required ' value="0" min="0" max="4"
+                                    name='blue_medium_0'></td>
+                            <td><input type='number' class='large required' value="0" min="0" max="4"
+                                    name='blue_large_0'></td>
+                            <td><input type='number' class='xlarge required' value="0" min="0" max="4"
+                                    name='blue_xlarge_0'></td>
+                            <td><input type='number' class='xxlarge required' value="0" min="0" max="4"
+                                    name='blue_xxlarge_0'>
+                            </td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
@@ -216,7 +222,7 @@ Link with timestamp in url to prevent browser from caching. -->
             <label>Are you bringing teams for the Gold (Scratch) Division?</label>
 
             <label class="switch">
-                <input name="gold_division" type="checkbox" data-toggle="gold-section">
+                <input name="gold_division" type="checkbox" data-toggle="gold-section" toggle-required="true">
                 <span class="slider"></span>
             </label>
             <div class="form-hidden-section" id="gold-section">
@@ -238,12 +244,18 @@ Link with timestamp in url to prevent browser from caching. -->
                     <tbody>
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='name' name='gold_0'></td>
-                            <td><input type='number' class='small' value="0" min="0" max="3" name='gold_small_0'></td>
-                            <td><input type='number' class='medium' value="0" min="0" max="3" name='gold_medium_0'></td>
-                            <td><input type='number' class='large' value="0" min="0" max="3" name='gold_large_0'></td>
-                            <td><input type='number' class='xlarge' value="0" min="0" max="3" name='gold_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge' value="0" min="0" max="3" name='gold_xxlarge_0'></td>
+                            <td><input class='name required' name='gold_0'></td>
+                            <td><input type='number' class='required small' value="0" min="0" max="3"
+                                    name='gold_small_0'></td>
+                            <td><input type='number' class='required medium' value="0" min="0" max="3"
+                                    name='gold_medium_0'></td>
+                            <td><input type='number' class='required large' value="0" min="0" max="3"
+                                    name='gold_large_0'></td>
+                            <td><input type='number' class='required xlarge' value="0" min="0" max="3"
+                                    name='gold_xlarge_0'></td>
+                            <td><input type='number' class='required xxlarge ' value="0" min="0" max="3"
+                                    name='gold_xxlarge_0'>
+                            </td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
@@ -257,7 +269,7 @@ Link with timestamp in url to prevent browser from caching. -->
             <label>Are you bringing teams for the Eagle Division?</label>
 
             <label class="switch">
-                <input name="eagle_division" type="checkbox" data-toggle="eagle-section">
+                <input name="eagle_division" type="checkbox" data-toggle="eagle-section" toggle-required="true">
                 <span class="slider"></span>
             </label>
             <div class="form-hidden-section" id="eagle-section">
@@ -282,12 +294,17 @@ Link with timestamp in url to prevent browser from caching. -->
                     <tbody>
                         <tr class='row' id="row_0">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='name' name='eagle_0'></td>
-                            <td><input type='number' class='small' value="0" min="0" max="3" name='eagle_small_0'></td>
-                            <td><input type='number' class='medium' value="0" min="0" max="3" name='eagle_medium_0'></td>
-                            <td><input type='number' class='large' value="0" min="0" max="3" name='eagle_large_0'></td>
-                            <td><input type='number' class='xlarge' value="0" min="0" max="3" name='eagle_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge' value="0" min="0" max="3" name='eagle_xxlarge_0'></td>
+                            <td><input class='required name' name='eagle_0'></td>
+                            <td><input type='number' class='required small' value="0" min="0" max="3"
+                                    name='eagle_small_0'></td>
+                            <td><input type='number' class='required medium' value="0" min="0" max="3"
+                                    name='eagle_medium_0'></td>
+                            <td><input type='number' class='required large' value="0" min="0" max="3"
+                                    name='eagle_large_0'></td>
+                            <td><input type='number' class='required xlarge' value="0" min="0" max="3"
+                                    name='eagle_xlarge_0'></td>
+                            <td><input type='number' class='required xxlarge' value="0" min="0" max="3"
+                                    name='eagle_xxlarge_0'></td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
