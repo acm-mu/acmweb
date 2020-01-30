@@ -4,17 +4,22 @@ $(document).ready(() => {
   $(document).on("click", ".add", addTeam);
   $(document).on("click", ".del", delTeam);
   $(document).on("click", "input", dataToggle);
-  //$(document).on("click", ".register", confirm);
+  $(document).on("click", "#register", confirm);
+
 });
 
-function confirm() {
+function confirm(e) {  
+
   var areFilled = true;
   $(':input[required]').each(function() {
     if(!areFilled) return;
-    if(!$(this).val()) areFilled = false;
+    if(!$(this)[0].checkValidity()) areFilled = false;
+    //console.log($("input[name='email']")[0].checkValidity())
+    // if(!$(this).val()) areFilled = false;
   })
   
   if(areFilled) {
+    e.preventDefault();
     Swal.fire({
       customClass: {
         popup: 'swal2-custom-popup',
@@ -31,11 +36,12 @@ function confirm() {
       confirmButtonText: 'I\'m sure!'
       }).then((result) => {
       if (result.value) {
-        Swal.fire(
-          'DICKS!',
-          'FUCKERS',
-          'success'
-        )
+        $('#registerform').submit();
+        // Swal.fire(
+        //   'DICKS!',
+        //   'FUCKERS',
+        //   'success'
+        // )
       }
     })
   }

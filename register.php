@@ -7,7 +7,7 @@ Link with timestamp in url to prevent browser from caching. -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script src="/js/form.js?<?php echo date("l jS \of F Y h:i:s A");?>"></script>
 
-<form action="/php/register.php" method="POST">
+<form action="/php/register.php" method="POST" id="registerform">
     <h1>2020 Wisconsin-Dairyland Programming Competition Registration</h1>
 
     <!----------------------------------
@@ -334,8 +334,8 @@ Link with timestamp in url to prevent browser from caching. -->
             <h4>Any additional questions/concerns/comments?</h4>
             <textarea name="concerns"></textarea>
             <br>
-            <input type="submit" class="register" value="Register" onclick="confirm()">
-            <!-- <input class="register" value="Register"> -->
+            <input type="submit" class="register" value="Register" id="register">
+            <!-- <button id="register" class="register">Register</button> -->
 
         </div>
     </div>
