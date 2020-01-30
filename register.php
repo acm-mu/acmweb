@@ -335,7 +335,6 @@ Link with timestamp in url to prevent browser from caching. -->
             <textarea name="concerns"></textarea>
             <br>
             <input type="submit" class="register" value="Register" id="register">
-            <!-- <button id="register" class="register">Register</button> -->
 
         </div>
     </div>
