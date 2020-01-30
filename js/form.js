@@ -4,8 +4,6 @@ $(document).ready(() => {
   $(document).on("click", ".add", addTeam);
   $(document).on("click", ".del", delTeam);
   $(document).on("click", "input", dataToggle);
-
-  $(document).on("keyup", "input", keyUp);
 });
 
 function addTeam() {
