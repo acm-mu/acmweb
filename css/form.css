@@ -275,4 +275,6 @@ input:checked + .slider:before {
 .swal2-custom-content {
   color: #969696 !important;
 }
-
+/*****************
+* End Swal Modal *
+*****************/
