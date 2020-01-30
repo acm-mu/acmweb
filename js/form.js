@@ -62,7 +62,6 @@ function adjustTable(table) {
 function dataToggle() {
   var section = $(this).attr("data-toggle");
   var toggleRequired = $(this).attr("toggle-required");
-  console.log(toggleRequired);
   if (typeof section !== typeof undefined && section !== false) {
     var show = $(this).prop("checked");
 

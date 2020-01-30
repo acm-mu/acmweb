@@ -79,7 +79,8 @@ Link with timestamp in url to prevent browser from caching. -->
             <div class="input-group">
                 <label>Do you need any additional t-shirts for chaperones?</label>
                 <label class="switch">
-                    <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section">
+                    <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section"
+                        toggle-required="true">
                     <span class="slider"></span>
                 </label>
             </div>
@@ -96,11 +97,11 @@ Link with timestamp in url to prevent browser from caching. -->
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="number" value="0" min="0" name="additional_small"></td>
-                            <td><input type="number" value="0" min="0" name="additional_medium"></td>
-                            <td><input type="number" value="0" min="0" name="additional_large"></td>
-                            <td><input type="number" value="0" min="0" name="additional_xlarge"></td>
-                            <td><input type="number" value="0" min="0" name="additional_xxlarge"></td>
+                            <td><input type="number" value="0" min="0" name="additional_small" class="required"></td>
+                            <td><input type="number" value="0" min="0" name="additional_medium" class="required"></td>
+                            <td><input type="number" value="0" min="0" name="additional_large" class="required"></td>
+                            <td><input type="number" value="0" min="0" name="additional_xlarge" class="required"></td>
+                            <td><input type="number" value="0" min="0" name="additional_xxlarge" class="required"></td>
                         </tr>
                     </tbody>
                 </table>
