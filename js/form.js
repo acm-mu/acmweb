@@ -14,8 +14,6 @@ function confirm(e) {
   $(':input[required]').each(function() {
     if(!areFilled) return;
     if(!$(this)[0].checkValidity()) areFilled = false;
-    //console.log($("input[name='email']")[0].checkValidity())
-    // if(!$(this).val()) areFilled = false;
   })
   
   if(areFilled) {
@@ -37,11 +35,6 @@ function confirm(e) {
       }).then((result) => {
       if (result.value) {
         $('#registerform').submit();
-        // Swal.fire(
-        //   'DICKS!',
-        //   'FUCKERS',
-        //   'success'
-        // )
       }
     })
   }
