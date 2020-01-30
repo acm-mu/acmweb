@@ -246,3 +246,33 @@ input:checked + .slider:before {
 /*****************
 * End Form Table *
 *****************/
+
+/*****************
+*   Swal Modal   *
+*****************/
+
+.swal2-custom-popup {
+  font-family: Trebuchet, Arial, sans-serif;
+}
+
+.swal2-custom-icon {
+  color: #036 !important;
+  border-color: #036 !important;
+}
+
+.swal2-custom-confirm {
+  background-color: #036 !important;
+}
+
+.swal2-custom-cancel {
+  background-color: #969696 !important;
+}
+
+.swal2-custom-title {
+  color: #036 !important;
+}
+
+.swal2-custom-content {
+  color: #969696 !important;
+}
+
