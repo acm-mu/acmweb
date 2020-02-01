@@ -59,6 +59,10 @@ a {
   font-weight: 600;
 }
 
+b {
+  color: #036;
+}
+
 p,
 li {
   font-family: "Open Sans";

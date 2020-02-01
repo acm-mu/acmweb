@@ -9,8 +9,13 @@ label {
   display: block;
   margin: 5px;
 }
-div.form-hidden-section {
-  display: none;
+
+.one-line {
+  display: inline-block;
+}
+
+.one-line .input-group {
+  float: left;
 }
 
 input,
@@ -23,6 +28,25 @@ select.custom-select {
   font-size: 16px;
   border: none;
 }
+
+b.req {
+  color: red;
+}
+
+input.double {
+  width: 400px;
+}
+
+input:disabled {
+  color: #999;
+}
+
+input:disabled:hover,
+input:disabled:focus {
+  cursor: not-allowed;
+  background: #eee;
+}
+
 textarea {
   width: 40em;
   height: 5em;
@@ -33,10 +57,17 @@ button:focus {
   background: #ddd;
 }
 
-input:hover,
+input:hover {
+  cursor: text;
+  background: #e7e7e7;
+}
 button:hover {
   cursor: pointer;
   background: #e7e7e7;
+}
+
+.form-hidden-section {
+  display: none;
 }
 
 /*************
@@ -214,4 +245,36 @@ input:checked + .slider:before {
 }
 /*****************
 * End Form Table *
+*****************/
+
+/*****************
+*   Swal Modal   *
+*****************/
+
+.swal2-custom-popup {
+  font-family: Trebuchet, Arial, sans-serif;
+}
+
+.swal2-custom-icon {
+  color: #036 !important;
+  border-color: #036 !important;
+}
+
+.swal2-custom-confirm {
+  background-color: #036 !important;
+}
+
+.swal2-custom-cancel {
+  background-color: #969696 !important;
+}
+
+.swal2-custom-title {
+  color: #036 !important;
+}
+
+.swal2-custom-content {
+  color: #969696 !important;
+}
+/*****************
+* End Swal Modal *
 *****************/
