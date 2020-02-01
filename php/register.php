@@ -142,5 +142,5 @@ $sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, 
 
 $mysql->query($sql_details);
 
-header("Location: dev.php?schoolid=$schoolid");
+header("Location: confirmation.php?schoolid=$schoolid");
 ?>
