@@ -47,4 +47,6 @@
         Building #1 can be painted.
         Building #2 can NOT be painted.
     </pre>
+    <br />
+    <br />
 </script>

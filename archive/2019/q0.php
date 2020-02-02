@@ -90,8 +90,8 @@
     </blockquote>
 
     <ul>
-        <li>1 &lt;= <code>t</code> &lt;= 10</li>
-        <li>-1000 &lt;= <code>x</code> &lt;= 1000
+        <li>1 &le; <code>t</code> &le; 10</li>
+        <li>-1000 &le; <code>x</code> &le; 1000
             <ul>
                 <li>A value of <code>x</code> equal to zero is valid input; when <code>x</code> = 0, the program should
                     output that <code>x</code> is non-negative</li>
@@ -120,60 +120,25 @@
 
         <h4>Input:</h4>
         <pre>
-            4
-            -3
-            12
-            0
-            -1
+4
+-3
+12
+0
+-1
         </pre>
 
         <p>(4 is <code>t</code>, and the following values were different <code>x</code> cases)</p>
 
         <h4>Output:</h4>
         <pre>
-            Negative
-            Non-Negative
-            Non-Negative
-            Negative
+Negative
+Non-Negative
+Non-Negative
+Negative
         </pre>
+        <br />
+        <br />
     </div>
-</script>
-
-<script type="text/template" id="python-skeleton-template">
-    <pre>
-def isNegative(x):
-"""
-TODO: Complete this function, which should return whether or not the input number is less than zero.
-
-Parameters:
-x --> (integer) the input number
-
-Returns:
-result --> (boolean) True if x is less than zero, and False otherwise
-"""
-result = False
-
-# write your code here to change "result"!
-
-return result
-
-
-# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
-# The main function is written for you in order to help you conform to input and output formatting requirements.
-def main():
-num_cases = int(input())
-
-for _ in range(num_cases):
-    x = int(input())
-    x_is_negative = isNegative(x)
-
-    if x_is_negative:
-        print('Negative')
-    else:
-        print('Non-Negative')
-
-main()
-    </pre>
 </script>
 
 <script type="text/template" id="java-skeleton-template">
@@ -212,5 +177,42 @@ public class PracticeProblem {
         return result;
     }
 }
+    </pre>
+</script>
+
+<script type="text/template" id="python-skeleton-template">
+    <pre>
+def isNegative(x):
+"""
+TODO: Complete this function, which should return whether or not the input number is less than zero.
+
+Parameters:
+x --> (integer) the input number
+
+Returns:
+result --> (boolean) True if x is less than zero, and False otherwise
+"""
+result = False
+
+# write your code here to change "result"!
+
+return result
+
+
+# It is unnecessary to edit the "main" function of each problem's provided code skeleton.
+# The main function is written for you in order to help you conform to input and output formatting requirements.
+def main():
+num_cases = int(input())
+
+for _ in range(num_cases):
+    x = int(input())
+    x_is_negative = isNegative(x)
+
+    if x_is_negative:
+        print('Negative')
+    else:
+        print('Non-Negative')
+
+main()
     </pre>
 </script>

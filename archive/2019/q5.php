@@ -21,12 +21,28 @@
             more about the game. After every game, the scores are listed in the local newspaper. The ways to score in rugby
             are as follows:</p>
 
-        <pre>
-            Try (T): 4 points 
-            Goal Kick (GK): 2 points
-            Penalty (P): 2 points
-            Drop Goal (DG): 1 point
-        </pre>
+        <table>
+            <tr>
+                <td><b>Way To Score</b></td>
+                <td><b>Points</b></td>
+            </tr>
+            <tr>
+                <td>Try (T)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Goal Kick (GK)</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Penalty (P)</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Drop Goal (DG)</td>
+                <td>1</td>
+            </tr>
+        </table>
 
         <p>There is no limit on the number of times a team can score in any one way.</p>
 
@@ -69,8 +85,8 @@
 
     <h3>Assumptions</h3>
     <ul>
-        <li>1 &lt;= <code>t</code> &lt;= 10</li>
-        <li>0 &lt;= <code>score</code> &lt;= 16</li>
+        <li>1 &le; <code>t</code> &le; 10</li>
+        <li>0 &le; <code>score</code> &le; 16</li>
     </ul>
 
     <h3>Console Output Format</h3>
@@ -83,21 +99,23 @@
 
         <h4>Input:</h4>
         <pre>
-            4
-            0
-            1
-            3
-            5
+4
+0
+1
+3
+5
         </pre>
 
         <h4>Output:</h4>
 
         <pre>
-            1
-            1
-            3
-            7
+1
+1
+3
+7
         </pre>
+        <br />
+        <br />
     </div>
 </script>
 

@@ -70,10 +70,10 @@
 
     <h3>Assumptions</h3>
     <ul>
-        <li>0 &lt;= <code>t</code> &lt;= 10</li>
-        <li>0 &lt;= <code>i</code> &lt;= 5</li>
-        <li>0 &lt;= <code>code</code> &lt;= 2</li>
-        <li>0 &lt;= <code>startX</code>, <code>startY</code>, <code>width</code>, <code>height</code> &lt;= 100</li>
+        <li>0 &le; <code>t</code> &le; 10</li>
+        <li>0 &le; <code>i</code> &le; 5</li>
+        <li>0 &le; <code>code</code> &le; 2</li>
+        <li>0 &le; <code>startX</code>, <code>startY</code>, <code>width</code>, <code>height</code> &le; 100</li>
     </ul>
 
     <h3>Console Output Format</h3>
@@ -86,23 +86,25 @@
 
         <h4>Input:</h4>
         <pre>
-            3
-            1
-            1,0,0,10,10
-            2
-            1,0,0,10,10
-            0,5,5,5,5
-            2
-            1,0,0,10,10
-            2,0,0,5,5
+3
+1
+1,0,0,10,10
+2
+1,0,0,10,10
+0,5,5,5,5
+2
+1,0,0,10,10
+2,0,0,5,5
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            100
-            75
-            75
+100
+75
+75
         </pre>
+        <br />
+        <br />
     </div>
 </script>
 

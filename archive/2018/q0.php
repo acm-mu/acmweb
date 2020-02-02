@@ -48,8 +48,8 @@
         <p>Our test data will always adhere to the assumptions listed in this section of each problem.</p>
     </blockquote>
     <ul>
-        <li>1 <= <code>n</code>
-                <= 10</li> <li><code>input</code> >= 0</li>
+        <li>1 &le; <code>n</code> &le; 10</li> 
+        <li><code>input</code> &ge; 0</li>
     </ul>
 
     <h3>Console Output Format</h3>
@@ -70,17 +70,19 @@
         </blockquote>
         <h4>Input:</h4>
         <pre>
-            3
-            41
-            0
-            111
+3
+41
+0
+111
         </pre>
         <h4>Output:</h4>
         <pre>
-            42
-            1
-            112
+42
+1
+112
         </pre>
+        <br />
+        <br />
     </div>
 </script>
 

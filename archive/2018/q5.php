@@ -15,12 +15,11 @@
             <li>Patrick must figure out which row of the table contains the four letters on his bomb.</li>
             <li>Then, he must press the buttons in the order that they appear in the matching row (from left to right)</li>
         </ol>
-        <hr>
         <p>For example, suppose the bomb manual's table has three rows of letters:</p>
         <pre>
-            HSOVIA
-            WISAUP
-            LOQUIX
+HSOVIA
+WISAUP
+LOQUIX
         </pre>
         <p>Suppose Patrick looks on the bomb and sees that the four buttons are labeled "A", "P", "S", "I".</p>
         <p>Therefore, the matching row would be "WISAUP", since that is the only row containing all four button labels
@@ -57,12 +56,8 @@
     </ul>
     <h3>Assumptions</h3>
     <ul>
-        <li>
-            <pre>1 <= <code>m</code> <= 300</pre>
-        </li>
-        <li>
-            <pre>1 <= <code>n</code> <= 10</pre>
-        </li>
+        <li>1 &le; <code>m</code> &le; 300</li>
+        <li>1 &le; <code>n</code> &le; 10</li>
         <li>each of the test cases (four button labels) will match exactly one of the table rows</li>
         <li>each of the test cases is made up of four unique button labels (e.g., "AABC" will not appear as a test case)
         </li>
@@ -78,24 +73,26 @@
 
         <h4>Input:</h4>
         <pre>
-            3
-            HSOVIA
-            WISAUP
-            LOQUIX
-            4
-            APSI
-            IOVH
-            LQUX
-            AIVO
+3
+HSOVIA
+WISAUP
+LOQUIX
+4
+APSI
+IOVH
+LQUX
+AIVO
         </pre>
         
         <h4>Output:</h4>
         <pre>
-            ISAP
-            HOVI
-            LQUX
-            OVIA
+ISAP
+HOVI
+LQUX
+OVIA
         </pre>
+        <br />
+        <br />
     </div>
 </script>
 

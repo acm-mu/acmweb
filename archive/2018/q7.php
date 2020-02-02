@@ -39,12 +39,12 @@
 
         <h3>Sample Method Calls</h3>
         <pre>
-            getOutputFlows(3, 4, 2, // numInputs, numJunctions, numOutputs
-                new String[][] { // connections
-                    new String[] { "IN0", "JUNC0" }, new String[] { "IN1", "JUNC0" }, new String[] { "IN2", "JUNC1" },
-                    new String[] { "JUNC0", "JUNC2" }, new String[] { "JUNC1", "JUNC2" }, new String[] { "JUNC1", "JUNC3" },
-                    new String[] { "JUNC2", "JUNC3" }, new String[] { "JUNC2", "OUT0" }, new String[] { "JUNC3", "OUT1" } },
-                new float[] { 200.0, 100.0, 300.0 } ) // inputFlows
+getOutputFlows(3, 4, 2, // numInputs, numJunctions, numOutputs
+    new String[][] { // connections
+        new String[] { "IN0", "JUNC0" }, new String[] { "IN1", "JUNC0" }, new String[] { "IN2", "JUNC1" },
+        new String[] { "JUNC0", "JUNC2" }, new String[] { "JUNC1", "JUNC2" }, new String[] { "JUNC1", "JUNC3" },
+        new String[] { "JUNC2", "JUNC3" }, new String[] { "JUNC2", "OUT0" }, new String[] { "JUNC3", "OUT1" } },
+    new float[] { 200.0, 100.0, 300.0 } ) // inputFlows
         </pre>
         <p>returns a <code>float</code> array containing <code>{ 225.0, 375.0 }</code></p>
     </div>
@@ -69,15 +69,9 @@
     </ul>
     <h3>Assumptions</h3>
     <ul>
-        <li>
-            <pre>1 <= <code>numInputs</code>, <code>numJunctions</code>, <code>numOutputs</code>  <= 10</pre>
-        </li>
-        <li>
-            <pre>1 <= <code>numConnections</code> <= 100</pre>
-        </li>
-        <li>
-            <pre>1 <= <code>numTests</code> <= 10</pre>
-        </li>
+        <li>1 &le; <code>numInputs</code>, <code>numJunctions</code>, <code>numOutputs</code>  &le; 10</li>
+        <li>1 &le; <code>numConnections</code> &le; 100</li>
+        <li>1 &le; <code>numTests</code> &le; 10</li>
         <li>individual input flow values will be between 0 and 1000, inclusive</li>
     </ul>
     <h3>Console Output Format</h3>
@@ -94,26 +88,28 @@
 
         <h4>Input:</h4>
         <pre>
-            3 4 2 9
-            IN0 JUNC0
-            IN1 JUNC0
-            IN2 JUNC1
-            JUNC0 JUNC2
-            JUNC1 JUNC2
-            JUNC1 JUNC3
-            JUNC2 JUNC3
-            JUNC2 OUT0
-            JUNC3 OUT1
-            2
-            200 100 300
-            0 0 20
+3 4 2 9
+IN0 JUNC0
+IN1 JUNC0
+IN2 JUNC1
+JUNC0 JUNC2
+JUNC1 JUNC2
+JUNC1 JUNC3
+JUNC2 JUNC3
+JUNC2 OUT0
+JUNC3 OUT1
+2
+200 100 300
+0 0 20
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            225 375
-            5 15
+225 375
+5 15
         </pre>
+        <br />
+        <br />
     </div>
 </script>
 

@@ -45,14 +45,14 @@
             form of a grid with 7 rows and 8 columns.</p>
 
         <pre>
-            iamreall 
-            yenjoyin
-            gmytimea
-            tsteerbu
-            cksthisf
-            inewedne
-            sdaymorn
-            ing
+iamreall 
+yenjoyin
+gmytimea
+tsteerbu
+cksthisf
+inewedne
+sdaymorn
+ing
         </pre>
 
         <p>The final encrypted string is then created from the columns of the grid:
@@ -85,8 +85,8 @@
 
     <h3>Assumptions</h3>
     <ul>
-        <li>1 &lt;= <code>t</code> &lt;= 10</li>
-        <li>1 &lt;= length of <code>s</code> &lt; 100 characters</li>
+        <li>1 &le; <code>t</code> &le; 10</li>
+        <li>1 &le; length of <code>s</code> &lt; 100 characters</li>
         <li><code>s</code> will not contain any spaces</li>
     </ul>
 
@@ -100,16 +100,18 @@
 
         <h4>Input:</h4>
         <pre>
-            2
-            iamreallyenjoyingmytimeatsteerbucksthisfinewednesdaymorning
-            mynameissam
+2
+iamreallyenjoyingmytimeatsteerbucksthisfinewednesdaymorning
+mynameissam
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            iygtcisi aemskndn mnytseag rjtetwy eoiehem aymrido liebsnr lnaufen
-            mms yea nim as
+iygtcisi aemskndn mnytseag rjtetwy eoiehem aymrido liebsnr lnaufen
+mms yea nim as
         </pre>
+        <br />
+        <br />
     </div>
 </script>
 

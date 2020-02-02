@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="looksay">Look &amp; Say</h1>
+    <h1 id="page" page="looksay">Look and Say</h1>
 
     <div>
         <p>Now that Jimothy has his free lifetime subscription to <em>Old Math, Old Dudes, New Concepts</em>, The Four
@@ -70,7 +70,7 @@
     <h3 id="assumptions">Assumptions</h3>
     <ul>
         <li><code>input</code> is a non-empty string containing numerical digits</li>
-        <li>1 &lt;= length of <code>input</code> &lt;= 20</li>
+        <li>1 &le; length of <code>input</code> &le; 20</li>
     </ul>
 
     <h3>Console Output Format</h3>
@@ -83,20 +83,22 @@
 
         <h4>Input:</h4>
         <pre>
-            4
-            1
-            13
-            111221
-            849583
+4
+1
+13
+111221
+849583
         </pre>
 
         <h4>Output:</h4>
         <pre>
-            5
-            11
-            16
-            67
-        </pre> 
+5
+11
+16
+67
+        </pre>
+        <br />
+        <br /> 
     </div>
 </script>
 

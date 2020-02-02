@@ -29,9 +29,39 @@
   margin: auto 15px;
   font-size: 16px;
   font-family: Poppins, Roboto, Ubuntu;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
 
-#navbar li.active {
-  font-weight: bold;
-  border-bottom: 2px solid #244770;
+#navbar li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #244770;
+  height: 3px;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#navbar li:hover:before, #navbar li:focus:before, #navbar li:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#navbar .active {
+  font-weight: bold !important;
+  /*border-bottom: 3px solid #244770;*/
 }

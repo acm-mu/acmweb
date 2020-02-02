@@ -79,4 +79,6 @@
       Student #1 Fits
       Student #2 Doesn't Fit
     </pre>
+    <br />
+    <br />
 </script>

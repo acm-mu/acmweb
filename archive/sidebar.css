@@ -1,6 +1,10 @@
+.container {
+  width: 100%;
+}
+
 .sidebar {
   background: #222;
-  width: 15%;
+  width: 13%;
   height: 95%;
   position: relative;
   float: left;
@@ -106,6 +110,35 @@ button {
   font-weight: bold;
   border-radius: 8px;
   padding: 10px 24px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #003366;
+  height: 4px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+button:hover:before, button:focus:before, button:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 button:hover {
@@ -116,8 +149,10 @@ button:focus {
 }
 
 button.active {
-  background: #ddd;
-  border-bottom: 3px solid #003366;
+  /*background: #ddd;*/
+  background: #003366;
+  color: #fff;
+  /*border-bottom: 4px solid #003366;*/
 }
 
 td {
