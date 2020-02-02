@@ -3,15 +3,19 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/muhosting/public_html/
     - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp index.php $DEPLOYPATH
     - /bin/cp about.php $DEPLOYPATH
-    - /bin/cp events.php $DEPLOYPATH
     - /bin/cp competition.php $DEPLOYPATH
+    - /bin/cp events.php $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
     - /bin/cp java_prep.php $DEPLOYPATH
+    - /bin/cp register.php $DEPLOYPATH
     - /bin/cp scratch_prep.php $DEPLOYPATH
     - /bin/cp subscribe.php $DEPLOYPATH
-    - /bin/cp -R include $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R archive $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R include $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R lib $DEPLOYPATH
+    - /bin/cp -R php $DEPLOYPATH

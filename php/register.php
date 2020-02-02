@@ -7,8 +7,6 @@ function post_get($key, $default) {
     return $default;
 }
 
-var_dump($_POST);
-
 /*************************************
  *           school table            *
  ************************************/
