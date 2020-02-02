@@ -25,7 +25,6 @@
 
 #navbar li {
   color: #244770;
-  float: left;
   margin: auto 15px;
   font-size: 16px;
   font-family: Poppins, Roboto, Ubuntu;
@@ -56,7 +55,9 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#navbar li:hover:before, #navbar li:focus:before, #navbar li:active:before {
+#navbar li:hover:before,
+#navbar li:focus:before,
+#navbar li:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
