@@ -6,8 +6,7 @@
     <link rel='stylesheet' type='text/css' href='/css/global.css?<?php echo date('l jS \of F Y h:i:s A');?>'>
     <link rel='stylesheet' type='text/css' href='/css/header.css?<?php echo date('l jS \of F Y h:i:s A');?>'>
     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
-    <script src='https://code.jquery.com/jquery-3.4.1.js'
-        integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.4.1.js'></script>
     <script src="/js/header.js"></script>
 </head>
 

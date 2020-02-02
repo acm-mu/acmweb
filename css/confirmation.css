@@ -1,0 +1,20 @@
+#conf {
+  font-family: Trebuchet, Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#conf td, #conf th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#conf tr:nth-child(even){background-color: #f2f2f2;}
+
+#conf th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #036;
+  color: white;
+}

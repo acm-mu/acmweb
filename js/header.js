@@ -1,4 +1,6 @@
 $(document).ready(() => {
-  var page = $("h1.title").attr("page");
-  $("#navbar li#" + page).addClass("active");
- });
+  if ($("h1.title").length) {
+    var page = $("h1.title").attr("page");
+    $(`#navbar #${page} li`).addClass("active");
+  }
+});
