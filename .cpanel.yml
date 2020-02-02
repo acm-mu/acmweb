@@ -8,8 +8,6 @@ deployment:
     - /bin/cp events.php $DEPLOYPATH
     - /bin/cp favicon.ico $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp java_prep.php $DEPLOYPATH
-    - /bin/cp register.php $DEPLOYPATH
     - /bin/cp scratch_prep.php $DEPLOYPATH
     - /bin/cp subscribe.php $DEPLOYPATH
     - /bin/cp -R archive $DEPLOYPATH
@@ -19,3 +17,4 @@ deployment:
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R lib $DEPLOYPATH
     - /bin/cp -R php $DEPLOYPATH
+    - /bin/cp register.php $DEPLOYPATH
