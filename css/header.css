@@ -64,5 +64,31 @@
 
 #navbar .active {
   font-weight: bold !important;
-  /*border-bottom: 3px solid #244770;*/
+  border-bottom: 3px solid #244770 !important;
+}
+
+#navbar .active:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  height: 0px;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#navbar .active:hover:before,
+#navbar .active:focus:before,
+#navbar .active:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
