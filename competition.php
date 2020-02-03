@@ -67,7 +67,9 @@ Link with timestamp in url to prevent browser from caching. -->
 
 <h3>Date:</h3>
 <p>
-    Thursday, April 16, 2020
+	<b>TBD</b>
+	<p>Most likely the week of April 12, 2020.</p>
+    <!-- Thursday, April 16, 2020 -->
 </p>
 
 <h3>Schedule:</h3>
@@ -85,10 +87,12 @@ Link with timestamp in url to prevent browser from caching. -->
     <li>Awards: <b>1:00 PM - 2:00 PM</b></li>
 </ul>
 
-<a href="/register">
+<h3>Register</h3>
+<p>Registration coming soon!</p>
+<!-- <a href="/register">
     <button class="register">Register</button>
 </a>
 <p>
     <i>Registration closes March 27th, 2020</i>
-</p>
+</p> -->
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
