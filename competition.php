@@ -8,11 +8,11 @@ Link with timestamp in url to prevent browser from caching. -->
 
 <center>
     <a href="/archive/prep/q0">
-        <button class="comp_button java">Java Preparation</button>
+        <button class="java">Java Preparation</button>
     </a>
 
     <a href="/scratch_prep">
-        <button class="comp_button scratch">Scratch Preparation</button>
+        <button class="scratch">Scratch Preparation</button>
     </a>
 </center>
 
@@ -85,7 +85,6 @@ Link with timestamp in url to prevent browser from caching. -->
     <li>Awards: <b>1:00 PM - 2:00 PM</b></li>
 </ul>
 
-<!-- <h3>Register</h3> -->
 <a href="/register">
     <button class="register">Register</button>
 </a>
