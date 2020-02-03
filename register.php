@@ -327,12 +327,12 @@ Link with timestamp in url to prevent browser from caching. -->
                 <span class="slider"></span>
             </label>
             <div class="form-hidden-section" id="accommodations-section">
-                <textarea name="special_accommodations"></textarea>
+                <textarea name="special_accommodations" placeholder="e.g. I have a student with a gluten allergy."></textarea>
             </div>
 
-            <h4>Any additional questions/concerns/comments?</h4>
-            <textarea name="concerns"></textarea>
-            <br>
+            <h4>Any additional questions/comments/concerns?</h4>
+            <textarea name="concerns" placeholder="e.g. Where should I tell the bus driver to drop my students?"></textarea>
+            <br />
             <input type="submit" class="register" value="Register" id="register">
 
         </div>
