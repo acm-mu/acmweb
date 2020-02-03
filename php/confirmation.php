@@ -21,7 +21,7 @@ $count = $row['teams'];
 <h1 class="title" page="confirmation">Thank You!</h1>
 
 <p>Thank you for registering,
-    <? echo $cname; ?> We can't wait to have you and your students here at Marquette on <b>April
+    <? echo $cname; ?>. We can't wait to have you and your students here at Marquette on <b>April
         16th</b>!</p>
 <h2>Confirmation Details</h2>
 <p>Here are your confirmation details:</p>
