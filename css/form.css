@@ -52,18 +52,49 @@ textarea {
   height: 5em;
 }
 
+input:hover {
+  cursor: text;
+  background: #e7e7e7;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #e7e7e7;
+}
+
 input:focus,
 button:focus {
   background: #ddd;
 }
 
-input:hover {
-  cursor: text;
-  background: #e7e7e7;
-}
-button:hover {
+.register {
+  cursor: pointer !important;
+  font-size: 20px;
+  width: 250px;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  border: none;
+  color: white;
+  background: transparent;
+  position: relative;
+  padding: 10px 24px;
+  color: #244770;
+  border: 2px #244770 solid;
+  border-radius: 4px;
+  overflow:hidden;
+  background: none;
+  z-index: 0;
   cursor: pointer;
-  background: #e7e7e7;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.register:hover {
+  color: #fff;
+  background: #244770;
 }
 
 .form-hidden-section {
