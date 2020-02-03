@@ -2,7 +2,7 @@ button {
   font-size: 20px;
   width: 250px;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   border: none;
   color: white;
   margin: 0 20px;
