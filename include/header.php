@@ -8,6 +8,19 @@
     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
     <script src='https://code.jquery.com/jquery-3.4.1.js'></script>
     <script src="/js/header.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158210865-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158210865-1');
+    </script>
 </head>
 
 <div id='navbar'>
