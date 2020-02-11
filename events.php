@@ -11,7 +11,7 @@ Link with timestamp in url to prevent browser from caching. -->
     <div class="event">
         <div class="date">
             <h1 class="month"> APR </h1>
-            <h1 class="day"> 16 </h1>
+            <h1 class="day"> 15 </h1>
         </div>
         <div class="details">
             <p class="title"> ACM/UPE Programming Competition </p>
