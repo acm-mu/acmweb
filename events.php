@@ -41,7 +41,9 @@ Link with timestamp in url to prevent browser from caching. -->
         </div>
         <div class="details">
             <p class="title">Internship/Research Panel</p>
-            <p class="desc">Curious about internships? Not sure how to apply? Want to do research, but don't know what to expect? Join us for an hour of Q&A with members of ACM who have done research or had an internship experience and find out what it's like and what to expect!</p>
+            <p class="desc">Curious about internships? Not sure how to apply? Want to do research, but don't know what
+                to expect? Join us for an hour of Q&A with members of ACM who have done research or had an internship
+                experience and find out what it's like and what to expect!</p>
         </div>
     </div>
 

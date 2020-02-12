@@ -136,7 +136,9 @@ button:before {
   transition-timing-function: ease-out;
 }
 
-button:hover:before, button:focus:before, button:active:before {
+button:hover:before,
+button:focus:before,
+button:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -149,10 +151,8 @@ button:focus {
 }
 
 button.active {
-  /*background: #ddd;*/
   background: #003366;
   color: #fff;
-  /*border-bottom: 4px solid #003366;*/
 }
 
 td {

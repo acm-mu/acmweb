@@ -1,6 +1,3 @@
-<script src='/lib/fontawesome.min.js'></script>
-
-
 <!-- DEVELOPMENT PURPOSES: 
 Link with timestamp in url to prevent browser from caching. -->
 <link rel='stylesheet' type='text/css' href='/css/footer.css?<?php echo date('l jS \of F Y h:i:s A');?>'>
