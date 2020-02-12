@@ -142,7 +142,7 @@ $concerns = addslashes($_POST["concerns"]);
 $sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, gold_devices, blue, java_eclipse, java_netbeans, java_bluej, java_jgrasp, java_notepad, java_other, python_idle, python_pycharm, python_notepad, python_other, accommodations, concerns, schoolid) VALUES ($eagle, $eagle_devices, '$eagle_platform', $gold, $gold_devices, $blue, $java_eclipse, $java_netbeans, $java_bluej, $java_jgrasp, $java_notepad, '$java_other', $python_idle, $python_pycharm, $python_notepad, '$python_other', '$accommodations', '$concerns', $schoolid)";
 
 /** Send Email to ACM Eboard */
-$to      = 'acm-webmaster@mscs.mu.edu';
+$to      = 'acm@mscs.mu.edu';
 $subject = "New Team Registration ($sname)";
 $message = "<b>$cname</b> has registered <b>$teamcount</b> team(s) for <b>$sname</b> from <b>$scity</b>.\n\n Goto https://mu.acm.org/admin/school?schoolid=$schoolid for more information.";
 $headers = array(
@@ -151,7 +151,7 @@ $headers = array(
     'X-Mailer' => 'PHP/' . phpversion()
 );
 
-mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers, "-fjackpfeiffer@marquette.edu");
 
 /** End of Email */
 
