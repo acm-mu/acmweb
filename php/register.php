@@ -56,6 +56,8 @@ $mysql->query($sql_coach);
 
 $divisions = array("blue", "gold", "eagle");
 
+$teamcount = 0;
+
 foreach ($divisions as $division) {
     if (array_key_exists($division."_division", $_POST) && $_POST[$division."_division"] == "on") {
         $n = 0;
@@ -73,6 +75,7 @@ foreach ($divisions as $division) {
             $mysql->query($sql_team);
             
             $n++;
+            $teamcount++;
         }
     }
 }
@@ -137,6 +140,20 @@ if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special
 $concerns = addslashes($_POST["concerns"]);
 
 $sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, gold_devices, blue, java_eclipse, java_netbeans, java_bluej, java_jgrasp, java_notepad, java_other, python_idle, python_pycharm, python_notepad, python_other, accommodations, concerns, schoolid) VALUES ($eagle, $eagle_devices, '$eagle_platform', $gold, $gold_devices, $blue, $java_eclipse, $java_netbeans, $java_bluej, $java_jgrasp, $java_notepad, '$java_other', $python_idle, $python_pycharm, $python_notepad, '$python_other', '$accommodations', '$concerns', $schoolid)";
+
+/** Send Email to ACM Eboard */
+$to      = 'acm-webmaster@mscs.mu.edu';
+$subject = "New Team Registration ($sname)";
+$message = "<b>$cname</b> has registered <b>$teamcount</b> team(s) for <b>$sname</b> from <b>$scity</b>.\n\n Goto https://mu.acm.org/admin/school?schoolid=$schoolid for more information.";
+$headers = array(
+    'From' => 'registration@mu.acm.org',
+    'Reply-To' => 'noreply@mu.acm.org',
+    'X-Mailer' => 'PHP/' . phpversion()
+);
+
+mail($to, $subject, $message, $headers);
+
+/** End of Email */
 
 $mysql->query($sql_details);
 
