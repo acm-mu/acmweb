@@ -66,7 +66,7 @@ function maxNumberKeyUp() {
     total += parseInt($(this).val());
   });
 
-  if (total >= max) $(this).val(0);
+  if (total > max) $(this).val(0);
 }
 
 function addTeam() {
