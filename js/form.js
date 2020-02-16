@@ -6,44 +6,64 @@ $(document).ready(() => {
   $(document).on("click", "input", dataToggle);
   $(document).on("click", "#register", confirm);
 
+  $(document).on("change", ".shirts", maxNumber);
 });
 
-function confirm(e) {  
-
+function confirm(e) {
   var areFilled = true;
-  $(':input[required]').each(function() {
-    if(!areFilled) return;
-    if(!$(this)[0].checkValidity()) areFilled = false;
-  })
-  
-  if(areFilled) {
+  $(":input[required]").each(function() {
+    if (!areFilled) return;
+    if (!$(this)[0].checkValidity()) areFilled = false;
+  });
+
+  if (areFilled) {
     e.preventDefault();
     Swal.fire({
       customClass: {
-        popup: 'swal2-custom-popup',
-        icon: 'swal2-custom-icon',
-        confirmButton: 'swal2-custom-confirm',
-        cancelButton: 'swal2-custom-cancel',
-        title: 'swal2-custom-title',
-        content: 'swal2-custom-content'
+        popup: "swal2-custom-popup",
+        icon: "swal2-custom-icon",
+        confirmButton: "swal2-custom-confirm",
+        cancelButton: "swal2-custom-cancel",
+        title: "swal2-custom-title",
+        content: "swal2-custom-content"
       },
-      title: 'Are you sure?',
+      title: "Are you sure?",
       text: "Make sure all your fields are correct before submitting.",
-      icon: 'info',
+      icon: "info",
       showCancelButton: true,
-      confirmButtonText: 'I\'m sure!'
-      }).then((result) => {
+      confirmButtonText: "I'm sure!"
+    }).then(result => {
       if (result.value) {
-        $('#registerform').submit();
+        $("#registerform").submit();
       }
-    })
+    });
   }
+}
+
+function maxNumber() {
+  var row = $(this).closest("tr.row");
+  var max = parseInt(row.attr("max-total"));
+
+  var total = 0;
+  row.find(".shirts").each(function() {
+    total += parseInt($(this).val());
+  });
+
+  var remaining = max - total;
+  row.find(".shirts").each(function() {
+    var val = parseInt($(this).val());
+    $(this).attr("max", val + remaining);
+  });
 }
 
 function addTeam() {
   var table = $(this).closest("table");
+  var maxRows = parseInt(table.attr("max-rows"));
   var div = table.attr("division");
   var numRow = table.find("tr.row").length;
+  if (numRow >= maxRows) {
+    return;
+  }
   var newRow = $(`#${div}-section #row_0`).clone();
   newRow.attr("id", `row_${numRow}`);
   newRow

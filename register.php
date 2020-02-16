@@ -184,7 +184,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 <input name="python_other" placeholder="Other">
 
                 <label>Teams</label>
-                <table class="form-table" division="blue">
+                <table class="form-table" division="blue" max-rows="8">
                     <thead>
                         <tr>
                             <th></th>
@@ -196,18 +196,18 @@ Link with timestamp in url to prevent browser from caching. -->
                             <th>XX-Large Shirts</th>
                     </thead>
                     <tbody>
-                        <tr class='row' id="row_0">
+                        <tr class='row' id="row_0" max-total="4">
                             <td><button type="button" class="del">-</button></td>
                             <td><input class='name required' name='blue_0'></td>
-                            <td><input type='number' class='small required' value="0" min="0" max="4"
+                            <td><input type='number' class='shirts small required' value="0" min="0" max="4"
                                     name='blue_small_0'></td>
-                            <td><input type='number' class='medium required ' value="0" min="0" max="4"
+                            <td><input type='number' class='shirts medium required ' value="0" min="0" max="4"
                                     name='blue_medium_0'></td>
-                            <td><input type='number' class='large required' value="0" min="0" max="4"
+                            <td><input type='number' class='shirts large required' value="0" min="0" max="4"
                                     name='blue_large_0'></td>
-                            <td><input type='number' class='xlarge required' value="0" min="0" max="4"
+                            <td><input type='number' class='shirts xlarge required' value="0" min="0" max="4"
                                     name='blue_xlarge_0'></td>
-                            <td><input type='number' class='xxlarge required' value="0" min="0" max="4"
+                            <td><input type='number' class='shirts xxlarge required' value="0" min="0" max="4"
                                     name='blue_xxlarge_0'>
                             </td>
                         </tr>
@@ -231,7 +231,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 <input name="gold_devices" type="number" min="0" value="0">
 
                 <label>Teams</label>
-                <table class="form-table" division="gold">
+                <table class="form-table" division="gold" max-rows="8">
                     <thead>
                         <tr>
                             <th></th>
@@ -243,18 +243,18 @@ Link with timestamp in url to prevent browser from caching. -->
                             <th>XX-Large Shirts</th>
                     </thead>
                     <tbody>
-                        <tr class='row' id="row_0">
+                        <tr class='row' id="row_0" max-total="3">
                             <td><button type="button" class="del">-</button></td>
                             <td><input class='name required' name='gold_0'></td>
-                            <td><input type='number' class='required small' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required small' value="0" min="0" max="3"
                                     name='gold_small_0'></td>
-                            <td><input type='number' class='required medium' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required medium' value="0" min="0" max="3"
                                     name='gold_medium_0'></td>
-                            <td><input type='number' class='required large' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required large' value="0" min="0" max="3"
                                     name='gold_large_0'></td>
-                            <td><input type='number' class='required xlarge' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required xlarge' value="0" min="0" max="3"
                                     name='gold_xlarge_0'></td>
-                            <td><input type='number' class='required xxlarge ' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required xxlarge ' value="0" min="0" max="3"
                                     name='gold_xxlarge_0'>
                             </td>
                         </tr>
@@ -281,7 +281,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 <input name="eagle_devices" type="number" value="0" min="0">
 
                 <label>Teams</label>
-                <table class="form-table" division="eagle">
+                <table class="form-table" division="eagle" max-rows="3">
                     <thead>
                         <tr>
                             <th></th>
@@ -293,18 +293,18 @@ Link with timestamp in url to prevent browser from caching. -->
                             <th>XX-Large Shirts</th>
                     </thead>
                     <tbody>
-                        <tr class='row' id="row_0">
+                        <tr class='row' id="row_0" max-total="3">
                             <td><button type="button" class="del">-</button></td>
                             <td><input class='required name' name='eagle_0'></td>
-                            <td><input type='number' class='required small' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required small' value="0" min="0" max="3"
                                     name='eagle_small_0'></td>
-                            <td><input type='number' class='required medium' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required medium' value="0" min="0" max="3"
                                     name='eagle_medium_0'></td>
-                            <td><input type='number' class='required large' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required large' value="0" min="0" max="3"
                                     name='eagle_large_0'></td>
-                            <td><input type='number' class='required xlarge' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required xlarge' value="0" min="0" max="3"
                                     name='eagle_xlarge_0'></td>
-                            <td><input type='number' class='required xxlarge' value="0" min="0" max="3"
+                            <td><input type='number' class='shirts required xxlarge' value="0" min="0" max="3"
                                     name='eagle_xxlarge_0'></td>
                         </tr>
                         <tr>
@@ -327,11 +327,13 @@ Link with timestamp in url to prevent browser from caching. -->
                 <span class="slider"></span>
             </label>
             <div class="form-hidden-section" id="accommodations-section">
-                <textarea name="special_accommodations" placeholder="e.g. I have a student with a gluten allergy."></textarea>
+                <textarea name="special_accommodations"
+                    placeholder="e.g. I have a student with a gluten allergy."></textarea>
             </div>
 
             <h4>Any additional questions/comments/concerns?</h4>
-            <textarea name="concerns" placeholder="e.g. Where should I tell the bus driver to drop my students?"></textarea>
+            <textarea name="concerns"
+                placeholder="e.g. Where should I tell the bus driver to drop my students?"></textarea>
             <br />
             <input type="submit" class="register" value="Register" id="register">
 
