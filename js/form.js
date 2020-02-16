@@ -7,6 +7,7 @@ $(document).ready(() => {
   $(document).on("click", "#register", confirm);
 
   $(document).on("change", ".shirts", maxNumber);
+  $(document).on("keyup", ".shirts", maxNumberKeyUp);
 });
 
 function confirm(e) {
@@ -54,6 +55,18 @@ function maxNumber() {
     var val = parseInt($(this).val());
     $(this).attr("max", val + remaining);
   });
+}
+
+function maxNumberKeyUp() {
+  var row = $(this).closest("tr.row");
+  var max = parseInt(row.attr("max-total"));
+
+  var total = 0;
+  row.find(".shirts").each(function() {
+    total += parseInt($(this).val());
+  });
+
+  if (total >= max) $(this).val(0);
 }
 
 function addTeam() {
