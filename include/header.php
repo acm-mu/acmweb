@@ -1,3 +1,7 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
+?>
+
 <head>
     <title>Association for Computing Machinery - Marquette University</title>
 
