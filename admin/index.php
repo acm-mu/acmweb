@@ -32,7 +32,7 @@ function makeEvent(event) {
         "class": "summary"
     }).append(mail_link, " from ", school_link, ` registered ${event.teams} teams.`).append($("<div/>", {
         "class": "date"
-    }).html(m.fromNow()))))
+    }).html(m.subtract(6, 'hours').fromNow()))))
 
 }
 
