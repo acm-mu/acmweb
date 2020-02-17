@@ -67,13 +67,12 @@ Link with timestamp in url to prevent browser from caching. -->
 
 <h3>Date:</h3>
 <p>
-	<!-- <b>TBD</b>
-	<p>Most likely the week of April 12, 2020.</p> -->
     Wednesday, April 15, 2020
 </p>
 
 <h3>Schedule:</h3>
-<p><em>This is a tenative schedule and could change at any time. We will try our best to notify you of any changes.</em>
+<p><em>This is a tentative schedule and could change at any time. We will try our best to notify you of any
+        changes.</em>
 </p>
 <ul>
     <li>Registration/Welcome: <b>8:00 AM - 8:30 AM</b></li>

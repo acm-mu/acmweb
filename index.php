@@ -16,6 +16,7 @@
         Competition</a>. It is a morning event, 100% student volunteer run, offered to Wisconsin high schools. </p>
 
 <h3>Who can be a member?</h3>
-<p>Membership is open to anyone and everyone who's interested in computing. The easiest way to get involved is to <a href="/subscribe">join our mailing list</a>.</p>
+<p>Membership is open to anyone and everyone who's interested in computing. The easiest way to get involved is to <a
+        href="/subscribe">join our mailing list</a>.</p>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

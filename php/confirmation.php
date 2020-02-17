@@ -1,6 +1,5 @@
 <?php 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
 
 $schoolid = $_GET['schoolid'];
 
