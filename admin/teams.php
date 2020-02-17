@@ -55,9 +55,12 @@ function makeTeamRow(team) {
 function updateTeams() {
     $("#teams tbody").html("")
 
-    $.ajax('api/teams', {
+    url = 'api/teams'
+    if (getUrlParameter('schoolid') != undefined)
+        url += '?schoolid=' + getUrlParameter('schoolid')
+
+    $.ajax(url, {
         success: function(data) {
-            console.log(data)
             var jsonData = JSON.parse(data)
             if (jsonData.length == 0) {
                 error("No Results!")

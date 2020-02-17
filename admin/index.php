@@ -18,7 +18,7 @@ function makeEvent(event) {
         html: event.cname
     })
     const school_link = $("<a/>", {
-        href: `/admin/school?schoolid=${event.schoolid}`,
+        href: `/admin/teams?schoolid=${event.schoolid}`,
         html: event.sname
     })
 

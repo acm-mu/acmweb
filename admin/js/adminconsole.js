@@ -22,9 +22,14 @@ function error(message) {
 
 $(document).ready(function() {
   // Set Active Page
-  var url = window.location.href;
-  var index = url.indexOf("/admin/") + 7;
-  var page = url.substr(index, url.length - index);
+  const url = window.location.href;
+  const sIndex = url.indexOf("/admin/") + 7;
+  const eIndex = url.indexOf("?");
+
+  var page;
+  if (eIndex != -1) page = url.substring(sIndex, eIndex);
+  else page = url.substr(sIndex, url.length - sIndex);
   if (page.length == 0) page = "index";
+
   $(".item#" + page).addClass("active");
 });
