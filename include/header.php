@@ -42,6 +42,17 @@
             <li>Competition</li>
         </a>
     </ul>
+
+        <?php
+        if (substr($_SERVER['REQUEST_URI'], 0, 7) == "/admin/") {
+            echo "<span>Admin Console";
+            if (loggedin()) {
+                echo " | <a href='/admin/logout'>Logout</a>";
+            }
+            echo "</span>";
+        }
+        ?>
+        </script>
 </div>
 
 <div class='container'>
