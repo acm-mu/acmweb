@@ -26,12 +26,13 @@ if (!loggedin()) {
     <a class="item" id="schools" href="/admin/schools">
         Schools
     </a>
-    <!-- <div class="right menu">
+    <div class="right menu">
         <div class="item">
-            <div class="ui transparent icon input">
-                <input type="text" placeholder="Search...">
+            <form class="ui transparent icon input" action="/admin/search.php" method="GET">
+                <input name="search" type="text" placeholder="Search..."
+                    value="<?php echo isset($_GET['search']) ? $_GET['search'] : "" ?>">
                 <i class="search link icon"></i>
-            </div>
+            </form>
         </div>
-    </div> -->
+    </div>
 </div>
