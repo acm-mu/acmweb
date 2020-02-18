@@ -13,7 +13,8 @@ if (isset($_GET['search'])) {
 
 $sql = "SELECT * FROM" 
 . " team INNER JOIN school ON team.schoolid = school.schoolid" 
-. " WHERE (school.sname LIKE '%$search%' OR team.tname LIKE '%$search%' OR school.scity LIKE '%$search%')"
+. " INNER JOIN coach ON coach.schoolid = school.schoolid"
+. " WHERE (school.sname LIKE '%$search%' OR team.tname LIKE '%$search%' OR school.scity LIKE '%$search%' OR coach.cname LIKE '%$search%')"
 . " ORDER BY rdate DESC";
 
 $res = $mysql->query($sql);

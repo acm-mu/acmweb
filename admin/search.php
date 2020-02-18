@@ -8,6 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
             <th col='tname'>Team Name</th>
             <th col='division'>Division</th>
             <th col='sname'>School</th>
+            <th col='cname'>Coach Name</th>
             <th col='scity'>City</th>
             <th>Members</th>
             <th col='rdate'>Registration Date</th>
@@ -45,6 +46,7 @@ function makeTeamRow(team) {
     row.append($("<td/>").html(team.tname))
     row.append($("<td/>").html(division))
     row.append($("<td/>").html(team.sname))
+    row.append($("<td/>").html(team.cname))
     row.append($("<td/>").html(team.scity))
     row.append($("<td/>").append(total))
     row.append($("<td/>").html(time))
