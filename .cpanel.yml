@@ -11,11 +11,11 @@ deployment:
     - /bin/cp register.php $DEPLOYPATH
     - /bin/cp scratch_prep.php $DEPLOYPATH
     - /bin/cp subscribe.php $DEPLOYPATH
-    - /bin/cp -R admin $DEPLOYPATH
-    - /bin/cp -R archive $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R include $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R lib $DEPLOYPATH
-    - /bin/cp -R php $DEPLOYPATH
+    - /bin/cp -Rf admin $DEPLOYPATH
+    - /bin/cp -Rf archive $DEPLOYPATH
+    - /bin/cp -Rf assets $DEPLOYPATH
+    - /bin/cp -Rf css $DEPLOYPATH
+    - /bin/cp -Rf include $DEPLOYPATH
+    - /bin/cp -Rf js $DEPLOYPATH
+    - /bin/cp -Rf lib $DEPLOYPATH
+    - /bin/cp -Rf php $DEPLOYPATH
