@@ -184,7 +184,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 <input name="python_other" placeholder="Other">
 
                 <h4>Teams</h4>
-                <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registerd with each team limited to <b>4</b> members.</label>
+                <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registered per school. Each team limited to <b>4</b> members.</label>
                 <table class="form-table" division="blue" max-rows="8">
                     <thead>
                         <tr>
@@ -232,7 +232,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 <input name="gold_devices" type="number" min="0" value="0">
 
                 <h4>Teams</h4>
-                <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registerd with each team limited to <b>3</b> members.</label>
+                <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registered per school. Each team limited to <b>3</b> members.</label>
                 <table class="form-table" division="gold" max-rows="8">
                     <thead>
                         <tr>
@@ -283,7 +283,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 <input name="eagle_devices" type="number" value="0" min="0">
 
                 <h4>Teams</h4>
-                <label class="sub"><b>Note:</b> A maximum of <b>3</b> teams can be registerd with each team limited to <b>4</b> members.</label>
+                <label class="sub"><b>Note:</b> A maximum of <b>3</b> teams can be registered per school. Each team limited to <b>4</b> members.</label>
                 <table class="form-table" division="eagle" max-rows="3">
                     <thead>
                         <tr>
