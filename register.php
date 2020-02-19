@@ -136,7 +136,7 @@ Link with timestamp in url to prevent browser from caching. -->
         </label>
 
         <div class="form-hidden-section" id="post-terms-section">
-            <h4>Blue Division</h4>
+            <h3>Blue Division</h3>
 
             <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
             <label class="switch">
@@ -145,7 +145,7 @@ Link with timestamp in url to prevent browser from caching. -->
             </label>
 
             <div class="form-hidden-section" id="blue-section">
-                <label>Preferred Java Environments</label>
+                <h4>Preferred Java Environments</h4>
                 <label class="checkbox-container">Eclipse
                     <input name="java_eclipse" type="checkbox">
                     <span class="checkmark">
@@ -168,7 +168,7 @@ Link with timestamp in url to prevent browser from caching. -->
                 </label>
                 <input name="java_other" placeholder="Other">
 
-                <label>Preferred Python Environments</label>
+                <h4>Preferred Python Environments</h4>
                 <label class="checkbox-container">IDLE
                     <input name="python_idle" type="checkbox">
                     <span class="checkmark">
@@ -183,7 +183,8 @@ Link with timestamp in url to prevent browser from caching. -->
                 </label>
                 <input name="python_other" placeholder="Other">
 
-                <label>Teams</label>
+                <h4>Teams</h4>
+                <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registerd with each team limited to <b>4</b> members.</label>
                 <table class="form-table" division="blue" max-rows="8">
                     <thead>
                         <tr>
@@ -219,7 +220,7 @@ Link with timestamp in url to prevent browser from caching. -->
             </div>
 
             <!--         GOLD DIVISION       -->
-            <h4>Gold Division</h4>
+            <h3>Gold Division</h3>
             <label>Are you bringing teams for the Gold (Scratch) Division?</label>
 
             <label class="switch">
@@ -230,7 +231,8 @@ Link with timestamp in url to prevent browser from caching. -->
                 <label>How many devices can you bring?</label>
                 <input name="gold_devices" type="number" min="0" value="0">
 
-                <label>Teams</label>
+                <h4>Teams</h4>
+                <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registerd with each team limited to <b>3</b> members.</label>
                 <table class="form-table" division="gold" max-rows="8">
                     <thead>
                         <tr>
@@ -266,7 +268,7 @@ Link with timestamp in url to prevent browser from caching. -->
             </div>
 
             <!--         EAGLE DIVISION       -->
-            <h4>Eagle Division</h4>
+            <h3>Eagle Division</h3>
             <label>Are you bringing teams for the Eagle Division?</label>
 
             <label class="switch">
@@ -280,7 +282,8 @@ Link with timestamp in url to prevent browser from caching. -->
                 <label>How many devices can you bring?</label>
                 <input name="eagle_devices" type="number" value="0" min="0">
 
-                <label>Teams</label>
+                <h4>Teams</h4>
+                <label class="sub"><b>Note:</b> A maximum of <b>3</b> teams can be registerd with each team limited to <b>4</b> members.</label>
                 <table class="form-table" division="eagle" max-rows="3">
                     <thead>
                         <tr>

@@ -10,6 +10,12 @@ label {
   margin: 5px;
 }
 
+label.sub {
+  font-size: 14px;
+  font-style: italic;
+  margin: 15px;
+}
+
 .one-line {
   display: inline-block;
 }
