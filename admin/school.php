@@ -128,9 +128,9 @@ function fillInformation(data) {
     }
 
     const mail_link = $("<a/>", {
-        href: `mailto:${event.email}?Subject=ACM%20Programming%20Competition`,
+        href: `mailto:${data.email}?Subject=ACM%20Programming%20Competition`,
         target: "_top",
-        html: data.cname
+        html: data.email
     })
 
     append("School Name", data.sname)
