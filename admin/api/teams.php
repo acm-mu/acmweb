@@ -11,7 +11,7 @@ if (isset($_GET['search']))
     $search = $_GET['search'];
 
 $schoolid = "";
-if (isset($_GET['schoolid']))
+if (isset($_GET['schoolid'])) 
     $schoolid = "school.schoolid=".$_GET['schoolid']." AND";
 
 $sql = "SELECT * FROM"
@@ -24,5 +24,6 @@ $rows = array();
 while($row = $res->fetch_assoc()) {
     $rows[] = $row;
 }
-echo json_encode($rows);
+
+echo json_encode($rows, JSON_NUMERIC_CHECK);
 ?>

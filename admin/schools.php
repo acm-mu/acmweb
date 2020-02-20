@@ -40,14 +40,14 @@ function updateTeams() {
 }
 
 function makeSchoolRow(school) {
-    const time = moment(school.rdate).subtract(6, 'hours').fromNow()
+    const time = moment(school.rdate).fromNow()
     const row = $("<tr>")
-    const a = $("<a/>").attr('href', "/admin/teams?schoolid=" + school.schoolid).html(school.sname)
+    const a = $("<a/>").attr('href', "/admin/school?schoolid=" + school.schoolid).html(school.sname)
 
     row.append($("<td/>").html(a))
     row.append($("<td/>").html(school.cname))
     row.append($("<td/>").html(school.scity))
-    row.append($("<td/>").html(school.teams))
+    row.append($("<td/>").html(school.teams.length))
     row.append($("<td/>").html(time))
 
     return row

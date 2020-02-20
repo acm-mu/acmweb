@@ -21,5 +21,5 @@ $rows = array();
 while($row = $res->fetch_assoc()) {
     $rows[] = $row;
 }
-echo json_encode($rows);
+echo json_encode($rows, JSON_NUMERIC_CHECK);
 ?>
