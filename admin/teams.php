@@ -26,9 +26,12 @@ function makeTeamRow(team) {
     var total = parseInt(team.small) + parseInt(team.medium) + parseInt(team
         .large) + parseInt(team.xlarge) + parseInt(team.xxlarge)
 
-    var time = moment(team.rdate).subtract(6, 'hours').fromNow()
+    var time = moment(team.rdate).fromNow()
 
-    var division = $("<a/>").addClass("ui label")
+    var division = $("<a/>", {
+        class: "ui label",
+        href: `/admin/teams?division=${team.division}`
+    })
     switch (team.division) {
         case 'blue':
             division.addClass("blue").html("Blue")
@@ -40,11 +43,15 @@ function makeTeamRow(team) {
             division.addClass("teal").html("Eagle")
             break
     }
+    const school_link = $("<a/>", {
+        href: `/admin/school?schoolid=${team.schoolid}`,
+        html: team.sname
+    })
 
     var row = $("<tr/>")
     row.append($("<td/>").html(team.tname))
     row.append($("<td/>").html(division))
-    row.append($("<td/>").html(team.sname))
+    row.append($("<td/>").html(school_link))
     row.append($("<td/>").html(team.scity))
     row.append($("<td/>").append(total))
     row.append($("<td/>").html(time))

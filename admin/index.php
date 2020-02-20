@@ -18,7 +18,7 @@ function makeEvent(event) {
         html: event.cname
     })
     const school_link = $("<a/>", {
-        href: `/admin/teams?schoolid=${event.schoolid}`,
+        href: `/admin/school?schoolid=${event.schoolid}`,
         html: event.sname
     })
 
@@ -32,7 +32,7 @@ function makeEvent(event) {
         "class": "summary"
     }).append(mail_link, " from ", school_link, ` registered ${event.teams} teams.`).append($("<div/>", {
         "class": "date"
-    }).html(m.subtract(6, 'hours').fromNow()))))
+    }).html(m.fromNow()))))
 
 }
 

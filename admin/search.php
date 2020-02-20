@@ -27,7 +27,7 @@ function makeTeamRow(team) {
     var total = parseInt(team.small) + parseInt(team.medium) + parseInt(team
         .large) + parseInt(team.xlarge) + parseInt(team.xxlarge)
 
-    var time = moment(team.rdate).subtract(6, 'hours').fromNow()
+    var time = moment(team.rdate).fromNow()
 
     var division = $("<a/>").addClass("ui label")
     switch (team.division) {

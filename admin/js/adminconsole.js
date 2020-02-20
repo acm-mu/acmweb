@@ -31,5 +31,7 @@ $(document).ready(function() {
   else page = url.substr(sIndex, url.length - sIndex);
   if (page.length == 0) page = "index";
 
-  $(".item#" + page).addClass("active");
+  $(`.item#${page}_nav`).addClass("active");
+
+  $(document).on("click", "th[col]", function() {});
 });
