@@ -127,10 +127,16 @@ function fillInformation(data) {
         if (data[size[0]] > 0) shirts += data[size[0]] + size[1] + " ";
     }
 
+    const mail_link = $("<a/>", {
+        href: `mailto:${event.email}?Subject=ACM%20Programming%20Competition`,
+        target: "_top",
+        html: data.cname
+    })
+
     append("School Name", data.sname)
     append("Coach Name", data.cname)
     append("Address Line 1", data.saddl1)
-    append("Coach Email", data.email)
+    append("Coach Email", mail_link)
     if (data.saddl2 != "")
         append("Address Line 2", data.saddl2)
     append("Coach Phone", phone(data.phone))
