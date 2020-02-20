@@ -29,7 +29,10 @@ function makeTeamRow(team) {
 
     var time = moment(team.rdate).fromNow()
 
-    var division = $("<a/>").addClass("ui label")
+    var division = $("<a/>", {
+        class: "ui label",
+        href: `/admin/teams?division=${team.division}`
+    })
     switch (team.division) {
         case 'blue':
             division.addClass("blue").html("Blue")

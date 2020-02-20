@@ -10,13 +10,16 @@ $search = "";
 if (isset($_GET['search']))
     $search = $_GET['search'];
 
-$schoolid = "";
+$where = "";
 if (isset($_GET['schoolid'])) 
-    $schoolid = "school.schoolid=".$_GET['schoolid']." AND";
+    $where = "school.schoolid=".$_GET['schoolid']." AND";
+
+if (isset($_GET['division']))
+    $where = "team.division='".$_GET["division"]."' AND";
 
 $sql = "SELECT * FROM"
 . " team INNER JOIN school ON team.schoolid = school.schoolid"
-. " WHERE $schoolid (school.sname LIKE '%$search%' OR team.tname LIKE '%$search%' OR school.scity LIKE '%$search%')"
+. " WHERE $where (school.sname LIKE '%$search%' OR team.tname LIKE '%$search%' OR school.scity LIKE '%$search%')"
 . " ORDER BY rdate DESC";
 
 $res = $mysql->query($sql);

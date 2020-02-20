@@ -18,63 +18,82 @@ if (!loggedin()) {
 <div class="ui grid">
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <div class="statistic">
-                <div class="value" id="schools">0</div>
-                <div class="label">Schools</div>
-            </div>
-            <div class="statistic">
-                <div class="value" id="coaches">0</div>
-                <div class="label">Coaches</div>
-            </div>
+            <a>
+                <div class="statistic">
+                    <div class="value" id="schools">0</div>
+                    <div class="label">Schools</div>
+                </div>
+            </a><a>
+                <div class="statistic">
+                    <div class="value" id="coaches">0</div>
+                    <div class="label">Coaches</div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <div class="statistic">
-                <div class="value" id="teams">0</div>
-                <div class="label">Teams</div>
-            </div>
-            <div class="statistic">
-                <div class="value" id="students">0</div>
-                <div class="label">Students</div>
-            </div>
+            <a>
+                <div class="statistic">
+                    <div class="value" id="teams">0</div>
+                    <div class="label">Teams</div>
+                </div>
+            </a>
+            <a>
+                <div class="statistic">
+                    <div class="value" id="students">0</div>
+                    <div class="label">Students</div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <div class="blue statistic">
-                <div class="value" id="blue_teams">0</div>
-                <div class="label">Teams</div>
-            </div>
-            <div class="blue statistic">
-                <div class="value" id="blue_students">0</div>
-                <div class="label">Students</div>
-            </div>
+            <a href='/admin/teams?division=blue'>
+                <div class="blue statistic">
+                    <div class="value" id="blue_teams">0</div>
+                    <div class="label">Teams</div>
+                </div>
+            </a>
+            <a>
+                <div class="blue statistic">
+                    <div class="value" id="blue_students">0</div>
+                    <div class="label">Students</div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <div class="yellow statistic">
-                <div class="value" id="gold_teams">0</div>
-                <div class="label">Teams</div>
-            </div>
-            <div class="yellow statistic">
-                <div class="value" id="gold_students">0</div>
-                <div class="label">Students</div>
-            </div>
+            <a href='/admin/teams?division=gold'>
+                <div class="yellow statistic">
+                    <div class="value" id="gold_teams">0</div>
+                    <div class="label">Teams</div>
+                </div>
+            </a>
+            <a>
+                <div class="yellow statistic">
+                    <div class="value" id="gold_students">0</div>
+                    <div class="label">Students</div>
+                </div>
+            </a>
         </div>
     </div>
 
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <div class="teal statistic">
-                <div class="value" id="eagle_teams">0</div>
-                <div class="label">Teams</div>
-            </div>
-            <div class="teal statistic">
-                <div class="value" id="eagle_students">0</div>
-                <div class="label">Students</div>
-            </div>
+            <a href='/admin/teams?division=eagle'>
+                <div class="teal statistic">
+                    <div class="value" id="eagle_teams">0</div>
+                    <div class="label">Teams</div>
+                </div>
+            </a>
+            <a>
+                <div class="teal statistic">
+                    <div class="value" id="eagle_students">0</div>
+                    <div class="label">Students</div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
