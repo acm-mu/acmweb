@@ -14,6 +14,7 @@ if (isset($_GET['search'])) {
 $sql = "SELECT *, (SELECT COUNT(*) FROM team WHERE team.schoolid = school.schoolid) AS teams"
 . " FROM school INNER JOIN coach" 
 . " ON school.schoolid = coach.schoolid"
+. " INNER JOIN details ON school.schoolid = details.schoolid"
 . " WHERE school.sname LIKE '%$search%' OR school.scity LIKE '%$search%' OR coach.cname LIKE '%$search%'"
 . " ORDER BY school.rdate DESC";
 
