@@ -113,6 +113,9 @@ if (!loggedin()) {
     <a class="item" id="accommodations_nav" href="/admin/accommodations">
         Accomm. / Concerns
     </a>
+    <a class="item" id="shirts_nav" href="/admin/shirts">
+        Shirts
+    </a>
     <div class="right menu">
         <div class="item">
             <form class="ui transparent icon input" action="/admin/search.php" method="GET">
