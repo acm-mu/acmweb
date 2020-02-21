@@ -30,9 +30,10 @@ function makeEvent(event) {
         "class": "content"
     }).append($("<div/>", {
         "class": "summary"
-    }).append(mail_link, " from ", school_link, ` registered ${event.teams} teams.`).append($("<div/>", {
-        "class": "date"
-    }).html(m.fromNow()))))
+    }).append(mail_link, " from ", school_link, ` registered ${event.teams.length} teams.`).append($(
+        "<div/>", {
+            "class": "date"
+        }).html(m.fromNow()))))
 
 }
 
