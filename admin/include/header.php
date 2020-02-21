@@ -11,6 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 
 <?php
 if (!loggedin()) {
+    $_SESSION['HREF_LR'] = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     require_once "login.php";
     exit();
 }
