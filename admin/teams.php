@@ -71,8 +71,6 @@ function updateTeams() {
 
     url = 'api/teams?' + args.join("&")
 
-    console.log(url)
-
     $.ajax(url, {
         success: function(data) {
             var jsonData = JSON.parse(data)
