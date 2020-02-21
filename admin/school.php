@@ -144,6 +144,7 @@ function fillInformation(data) {
         append("Address Line 2", data.saddl2)
     append("Coach Phone", phone(data.phone))
     append("School City", data.scity)
+    append("School Zip", data.szip)
     append("Coach Shirts", shirts)
     if (data.accommodations != "")
         append("Accommodations", data.accommodations)
