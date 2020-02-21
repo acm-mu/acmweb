@@ -12,8 +12,14 @@ $(document).ready(function() {
 })
 
 function makePost(school) {
-
     const m = moment(school.rdate)
+
+    const mail_link = $("<a/>", {
+        href: `mailto:${school.email}?Subject=ACM%20Programming%20Competition`,
+        target: "_top",
+        html: school.cname
+    })
+
     const school_link = $("<a/>", {
         href: `/admin/school?schoolid=${school.schoolid}`,
         html: school.sname
@@ -25,7 +31,8 @@ function makePost(school) {
         "class": "content"
     }).append($("<div/>", {
             "class": "summary"
-        }).append(school_link, " said").append($("<div/>", {
+        }).append(mail_link, " from ", school_link, " said")
+        .append($("<div/>", {
             "class": "date"
         }).html(m.fromNow())),
         $("<div/>", {
