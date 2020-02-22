@@ -131,7 +131,7 @@ function fillInformation(data) {
     }
 
     const mail_link = $("<a/>", {
-        href: `mailto:${data.email}?Subject=ACM%20Programming%20Competition`,
+        href: `mailto:${data.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`,
         target: "_top",
         html: data.email
     })

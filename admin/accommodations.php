@@ -15,7 +15,7 @@ function makePost(school) {
     const m = moment(school.rdate)
 
     const mail_link = $("<a/>", {
-        href: `mailto:${school.email}?Subject=ACM%20Programming%20Competition`,
+        href: `mailto:${school.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`,
         target: "_top",
         html: school.cname
     })

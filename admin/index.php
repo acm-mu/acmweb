@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 function makeEvent(event) {
     const mail_link = $("<a/>", {
-        href: `mailto:${event.email}?Subject=ACM%20Programming%20Competition`,
+        href: `mailto:${event.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`,
         target: "_top",
         html: event.cname
     })
