@@ -32,7 +32,7 @@ echo "<title>$website - Subscribe</title>";
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                     name="b_9fa8d85050948a789c7b95129_a717949fca" tabindex="-1" value=""></div>
             <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                    class="curved button" disabled></div>
+                    class="curved button"></div>
         </div>
     </form>
 </div>
