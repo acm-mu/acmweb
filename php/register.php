@@ -17,8 +17,9 @@ $saddl2 = addslashes($_POST['saddl2']);
 $scity = addslashes($_POST['scity']);
 $sstate = "WI";
 $szip = $_POST['szip'];
+$ip = $_SERVER['REMOTE_ADDR'];
 
-$sql_school = "INSERT INTO school(sname, saddl1, saddl2, scity, sstate, szip) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip')";
+$sql_school = "INSERT INTO school(sname, saddl1, saddl2, scity, sstate, szip, ip) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip', INET_ATON('$ip'))";
 $mysql->query($sql_school);
 
 $schoolid = $mysql->insert_id;
