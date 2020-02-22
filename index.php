@@ -1,4 +1,7 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
+<?php 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
+echo "<title>$website</title>";
+?>
 
 <h1 class="title" page="home" id="bash">ACM@MU</h1>
 

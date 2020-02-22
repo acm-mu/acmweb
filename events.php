@@ -1,4 +1,7 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
+echo "<title>$website - Events</title>"; 
+?>
 
 <!-- DEVELOPMENT PURPOSES: 
 Link with timestamp in url to prevent browser from caching. -->
