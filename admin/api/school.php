@@ -14,7 +14,7 @@ if(!isset($_GET['schoolid'])) {
 $schoolid = $_GET['schoolid'];
 
     
-$sql = "SELECT *, (SELECT COUNT(*) FROM team WHERE team.schoolid = school.schoolid) AS numteams"
+$sql = "SELECT *, INET_NTOA(school.ip) AS school_ip"
 . " FROM school INNER JOIN coach ON school.schoolid = coach.schoolid"
 . " INNER JOIN details ON school.schoolid = details.schoolid"
 . " WHERE school.schoolid=$schoolid";

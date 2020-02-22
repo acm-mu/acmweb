@@ -151,6 +151,7 @@ function fillInformation(data) {
     if (data.concerns != "")
         append("Concerns", data.concerns)
     append("Registration Date", moment(data.rdate).fromNow())
+    append("Registration IP", data.school_ip)
 
     if (data.blue == "1") {
         if (java != "")
