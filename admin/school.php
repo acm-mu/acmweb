@@ -176,6 +176,8 @@ function fillInformation(data) {
         append("Eagle Platform", data.eagle_platform)
     }
 
+    append("Billing", `<a href='/admin/invoice?schoolid=${data.schoolid}'>View Invoice</a>`)
+
     for (const team of data.teams)
         $("#teams tbody").append(makeTeamRow(team))
 }
