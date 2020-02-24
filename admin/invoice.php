@@ -18,20 +18,8 @@ $sql = "SELECT school.*, cname," .
     
 
 $res = $mysql->query($sql);
-$rows = $res->fetch_assoc();
+$data = $res->fetch_assoc();
 
-$data = array(
-    "sname" => "Baraboo High School",
-    "cname" => "Daniel Rhode",
-    "saddl1" => "1201 Draper St",
-    "saddl2" => "",
-    "scity" => "Baraboo",
-    "szip" => "53913",
-    "blue" => 4,
-    "gold" => 2,
-    "eagle" => 3  
-);
-
-$invoice = new Invoice($rows);
+$invoice = new Invoice($data);
 $invoice->Output();
 ?>
