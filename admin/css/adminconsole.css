@@ -22,3 +22,7 @@ form.login input[type="submit"] {
 .ui.feed#feed > .event > .content .summary {
   font-weight: normal;
 }
+
+#schoolinfo td.value {
+  max-width: 200px;
+}
