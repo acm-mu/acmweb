@@ -116,8 +116,17 @@ function fillInformation(data) {
         ["java_notepad", "Notepad"]
     ]
 
-    const python = (python_ides.filter((ide) => data[ide[0]] == "1")).map(x => x[1]).join(", ")
-    const java = (java_ides.filter((ide) => data[ide[0]] == "1")).map(x => x[1]).join(", ")
+    var python = python_ides.filter((ide) => data[ide[0]] == "1")
+    python = python.map(x => x[1])
+    if (data['python_other'] != "")
+        python.push(data["python_other"])
+    python = python.join(", ")
+
+    var java = java_ides.filter((ide) => data[ide[0]] == "1")
+    java = java.map(x => x[1])
+    if (data['java_other'] != "")
+        java.push(data["java_other"])
+    java = java.join(", ")
 
     var shirts = "";
     for (const size of [
