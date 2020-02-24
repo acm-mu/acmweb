@@ -103,7 +103,7 @@ class Invoice extends FPDF {
         $this->MultiCell(0, 5, "Best Regards,");
         $this->Ln(3);
         $this->SetX(90);
-        $this->MultiCell(0, 5, "Dennis W. Brylow, Ph. D");
+        $this->MultiCell(0, 5, "Dennis W. Brylow, Ph.D");
         
         $this->Ln(18);
         $this->Write(5, "Please make payment to ", 0, 0);
