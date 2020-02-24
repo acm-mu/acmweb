@@ -19,7 +19,7 @@ if (!loggedin()) {
 <div class="ui grid">
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <a>
+            <a href='/admin/schools'>
                 <div class="statistic">
                     <div class="value" id="schools">0</div>
                     <div class="label">Schools</div>
@@ -34,7 +34,7 @@ if (!loggedin()) {
     </div>
     <div class="three wide column">
         <div class="ui horizontal tiny statistics">
-            <a>
+            <a href='/admin/teams'>
                 <div class="statistic">
                     <div class="value" id="teams">0</div>
                     <div class="label">Teams</div>
