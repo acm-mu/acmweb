@@ -18,6 +18,8 @@ Link with timestamp in url to prevent browser from caching. -->
                 2018</option>
             <option <?php if(strpos($_SERVER['REQUEST_URI'], '2017')) echo "selected" ?> value='/archive/2017/q1.php'>
                 2017</option>
+            <option <?php if(strpos($_SERVER['REQUEST_URI'], '2016')) echo "selected" ?> value='/archive/2016/q1.php'>
+                2016</option>
             <option <?php if(strpos($_SERVER['REQUEST_URI'], '2013')) echo "selected" ?> value='/archive/2013/q1.php'>
                 2013</option>
         </select>
