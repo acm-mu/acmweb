@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
     <script src="/js/header.js?<?php echo date('l jS \of F Y h:i:s A');?>"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158210865-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158210865-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -24,7 +24,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
     gtag('js', new Date());
 
     gtag('config', 'UA-158210865-1');
-    </script>-->
+    </script>
 </head>
 
 <body>
