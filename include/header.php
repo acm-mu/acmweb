@@ -27,7 +27,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
     </script>-->
 </head>
 
-<body>
+<body class="dark">
 
     <div id='navbar'>
         <img src='/assets/acmmu.png'>

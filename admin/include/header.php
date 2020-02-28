@@ -23,7 +23,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a href='/admin/schools'>
-                    <div class="statistic">
+                    <div class="ui statistic">
                         <div class="value" id="schools">0</div>
                         <div class="label">Schools</div>
                     </div>
@@ -33,7 +33,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a href='/admin/teams'>
-                    <div class="statistic">
+                    <div class="ui statistic">
                         <div class="value" id="teams">0</div>
                         <div class="label">Teams</div>
                     </div>
@@ -43,7 +43,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a href='/admin/teams?division=blue'>
-                    <div class="blue statistic">
+                    <div class="ui blue statistic">
                         <div class="value" id="blue_teams">0</div>
                         <div class="label">Teams</div>
                     </div>
@@ -53,7 +53,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a href='/admin/teams?division=gold'>
-                    <div class="yellow statistic">
+                    <div class="ui yellow statistic">
                         <div class="value" id="gold_teams">0</div>
                         <div class="label">Teams</div>
                     </div>
@@ -63,7 +63,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a href='/admin/teams?division=eagle'>
-                    <div class="teal statistic">
+                    <div class="ui teal statistic">
                         <div class="value" id="eagle_teams">0</div>
                         <div class="label">Teams</div>
                     </div>
@@ -76,7 +76,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a>
-                    <div class="statistic">
+                    <div class="ui statistic">
                         <div class="value" id="coaches">0</div>
                         <div class="label">Coaches</div>
                     </div>
@@ -86,7 +86,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a>
-                    <div class="statistic">
+                    <div class="ui statistic">
                         <div class="value" id="students">0</div>
                         <div class="label">Students</div>
                     </div>
@@ -96,7 +96,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a>
-                    <div class="blue statistic">
+                    <div class="ui blue statistic">
                         <div class="value" id="blue_students">0</div>
                         <div class="label">Students</div>
                     </div>
@@ -106,7 +106,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a>
-                    <div class="yellow statistic">
+                    <div class="ui yellow statistic">
                         <div class="value" id="gold_students">0</div>
                         <div class="label">Students</div>
                     </div>
@@ -116,7 +116,7 @@ if (!loggedin()) {
         <div class="two wide column">
             <div class="ui tiny statistics">
                 <a>
-                    <div class="teal statistic">
+                    <div class="ui teal statistic">
                         <div class="value" id="eagle_students">0</div>
                         <div class="label">Students</div>
                     </div>

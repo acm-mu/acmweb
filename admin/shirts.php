@@ -5,23 +5,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
 
 <h3>Student Shirts</h3>
 <div class="ui statistics" id="students">
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">Small</div>
         <div class="value small">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">Medium</div>
         <div class="value medium">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">Large</div>
         <div class="value large">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">X-Large</div>
         <div class="value xlarge">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">XX-Large</div>
         <div class="value xxlarge">0</div>
     </div>
@@ -29,23 +29,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
 
 <h3>Coach Shirts</h3>
 <div class="ui statistics" id="coaches">
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">Small</div>
         <div class="value small">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">Medium</div>
         <div class="value medium">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">Large</div>
         <div class="value large">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">X-Large</div>
         <div class="value xlarge">0</div>
     </div>
-    <div class="statistic">
+    <div class="ui statistic">
         <div class="label">XX-Large</div>
         <div class="value xxlarge">0</div>
     </div>
@@ -56,7 +56,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
 $(document).ready(function() {
     updateShirts()
 })
-
 
 function updateShirts() {
 

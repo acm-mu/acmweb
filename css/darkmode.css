@@ -1,0 +1,288 @@
+/**
+    Global
+**/
+
+body.dark {
+  background: #1f1f1f;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5 {
+  color: white;
+}
+
+.dark h1.title:after {
+  background-color: #444;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark b {
+  color: #fff;
+}
+
+.dark p,
+.dark li {
+  color: #aaa;
+}
+
+.dark code {
+  color: #bf616a;
+  background: #f9f9f9;
+}
+
+.dark pre {
+  background: #f9f9f9;
+}
+
+/** 
+    Breadcrumb
+**/
+.dark ul.breadcrumb {
+  background-color: #eee;
+}
+
+.dark ul.breadcrumb li+li:before {
+  color: #000;
+}
+
+/**
+    navbar
+**/
+.dark #navbar {
+  border-bottom: none;
+  box-shadow: none;
+  background: #282828;
+}
+
+.dark #navbar li {
+  color: white;
+  box-shadow: none;
+}
+
+.dark #navbar li:before {
+  background: #eee;
+}
+
+/** 
+    form
+**/
+.dark label,
+.dark th {
+  color: #737373;
+}
+
+.dark input,
+.dark textarea,
+.dark select.custom-select {
+  background: #121212;
+  color: #aaa;
+}
+
+.dark b.req {
+  color: red;
+}
+
+.dark input:disabled {
+  color: #999;
+}
+
+.dark input:disabled:hover,
+.dark input:disabled:focus {
+  background: #eee;
+}
+
+.dark input:focus,
+.dark button:focus {
+  background: #2c2c2c;
+  color: #aaa;
+}
+
+.dark input:hover {
+  background: #2c2c2c;
+}
+
+.dark button:hover {
+  background: #e7e7e7;
+}
+
+/** 
+    Select
+**/
+.dark select.custom-select {
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #eee;
+}
+
+.dark select.custom-select:hover {
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #e7e7e7;
+}
+
+.dark select.custom-select:focus {
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #ddd;
+}
+
+.dark .checkmark {
+  background: #eee;
+}
+
+.dark .checkbox-container input~.checkmark {
+  background-color: #ccc;
+}
+
+.dark .checkbox-container input:checked~.checkmark {
+  background-color: #79bf5d;
+}
+
+.dark .checkbox-container .checkmark:after {
+  border: solid white;
+}
+
+.dark .slider {
+  background-color: #ccc;
+}
+
+.dark .slider:before {
+  background-color: white;
+}
+
+.dark input:checked+.slider {
+  background-color: #79bf5d;
+}
+
+.dark .form-table button {
+  background: #eee;
+  color: #666;
+}
+
+.dark .form-table input {
+  background: #eee;
+}
+
+.dark .swal2-custom-popup {
+  font-family: Trebuchet, Arial, sans-serif;
+}
+
+.dark .swal2-custom-icon {
+  color: #036 !important;
+  border-color: #036 !important;
+}
+
+.dark .swal2-custom-confirm {
+  background-color: #036 !important;
+}
+
+.dark .swal2-custom-cancel {
+  background-color: #969696 !important;
+}
+
+.dark .swal2-custom-title {
+  color: #036 !important;
+}
+
+.dark .swal2-custom-content {
+  color: #969696 !important;
+}
+
+/** 
+    Footer
+**/
+
+.dark #footer {
+  background: #282828;
+}
+
+.dark #social-links li {
+  color: #eee;
+}
+
+.dark #social-links li:hover {
+  color: #888;
+}
+
+/** 
+    Events
+**/
+.dark .event {
+  border-bottom: 1px solid #ccc;
+}
+
+.dark .event .date .month {
+  color: #ff2852;
+}
+
+.dark .event .date .day {
+  color: white;
+}
+
+.dark .event .details .title {
+  color: rgb(32, 132, 233);
+}
+
+.dark .event .details .desc {
+  color: white;
+}
+
+.dark .event.passed .date .month,
+.dark .event.passed .date .day,
+.dark .event.passed .details .title,
+.dark .event.passed .details .desc,
+.dark .event.passed .details .desc a {
+  color: #bbb;
+}
+
+/**
+    Confirmation
+**/
+
+.dark #conf td,
+.dark #conf th {
+  border: 1px solid #ddd;
+}
+
+.dark #conf tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dark #conf th {
+  background-color: #036;
+  color: white;
+}
+
+/**
+    Competition
+**/
+.dark button {
+  color: #4185d3;
+  border: 2px #4185d3 solid;
+}
+
+.dark button.active {
+  background: #4185d3;
+}
+
+.dark button:before {
+  background: #4185d3;
+}
+
+.dark button.java:hover,
+.dark button.register:hover {
+  color: white;
+}
+
+.dark button.java:before,
+.dark button.register:before {
+  background: #4185d3;
+}
+
+.dark button.scratch:after {
+  background: #d19b26;
+}
+
+.dark button.scratch:hover {
+  color: white;
+}

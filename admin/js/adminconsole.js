@@ -26,7 +26,7 @@ function setTitle(page) {
   document.title = title;
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Set Active Page
   const url = window.location.href;
   const sIndex = url.indexOf("/admin/") + 7;
@@ -42,5 +42,11 @@ $(document).ready(function() {
 
   $(`.item#${page}_nav`).addClass("active");
 
-  $(document).on("click", "th[col]", function() {});
+  $(document).on("click", "th[col]", function () {});
+
+  if ($('body').hasClass("dark")) {
+    $(".ui.statistic").addClass("inverted");
+    $(".ui.menu").addClass("inverted");
+    $(".ui.table").addClass("inverted");
+  }
 });
