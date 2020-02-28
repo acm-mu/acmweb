@@ -15,11 +15,11 @@ $sql = "SELECT school.*, cname," .
     "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='eagle') AS eagle " .
     "FROM school INNER JOIN coach ON school.schoolid = coach.schoolid " .
     "WHERE school.schoolid=$schoolid";
-    
+
 
 $res = $mysql->query($sql);
 $data = $res->fetch_assoc();
 
 $invoice = new Invoice($data);
-$invoice->Output();
+$invoice->Output('I', $data['sname'].".pdf");
 ?>
