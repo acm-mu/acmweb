@@ -8,7 +8,7 @@ Link with timestamp in url to prevent browser from caching. -->
         <img class='acmlogo' src='/assets/acmlogo.png'>
     </a>
     <ul id='social-links'>
-        <a target='_blank' href='https://github.com/acmmu'>
+        <a target='_blank' href='https://github.com/acm-mu'>
             <li><img src='/assets/github.png'></li>
         </a>
         <a target='_blank' href='https://twitter.com/acmmu_'>
