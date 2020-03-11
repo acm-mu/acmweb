@@ -5,9 +5,10 @@
 .sidebar {
   background: #222;
   width: 13%;
-  height: 95%;
+  height: calc(100% - 60px);
   position: relative;
   float: left;
+  overflow-y: auto;
 }
 
 .select-year {
@@ -78,10 +79,12 @@ select.select-css {
   height: 90%;
   overflow-y: scroll;
 }
+
 html,
 body {
   overflow: hidden;
 }
+
 .container {
   padding: 0;
   margin-top: 60;
@@ -146,6 +149,7 @@ button:active:before {
 button:hover {
   cursor: pointer;
 }
+
 button:focus {
   outline: none;
 }
