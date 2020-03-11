@@ -19,10 +19,14 @@ form.login input[type="submit"] {
   margin: 15px;
 }
 
-.ui.feed#feed > .event > .content .summary {
+.ui.feed#feed>.event>.content .summary {
   font-weight: normal;
 }
 
 #schoolinfo td.value {
   max-width: 200px;
+}
+
+.event .content {
+  width: 100%;
 }

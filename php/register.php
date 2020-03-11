@@ -31,6 +31,13 @@ $mysql->query($sql_school);
 $schoolid = $mysql->insert_id;
 
 /*************************************
+ *           invoice table            *
+ ************************************/
+
+ $sql_invoice = "INSERT INTO invoice(schoolid) VALUES ('$schoolid')";
+ $mysql->query($sql_invoice);
+
+/*************************************
  *            coach table            *
  ************************************/
 
