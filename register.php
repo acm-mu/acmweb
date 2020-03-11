@@ -6,7 +6,6 @@ echo "<title>$website - Register</title>";
 <!-- DEVELOPMENT PURPOSES: 
 Link with timestamp in url to prevent browser from caching. -->
 <link rel="stylesheet" type="text/css" href="/css/form.css?<?php echo date("l jS \of F Y h:i:s A");?>">
-<script src="/lib/sweetalert2.min.js"></script>
 <script src="/js/form.js?<?php echo date("l jS \of F Y h:i:s A");?>"></script>
 
 <form action="/php/register.php" method="POST" id="registerform">
