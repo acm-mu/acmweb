@@ -15,10 +15,12 @@ $sql = "SELECT *, (SELECT COUNT(*) FROM team WHERE team.schoolid = school.school
 . " FROM school INNER JOIN coach" 
 . " ON school.schoolid = coach.schoolid"
 . " INNER JOIN details ON school.schoolid = details.schoolid"
+. " INNER JOIN invoice ON school.schoolid = invoice.schoolid"
 . " WHERE school.sname LIKE '%$search%' OR school.scity LIKE '%$search%' OR coach.cname LIKE '%$search%'"
 . " ORDER BY school.rdate DESC";
 
 $res = $mysql->query($sql);
+
 $rows = array();
 while($row = $res->fetch_assoc()) {
     $row['teams'] = array();
