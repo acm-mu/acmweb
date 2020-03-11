@@ -27,7 +27,6 @@ $(document).ready(function() {
 function sentInvoice() {
     $(this).addClass("loading")
     const schoolid = $(this).attr('schoolid')
-    console.log("Sent invoice for " + schoolid)
     $.ajax(`/admin/php/update?schoolid=${schoolid}&key=datesent`, {
         success: updateTeams, 
         error: function() {
@@ -109,11 +108,12 @@ function makeSchoolRow(school) {
 
     var datesent;
     if (school.datesent != null) {
+        const time = moment(school.datesent)
         datesent = $("<button/>", {
             class: "ui compact blue button sentInvoice",
             style: "width: 85%",
             schoolid: school.schoolid
-        }).append("Sent")
+        }).append(time.format('MM/DD'))
     } else { 
         datesent = $("<button/>", {
             class: "ui compact labeled icon blue basic button sentInvoice",
@@ -127,11 +127,12 @@ function makeSchoolRow(school) {
 
     var datepaid; 
     if (school.datepaid != null) {
+        const time = moment(school.datepaid)
         datepaid = $("<button/>", {
             class: "ui compact green button paidInvoice",
             style: "width: 85%",
             schoolid: school.schoolid
-        }).append("Paid")
+        }).append(time.format('MM/DD'))
     } else {
         datepaid = $("<button/>", {
             class: "ui compact labeled icon green basic button paidInvoice",
