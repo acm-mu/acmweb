@@ -7,16 +7,22 @@ function post_get($key, $default) {
     return $default;
 }
 
+function validate($key) {
+    if (isset($_POST[$key]))
+        return addslashes($_POST[$key]);
+    exit();
+}
+
 /*************************************
  *           school table            *
  ************************************/
 
-$sname = addslashes($_POST['sname']);
-$saddl1 = addslashes($_POST['saddl1']);
-$saddl2 = addslashes($_POST['saddl2']);
-$scity = addslashes($_POST['scity']);
+$sname = validate('sname');
+$saddl1 = validate('saddl1');
+$saddl2 = validate('saddl2');
+$scity = validate('scity');
 $sstate = "WI";
-$szip = $_POST['szip'];
+$szip = validate('szip');
 $ip = $_SERVER['REMOTE_ADDR'];
 
 $sql_school = "INSERT INTO school(sname, saddl1, saddl2, scity, sstate, szip, ip) VALUES ('$sname', '$saddl1', '$saddl2', '$scity', '$sstate', '$szip', INET_ATON('$ip'))";
@@ -28,11 +34,11 @@ $schoolid = $mysql->insert_id;
  *            coach table            *
  ************************************/
 
-$cname = addslashes($_POST['cname']);
-$email = addslashes($_POST['email']);
-$phone = addslashes($_POST['phone']);
+$cname = validate('cname');
+$email = validate('email');
+$phone = validate('phone');
 
-$coach_shirt = $_POST['coach_shirt'];
+$coach_shirt = validate('coach_shirt');
 
 $small = $coach_shirt == "small" ? 1 : 0;
 $medium = $coach_shirt == "medium" ? 1 : 0;
@@ -138,7 +144,7 @@ if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special
     $accommodations = addslashes(post_get("special_accommodations", NULL));
 }
 
-$concerns = addslashes($_POST["concerns"]);
+$concerns = validate("concerns");
 
 $sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, gold_devices, blue, java_eclipse, java_netbeans, java_bluej, java_jgrasp, java_notepad, java_other, python_idle, python_pycharm, python_notepad, python_other, accommodations, concerns, schoolid) VALUES ($eagle, $eagle_devices, '$eagle_platform', $gold, $gold_devices, $blue, $java_eclipse, $java_netbeans, $java_bluej, $java_jgrasp, $java_notepad, '$java_other', $python_idle, $python_pycharm, $python_notepad, '$python_other', '$accommodations', '$concerns', $schoolid)";
 

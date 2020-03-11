@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
 ?>
 
 <div class="ui large feed" id="feed">
-    <h4 class="ui header">Recent Activity</h4>
+    <h4 class="ui header">Accommodations and Concerns</h4>
 </div>
 
 <script>
