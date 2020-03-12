@@ -65,13 +65,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, please!'
         }).then((result) => {
-            $(this).addClass("loading")
-            $.ajax(`/admin/php/update?schoolid=${schoolid}&key=datepaid`, {
-                success: updateTeams,
-                error: function () {
-                    console.error("An error has occurred updating the school's invoice (233)");
-                }
-            })
+            if (result.value) {
+                $(this).addClass("loading")
+                $.ajax(`/admin/php/update?schoolid=${schoolid}&key=datepaid`, {
+                    success: updateTeams,
+                    error: function () {
+                        console.error("An error has occurred updating the school's invoice (233)");
+                    }
+                })
+            }
         })
     }
 
