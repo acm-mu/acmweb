@@ -24,6 +24,7 @@ body {
   width: 60%;
   min-height: 90%;
   padding: 30px 0;
+  color: #21272d;
 }
 
 h1,
@@ -67,7 +68,7 @@ b {
 p,
 li {
   font-family: "Open Sans";
-  color: #21272d;
+  color: inherit;
   font-size: 18px;
   line-height: 27px;
 }

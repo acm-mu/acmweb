@@ -1,11 +1,6 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
-echo "<title>$website - Events</title>"; 
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
-<!-- DEVELOPMENT PURPOSES: 
-Link with timestamp in url to prevent browser from caching. -->
-<link rel="stylesheet" type="text/css" href="/css/events.css?<?php echo date('l jS \of F Y h:i:s A');?>">
+<link rel="stylesheet" type="text/css" href="/css/events.css>">
 
 <h1 class="title" page="events"> Events </h1>
 

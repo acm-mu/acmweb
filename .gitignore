@@ -2,5 +2,5 @@
 .well-known
 cgi-bin
 error_log
-include/connection.php
+include/mysql.php
 .DS_Store

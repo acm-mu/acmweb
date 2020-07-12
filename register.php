@@ -1,12 +1,7 @@
-<?php
-require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php"; 
-echo "<title>$website - Register</title>";
-?>
+<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php"; ?>
 
-<!-- DEVELOPMENT PURPOSES: 
-Link with timestamp in url to prevent browser from caching. -->
-<link rel="stylesheet" type="text/css" href="/css/form.css?<?php echo date("l jS \of F Y h:i:s A");?>">
-<script src="/js/form.js?<?php echo date("l jS \of F Y h:i:s A");?>"></script>
+<link rel="stylesheet" type="text/css" href="/css/form.css">
+<script src="/js/form.js"></script>
 
 <form action="/php/register.php" method="POST" id="registerform">
     <h1>2020 Wisconsin-Dairyland Programming Competition Registration</h1>

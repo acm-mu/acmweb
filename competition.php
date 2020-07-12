@@ -1,10 +1,6 @@
-<?php 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
-echo "<title>$website - Competition</title>";
-?>
-<!-- DEVELOPMENT PURPOSES: 
-Link with timestamp in url to prevent browser from caching. -->
-<link rel="stylesheet" type="text/css" href="/css/competition.css?<?php echo date('l jS \of F Y h:i:s A');?>">
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
+<link rel="stylesheet" type="text/css" href="/css/competition.css">
+
 <h1 class="title" page="competition">
     2020 Wisconsin-Dairyland Programming Competition
 </h1>

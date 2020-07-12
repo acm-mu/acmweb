@@ -1,7 +1,4 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
-echo "<title>$website - Subscribe</title>";
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
 <h1 class="title" page="subscribe"> Subscribe </h1>
 <link rel="stylesheet" type="text/css" href="/css/form.css">

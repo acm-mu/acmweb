@@ -1,11 +1,6 @@
-<?php 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
-echo "<title>$website - Archive</title>";
-?>
+<?php  require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";  ?>
 
-<!-- DEVELOPMENT PURPOSES: 
-Link with timestamp in url to prevent browser from caching. -->
-<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?<?php echo date('l jS \of F Y h:i:s A');?>">
+<link rel="stylesheet" type="text/css" href="/archive/sidebar.css">
 
 <div class="sidebar">
     <span class='select-year'>

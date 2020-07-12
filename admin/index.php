@@ -1,6 +1,4 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
 
 <div class="ui large feed" id="feed">
     <h4 class="ui header">Recent Activity</h4>

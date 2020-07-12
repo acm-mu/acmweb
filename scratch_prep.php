@@ -1,7 +1,4 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
-echo "<title>$website - Scratch Preparation</title>"; 
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
 <ul class="breadcrumb">
     <li><a href="/">Home</a></li>

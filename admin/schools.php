@@ -1,6 +1,4 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php";
-?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
 
 <table id="schools" class="ui very basic table">
     <thead>

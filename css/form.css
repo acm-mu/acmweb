@@ -73,7 +73,7 @@ button:focus {
   background: #ddd;
 }
 
-.register {
+input[type='submit'] {
   cursor: pointer !important;
   font-size: 20px;
   width: 250px;
@@ -98,7 +98,7 @@ button:focus {
   -webkit-transition: 0.08s ease-in;
 }
 
-.register:hover {
+input[type='submit']:hover {
   color: #fff;
   background: #244770;
 }
