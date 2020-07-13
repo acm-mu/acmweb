@@ -1,5 +1,5 @@
 <pre>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/mysql.php";
 
 function post_get($key, $default) {
     if (array_key_exists($key, $_POST)) 

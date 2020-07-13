@@ -7,4 +7,6 @@
 
 <p>Are you a Marquette ACM Member? <a href="signup">Sign up</a> for a user page.</p>
 
+<?php include_once "comp/member_list.php"; ?>
+
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

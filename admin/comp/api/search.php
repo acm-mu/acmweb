@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/connection.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/mysql.php";
 
 if (!loggedin()) {
     echo json_encode(array("status" => 401, "message" => "You are not authorized to access this page."));

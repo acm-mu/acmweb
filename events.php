@@ -1,6 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
-<link rel="stylesheet" type="text/css" href="/css/events.css>">
+<link rel="stylesheet" type="text/css" href="/css/events.css">
 
 <h1 class="title" page="events"> Events </h1>
 

@@ -20,23 +20,15 @@ function error(message) {
   );
 }
 
-function setTitle(page) {
-  var title = "ACM Admin Console";
-  if (page != "") title += ` - ${page.charAt(0).toUpperCase() + page.slice(1)}`;
-  document.title = title;
-}
-
 $(document).ready(function() {
   // Set Active Page
   const url = window.location.href;
-  const sIndex = url.indexOf("/admin/") + 7;
+  const sIndex = url.indexOf("/admin/comp/") + 12;
   const eIndex = url.indexOf("?");
 
   var page;
   if (eIndex != -1) page = url.substring(sIndex, eIndex);
   else page = url.substr(sIndex, url.length - sIndex);
-
-  setTitle(page);
 
   if (page.length == 0) page = "index";
 

@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php require_once "include/header.php"; ?>
 
 <table id="schoolinfo" class="ui very small basic table">
 </table>
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $("<a/>", {
         class: "item active",
         id: "school",
-        href: "/admin/school?schoolid=" + getUrlParameter('schoolid'),
+        href: "/admin/comp/school?schoolid=" + getUrlParameter('schoolid'),
         html: "School"
     }).insertAfter("#schools_nav")
 })
@@ -37,7 +37,7 @@ function makeTeamRow(team) {
 
     var division = $("<a/>", {
         class: "ui label",
-        href: `/admin/teams?division=${team.division}`
+        href: `/admin/comp/teams?division=${team.division}`
     })
     switch (team.division) {
         case 'blue':
@@ -175,7 +175,7 @@ function fillInformation(data) {
         append("Eagle Platform", data.eagle_platform)
     }
 
-    append("Billing", `<a target='_blank' href='/admin/invoice?schoolid=${data.schoolid}'>View Invoice</a>`)
+    append("Billing", `<a target='_blank' href='/admin/comp/invoice?schoolid=${data.schoolid}'>View Invoice</a>`)
 
     for (const team of data.teams)
         $("#teams tbody").append(makeTeamRow(team))

@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php require_once "include/header.php"; ?>
 
 <table id="teams" class="ui very basic table">
     <thead>
@@ -28,7 +28,7 @@ function makeTeamRow(team) {
 
     var division = $("<a/>", {
         class: "ui label",
-        href: `/admin/teams?division=${team.division}`
+        href: `/admin/comp/teams?division=${team.division}`
     })
     switch (team.division) {
         case 'blue':
@@ -42,7 +42,7 @@ function makeTeamRow(team) {
             break
     }
     const school_link = $("<a/>", {
-        href: `/admin/school?schoolid=${team.schoolid}`,
+        href: `/admin/comp/school?schoolid=${team.schoolid}`,
         html: team.sname
     })
 
@@ -67,7 +67,7 @@ function updateTeams() {
     if (getUrlParameter("division") != undefined)
         args.push("division=" + getUrlParameter("division"))
 
-    url = 'api/teams?' + args.join("&")
+    url = '/admin/comp/api/teams?' + args.join("&")
 
     $.ajax(url, {
         success: function(data) {

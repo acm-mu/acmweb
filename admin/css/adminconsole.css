@@ -1,3 +1,7 @@
+body {
+  margin: 20px !important;
+}
+
 span.error {
   color: red;
 }
@@ -19,14 +23,37 @@ form.login input[type="submit"] {
   margin: 15px;
 }
 
-.ui.feed#feed>.event>.content .summary {
-  font-weight: normal;
-}
-
 #schoolinfo td.value {
   max-width: 200px;
 }
 
 .event .content {
   width: 100%;
+}
+
+.ui.feed#feed>.event>.content .summary {
+  font-weight: normal;
+}
+.ui.feed>.event>.content .extra.text {
+  max-width: none !important;
+  width: 80%;
+}
+
+.ui.feed>.event>.content .extra.text pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ }
+
+.admin_sidebar {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+.admin.panel {
+float: left;
+width: 80%;
 }

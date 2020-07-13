@@ -22,6 +22,8 @@
   </ul>
 </div>
 
+<div class='container'>
+
 <script>
     $(document).ready(() => {
       if ($("h1.title").length) {

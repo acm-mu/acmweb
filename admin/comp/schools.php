@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php require_once "include/header.php"; ?>
 
 <table id="schools" class="ui very basic table">
     <thead>
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 function updateTeams() {
     $("#schools tbody").html("")
-    $.ajax("/admin/api/schools", {
+    $.ajax("/admin/comp/api/schools", {
         success: function(data) {
             var jsonData = JSON.parse(data)
             if (jsonData.length == 0) {
@@ -40,7 +40,7 @@ function updateTeams() {
 function makeSchoolRow(school) {
     const time = moment(school.rdate).fromNow()
     const row = $("<tr>")
-    const a = $("<a/>").attr('href', "/admin/school?schoolid=" + school.schoolid).html(school.sname)
+    const a = $("<a/>").attr('href', "/admin/comp/school?schoolid=" + school.schoolid).html(school.sname)
 
     row.append($("<td/>").html(a))
     row.append($("<td/>").html(school.cname))

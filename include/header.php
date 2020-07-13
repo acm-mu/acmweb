@@ -21,5 +21,3 @@
 
 <body>
     <?php if (!$disable_main_navbar) require_once "mainnavbar.php"; ?>
-
-    <div class='container'>

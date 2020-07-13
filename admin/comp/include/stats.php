@@ -4,7 +4,7 @@
         <div class="three wide column"></div>
         <div class="two wide column">
             <div class="ui tiny statistics">
-                <a href='/admin/schools'>
+                <a href='/admin/comp/schools'>
                     <div class="statistic">
                         <div class="value" id="schools">0</div>
                         <div class="label">Schools</div>
@@ -14,7 +14,7 @@
         </div>
         <div class="two wide column">
             <div class="ui tiny statistics">
-                <a href='/admin/teams'>
+                <a href='/admin/comp/teams'>
                     <div class="statistic">
                         <div class="value" id="teams">0</div>
                         <div class="label">Teams</div>
@@ -24,7 +24,7 @@
         </div>
         <div class="two wide column">
             <div class="ui tiny statistics">
-                <a href='/admin/teams?division=blue'>
+                <a href='/admin/comp/teams?division=blue'>
                     <div class="blue statistic">
                         <div class="value" id="blue_teams">0</div>
                         <div class="label">Teams</div>
@@ -34,7 +34,7 @@
         </div>
         <div class="two wide column">
             <div class="ui tiny statistics">
-                <a href='/admin/teams?division=gold'>
+                <a href='/admin/comp/teams?division=gold'>
                     <div class="yellow statistic">
                         <div class="value" id="gold_teams">0</div>
                         <div class="label">Teams</div>
@@ -44,7 +44,7 @@
         </div>
         <div class="two wide column">
             <div class="ui tiny statistics">
-                <a href='/admin/teams?division=eagle'>
+                <a href='/admin/comp/teams?division=eagle'>
                     <div class="teal statistic">
                         <div class="value" id="eagle_teams">0</div>
                         <div class="label">Teams</div>
@@ -153,7 +153,7 @@
     }
 
     $(document).ready(function () {
-        $.ajax("/admin/api/schools", {
+        $.ajax("/admin/comp/api/schools", {
             success: function (data) {
                 var jsonData = JSON.parse(data)
                 if (jsonData == 0) return

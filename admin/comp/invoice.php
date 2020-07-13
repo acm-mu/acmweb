@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']. "/include/connection.php";
+require_once $_SERVER['DOCUMENT_ROOT']. "/include/mysql.php";
 require_once dirname( __FILE__ ) . "/pdf/generate_invoice.php";
 
 if(!isset($_GET['schoolid'])) {

@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php require_once "include/header.php"; ?>
 
 <div class="ui large feed" id="feed">
     <h4 class="ui header">Accommodations and Concerns</h4>
@@ -19,7 +19,7 @@ function makePost(school) {
     })
 
     const school_link = $("<a/>", {
-        href: `/admin/school?schoolid=${school.schoolid}`,
+        href: `/admin/comp/school?schoolid=${school.schoolid}`,
         html: school.sname
     })
 
@@ -34,13 +34,13 @@ function makePost(school) {
             "class": "date"
         }).html(m.fromNow())),
         $("<div/>", {
-            "class": "extra test"
+            "class": "extra text"
         }).html(`<pre>${school.accommodations}${school.concerns}</pre>`)))
 }
 
 function updateActivity() {
     $(".event").remove()
-    $.ajax('/admin/api/schools', {
+    $.ajax('/admin/comp/api/schools', {
         success: function(data) {
             var jsonData = JSON.parse(data)
             if (jsonData.length == 0) {

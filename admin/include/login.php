@@ -16,4 +16,6 @@
 
         <input name="submit" type="submit" value="Login">
     </form>
+
+    <a href="/">Go back to mu.acm.org</a>
 </center>

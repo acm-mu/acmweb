@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php require_once "include/header.php"; ?>
 
 <table id="schools" class="ui very basic table">
     <thead>
@@ -40,7 +40,7 @@
         }).then((result) => {
             if (result.value) {
                 $(this).addClass("loading")
-                $.ajax(`/admin/php/update?schoolid=${schoolid}&key=datesent`, {
+                $.ajax(`/admin/comp/php/update?schoolid=${schoolid}&key=datesent`, {
                     success: updateTeams,
                     error: function () {
                         console.error("An error has occurred updating the school's invoice (232)");
@@ -65,7 +65,7 @@
         }).then((result) => {
             if (result.value) {
                 $(this).addClass("loading")
-                $.ajax(`/admin/php/update?schoolid=${schoolid}&key=datepaid`, {
+                $.ajax(`/admin/comp/php/update?schoolid=${schoolid}&key=datepaid`, {
                     success: updateTeams,
                     error: function () {
                         console.error("An error has occurred updating the school's invoice (233)");
@@ -76,7 +76,7 @@
     }
 
     function updateTeams() {
-        $.ajax("/admin/api/schools", {
+        $.ajax("/admin/comp/api/schools", {
             success: function (data) {
                 var jsonData = JSON.parse(data)
                 if (jsonData.length == 0) {
@@ -98,7 +98,7 @@
     function makeSchoolRow(school) {
         const time = moment(school.rdate).fromNow()
         const row = $("<tr>")
-        const a = $("<a/>").attr('href', "/admin/school?schoolid=" + school.schoolid).html(school.sname)
+        const a = $("<a/>").attr('href', "/admin/comp/school?schoolid=" + school.schoolid).html(school.sname)
 
         var amount_due = 0;
         for (const team of school.teams)
@@ -127,7 +127,7 @@
 
         var view_button = $("<a/>", {
             target: "_blank",
-            href: `/admin/invoice?schoolid=${school.schoolid}`
+            href: `/admin/comp/invoice?schoolid=${school.schoolid}`
         }).html($("<button/>", {
             class: "ui compact labeled icon button"
         }).append($("<i/>", {

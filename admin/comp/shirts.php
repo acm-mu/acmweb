@@ -1,7 +1,7 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php require_once "include/header.php"; ?>
 
 
-<h3>Student Shirts</h3>
+<h4 class="ui header">Student Shirts</h4>
 <div class="ui statistics" id="students">
     <div class="statistic">
         <div class="label">Small</div>
