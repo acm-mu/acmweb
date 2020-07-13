@@ -22,3 +22,5 @@ if (!loggedin()) {
 <h3>Marquette ACM Admin Console</h3>
 
 <?php require_once "navbar.php"; ?>
+
+<div class="admin panel">

@@ -6,5 +6,3 @@ require_once "navbar.php";
 ?>
 
 <script src="/admin/comp/js/comp.js"></script>
-
-<div class="admin panel">

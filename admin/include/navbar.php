@@ -2,7 +2,10 @@
   <div class="ui secondary vertical menu">
     <a class="item" id="index_sidenav" href="/admin">
       Home
-    </a>  
+    </a>
+    <a class="item" id="events_sidenav" href="/admin/events">
+      Events
+    </a>
     <!-- <a class="item" href="/admin/members">
       Members
     </a> -->

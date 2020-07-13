@@ -24,11 +24,4 @@
 
 <div class='container'>
 
-<script>
-    $(document).ready(() => {
-      if ($("h1.title").length) {
-        var page_ = $("h1.title").attr("page");
-        $(`#mainnavbar #${page_} li`).addClass("active");
-      }
-    });
-  </script>
+<script src="/js/header.js"></script>
