@@ -19,11 +19,12 @@ if ($action == 'update') {
     header("Location: verify_account?mid=$mid&key=$key&error_msg=" . urlencode("Passwords do not match!"));
   }
 
+  $gender = $_POST['gender'];
   $class = $_POST['class'];
   $majors = $_POST['majors'];
   $minors = $_POST['minors'];
 
-  $sql = "UPDATE members SET class='$class', password='$password', vcode=NULL, status=1 WHERE mid=$mid";
+  $sql = "UPDATE members SET class='$class', gender='$gender', password='$password', vcode=NULL, status=1 WHERE mid=$mid";
   if(!$mysql->query($sql)) {
     printf("Could not change databases: %s", $mysql->error);
     exit();
@@ -86,6 +87,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 
   <input type="hidden" name="mid" value="<?php echo $mid; ?>">
   <input type="hidden" name="key" value="<?php echo $key; ?>">
+
+  <label>Gender <b class="req">*</b></label>
+  <select name="gender" class="custom-select" required>
+    <option disabled="" selected="" value="">Select Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="">Prefer not to say</option>
+  </select>
 
   <label>Password <b class="req">*</b></label>
   <input type="password" name="password" required>

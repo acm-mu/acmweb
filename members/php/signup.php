@@ -26,7 +26,7 @@ if (!$mysql->query("USE muhostin_acm")) {
 
 if ($result = $mysql->query("SELECT * FROM members WHERE email LIKE '%$email%'")) {
   if ($result->num_rows > 0) {
-    print("User has already created an account!");
+    header("Location: https://192.168.64.2/members/signup?error_msg=" . urlencode("An account already exists with that email address."));
     exit();
   }
 }
