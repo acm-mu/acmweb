@@ -152,6 +152,7 @@
         $("#eagle_teams").html(teams['eagle'])
     }
 
+    // TODO: Switch to fetch promise call
     $(document).ready(function () {
         $.ajax("/admin/comp/api/schools", {
             success: function (data) {

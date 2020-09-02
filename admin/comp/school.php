@@ -187,7 +187,8 @@ function updateTeams() {
     url = 'api/school'
     if (getUrlParameter('schoolid') != undefined)
         url += '?schoolid=' + getUrlParameter('schoolid')
-
+    
+    // TODO: Switch to fetch promise call
     $.ajax(url, {
         success: function(data) {
             var jsonData = JSON.parse(data)

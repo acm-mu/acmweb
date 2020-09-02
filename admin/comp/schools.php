@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 function updateTeams() {
     $("#schools tbody").html("")
+    // TODO: Switch to fetch promise call
     $.ajax("/admin/comp/api/schools", {
         success: function(data) {
             var jsonData = JSON.parse(data)

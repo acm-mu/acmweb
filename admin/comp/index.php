@@ -37,6 +37,7 @@ function makeEvent(event) {
 
 function updateActivity() {
     $(".event").remove()
+    // TODO: Switch to fetch promise call
     $.ajax('/admin/comp/api/recentactivity', {
         success: function(data) {
             var jsonData = JSON.parse(data)

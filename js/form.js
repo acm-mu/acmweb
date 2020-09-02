@@ -12,7 +12,7 @@ $(document).ready(() => {
 
 function confirm(e) {
   var areFilled = true;
-  $(":input[required]").each(function() {
+  $(":input[required]").each(function () {
     if (!areFilled) return;
     if (!$(this)[0].checkValidity()) areFilled = false;
   });
@@ -46,12 +46,12 @@ function maxNumber() {
   var max = parseInt(row.attr("max-total"));
 
   var total = 0;
-  row.find(".shirts").each(function() {
+  row.find(".shirts").each(function () {
     total += parseInt($(this).val());
   });
 
   var remaining = max - total;
-  row.find(".shirts").each(function() {
+  row.find(".shirts").each(function () {
     var val = parseInt($(this).val());
     $(this).attr("max", val + remaining);
   });
@@ -62,7 +62,7 @@ function maxNumberKeyUp() {
   var max = parseInt(row.attr("max-total"));
 
   var total = 0;
-  row.find(".shirts").each(function() {
+  row.find(".shirts").each(function () {
     total += parseInt($(this).val());
   });
 
@@ -84,18 +84,19 @@ function addTeam() {
     .attr("name", `${div}_${numRow}`)
     .prop("required", true)
     .val("");
-  $.each(shirtSizes, (_, size) => {
+
+  for (const size of shirtSizes) {
     newRow
       .find(`.${size}`)
       .attr("name", `${div}_${size}_${numRow}`)
       .prop("required", true)
       .val(0);
-  });
+  }
 
   newRow.insertBefore(
     $(this)
-      .parent()
-      .parent()
+    .parent()
+    .parent()
   );
 }
 
@@ -112,16 +113,16 @@ function delTeam() {
 function adjustTable(table) {
   var n = 0;
   var div = table.attr("division");
-  table.find(".row").each(function() {
+  table.find(".row").each(function () {
     $(this).attr("id", `row_${n}`);
     $(this)
       .find(".name")
       .attr("name", `${div}_${n}`);
-    $.each(shirtSizes, (_, size) => {
+    for (const size of shirtSizes) {
       $(this)
         .find(`.${size}`)
         .attr("name", `${div}_${size}_${n}`);
-    });
+    }
     n++;
   });
 }
@@ -137,7 +138,7 @@ function dataToggle() {
       typeof toggleRequired !== typeof undefined &&
       toggleRequired == "true"
     ) {
-      $(`#${section} .required`).each(function() {
+      $(`#${section} .required`).each(function () {
         $(this).prop("required", show);
       });
     }

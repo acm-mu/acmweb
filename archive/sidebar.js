@@ -1,22 +1,14 @@
 var template = {};
+const template_types = ['description', 'python-skeleton', 'java-skeleton', 'python-solution', 'java-solution']
 
 $(document).ready(() => {
-  $.each(
-    [
-      "description",
-      "python-skeleton",
-      "java-skeleton",
-      "python-solution",
-      "java-solution"
-    ],
-    (k, v) => {
-      var temp = `#${v}-template`;
-      if ($(temp).length) {
-        template[v] = $(temp).html();
-        $(`#${v}`).show();
-      }
+  for (const type of template_types) {
+    var temp = `#${type}-template`;
+    if ($(temp).length) {
+      template[type] = $(temp).html();
+      $(`#${type}`).show();
     }
-  );
+  }
 
   $("button#description").click();
 
@@ -24,7 +16,7 @@ $(document).ready(() => {
   $("#" + page).addClass("active");
 });
 
-$(document).on("click", "button.swatch", function() {
+$(document).on("click", "button.swatch", function () {
   $("button.active").removeClass("active");
   $(this).addClass("active");
   var html = template[$(this).attr("id")];

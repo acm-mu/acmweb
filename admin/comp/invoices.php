@@ -40,6 +40,7 @@
         }).then((result) => {
             if (result.value) {
                 $(this).addClass("loading")
+                // TODO: Switch to fetch promise call
                 $.ajax(`/admin/comp/php/update?schoolid=${schoolid}&key=datesent`, {
                     success: updateTeams,
                     error: function () {
@@ -65,6 +66,7 @@
         }).then((result) => {
             if (result.value) {
                 $(this).addClass("loading")
+                // TODO: Switch to fetch promise call
                 $.ajax(`/admin/comp/php/update?schoolid=${schoolid}&key=datepaid`, {
                     success: updateTeams,
                     error: function () {
@@ -76,6 +78,7 @@
     }
 
     function updateTeams() {
+        // TODO: Switch to fetch promise call
         $.ajax("/admin/comp/api/schools", {
             success: function (data) {
                 var jsonData = JSON.parse(data)

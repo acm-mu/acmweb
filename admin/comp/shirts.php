@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 
 function updateShirts() {
-
+    // TODO: Switch to fetch promise call
     $.ajax('api/schools', {
         success: function(data) {
             var jsonData = JSON.parse(data)

@@ -62,6 +62,7 @@ function updateTeams() {
     if (getUrlParameter('search') != undefined)
         url += '?search=' + getUrlParameter('search')
 
+    // TODO: Switch to fetch promise call
     $.ajax(url, {
         success: function(data) {
             var jsonData = JSON.parse(data)

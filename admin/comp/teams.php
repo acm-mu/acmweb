@@ -69,6 +69,7 @@ function updateTeams() {
 
     url = '/admin/comp/api/teams?' + args.join("&")
 
+    // TODO: Switch to fetch promise call
     $.ajax(url, {
         success: function(data) {
             var jsonData = JSON.parse(data)
