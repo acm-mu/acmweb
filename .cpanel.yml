@@ -6,7 +6,6 @@ deployment:
     - /bin/cp about.php $DEPLOYPATH
     - /bin/cp competition.php $DEPLOYPATH
     - /bin/cp events.php $DEPLOYPATH
-    - /bin/cp favicon.ico $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp register.php $DEPLOYPATH
     - /bin/cp scratch_prep.php $DEPLOYPATH

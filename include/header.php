@@ -2,7 +2,7 @@
     <link rel='stylesheet' type='text/css' href='/css/global.css'>
     <link rel='stylesheet' type='text/css' href='/css/darkmode.css'>
     <script src="/lib/sweetalert2.min.js"></script>
-    <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='/assets/favicon.ico' type='image/x-icon'>
     <script src='https://code.jquery.com/jquery-3.4.1.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
