@@ -16,7 +16,8 @@ if ($action == 'update') {
   $cpassword = md5($_POST['confirm_password']);
   
   if ($password !== $cpassword) {
-    header("Location: verify_account?mid=$mid&key=$key&error_msg=" . urlencode("Passwords do not match!"));
+    echo "<meta http-equiv='refresh' content='0; URL=verify_account?mid=$mid&key=$key&error_msg=" . urlencode("Passwords do not match!") . "'>";
+    // header("Location: verify_account?mid=$mid&key=$key&error_msg=" . urlencode("Passwords do not match!"));
   }
 
   $gender = $_POST['gender'];
@@ -49,7 +50,8 @@ if ($action == 'update') {
     }
   }
 
-  header("Location: ../me?mid=$mid");
+  echo "<meta http-equiv='refresh' content='0; URL=../me?mid=$mid'>";
+  // header("Location: ../me?mid=$mid");
 }
 
 $res = $mysql->query("SELECT * FROM members WHERE mid=$mid");

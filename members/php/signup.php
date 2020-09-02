@@ -26,7 +26,8 @@ if (!$mysql->query("USE muhostin_acm")) {
 
 if ($result = $mysql->query("SELECT * FROM members WHERE email LIKE '%$email%'")) {
   if ($result->num_rows > 0) {
-    header("Location: https://192.168.64.2/members/signup?error_msg=" . urlencode("An account already exists with that email address."));
+    echo '<meta http-equiv="refresh" content="0; URL=/members/signup?error_msg' . urlencode("An account already exists with that email address.") . '">';
+    // header("Location: https://192.168.64.2/members/signup?error_msg=" . urlencode("An account already exists with that email address."));
     exit();
   }
 }
@@ -48,5 +49,6 @@ $body = $_POST['fname'] . ", \n" .
         $link;
 
 send_mail($_POST['email'] . "@marquette.edu", "Verify your Marquette ACM Account", $body);
-header("Location: confirmation?mid=$mid");
+// header("Location: confirmation?mid=$mid");
+echo "<meta http-equiv='refresh' content='0; URL=confirmation?mid=$mid'>";
 ?>

@@ -1,3 +1,3 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; 
-header("Location: comp/");
+echo '<meta http-equiv="refresh" content="0; URL=comp/">';
 ?>

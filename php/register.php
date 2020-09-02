@@ -158,5 +158,6 @@ $sql_details = "INSERT INTO details(eagle, eagle_devices, eagle_platform, gold, 
 
 $mysql->query($sql_details);
 
-header("Location: confirmation.php?schoolid=$schoolid");
+// header("Location: confirmation.php?schoolid=$schoolid");
+echo "<meta http-equiv='refresh' content='0; URL=confirmation.php?schoolid=$schoolid'>";
 ?>
