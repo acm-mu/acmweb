@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/include/mysql.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 ?>
 
 <link rel="stylesheet" type="text/css" href="/css/events.css">
