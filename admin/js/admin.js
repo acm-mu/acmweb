@@ -4,7 +4,7 @@ function setTitle(page) {
   document.title = title;
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Set Active Page
   const url = window.location.href;
   const sIndex = url.indexOf("/admin") + 7;
@@ -15,12 +15,10 @@ $(document).ready(function() {
   else page = url.substr(sIndex, url.length - sIndex);
 
   if (page.endsWith("/")) page = page.substring(0, page.length - 1);
-  
+
   setTitle(page);
 
   if (page.length == 0) page = "index";
-
-  console.log(page);
 
   $(`.item#${page}_sidenav`).addClass("active");
 });
