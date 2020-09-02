@@ -1,6 +1,8 @@
 <?php 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
 
+$mysql->query("USE muhostin_registration;");
+
 $schoolid = $_GET['schoolid'];
 
 $sql = "SELECT *, (SELECT COUNT(*) FROM team WHERE schoolid = $schoolid) AS teams

@@ -6,6 +6,7 @@ if(!isset($_GET['schoolid'])) {
     echo json_encode(array("code" => 400, "message" => "Bad Request", "more_info" => "Please provide a 'schoolid' in your request."));
     exit();
 }
+$mysql->query("USE muhostin_registration;");
 
 $schoolid = $_GET['schoolid'];
 

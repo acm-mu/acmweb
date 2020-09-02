@@ -15,6 +15,7 @@ if (!isset($_GET['key'])) {
     echo json_encode(array("status" => 400, "message" => "Bad Request."));
     exit();
 }
+$mysql->query("USE muhostin_registration;");
 
 $schoolid = $_GET['schoolid'];
 $key = $_GET['key'];

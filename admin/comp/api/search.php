@@ -5,6 +5,7 @@ if (!loggedin()) {
     echo json_encode(array("status" => 401, "message" => "You are not authorized to access this page."));
     exit();
 }
+$mysql->query("USE muhostin_registration;");
 
 $search = "";
 if (isset($_GET['search'])) {
