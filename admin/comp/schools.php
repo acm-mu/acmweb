@@ -13,41 +13,34 @@
     <tbody> </tbody>
 </table>
 
-<script>
-$(document).ready(function() {
-    updateTeams()
-})
+<script defer>
 
-function updateTeams() {
-    $("#schools tbody").html("")
-    // TODO: Switch to fetch promise call
-    $.ajax("/admin/comp/api/schools", {
-        success: function(data) {
-            var jsonData = JSON.parse(data)
-            if (jsonData.length == 0) {
-                error("No Results!")
-                return
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('#schools tbody').innerHTML = '';
+    
+    fetch("/admin/comp/api/schools")
+        .then(response => response.json())
+        .then(data => {
+            if (!data) {
+                error("No Results");
+                return;
             }
-            for (const school of jsonData) {
-                $("#schools tbody").append(makeSchoolRow(school))
-            }
-        },
-        error: function() {
-            error("An Error Has Occurred!")
-        }
-    })
-}
+            for (const school of data) 
+                document.querySelector('#schools tbody').appendChild(makeSchoolRow(school));
+        })
+        .catch(error_msg => error("An Error Has Occurred!", error_msg))
+});
 
 function makeSchoolRow(school) {
     const time = moment(school.rdate).fromNow()
-    const row = $("<tr>")
-    const a = $("<a/>").attr('href', "/admin/comp/school?schoolid=" + school.schoolid).html(school.sname)
+    const schoolLink = `<a href='/admin/comp/school?schoolid=${school.schoolid}'>${school.sname}</a>`;
 
-    row.append($("<td/>").html(a))
-    row.append($("<td/>").html(school.cname))
-    row.append($("<td/>").html(school.scity))
-    row.append($("<td/>").html(school.teams.length))
-    row.append($("<td/>").html(time))
+    const row = document.createElement('tr');
+    row.appendChild(createElement(`<td>${schoolLink}</td>`));
+    row.appendChild(createElement(`<td>${school.cname}</td>`));
+    row.appendChild(createElement(`<td>${school.scity}</td>`));
+    row.appendChild(createElement(`<td>${school.teams.length}</td>`));
+    row.appendChild(createElement(`<td>${time}</td>`));
 
     return row
 }

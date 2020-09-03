@@ -1,13 +1,13 @@
 <head>
     <link rel='stylesheet' type='text/css' href='/css/global.css'>
     <link rel='stylesheet' type='text/css' href='/css/darkmode.css'>
-    <script src="/lib/sweetalert2.min.js"></script>
+    <script src='/js/global.js'></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel='shortcut icon' href='/assets/favicon.ico' type='image/x-icon'>
-    <script src='https://code.jquery.com/jquery-3.4.1.js'></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158210865-1"></script>
-    <script>
+    <script defer>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -16,6 +16,8 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-158210865-1');
+
+    setTitle('ACM@MU');
     </script>
 </head>
 

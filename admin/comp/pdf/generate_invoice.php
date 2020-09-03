@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('America/Chicago');
+
 require(dirname(__FILE__) . "/fpdf.php");
 
 $BLUE_PRICE = 80;

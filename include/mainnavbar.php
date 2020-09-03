@@ -4,24 +4,22 @@
   <img src='/assets/acmmu.png'>
 
   <ul>
-    <a href="/" id="home">
+    <a href="/" class='nav_item' id="index">
       <li>Home</li>
     </a>
-    <a href="/about" id="about">
+    <a href="/about" class='nav_item' id="about">
       <li>About</li>
     </a>
     <!-- <a href="/members" id="members">
       <li>Members</li>
     </a> -->
-    <a href="/events" id="events">
+    <a href="/events" class='nav_item' id="events">
       <li>Events</li>
     </a>
-    <a href="/competition" id="competition">
+    <a href="/competition" class='nav_item' id="competition">
       <li>Competition</li>
     </a>
   </ul>
 </div>
 
 <div class='container'>
-
-<script src="/js/header.js"></script>

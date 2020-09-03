@@ -10,7 +10,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="/admin/js/admin.js"></script>
+<script defer>
+    setTitle('ACM Admin Console');
+</script>
 
 <?php
 if (!loggedin()) {

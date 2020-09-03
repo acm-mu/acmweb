@@ -138,29 +138,24 @@
             }
         }
 
-        $("#schools").html(data.length)
-        $("#coaches").html(coaches)
-
-        $("#students").html(nstudents['total'])
-        $("#blue_students").html(nstudents['blue'])
-        $("#gold_students").html(nstudents['gold'])
-        $("#eagle_students").html(nstudents['eagle'])
-
-        $("#teams").html(teams['total'])
-        $("#blue_teams").html(teams['blue'])
-        $("#gold_teams").html(teams['gold'])
-        $("#eagle_teams").html(teams['eagle'])
+        document.querySelector('#schools').innerText = data.length
+        document.querySelector('#coaches').innerText = coaches;
+        
+        document.querySelector('#students').innerText = nstudents['total'];
+        document.querySelector('#blue_students').innerText = nstudents['blue'];
+        document.querySelector('#gold_students').innerText = nstudents['gold'];
+        document.querySelector('#eagle_students').innerText = nstudents['eagle'];
+        
+        document.querySelector('#teams').innerText = teams['total'];
+        document.querySelector('#blue_teams').innerText = teams['blue'];
+        document.querySelector('#gold_teams').innerText = teams['gold'];
+        document.querySelector('#eagle_teams').innerText = teams['eagle'];
     }
 
-    // TODO: Switch to fetch promise call
-    $(document).ready(function () {
-        $.ajax("/admin/comp/api/schools", {
-            success: function (data) {
-                var jsonData = JSON.parse(data)
-                if (jsonData == 0) return
-                fillStatistics(jsonData)
-            }
-        })
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('/admin/comp/api/schools')
+            .then(response => response.json())
+            .then(data => fillStatistics(data))
     })
 </script>
 

@@ -4,54 +4,30 @@
     <h4 class="ui header">Recent Activity</h4>
 </div>
 
-<script>
-$(document).ready(function() {
-    updateActivity()
-})
+<script defer>
+    function makeEvent(data) {
+        const mailTo = `mailto:${data.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`;
+        const mailLink = `<a href='${mailTo}' target='_top'>${data.cname}</a>`;
 
-function makeEvent(event) {
-    const mail_link = $("<a/>", {
-        href: `mailto:${event.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`,
-        target: "_top",
-        html: event.cname
-    })
-    const school_link = $("<a/>", {
-        href: `/admin/comp/school?schoolid=${event.schoolid}`,
-        html: event.sname
-    })
+        const schoolLink = `<a href='/admin/comp/school?schoolid=${data.schoolid}'>${data.sname}</a>`;
 
-    const m = moment(event.rdate)
+        const date = `<div class='date'>${moment(data.rdate).fromNow()}</div>`;
+        
+        const summary = `${mailLink} from ${schoolLink} registered ${data.teams.length} teams.`;
 
-    return $("<div/>", {
-        "class": "event"
-    }).append($("<div/>", {
-        "class": "content"
-    }).append($("<div/>", {
-        "class": "summary"
-    }).append(mail_link, " from ", school_link, ` registered ${event.teams.length} teams.`).append($(
-        "<div/>", {
-            "class": "date"
-        }).html(m.fromNow()))))
+        return createElement(`<div class='event'> <div class='content'> <div class='summary'> ${summary} ${date} </div></div></div>`);
+    }
 
-}
+    document.addEventListener('DOMContentLoaded', () => {
+        for (const event of document.querySelectorAll('.event'))
+            event.remove()
 
-function updateActivity() {
-    $(".event").remove()
-    // TODO: Switch to fetch promise call
-    $.ajax('/admin/comp/api/recentactivity', {
-        success: function(data) {
-            var jsonData = JSON.parse(data)
-            if (jsonData.length == 0) {
-                error("No Results!")
-                return
-            }
-            for (const event of jsonData) {
-                $("#feed").append(makeEvent(event))
-            }
-        },
-        error: function() {
-            error("An Error Has Occurred!")
-        }
-    })
-}
+        fetch('/admin/comp/api/recentactivity')
+            .then(response => response.json())
+            .then(data => {
+                for (const event of data)
+                    document.querySelector('#feed').appendChild(makeEvent(event))
+            })
+            .catch(error => console.error(error))
+    });
 </script>

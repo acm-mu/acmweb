@@ -4,57 +4,38 @@
     <h4 class="ui header">Accommodations and Concerns</h4>
 </div>
 
-<script>
-$(document).ready(function() {
-    setInterval(updateActivity())
-})
+<script defer>
 
 function makePost(school) {
     const m = moment(school.rdate)
 
-    const mail_link = $("<a/>", {
-        href: `mailto:${school.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`,
-        target: "_top",
-        html: school.cname
-    })
+    const mailTo = `mailto:${school.email}?cc=acm%2Dregistration%40mscs%2Emu%2Eedu&Subject=ACM%20Programming%20Competition`;
+    const mailLink = `<a href='${mailTo}' target='_top'>${school.cname}</a>`;
 
-    const school_link = $("<a/>", {
-        href: `/admin/comp/school?schoolid=${school.schoolid}`,
-        html: school.sname
-    })
+    const schoolLink = `<a href='/admin/comp/school?schoolid=${school.schoolid}'>${school.sname}</a>`;
 
-    return $("<div/>", {
-        "class": "event"
-    }).append($("<div/>", {
-        "class": "content"
-    }).append($("<div/>", {
-            "class": "summary"
-        }).append(mail_link, " from ", school_link, " said")
-        .append($("<div/>", {
-            "class": "date"
-        }).html(m.fromNow())),
-        $("<div/>", {
-            "class": "extra text"
-        }).html(`<pre>${school.accommodations}${school.concerns}</pre>`)))
+    let summary = `${mailLink} from ${schoolLink} said <div class='date'>${m.fromNow()}</div>`;
+    summary += `<div class='extra text'><pre> ${school.accommodations}${school.concerns}</pre></div>`;
+
+    return createElement(`<div class='event'> <div class='content'> <div class='summary'> ${summary} </div> </div> </div>`);
 }
 
-function updateActivity() {
-    $(".event").remove()
-    $.ajax('/admin/comp/api/schools', {
-        success: function(data) {
-            var jsonData = JSON.parse(data)
-            if (jsonData.length == 0) {
+document.addEventListener('DOMContentLoaded', () => {
+    for (const event of document.querySelectorAll(".event"))
+        event.remove()
+
+    fetch('/admin/comp/api/schools')
+        .then(response => response.json())
+        .then(data => {
+            if (!data) {
                 error("No Results!")
                 return
             }
-            for (const school of jsonData) {
+            for (const school of data) 
                 if (school.accommodations != "" || school.concerns != "")
-                    $("#feed").append(makePost(school))
-            }
-        },
-        error: function() {
-            error("An Error Has Occurred!")
-        }
-    })
-}
+                    document.querySelector('#feed').appendChild(makePost(school))
+
+        })
+        .catch(error_msg => error("An Error Has Occurred!", error_msg));
+});
 </script>

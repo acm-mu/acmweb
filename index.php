@@ -1,6 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
-<h1 class="title" page="home" id="bash">ACM@MU</h1>
+<h1 class="title" page="index">ACM@MU</h1>
 
 <h3>Who are we?</h3>
 <p>The Association for Computing Machinery (ACM) is a student group consisting of a variety of people with diverse

@@ -11,6 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 <div class="ui secondary menu">
 
   <?php
+    date_default_timezone_set('America/Chicago') ;
     $year = date('m') < 6 ? date('Y') - 1 : date('Y');
     if (isset($_GET['year']))
       $year = $_GET['year'];
