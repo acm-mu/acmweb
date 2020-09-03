@@ -2,5 +2,4 @@
 .well-known
 cgi-bin
 error_log
-include/mysql.php
 .DS_Store

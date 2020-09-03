@@ -1,4 +1,5 @@
 <?php 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/mysql.php"; 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; 
 
 $mysql->query("USE muhostin_registration;");
