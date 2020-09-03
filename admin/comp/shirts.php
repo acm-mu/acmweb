@@ -49,53 +49,43 @@
     </div>
 </div>
 
-
-<script>
-$(document).ready(function() {
-    updateShirts()
-})
-
-
-function updateShirts() {
-    // TODO: Switch to fetch promise call
-    $.ajax('api/schools', {
-        success: function(data) {
-            var jsonData = JSON.parse(data)
-            if (jsonData.length == 0) {
-                error("No Results!")
-                return
-            }
-
-            var shirts = {
-                'students': {},
-                'coaches': {}
-            }
-
-            const sizes = ['small', 'medium', 'large', 'xlarge', 'xxlarge']
-            for (const shirt of sizes) {
-                shirts['students'][shirt] = 0;
-                shirts['coaches'][shirt] = 0;
-            }
-
-            for (const school of jsonData) {
-                for (const size in shirts['coaches']) {
-                    shirts['coaches'][size] += school[size]
+<script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('api/schools')
+            .then(response => response.json())
+            .then(data => {
+                if (!data) {
+                    error("No Results!")
+                    return
                 }
-                for (const team of school.teams) {
-                    for (const size in shirts['students']) {
-                        shirts['students'][size] += team[size]
+
+                var shirts = {
+                    'students': {},
+                    'coaches': {}
+                }
+
+                const sizes = ['small', 'medium', 'large', 'xlarge', 'xxlarge']
+                for (const shirt of sizes) {
+                    shirts['students'][shirt] = 0;
+                    shirts['coaches'][shirt] = 0;
+                }
+
+                for (const school of data) {
+                    for (const size in shirts['coaches']) {
+                        shirts['coaches'][size] += school[size]
+                    }
+                    for (const team of school.teams) {
+                        for (const size in shirts['students']) {
+                            shirts['students'][size] += team[size]
+                        }
                     }
                 }
-            }
 
-            for (const size of sizes) {
-                $(`#students .${size}`).html(shirts['students'][size])
-                $(`#coaches .${size}`).html(shirts['coaches'][size])
-            }
-        },
-        error: function() {
-            error("An Error Has Occurred!")
-        }
-    })
-}
+                for (const size of sizes) {
+                    document.querySelector(`#students .${size}`).innerText = shirts['students'][size];
+                    document.querySelector(`#coaches .${size}`).innerText = shirts['coaches'][size];
+                }
+            })
+            .catch(error_msg => error("An Error Has Occurred!", error_msg));
+    });
 </script>

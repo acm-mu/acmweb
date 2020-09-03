@@ -6,7 +6,7 @@ Once you have downloaded and extracted the xinu tarball, you will see a
 basic directory structure:
 
     admin/  archive/  assets/  members/  ./docker/  include/  php/
-    js/  lib/  css/  .cpanel.yml  .gitignore  .htaccess  README
+    js/  css/  .cpanel.yml  .gitignore  .htaccess  README
 
 - `admin/` subsystem for administering the website. Includes dashboard for events and competition registration.
 - `archive/` subsite (mu.acm.org/archive) for all previous competition information.
@@ -16,7 +16,6 @@ basic directory structure:
 - `include/` contains component files used on other pages throughout the website.
 - `php/` contains PHP scripts, mostly for heavy database CRUD operations.
 - `js/` contains code for all javascript of the website.
-- `lib/` contains source for all libraries used for the website.
 - `css/` contains code for the styling of the website.
 - `.cpanel.yml` determines how and where the changed files deploy.
 - `.gitignore` tells Git which files or folders to ignore.

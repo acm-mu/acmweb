@@ -16,67 +16,46 @@
     </tbody>
 </table>
 
-<script>
-$(document).ready(function() {
-    updateTeams()
-})
+<script defer>
+    function makeTeamRow(team) {
+        var total = parseInt(team.small) + parseInt(team.medium) + parseInt(team
+            .large) + parseInt(team.xlarge) + parseInt(team.xxlarge)
 
-function makeTeamRow(team) {
-    var total = parseInt(team.small) + parseInt(team.medium) + parseInt(team
-        .large) + parseInt(team.xlarge) + parseInt(team.xxlarge)
+        var time = moment(team.rdate).fromNow()
+        let clazz = team.division == 'eagle' ? 'teal' : (team.division == 'gold' ? 'yellow' : 'blue')
 
-    var time = moment(team.rdate).fromNow()
+        const division =
+            `<a class='ui label ${clazz}' href='/admin/comp/teams?division=${team.division}'>${capitalize(team.division)}</a>`;
 
-    var division = $("<a/>", {
-        class: "ui label",
-        href: `/admin/teams?division=${team.division}`
-    })
-    switch (team.division) {
-        case 'blue':
-            division.addClass("blue").html("Blue")
-            break
-        case 'gold':
-            division.addClass("yellow").html("Gold")
-            break
-        case 'eagle':
-            division.addClass("teal").html("Eagle")
-            break
+        const row = document.createElement('tr');
+        row.appendChild(createElement(`<td>${team.tname}</td>`));
+        row.appendChild(createElement(`<td>${division}</td>`));
+        row.appendChild(createElement(`<td>${team.sname}</td>`));
+        row.appendChild(createElement(`<td>${team.cname}</td>`));
+        row.appendChild(createElement(`<td>${team.scity}</td>`));
+        row.appendChild(createElement(`<td>${total}</td>`));
+        row.appendChild(createElement(`<td>${time}</td>`));
+
+        return row
     }
 
-    var row = $("<tr/>")
-    row.append($("<td/>").html(team.tname))
-    row.append($("<td/>").html(division))
-    row.append($("<td/>").html(team.sname))
-    row.append($("<td/>").html(team.cname))
-    row.append($("<td/>").html(team.scity))
-    row.append($("<td/>").append(total))
-    row.append($("<td/>").html(time))
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#teams tbody').innerHTML = '';
 
-    return row
-}
+        url = 'api/search'
+        if (getUrlParameter('search') != undefined)
+            url += '?search=' + getUrlParameter('search')
 
-function updateTeams() {
-    $("#teams tbody").html("")
-
-    url = 'api/search'
-    if (getUrlParameter('search') != undefined)
-        url += '?search=' + getUrlParameter('search')
-
-    // TODO: Switch to fetch promise call
-    $.ajax(url, {
-        success: function(data) {
-            var jsonData = JSON.parse(data)
-            if (jsonData.length == 0) {
-                error("No Results!")
-                return
-            }
-            for (const team of jsonData) {
-                $("#teams tbody").append(makeTeamRow(team))
-            }
-        },
-        error: function() {
-            error("An Error Has Occurred!")
-        }
-    })
-}
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (!data) {
+                    error("No Results!")
+                    return
+                }
+                for (const team of data)
+                    document.querySelector('#teams tbody').appendChild(makeTeamRow(team));
+            })
+            .catch(error_msg => error("An Error Has Occurred!", error_msg));
+    });
 </script>

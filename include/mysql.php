@@ -20,7 +20,6 @@ function loggedin() {
 
 function logout() {
     unset($_SESSION['ADMIN_KEY']);
-    // header("Location: /admin");
     echo '<meta http-equiv="refresh" content="0; URL=/admin">';
 }
 
@@ -71,10 +70,8 @@ function login($arr) {
         $_SESSION['ADMIN_KEY'] = $config['dashboard']['password'];
         if(isset($_SERVER['HTTP_REFERER']))  
             echo '<meta http-equiv="refresh" content="0; URL='.$_SERVER['HTTP_REFERER'].'">';
-            // header("Location: ".$_SERVER['HTTP_REFERER']);
         else
             echo '<meta http-equiv="refresh" content="0; URL=/admin/">';
-            // header("Location: /admin/");
     }
     return false;
 }

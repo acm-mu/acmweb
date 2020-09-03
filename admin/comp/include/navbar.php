@@ -1,20 +1,20 @@
 <div class="ui pointing menu" id="admin_navbar">
-    <a class="item" id="index_nav" href="/admin/comp">
+    <a class="nav_item item" id="index" href="/admin/comp">
         Feed
     </a>
-    <a class="item" id="teams_nav" href="/admin/comp/teams">
+    <a class="nav_item item" id="teams" href="/admin/comp/teams">
         Teams
     </a>
-    <a class="item" id="schools_nav" href="/admin/comp/schools">
+    <a class="nav_item item" id="schools" href="/admin/comp/schools">
         Schools
     </a>
-    <a class="item" id="accommodations_nav" href="/admin/comp/accommodations">
+    <a class="nav_item item" id="accommodations" href="/admin/comp/accommodations">
         Accomm. / Concerns
     </a>
-    <a class="item" id="shirts_nav" href="/admin/comp/shirts">
+    <a class="nav_item item" id="shirts" href="/admin/comp/shirts">
         Shirts
     </a>
-    <a class="item" id="invoices_nav" href="/admin/comp/invoices">
+    <a class="nav_item item" id="invoices" href="/admin/comp/invoices">
         Invoices
     </a>
     <div class="right menu">

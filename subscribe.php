@@ -1,5 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
+<script src="/js/form.js" defer></script>
+
 <h1 class="title" page="subscribe"> Subscribe </h1>
 <link rel="stylesheet" type="text/css" href="/css/form.css">
 
@@ -34,5 +36,4 @@
     </form>
 </div>
 
-<script src="/js/form.js"></script>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
