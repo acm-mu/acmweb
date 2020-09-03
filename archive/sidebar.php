@@ -22,13 +22,14 @@
     </span>
     <ul>
         <?php
-            foreach(scandir(".") as $f) {
-                if (preg_match('/q(\d).php/', $f, $m)) {
-                    $file = fopen($f, "r");
+            foreach(scandir(".") as $filename) {
+                if (preg_match('/q(\d).php/', $filename, $m)) {
+                    $file = fopen($filename, "r");
+                    $f = str_replace('.php', '', $filename);
                     while(!feof($file)) {
                         $line = fgets($file);
                         if(preg_match('/<h1 id="page" page="([a-zA-Z0-9]+)">([0-9a-zA-Z\ \-\.\!\(\)\']+)<\/h1>/', $line, $matches)) {
-                            echo '<a href="' . $f . '"> <li id="' . $matches[1] . '">' . $m[1] . ' - ' . $matches[2] . '</li> </a>';
+                            echo '<a href="' . $filename . '" class="nav_item" id="'.$f.'"> <li id="' . $matches[1] . '">' . $m[1] . ' - ' . $matches[2] . '</li> </a>';
                             break;
                         }
                     }
@@ -49,4 +50,4 @@
     <div id="content"></div>
 </div>
 
-<script src="/archive/sidebar.js"></script>
+<script src="/archive/sidebar.js" defer></script>
