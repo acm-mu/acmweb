@@ -3,7 +3,7 @@
 const shirtSizes = ['small', 'medium', 'large', 'xlarge', 'xxlarge'];
 
 function confirm(e) {
-  const inputs = document.querySelectorAll(':input[required]');
+  const inputs = document.querySelectorAll('input[required]');
   // eslint-disable-next-line no-restricted-syntax
   for (const input of inputs) {
     if (!input[0].checkValidity()) return;
