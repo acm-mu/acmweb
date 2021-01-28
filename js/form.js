@@ -68,6 +68,7 @@ function addTeam() {
   newRow.id = `row_${numRows}`;
 
   newRow.querySelector('.name').value = '';
+  newRow.querySelector('.name').setAttribute('name', `${div}_${numRows}`);
 
   shirtSizes.forEach((size) => {
     const input = newRow.querySelector(`.${size}`);
