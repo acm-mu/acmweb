@@ -4,7 +4,7 @@
 <script src="/js/form.js" defer></script>
 
 <form action="/php/register.php" method="POST" id="registerform">
-    <h1 class="title">2020 Wisconsin-Dairyland Programming Competition Registration</h1>
+    <h1 class="title">2021 Wisconsin-Dairyland Programming Competition Registration</h1>
 
     <!----------------------------------
     -         SCHOOL INFORMATION       -
@@ -74,7 +74,7 @@
             </div>
 
             <div class="input-group">
-                <label>Do you need any additional t-shirts for chaperones?</label>
+                <label>Would you like any additional t-shirts for classroom volunteers (max 2)?</label>
                 <label class="switch">
                     <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section"
                         toggle-required="true">
@@ -114,17 +114,12 @@
 
         <h4>Team Attendance <b class="req">*</b></h4>
         <p>The competition has three divisions. Per school, we are accepting
-            up to 8 teams in the Blue Division (Java/Python), 8 teams in the Gold Division (Scratch), and 3 teams in
-            the
-            Eagle Division (a competition based on concepts in AP Computer Science Principles), as we are limited by
-            competition space availability. We may further restrict this limit as registration continues, if a large
-            volume of schools register to attend. We will finalize the number of teams your school can bring by
-            March
-            14th, 2019.
+            up to 8 teams in the Blue Division (Java/Python), 8 teams in the Gold Division (Scratch), and 5 teams in
+            the Eagle Division (a competition based on concepts in AP Computer Science Principles). We are currently limiting
+            teams to give as many schools a chance to register. We may expand this team limit in early March depending on demand.
 
-            Registration cost for the Blue Division (Java/Python) is $80 per team, cost for the Gold Division
-            (Scratch)
-            is $60 per team, and $60 per team for the Eagle Division (AP CSP).
+            Registration cost for the Blue Division (Java/Python) is $60 per team, cost for the Gold Division
+            (Scratch) is $50 per team, and $50 per team for the Eagle Division (AP CSP).
         </p>
 
         <label class="checkbox-container">I Agree
@@ -142,7 +137,7 @@
             </label>
 
             <div class="form-hidden-section" id="blue-section">
-                <h4>Preferred Java Environments</h4>
+                <!-- <h4>Preferred Java Environments</h4>
                 <label class="checkbox-container">Eclipse
                     <input name="java_eclipse" type="checkbox">
                     <span class="checkmark">
@@ -178,7 +173,7 @@
                     <input name="python_notepad" type="checkbox">
                     <span class="checkmark">
                 </label>
-                <input name="python_other" placeholder="Other">
+                <input name="python_other" placeholder="Other"> -->
 
                 <h4>Teams</h4>
                 <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registered per school. Each team
@@ -221,8 +216,8 @@
                 <span class="slider"></span>
             </label>
             <div class="form-hidden-section" id="gold-section">
-                <label>How many devices can you bring?</label>
-                <input name="gold_devices" type="number" min="0" value="0">
+                <!-- <label>How many devices can you bring?</label>
+                <input name="gold_devices" type="number" min="0" value="0"> -->
 
                 <h4>Teams</h4>
                 <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registered per school. Each team
@@ -267,8 +262,8 @@
                 <label>Describe the platform you use for your AP CSP class.</label>
                 <input name="eagle_platform" type="text" style="width: 50em">
 
-                <label>How many devices can you bring?</label>
-                <input name="eagle_devices" type="number" value="0" min="0">
+                <!-- <label>How many devices can you bring?</label>
+                <input name="eagle_devices" type="number" value="0" min="0"> -->
 
                 <h4>Teams</h4>
                 <label class="sub"><b>Note:</b> A maximum of <b>3</b> teams can be registered per school. Each team
@@ -303,7 +298,7 @@
 
             <h2>Additional Information</h2>
 
-            <h4>Will any attending student require special accommodations due to a disability, a food allergy, or
+            <!-- <h4>Will any attending student require special accommodations due to a disability, a food allergy, or
                 another
                 medical condition?</h4>
             <label>If you answer Yes, please list them below and we will contact you to coordinate the details
@@ -316,11 +311,11 @@
             <div class="form-hidden-section" id="accommodations-section">
                 <textarea name="special_accommodations"
                     placeholder="e.g. I have a student with a gluten allergy."></textarea>
-            </div>
+            </div> -->
 
             <h4>Any additional questions/comments/concerns?</h4>
             <textarea name="concerns"
-                placeholder="e.g. Where should I tell the bus driver to drop my students?"></textarea>
+                placeholder="e.g. Who should I contact about adding teams?"></textarea>
             <br />
             <input type="submit" class="register" value="Register" id="register">
 
