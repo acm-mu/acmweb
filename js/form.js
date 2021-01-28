@@ -25,10 +25,7 @@ function confirm(e) {
     showCancelButton: true,
     confirmButtonText: "I'm sure!",
   }).then((result) => {
-    if (result.value) {
-      const submitButton = document.querySelector('#registerform');
-      submitButton.submit();
-    }
+    result && document.querySelector('#registerform').submit();
   });
 }
 
