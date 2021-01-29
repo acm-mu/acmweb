@@ -3,9 +3,9 @@ date_default_timezone_set('America/Chicago');
 
 require(dirname(__FILE__) . "/fpdf.php");
 
-$BLUE_PRICE = 80;
-$GOLD_PRICE = 60;
-$EAGLE_PRICE = 60;
+$BLUE_PRICE = 60;
+$GOLD_PRICE = 50;
+$EAGLE_PRICE = 50;
 /* 
     Page Size 210x297
 */

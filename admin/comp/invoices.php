@@ -96,13 +96,13 @@
         for (const team of school.teams)
             switch (team.division) {
                 case "eagle":
-                    amount_due += 60;
+                    amount_due += 50;
                     break;
                 case "gold":
-                    amount_due += 60;
+                    amount_due += 50;
                     break;
                 case "blue":
-                    amount_due += 80;
+                    amount_due += 60;
                     break;
             }
 
