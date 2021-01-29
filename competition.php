@@ -70,7 +70,7 @@
 
 <h3>Date:</h3>
 <p>
-    TBD
+    Mid April, 2021 (final date TBD)
 </p>
 
 <h3>Schedule:</h3>
