@@ -192,12 +192,12 @@
                     <tbody>
                         <tr class='row' id="row" max-total="4">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='name required'></td>
-                            <td><input type='number' class='shirts small required' value="0" min="0" max="4"></td>
-                            <td><input type='number' class='shirts medium required ' value="0" min="0" max="4"></td>
-                            <td><input type='number' class='shirts large required' value="0" min="0" max="4"></td>
-                            <td><input type='number' class='shirts xlarge required' value="0" min="0" max="4"></td>
-                            <td><input type='number' class='shirts xxlarge required' value="0" min="0" max="4">
+                            <td><input class='name'></td>
+                            <td><input type='number' class='shirts small' value="0" min="0" max="4"></td>
+                            <td><input type='number' class='shirts medium ' value="0" min="0" max="4"></td>
+                            <td><input type='number' class='shirts large' value="0" min="0" max="4"></td>
+                            <td><input type='number' class='shirts xlarge' value="0" min="0" max="4"></td>
+                            <td><input type='number' class='shirts xxlarge' value="0" min="0" max="4">
                             </td>
                         </tr>
                         <tr>
@@ -236,12 +236,12 @@
                     <tbody>
                         <tr class='row' id="row" max-total="3">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='name required'></td>
-                            <td><input type='number' class='shirts required small' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required medium' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required large' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required xlarge' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required xxlarge ' value="0" min="0" max="3"></td>
+                            <td><input class='name'></td>
+                            <td><input type='number' class='shirts small' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts medium' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts large' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts xlarge' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts xxlarge ' value="0" min="0" max="3"></td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>
@@ -282,12 +282,12 @@
                     <tbody>
                         <tr class='row' id="row" max-total="4">
                             <td><button type="button" class="del">-</button></td>
-                            <td><input class='required name'></td>
-                            <td><input type='number' class='shirts required small' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required medium' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required large' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required xlarge' value="0" min="0" max="3"></td>
-                            <td><input type='number' class='shirts required xxlarge' value="0" min="0" max="3"></td>
+                            <td><input class='name'></td>
+                            <td><input type='number' class='shirts small' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts medium' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts large' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts xlarge' value="0" min="0" max="3"></td>
+                            <td><input type='number' class='shirts xxlarge' value="0" min="0" max="3"></td>
                         </tr>
                         <tr>
                             <td><button type="button" class="add">+</button></td>

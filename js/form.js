@@ -68,10 +68,12 @@ function addTeam() {
   newRow.id = `row_${numRows}`;
 
   newRow.querySelector('.name').value = '';
+  newRow.required = true
   newRow.querySelector('.name').setAttribute('name', `${div}_${numRows}`);
 
   shirtSizes.forEach((size) => {
     const input = newRow.querySelector(`.${size}`);
+    input.required = true
     input.setAttribute('name', `${div}_${size}_${numRows}`);
     input.value = 0;
   });
