@@ -5,6 +5,8 @@
 
 <form action="/php/register.php" method="POST" id="registerform">
     <h1 class="title">2021 Wisconsin-Dairyland Programming Competition Registration</h1>
+    <p><em><b>Please disable any ad-blockers for this page as they can alter your 
+    registration record by not allowing access to our databases. Thank you!</b></em></p>
 
     <!----------------------------------
     -         SCHOOL INFORMATION       -
@@ -315,7 +317,7 @@
 
             <h4>Any additional questions/comments/concerns?</h4>
             <textarea name="concerns"
-                placeholder="e.g. Who should I contact about adding teams?"></textarea>
+                placeholder="e.g. How will we get our shirts?"></textarea>
             <br />
             <input type="submit" class="register" value="Register" id="register">
 
