@@ -70,7 +70,7 @@
 
 <h3>Date:</h3>
 <p>
-    Mid April, 2021 (final date TBD)
+    April 15, 2021
 </p>
 
 <h3>Schedule:</h3>
@@ -78,8 +78,8 @@
         changes.</em>
 </p>
 <ul>
-    <li>Welcome: <b>8:00 AM - 8:30 AM</b></li>
-    <li>Practice Problem: <b>8:30 AM - 9:00 AM</b></li>
+    <li>Welcome: <b>8:00 AM - 8:10 AM</b></li>
+    <li>Practice Problem: <b>8:10 AM - 9:00 AM</b></li>
     <li>Competition: <b>9:00 AM - 12:00 PM</b></li>
     <ul>
         <li>Scoreboard Turns Off: <b>11:30 AM</b></li>
