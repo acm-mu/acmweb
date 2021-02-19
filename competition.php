@@ -1,5 +1,5 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
-<link rel="stylesheet" type="text/css" href="/css/competition.css">
+<link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=1">
 
 <h1 class="title" page="competition">
     2021 Wisconsin-Dairyland Programming Competition

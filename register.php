@@ -1,6 +1,6 @@
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php"; ?>
 
-<link rel="stylesheet" type="text/css" href="/css/form.css">
+<link rel="stylesheet" type="text/css" href="/css/form.css?css_version=1">
 <script src="/js/form.js" defer></script>
 
 <form action="/php/register.php" method="POST" id="registerform">

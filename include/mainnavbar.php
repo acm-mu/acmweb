@@ -1,4 +1,4 @@
-<link rel='stylesheet' type='text/css' href='/css/mainnavbar.css'>
+<link rel='stylesheet' type='text/css' href='/css/mainnavbar.css?css_version=1'>
 <div id='mainnavbar'>
   <img src='/assets/acmmu.png'>
   <nav>

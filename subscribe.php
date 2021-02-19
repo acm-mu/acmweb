@@ -3,7 +3,7 @@
 <script src="/js/form.js" defer></script>
 
 <h1 class="title" page="subscribe"> Subscribe </h1>
-<link rel="stylesheet" type="text/css" href="/css/form.css">
+<link rel="stylesheet" type="text/css" href="/css/form.css?css_version=1">
 
 <div id="mc_embed_signup">
     <form action="https://www.us16.list-manage.com/subscribe/post?u=9fa8d85050948a789c7b95129&amp;id=a717949fca"

@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/events.css">
+<link rel="stylesheet" type="text/css" href="/css/events.css?css_version=1">
 
 <h1 class="title" page="events"> Events </h1>
 

@@ -1,6 +1,6 @@
 <?php  require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";  ?>
 
-<link rel="stylesheet" type="text/css" href="/archive/sidebar.css">
+<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?css_version=1">
 
 <div class="sidebar">
     <span class='select-year'>
