@@ -1,6 +1,5 @@
 <head>
     <link rel='stylesheet' type='text/css' href='/css/global.css?css_version=1'>
-    <link rel='stylesheet' type='text/css' href='/css/darkmode.css?css_version=1'>
     <script src='/js/global.js'></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel='shortcut icon' href='/assets/favicon.ico' type='image/x-icon'>

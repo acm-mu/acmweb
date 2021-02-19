@@ -62,7 +62,7 @@ function setTitle(prefix) {
 }
 
 function createElement(html) {
-  const temp = document.createElement('template').trim();
-  temp.innerHTML = html;
+  const temp = document.createElement('template');
+  temp.innerHTML = html.trim();
   return temp.content.firstChild;
 }
