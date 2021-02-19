@@ -49,35 +49,15 @@ function setTitle(prefix) {
   document.addEventListener('DOMContentLoaded', () => {
     const titleElement = document.querySelector('h1.title');
     let title;
-    let
-      page;
+    let page;
     if (titleElement) {
       title = titleElement.innerText;
       page = titleElement.getAttribute('page');
-    } else {
-      // (() => {
-      //   // Set Active Page
-      //   const url = window.location.href;
-      //   const sIndex = url.indexOf("/admin") + 7;
-      //   const eIndex = url.indexOf("?");
 
-      //   var page;
-      //   if (eIndex != -1) page = url.substring(sIndex, eIndex);
-      //   else page = url.substr(sIndex, url.length - sIndex);
-
-      //   if (page.endsWith("/")) page = page.substring(0, page.length - 1);
-
-      //   setTitle("ACM Admin Console", page);
-
-      //   if (page.length == 0) page = "index";
-
-      //   document.querySelector(`.item#${page}_sidenav`).classList.add('active');
-      // })();
+      if (page && page !== 'index') title = `${prefix} - ${page.charAt(0).toUpperCase() + page.slice(1)}`;
     }
 
-    if (page && page !== 'index') title = `${prefix} - ${page.charAt(0).toUpperCase() + page.slice(1)}`;
-
-    document.title = title;
+    document.title = prefix + (page && page !== 'index' ? ` - ${page.charAt(0).toUpperCase() + page.slice(1)}` : '');
   });
 }
 
