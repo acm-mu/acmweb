@@ -13,7 +13,7 @@ function onEvent(eventName, elementSelector, handler) {
 function getUrlParameter(lookupKey) {
   // Get the query portion of the URL, and cut off the '?'
   const query = window.location.search.substring(1);
-  // Split them up seperated by '&'
+  // Split them up separated by '&'
   const variables = query.split('&');
 
   for (let i = 0; i < variables.length; i += 1) {

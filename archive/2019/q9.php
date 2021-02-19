@@ -28,7 +28,7 @@
             input.</p>
 
         <p>To solve this problem, <strong>write unit tests to make sure that the formLargestNumber method correctly outputs
-                the largest value in every different type of testcase.</strong></p>
+                the largest value in every different type of test case.</strong></p>
 
         <h2>Writing Your Solution</h2>
 
