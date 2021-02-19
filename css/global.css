@@ -1,112 +1,105 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Poppins|Open+Sans:400,400i,600,700Ubuntu&display=swap");
-html,
-body {
-  margin: 0;
+
+:root {
+    --darknavy: #244770;
+    --darkblue: #003366;
+    --red: #FF2852;
+    --red2: #BF616A;
+    --gold: #D19B26;
+    --lightgreen: #79BF5D;
+    --lightgray: #CCCCCC;
+    /* --lightgray: #E7E7E7; */
+    --white: white;
+    --darkgray: #222222;
+    --black: black;
 }
 
-/* Hide Scrollbar */
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 100vh 10vh;
+}
+
 * {
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
+
 ::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+    width: 0;
+    background: transparent;
 }
-/* */
 
 :focus {
-  outline: none;
+    outline: none;
 }
 
 .container {
-  margin: auto;
-  margin-top: 40px;
-  width: 60%;
-  min-height: 90%;
-  padding: 30px 0;
-  color: #21272d;
+    padding: 5rem 20%;
+    color: #21272D;
+    font-family: "Open Sans";
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #263c4c;
-  font-family: "Open Sans";
-  font-weight: bold;
-}
-
-h1 {
-  font-weight: normal;
+:is(h1, h2, h3, h4, h5) {
+    font-family: "Open Sans";
+    color: #263C4C;
 }
 
 h1.title {
-  font-size: 37px;
-  font-weight: 400;
+    font-weight: normal;
+    font-size: 2.3rem;
 }
 
 h1.title:after {
-  background-color: #ddd;
-  display: block;
-  content: " ";
-  height: 3.5px;
-  margin: 18px 0;
-  width: 27px;
+    content: "";
+    background: #DDDDDD;
+    display: block;
+    height: 3.5px;
+    margin-top: 1rem;
+    width: 2rem;
 }
 
 a {
-  text-decoration: none;
-  color: #036;
-  font-weight: 600;
+    text-decoration: none;
+    color: var(--darknavy);
+    font-weight: 600;
 }
 
 b {
-  color: #263c4c;
+    color: #263C4C;
 }
 
-p,
-li {
-  font-family: "Open Sans";
-  color: inherit;
-  font-size: 18px;
-  line-height: 27px;
+p {
+    font-size: 1em;
+    line-height: 27px;
+
 }
 
 code {
-  color: #bf616a;
-  background: #f9f9f9;
-  padding: 0.25em 0.5em;
-  border-radius: 3px;
-  font-size: 85%;
+    color: var(--red2);
+    background: #F9F9F9;
+    padding: 0.25em 0.5em;
+    border-radius: 3px;
+    font-size: 1em;
 }
 
 pre {
-  background: #f9f9f9;
-  padding: 0.5em 0.5em;
+    background: #F9F9F9;
+    padding: 0.5em;
 }
 
-/*****************
-*   Breadcrumb   *
-*****************/
+/* Breadcrumb */
 
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
+breadcrumb {
+    padding: 10px 16px;
+    display: flex;
+    background: #EEEEEE;
+    font-size: 0.8em;
+    border-radius: 3px;
 }
 
-ul.breadcrumb li {
-  display: inline;
-  font-size: 14px;
+breadcrumb a+a:before {
+    padding: 8px;
+    color: var(--black);
+    content: "/\00a0";
 }
-
-ul.breadcrumb li + li:before {
-  padding: 8px;
-  color: #000;
-  content: "/\00a0";
-}
-
-/*****************
-* End Breadcrumb *
-*****************/

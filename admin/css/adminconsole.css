@@ -3,13 +3,13 @@ body {
 }
 
 span.error {
-  color: red;
+  color: var(--red);
 }
 
 #navbar span {
   margin: auto;
   margin-right: 15px;
-  color: black;
+  color: #222222;
   font-weight: normal;
   font-size: 16px;
   font-family: Poppins, Roboto, Ubuntu;
@@ -34,18 +34,24 @@ form.login input[type="submit"] {
 .ui.feed#feed>.event>.content .summary {
   font-weight: normal;
 }
+
 .ui.feed>.event>.content .extra.text {
   max-width: none !important;
   width: 80%;
 }
 
 .ui.feed>.event>.content .extra.text pre {
-  white-space: pre-wrap;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
- }
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
 
 .admin_sidebar {
   height: 100%;
@@ -54,6 +60,6 @@ form.login input[type="submit"] {
 }
 
 .admin.panel {
-float: left;
-width: 80%;
+  float: left;
+  width: 80%;
 }

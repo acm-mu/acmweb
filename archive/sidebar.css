@@ -3,7 +3,7 @@
 }
 
 .sidebar {
-  background: #222;
+  background: var(--darkgray);
   width: 13%;
   height: calc(100% - 60px);
   position: relative;
@@ -16,7 +16,7 @@
 }
 
 .select-year .dropdown {
-  color: #ccc;
+  color: #CCCCCC;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -27,12 +27,12 @@
 select.select-css {
   position: relative;
   width: 100%;
-  color: #ccc;
+  color: #CCCCCC;
   padding: 0 15px;
   text-align: center;
   margin-top: 45px;
   margin-bottom: 15px;
-  background: #222;
+  background: var(--darkgray);
   -webkit-appearance: none;
   font-size: 18px;
   border: none;
@@ -57,15 +57,15 @@ select.select-css {
 .sidebar li {
   font-size: 14px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #bbb;
+  color: #BBBBBB;
   margin: 0;
   padding: 10px;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #888888;
 }
 
 .sidebar .active li {
-  background-color: #fff;
-  color: #222;
+  background: var(--white);
+  color: var(--darkgray);
 }
 
 .content-div {
@@ -91,20 +91,11 @@ body {
 blockquote {
   margin-left: 0;
   padding-left: 20px;
-  border-left: 5px solid rgb(221, 221, 221);
-}
-
-code {
-  color: #bf616a;
-  background: #f9f9f9;
-  padding: 0.25em 0.5em;
-  padding: 0;
-  font-size: 100% !important;
-  border-radius: 3px;
+  border-left: 5px solid #DDDDDD;
 }
 
 button {
-  background: #e9e9e9;
+  background: var(--lightgray);
   border: none;
   text-transform: uppercase;
   font-size: 12px;
@@ -113,7 +104,6 @@ button {
   padding: 10px 24px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
 }
@@ -125,7 +115,7 @@ button:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #003366;
+  background: var(--darkblue);
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
@@ -153,14 +143,14 @@ button:focus {
 }
 
 button.active {
-  background: #003366;
-  color: #fff;
+  background: var(--darkblue);
+  color: var(--white);
 }
 
 td {
   text-align: center;
   padding: 2px;
-  border: 1px solid rgb(221, 221, 221);
+  border: 1px solid #DDDDDD;
 }
 
 .swatch {

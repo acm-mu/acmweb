@@ -26,8 +26,8 @@
             text: `Are you sure you'd like to to mark ${school.sname} as sent?`,
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#3085D6',
+            cancelButtonColor: '#DD333',
             confirmButtonText: 'Yes, please!'
         }).then((result) => {
             if (result.value) {
@@ -49,8 +49,8 @@
             text: `Are you sure you'd like to to mark ${school.sname} as sent?`,
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
+            confirmButtonColor: '#3085D6',
+            cancelButtonColor: '#DD3333',
             confirmButtonText: 'Yes, please!'
         }).then((result) => {
             if (result.value) {

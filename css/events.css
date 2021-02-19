@@ -1,48 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro&display=swap");
 
+#yearSelector {
+  margin: 1rem -.3rem;
+  font-family: 1rem Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+#yearSelector a {
+  color: inherit;
+  border-radius: .28rem;
+  padding: .78rem .92rem;
+  margin: .3em;
+}
+
+#yearSelector a.active,
+#yearSelector a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 .event {
   font-family: "Source Sans Pro";
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #CCCCCC;
   padding: 30px;
+  display: flex;
+}
+
+.event :is(h1, div, p) {
+  margin: 0;
 }
 
 .event .date {
   text-align: center;
-  float: left;
-  width: 50px;
-  margin: 15px 0;
+  margin: 1rem 0;
 }
 
 .event .date .month {
-  color: #ff2852;
-  font-size: 18px;
-  margin: 0;
+  color: red;
+  font-size: 1.1rem;
 }
 
 .event .date .day {
   color: black;
-  font-size: 48px;
-  line-height: 48px;
-  margin: 0;
-  font-weight: lighter;
-  font-family: "Noto Sans";
+  font: 3rem/3rem "Noto Sans";
 }
 
 .event .details {
-  padding: 15px;
-  margin-left: 70px;
+  padding: 1rem;
+  margin-left: 20px;
 }
 
 .event .details .title {
   color: #036;
-  font-size: 24px;
-  margin: 0;
+  font-size: 1.5rem;
 }
 
 .event .details .desc {
-  color: #333;
-  font-size: 14px;
-  margin: 0;
+  color: #222;
+  font-size: 1rem;
   margin-top: 5px;
 }
 
@@ -51,5 +65,5 @@
 .event.passed .details .title,
 .event.passed .details .desc,
 .event.passed .details .desc a {
-  color: #bbb;
+  color: #CCC;
 }

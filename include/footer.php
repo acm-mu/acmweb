@@ -1,26 +1,48 @@
-<link rel='stylesheet' type='text/css' href='/css/footer.css'>
-
 </div>
 <div id='footer'>
     <a target='_blank' href='https://acm.org'>
         <img class='acmlogo' src='/assets/acmlogo.png'>
     </a>
-    <ul id='social-links'>
+    <div id='social-links'>
         <a target='_blank' href='https://github.com/acm-mu'>
-            <li><img src='/assets/github.png'></li>
+            <img src='/assets/github.png'>
         </a>
         <a target='_blank' href='https://twitter.com/acmmu_'>
-            <li><img src='/assets/twitter.png'></li>
+            <img src='/assets/twitter.png'>
         </a>
         <a target='_blank' href='https://instagram.com/acm_mu/'>
-            <li><img src='/assets/instagram.png'></li>
+            <img src='/assets/instagram.png'>
         </a>
         <a target='_blank' href='https://facebook.com/acmmu/'>
-            <li><img src='/assets/facebook.png'></li>
+            <img src='/assets/facebook.png'>
         </a>
         <a target='_blank' href='https://discord.gg/KHD9dsx'>
-            <li><img src='/assets/discord.png'></li>
+            <img src='/assets/discord.png'>
         </a>
-    </ul>
+    </div>
 </div>
 </body>
+
+<style>
+    #footer {
+        background: #EFEFEF;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .acmlogo {
+        height: 5rem;
+    }
+
+    #social-links {
+        display: flex;
+        width: 20vw;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #social-links img {
+        height: 2rem;
+        cursor: pointer;
+    }
+</style>

@@ -2,7 +2,7 @@ label,
 th {
   font-family: Trebuchet, Arial, sans-serif;
   font-size: 14px;
-  color: #555;
+  color: #555555;
 }
 
 label {
@@ -27,7 +27,7 @@ label.sub {
 input,
 textarea,
 select.custom-select {
-  background: #eee;
+  background: #EEEEEE;
   padding: 10px;
   margin: 5px;
   width: auto;
@@ -36,7 +36,7 @@ select.custom-select {
 }
 
 b.req {
-  color: red;
+  color: var(--red);
 }
 
 input.double {
@@ -44,13 +44,13 @@ input.double {
 }
 
 input:disabled {
-  color: #999;
+  color: #999999;
 }
 
 input:disabled:hover,
 input:disabled:focus {
   cursor: not-allowed;
-  background: #eee;
+  background: #EEEEEE;
 }
 
 textarea {
@@ -60,17 +60,17 @@ textarea {
 
 input:hover {
   cursor: text;
-  background: #e7e7e7;
+  background: var(--lightgray);
 }
 
 button:hover {
   cursor: pointer;
-  background: #e7e7e7;
+  background: var(--lightgray);
 }
 
 input:focus,
 button:focus {
-  background: #ddd;
+  background: #DDDDDD;
 }
 
 input.submit {
@@ -80,27 +80,27 @@ input.submit {
   padding: 10px !important;
   border-radius: 8px !important;
   border: none;
-  color: white;
+  color: var(--white);
   background: transparent;
   position: relative;
   padding: 10px 24px;
-  color: #244770;
-  border: 2px #244770 solid;
+  color: var(--darknavy);
+  border: 2px var(--darknavy) solid;
   border-radius: 4px;
-  overflow:hidden;
+  overflow: hidden;
   background: none;
   z-index: 0;
   cursor: pointer;
-  transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
 
 input.submit:hover {
-  color: #fff;
-  background: #244770;
+  color: var(--white);
+  background: var(--darknavy);
 }
 
 .form-hidden-section {
@@ -118,18 +118,15 @@ select.custom-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
-    10% no-repeat #eee;
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #EEEEEE;
 }
 
 select.custom-select:hover {
-  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
-    10% no-repeat #e7e7e7;
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat var(--lightgray);
 }
 
 select.custom-select:focus {
-  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
-    10% no-repeat #ddd;
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #DDDDDD;
 }
 
 /*************
@@ -166,15 +163,15 @@ select.custom-select:focus {
   left: 0;
   height: 19px;
   width: 19px;
-  background-color: #eee;
+  background: #EEEEEE;
 }
 
-.checkbox-container input ~ .checkmark {
-  background-color: #ccc;
+.checkbox-container input~.checkmark {
+  background: #CCCCCC;
 }
 
-.checkbox-container input:checked ~ .checkmark {
-  background-color: #79bf5d;
+.checkbox-container input:checked~.checkmark {
+  background: var(--lightgreen);
 }
 
 .checkmark:after {
@@ -183,7 +180,7 @@ select.custom-select:focus {
   display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark:after {
+.checkbox-container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -227,7 +224,7 @@ select.custom-select:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background: #CCCCCC;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -239,16 +236,16 @@ select.custom-select:focus {
   width: 15px;
   left: 2px;
   bottom: 2px;
-  background-color: white;
+  background: var(--white);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-input:checked + .slider {
-  background-color: #79bf5d;
+input:checked+.slider {
+  background: var(--lightgreen);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(15px);
   -ms-transform: translateX(15px);
   transform: translateX(15px);
@@ -263,8 +260,8 @@ input:checked + .slider:before {
 *****************/
 
 .form-table button {
-  background: #eee;
-  color: #666;
+  background: #EEEEEE;
+  color: #666666;
   width: 26px;
   height: 26px;
   font-size: 18px;
@@ -277,7 +274,7 @@ input:checked + .slider:before {
   height: 100%;
   border: none;
   padding: 5px;
-  background: #eee;
+  background: #EEEEEE;
   font-size: 16px;
 }
 
@@ -298,25 +295,26 @@ input:checked + .slider:before {
 }
 
 .swal2-custom-icon {
-  color: #036 !important;
-  border-color: #036 !important;
+  color: var(--darkblue) !important;
+  border-color: var(--darkblue) !important;
 }
 
 .swal2-custom-confirm {
-  background-color: #036 !important;
+  background: var(--darkblue) !important;
 }
 
 .swal2-custom-cancel {
-  background-color: #969696 !important;
+  background: #969696 !important;
 }
 
 .swal2-custom-title {
-  color: #036 !important;
+  color: var(--darkblue) !important;
 }
 
 .swal2-custom-content {
   color: #969696 !important;
 }
+
 /*****************
 * End Swal Modal *
 *****************/

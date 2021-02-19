@@ -12,6 +12,6 @@ require_once "navbar.php";
         
         const tr = document.createElement('tr');
         tr.innerHTML = "<td colspan='100%' style='text-align:center'>" + message + "</td>";
-        document.querySelector('table tbody').appendChild(tr)
+        document.querySelector('table tbody').appendChild(tr);
     }
 </script>

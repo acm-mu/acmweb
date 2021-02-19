@@ -183,7 +183,7 @@
 
 <style>
     .very.small.basic.table {
-        background: #f5f5f5;
+        background: #F5F5F5;
         border: none;
     }
 

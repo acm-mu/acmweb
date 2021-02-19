@@ -18,7 +18,6 @@ $sname = $row['sname'];
 $count = $row['teams'];
 
 ?>
-<link rel="stylesheet" type="text/css" href="/css/confirmation.css?<?php echo date('l jS \of F Y h:i:s A');?>">
 
 <h1 class="title" page="confirmation">Thank You!</h1>
 
@@ -51,3 +50,26 @@ $count = $row['teams'];
 <p>Something look wrong? <a href="mailto:acm-officers@mscs.mu.edu?subject=Incorrect Registration">Let us know!</a></p>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
+
+<style>
+    #conf {
+        font-family: Trebuchet, Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    #conf td, #conf th {
+        border: 1px solid #DDDDDD;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #conf td {
+        background #F2F2F2;
+    }
+
+    #conf th {
+        padding: 12px 8px;
+        background: var(--darkblue);
+        color: var(--white);
+    }
+</style>

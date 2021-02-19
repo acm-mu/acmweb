@@ -1,10 +1,10 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 
-<ul class="breadcrumb">
-    <li><a href="/">Home</a></li>
-    <li><a href="/competition">Competition</a></li>
-    <li>Scratch Preparation</li>
-</ul>
+<breadcrumb>
+    <a href="/">Home</a>
+    <a href="/competition">Competition</a>
+    <a>Scratch Preparation</a>
+</breadcrumb>
 
 <h1 class="title">
     Scratch Preparation
