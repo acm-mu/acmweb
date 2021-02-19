@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 100vh 10vh;
+    grid-template-rows: minmax(100vh, 1fr) 10vh;
 }
 
 * {
