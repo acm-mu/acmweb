@@ -40,13 +40,13 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static int[] totalFlightTime(int distance, int velocity, int departureHr, int departureMin)</pre>
+        <pre class="prettyprint">public static int[] totalFlightTime(int distance, int velocity, int departureHr, int departureMin)</pre>
         <ul>
             <li>Return an <code>int</code> array containing <code>{arrivalHr, arrivalMin}</code></li>
         </ul>
 
         <h4>Python</h4>
-        <pre>def totalFlightTime(distance, velocity, departureHr, departureMin):</pre>
+        <pre class="prettyprint">def totalFlightTime(distance, velocity, departureHr, departureMin):</pre>
         <ul>
             <li>Return a tuple containing <code>(arrivalHr, arrivalMin)</code></li>
         </ul>
@@ -134,7 +134,7 @@
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def totalFlightTime(distance, velocity, departureHr, departureMin):
     """
     TODO: Complete this method that calculates the arrival time of a flight based on the given parameters:
@@ -172,7 +172,7 @@ main()
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class FlightTime {

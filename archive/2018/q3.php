@@ -40,7 +40,7 @@
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
 
         <h3>Method Signature</h3>
-        <pre>public static int convertToPigLatin(int input)</pre>
+        <pre class="prettyprint">public static int convertToPigLatin(int input)</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>convertToPigLatin(8675309)</code> returns <code>79867530</code></p>
@@ -91,7 +91,7 @@
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question3 {

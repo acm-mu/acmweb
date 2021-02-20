@@ -46,10 +46,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static String lookandsay(String input)</pre>
+        <pre class="prettyprint">public static String lookandsay(String input)</pre>
 
         <h4>Python</h4>
-        <pre>def lookandsay(input)</pre>
+        <pre class="prettyprint">def lookandsay(input)</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -103,7 +103,7 @@
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class LookAndSay {
@@ -140,7 +140,7 @@ public class LookAndSay {
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def lookandsay(input):
     """ TODO: Write a function that applies the look and say sequence 3 times, 
         using the previous result as the input for the next sequence.

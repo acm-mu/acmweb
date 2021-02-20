@@ -54,7 +54,7 @@
         <p>For example, the given skeleton already contains a single unit test method, relating to the example from above:
         </p>
 
-        <pre>    
+        <pre class="prettyprint">    
 @Test
 public void testFormLargestNumber1() throws Exception {
     assertEquals(21110, LargestNumber.formLargestNumber(new int[] {10, 11, 2}));
@@ -70,7 +70,7 @@ public void testFormLargestNumber1() throws Exception {
         <p>For example, the given skeleton already contains a single unit test method, relating to the example from above:
         </p>
 
-        <pre>
+        <pre class="prettyprint">
 def test_1(self):
     self.assertEqual(21110, LargestNumber.formLargestNumber([10, 11, 2]))
         </pre>
@@ -116,7 +116,7 @@ def test_1(self):
 </script>
 
 <script type="text/template" id="python-solution-template">
-    <pre>
+    <pre class="prettyprint">
 from functools import cmp_to_key
 
 def formLargestNumber(digits):
@@ -148,7 +148,7 @@ def formLargestNumber(digits):
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -197,7 +197,7 @@ public class LargestNumber {
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import unittest
 from LargestNumber import formLargestNumber
 
@@ -226,7 +226,7 @@ main()
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;

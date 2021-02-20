@@ -22,7 +22,7 @@
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
 
         <h3>Method Signature</h3>
-        <pre>public static int countBuildConfigurations(int wallWidth, int wallHeight)</pre>
+        <pre class="prettyprint">public static int countBuildConfigurations(int wallWidth, int wallHeight)</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>countBuildConfigurations(9, 3)</code> returns <code>8</code></p>
@@ -64,7 +64,7 @@
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question8 {

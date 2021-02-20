@@ -41,10 +41,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static boolean isNegative(int input)</pre>
+        <pre class="prettyprint">public static boolean isNegative(int input)</pre>
 
         <h4>Python</h4>
-        <pre>def isNegative(input):</pre>
+        <pre class="prettyprint">def isNegative(input):</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -142,7 +142,7 @@ Negative
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 // Do NOT include a package statement at the top of your solution.
 
 import java.util.Scanner;
@@ -177,11 +177,11 @@ public class PracticeProblem {
         return result;
     }
 }
-    </pre>
+</pre>
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def isNegative(x):
 """
 TODO: Complete this function, which should return whether or not the input number is less than zero.
@@ -214,5 +214,5 @@ for _ in range(num_cases):
         print('Non-Negative')
 
 main()
-    </pre>
+</pre>
 </script>

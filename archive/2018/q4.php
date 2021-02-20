@@ -34,7 +34,7 @@
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
 
         <h3>Method Signature</h3>
-        <pre>public static boolean isAcceptablePassword(String password, String userFirstName, String userLastName, int birthYear,
+        <pre class="prettyprint">public static boolean isAcceptablePassword(String password, String userFirstName, String userLastName, int birthYear,
     int birthMonth, int birthDay)</pre>
 
         <h3>Sample Method Calls</h3>
@@ -91,7 +91,7 @@ INVALID
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question4 {

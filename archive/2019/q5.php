@@ -65,10 +65,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static int countCombos(int score)</pre>
+        <pre class="prettyprint">public static int countCombos(int score)</pre>
 
         <h4>Python</h4>
-        <pre>def countCombos(score)</pre>
+        <pre class="prettyprint">def countCombos(score)</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>countCombos(3)</code> returns <code>3</code></p>
@@ -120,7 +120,7 @@
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Rugby {
@@ -154,7 +154,7 @@ public class Rugby {
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def countCombos(score):
     """
         TODO: Write a function that counts all combinations of points

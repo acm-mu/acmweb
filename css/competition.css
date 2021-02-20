@@ -1,20 +1,14 @@
 button {
   font-size: 20px;
   width: 250px;
-  padding: 10px;
-  border-radius: 8px !important;
-  border: none;
-  color: var(--white);
   margin: 0 20px;
-  background: transparent;
-  position: relative;
   padding: 10px 24px;
   color: var(--darknavy);
   border: 2px var(--darknavy) solid;
-  border-radius: 4px;
+  border-radius: 8px;
   overflow: hidden;
   background: none;
-  z-index: 0;
+  position: relative;
   cursor: pointer;
   transition: 0.08s ease-in;
   -o-transition: 0.08s ease-in;
@@ -23,67 +17,34 @@ button {
   -webkit-transition: 0.08s ease-in;
 }
 
-button.java:hover,
-button.register:hover {
+button:hover {
   color: var(--white);
 }
 
-button.java:before,
-button.register:before {
-  content: "";
+button:before {
   position: absolute;
+  content: "";
   background: var(--darknavy);
+  width: 100%;
+  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
   top: 100%;
-  z-index: -1;
+  transition: top 0.09s ease-in;
   -webkit-transition: top 0.09s ease-in;
 }
 
-button.java:hover:before,
-button.register:hover:before {
-  top: 0;
-}
-
-button.scratch {
-  -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
-}
-
-button.scratch:before {
-  position: absolute;
-  content: "";
-  background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+button:hover:before {
   z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  top: 0;
 }
 
-button.scratch:after {
-  content: "";
-  position: absolute;
+button.scratch:after,
+button.scratch:before {
   background: var(--gold);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -2;
-  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 button.scratch:hover {
-  color: var(--white);
   border: 2px var(--gold) solid;
-}
-
-button.scratch:hover:before {
-  opacity: .8;
-}
-
-button.scratch:hover:after {
-  top: 0;
 }

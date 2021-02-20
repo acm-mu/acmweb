@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="onegiantleap">One Giant Leap</h1>
+	<h1 id="page" page="onegiantleap">One Giant Leap</h1>
 
 	<div>
 		<h3>Problem Description</h3>
@@ -34,10 +34,10 @@
 		<h3>Method Signature</h3>
 
 		<h4>Java</h4>
-		<pre>public static int [] findLeapYears(int startingYear, int endingYear);</pre>
+		<pre class="prettyprint">public static int [] findLeapYears(int startingYear, int endingYear);</pre>
 
 		<h4>Python</h4>
-		<pre>def findLeapYears(startingYear, endingYear):</pre>
+		<pre class="prettyprint">def findLeapYears(startingYear, endingYear):</pre>
 
 		<h3>Sample Method Calls</h3>
 
@@ -91,7 +91,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -131,7 +131,7 @@ public class QuestionThree {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;

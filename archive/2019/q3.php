@@ -53,16 +53,16 @@ etc.
         </ul>
 
         <h4>Java</h4>
-        <pre>public static double cos(double x)</pre>
-        <pre>public static double sin(double x)</pre>
+        <pre class="prettyprint">public static double cos(double x)</pre>
+        <pre class="prettyprint">public static double sin(double x)</pre>
 
         <ul>
             <li>a <code>factorial</code> function is implemented for you</li>
         </ul>
 
         <h4>Python</h4>
-        <pre>def cos(x):</pre>
-        <pre>def sin(x):</pre>
+        <pre class="prettyprint">def cos(x):</pre>
+        <pre class="prettyprint">def sin(x):</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>cos(0.0)</code> returns <code>1.0</code></p>
@@ -113,7 +113,7 @@ etc.
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class TaylorSeries {
@@ -175,7 +175,7 @@ public class TaylorSeries {
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def cos(x):
     """
     TODO: Complete this method which calculates the cosine given an angle

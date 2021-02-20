@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="allezcuisine">Allez Cuisine!</h1>
+	<h1 id="page" page="allezcuisine">Allez Cuisine!</h1>
 	<div>
 		<h3>Problem Description</h3>
 
@@ -35,10 +35,10 @@
 		<h3>Method Signature</h3>
 
 		<h4>Java</h4>
-		<pre>public static int countTriominoFittings(int rows, int columns)</pre>
+		<pre class="prettyprint">public static int countTriominoFittings(int rows, int columns)</pre>
 
 		<h4>Python</h4>
-		<pre>def countTriominoFittings(rows, columns):</pre>
+		<pre class="prettyprint">def countTriominoFittings(rows, columns):</pre>
 
 		<h3>Sample Method Calls</h3>
 
@@ -89,7 +89,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -371,7 +371,7 @@ public class Triominoes {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionEight {

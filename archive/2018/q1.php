@@ -24,7 +24,7 @@
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
         
         <h3>Method Signature</h3>
-        <pre>public static int[] produceAmount(int amount)</pre>
+        <pre class="prettyprint">public static int[] produceAmount(int amount)</pre>
         
         <h3>Sample Method Calls</h3>
         <p><code>produceAmount(175)</code> returns an int array containing <code>{ 7, -1, 35, 175 }</code> because $1.75 can
@@ -40,7 +40,7 @@
         <p>For this question, you may also call the following method which has been written for you in the given code
             skeleton:
         </p>
-        <pre>public static boolean isDivisibleBy(int x, int y)</pre>
+        <pre class="prettyprint">public static boolean isDivisibleBy(int x, int y)</pre>
     </div>
 
     <h2>Testing Your Program from the Console</h2>
@@ -82,7 +82,7 @@
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question1 {

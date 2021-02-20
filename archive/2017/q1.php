@@ -30,10 +30,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static int calculate(int left, String op, int right)</pre>
+        <pre class="prettyprint">public static int calculate(int left, String op, int right)</pre>
 
         <h4>Python</h4>
-        <pre>def calculate(left, op, right):</pre>
+        <pre class="prettyprint">def calculate(left, op, right):</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -93,7 +93,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class solution {
@@ -137,7 +137,7 @@ public class solution {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionOne {

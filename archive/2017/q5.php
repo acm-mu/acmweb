@@ -117,10 +117,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static char[] baseConvert(long num, int base);</pre>
+        <pre class="prettyprint">public static char[] baseConvert(long num, int base);</pre>
 
         <h4>Python</h4>
-        <pre>def baseConvert(num, base):</pre>
+        <pre class="prettyprint">def baseConvert(num, base):</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -170,7 +170,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 public class BaseConversionSolution {
 
@@ -200,7 +200,7 @@ public class BaseConversionSolution {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionFive {

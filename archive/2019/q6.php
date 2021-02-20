@@ -40,10 +40,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static String[] multBaseConverter(int base10, int lwrBnd, int uprBnd)</pre>
+        <pre class="prettyprint">public static String[] multBaseConverter(int base10, int lwrBnd, int uprBnd)</pre>
 
         <h4>Python</h4>
-        <pre>def multBaseConverter(base10, lwrBnd, uprBnd):</pre>
+        <pre class="prettyprint">def multBaseConverter(base10, lwrBnd, uprBnd):</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -109,7 +109,7 @@
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def multBaseConverter(base10, lwrBnd, uprBnd):
     """
     TODO: Complete this method which converts a decimal to all bases between two bounds
@@ -148,7 +148,7 @@ main()
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

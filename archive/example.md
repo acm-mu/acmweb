@@ -5,25 +5,25 @@
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
     <!--  PYTHON SKELETON GOES HERE -->
     </pre>
 </script>
 
 <script type="text/template" id="python-solution-template">
-    <pre>
+    <pre class="prettyprint">
     <!-- PYTHON SOLUTION GOES HERE -->
     </pre>
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
     <!-- JAVA SKELETON GOES HERE -->
     </pre>
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
     <!-- JAVA SOLUTION GOES HERE -->
     </pre>
 </script>

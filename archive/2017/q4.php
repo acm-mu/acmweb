@@ -91,10 +91,10 @@
         <h4>Method Signature</h4>
 
         <h4>Java</h4>
-        <pre>public static String decodeMorse(String morse);</pre>
+        <pre class="prettyprint">public static String decodeMorse(String morse);</pre>
 
         <h4>Python</h4>
-        <pre>def decodeMorse(morse):</pre>
+        <pre class="prettyprint">def decodeMorse(morse):</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -147,7 +147,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -214,7 +214,7 @@ public class solution {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionFour {

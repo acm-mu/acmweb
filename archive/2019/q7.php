@@ -67,10 +67,10 @@ ing
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static String encrypt(String s)</pre>
+        <pre class="prettyprint">public static String encrypt(String s)</pre>
 
         <h4>Python</h4>
-        <pre>def encrypt(s):```</pre>
+        <pre class="prettyprint">def encrypt(s):```</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>encrypt("my name is sam")</code> returns <code>"mms yea nim as"</code></p>
@@ -116,7 +116,7 @@ mms yea nim as
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 def encrypt(s):
     """
     TODO: Implement the "square encryption" scheme
@@ -140,7 +140,7 @@ main()
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class Encryption {

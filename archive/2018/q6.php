@@ -34,7 +34,7 @@
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
 
         <h3>Method Signature</h3>
-        <pre>public static int comparePokerHands(int[] hand1, int[] hand2)</pre>
+        <pre class="prettyprint">public static int comparePokerHands(int[] hand1, int[] hand2)</pre>
         <p>(output <code>1</code> if <code>hand1</code> is the better hand, output <code>2</code> if <code>hand2</code> is
             the better hand, and output <code>0</code> if there is a tie)</p>
             
@@ -90,7 +90,7 @@ Tie
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question6 {

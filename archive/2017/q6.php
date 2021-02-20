@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="offthegrid">Off The Grid</h1>
+	<h1 id="page" page="offthegrid">Off The Grid</h1>
 
 	<div>
 		<h3>Problem Description</h3>
@@ -46,17 +46,17 @@
 		<h3>Method Signature</h3>
 
 		<h4>Java</h4>
-		<pre>public static bool isValidSolution(int[][] solution)</pre>
+		<pre class="prettyprint">public static bool isValidSolution(int[][] solution)</pre>
 
 		<h4>Python</h4>
-		<pre>def isValidSolution(solution):</pre>
+		<pre class="prettyprint">def isValidSolution(solution):</pre>
 
 		<h3>Sample Method Calls</h3>
 
-		<pre>int solution[][] = {{1,2,3,4},{3,4,1,2},{2,1,4,3},{4,3,2,1}};</pre>
+		<pre class="prettyprint">int solution[][] = {{1,2,3,4},{3,4,1,2},{2,1,4,3},{4,3,2,1}};</pre>
 		<code>isValidSolution(solution);</code> returns <code>True</code>
 
-		<pre>int solution[][] = {{1,2,1,4},{3,4,1,2},{2,1,4,3},{4,2,3,1}};</pre>
+		<pre class="prettyprint">int solution[][] = {{1,2,1,4},{3,4,1,2},{2,1,4,3},{4,2,3,1}};</pre>
 		<code>isValidSolution(solution);</code> returns <code>False</code>
 
 	</div>
@@ -108,7 +108,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionSix {
@@ -208,7 +208,7 @@ public class QuestionSix {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionSix {

@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro&display=swap");
 
 #yearSelector {
-  margin: 1rem -.3rem;
-  font-family: 1rem Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 1rem -0.3rem;
+  font-family: 1rem Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
   display: flex;
 }
 
 #yearSelector a {
   color: inherit;
-  border-radius: .28rem;
-  padding: .78rem .92rem;
-  margin: .3em;
+  border-radius: 0.28rem;
+  padding: 0.78rem 0.92rem;
+  margin: 0.3em;
 }
 
 #yearSelector a.active,
@@ -20,7 +20,7 @@
 
 .event {
   font-family: "Source Sans Pro";
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
   padding: 30px;
   display: flex;
 }
@@ -65,5 +65,5 @@
 .event.passed .details .title,
 .event.passed .details .desc,
 .event.passed .details .desc a {
-  color: #CCC;
+  color: #ccc;
 }

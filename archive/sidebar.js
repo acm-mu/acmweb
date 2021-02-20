@@ -27,4 +27,5 @@ onEvent('click', 'button.swatch', function () {
 
   this.classList.add('active')
   document.querySelector('#content').innerHTML = templates[this.id];
+  PR.prettyPrint();
 })

@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="rollforinitiative">Roll For Initiative</h1>
+	<h1 id="page" page="rollforinitiative">Roll For Initiative</h1>
 	<div>
 		<h3>Problem Description</h3>
 
@@ -29,11 +29,11 @@
 		<h3>Method Signature</h3>
 
 		<p>Java</p>
-		<pre>public static boolean rollDice(String die1, String die2, String die3, String die4, String die5, String word)
+		<pre class="prettyprint">public static boolean rollDice(String die1, String die2, String die3, String die4, String die5, String word)
 		</pre>
 
 		<h4>Python</h4>
-		<pre>def rollDice(die1, die2, die3, die4, die5, word):</pre>
+		<pre class="prettyprint">def rollDice(die1, die2, die3, die4, die5, word):</pre>
 
 		<h3>Sample Method Calls</h3>
 
@@ -96,7 +96,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.Scanner;
 
 public class AlphabetDice {
@@ -176,7 +176,7 @@ public class AlphabetDice {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+	<pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionSeven {

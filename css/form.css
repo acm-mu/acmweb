@@ -27,7 +27,7 @@ label.sub {
 input,
 textarea,
 select.custom-select {
-  background: #EEEEEE;
+  background: #eeeeee;
   padding: 10px;
   margin: 5px;
   width: auto;
@@ -50,7 +50,7 @@ input:disabled {
 input:disabled:hover,
 input:disabled:focus {
   cursor: not-allowed;
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
 textarea {
@@ -70,7 +70,7 @@ button:hover {
 
 input:focus,
 button:focus {
-  background: #DDDDDD;
+  background: #dddddd;
 }
 
 input.submit {
@@ -118,15 +118,18 @@ select.custom-select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #EEEEEE;
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
+    10% no-repeat #eeeeee;
 }
 
 select.custom-select:hover {
-  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat var(--lightgray);
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
+    10% no-repeat var(--lightgray);
 }
 
 select.custom-select:focus {
-  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% / 10% no-repeat #DDDDDD;
+  background: url(https://image.flaticon.com/icons/png/512/120/120906.png) 90% /
+    10% no-repeat #dddddd;
 }
 
 /*************
@@ -163,14 +166,14 @@ select.custom-select:focus {
   left: 0;
   height: 19px;
   width: 19px;
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 
-.checkbox-container input~.checkmark {
-  background: #CCCCCC;
+.checkbox-container input ~ .checkmark {
+  background: #cccccc;
 }
 
-.checkbox-container input:checked~.checkmark {
+.checkbox-container input:checked ~ .checkmark {
   background: var(--lightgreen);
 }
 
@@ -180,7 +183,7 @@ select.custom-select:focus {
   display: none;
 }
 
-.checkbox-container input:checked~.checkmark:after {
+.checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -224,7 +227,7 @@ select.custom-select:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #CCCCCC;
+  background: #cccccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -241,11 +244,11 @@ select.custom-select:focus {
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background: var(--lightgreen);
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(15px);
   -ms-transform: translateX(15px);
   transform: translateX(15px);
@@ -260,7 +263,7 @@ input:checked+.slider:before {
 *****************/
 
 .form-table button {
-  background: #EEEEEE;
+  background: #eeeeee;
   color: #666666;
   width: 26px;
   height: 26px;
@@ -274,7 +277,7 @@ input:checked+.slider:before {
   height: 100%;
   border: none;
   padding: 5px;
-  background: #EEEEEE;
+  background: #eeeeee;
   font-size: 16px;
 }
 

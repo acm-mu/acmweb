@@ -38,7 +38,7 @@ LOQUIX
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
 
         <h3>Method Signature</h3>
-        <pre>public static String getButtonOrder(String buttonLabels, String[] labelOrderGroups)</pre>
+        <pre class="prettyprint">public static String getButtonOrder(String buttonLabels, String[] labelOrderGroups)</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>getButtonOrder("APSI", new String[] { "HSOVIA", "WISAUP", "LOQUIX" })</code> returns <code>"ISAP"</code>
@@ -97,7 +97,7 @@ OVIA
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question5 {

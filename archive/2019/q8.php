@@ -108,16 +108,16 @@ Line 3:      19
 
         <h4>Java</h4>
 
-        <p><code>public static int[] identifyError(String[][] tokens)</code> returns an <code>int</code> array:
+        <p><pre class="prettyprint">public static int[] identifyError(String[][] tokens)</pre> returns an <code>int</code> array:
             <code>{errorLineIndex, errorTokenIndex}</code>
             <h4>Python</h4>
 
-            <p><code>def identifyError(tokens):</code> returning a tuple:<code>(errorLineIndex, errorRowIndex)</code></p>
+            <p><pre class="prettyprint">def identifyError(tokens):</pre> returning a tuple:<code>(errorLineIndex, errorRowIndex)</code></p>
 
             <h3>Sample Method Calls</h3>
             <h4>Java</h4>
 
-            <pre><code>identifyError(new String[][] {
+            <pre class="prettyprint"><code>identifyError(new String[][] {
                 new String[] { "(", "2", "+", "10", "*", "4", ")", "/", "2" },
                 new String[] { "(", "2", "+", "36", ")", "/", "2" },
                 new String[] { "38", "/", "2" },
@@ -127,7 +127,7 @@ Line 3:      19
             <p>returns an <code>int</code> array containing <code>{ 1, 3 }</code> because a calculation error occurs at line
                 1, token 3.</p>
 
-            <pre><code>identifyError(new String[][] {
+            <pre class="prettyprint"><code>identifyError(new String[][] {
                 new String[] { "7", "+", "-2", "*", "3" },
                 new String[] { "7", "+", "-6" },
                 new String[] { "1" } });
@@ -138,7 +138,7 @@ Line 3:      19
 
             <h4>Python</h4>
 
-            <pre><code>identifyError([
+            <pre class="prettyprint"><code>identifyError([
                 ["(", "2", "+", "10", "*", "4", ")", "/", "2"],
                 ["(", "2", "+", "36", ")", "/", "2"],
                 ["38", "/", "2"],
@@ -147,7 +147,7 @@ Line 3:      19
 
             <p>returns <code>(1, 3)</code> because a calculation error occurs at line 1, token 3.</p>
 
-            <pre><code>identifyError([
+            <pre class="prettyprint"><code>identifyError([
                 ["7", "+", "-2", "*", "3"],
                 ["7", "+", "-6"],
                 ["1"] ]);
@@ -263,7 +263,7 @@ Line 3:      19
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import re
 import sys
 
@@ -324,7 +324,7 @@ main()
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class ErrorCheck {

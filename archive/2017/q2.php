@@ -28,10 +28,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static int leastCommonMultiple(int a, int b);</pre>
+        <pre class="prettyprint">public static int leastCommonMultiple(int a, int b);</pre>
 
         <h4>Python</h4>
-        <pre>def leastCommonMultiple(a, b):</pre>
+        <pre class="prettyprint">def leastCommonMultiple(a, b):</pre>
 
         <h3>Sample Method Calls</h3>
 
@@ -78,7 +78,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class solution  {
@@ -107,7 +107,7 @@ public class solution  {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class QuestionTwo {

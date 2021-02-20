@@ -28,7 +28,7 @@
         <p>Enter your solution in the body of this method in the given code skeleton:</p>
 
         <h3>Method Signature</h3>
-        <pre>public static float[] getOutputFlows(int numInputs, int numJunctions, int numOutputs, String[][] connections, float[]
+        <pre class="prettyprint">public static float[] getOutputFlows(int numInputs, int numJunctions, int numOutputs, String[][] connections, float[]
     inputFlows)</pre>
         <ul>
             <li>Each element of connections is an array of two strings. Each of the pairs is the start and end of an
@@ -38,7 +38,7 @@
         </ul>
 
         <h3>Sample Method Calls</h3>
-        <pre>
+        <pre class="prettyprint">
 getOutputFlows(3, 4, 2, // numInputs, numJunctions, numOutputs
     new String[][] { // connections
         new String[] { "IN0", "JUNC0" }, new String[] { "IN1", "JUNC0" }, new String[] { "IN2", "JUNC1" },
@@ -114,7 +114,7 @@ JUNC3 OUT1
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.*;
 
 public class Question7 {

@@ -50,7 +50,7 @@
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class Ex3 {

@@ -1,46 +1,47 @@
 #mainnavbar {
-    position: fixed;
-    background: #F5F5F5;
-    width: 100vw;
-    height: 4em;
-    display: flex;
-    border-bottom: 2px solid var(--darknavy);
-    box-shadow: 0px 0px 10px #888888;
+  position: fixed;
+  z-index: 1;
+  background: #f5f5f5;
+  width: 100vw;
+  height: 4em;
+  display: flex;
+  border-bottom: 2px solid var(--darknavy);
+  box-shadow: 0px 0px 10px #888888;
 }
 
 #mainnavbar nav a {
-    margin: auto 15px;
-    color: var(--darknavy);
-    font-family: Poppins, Roboto, Ubuntu;
-    position: relative;
+  margin: auto 15px;
+  color: var(--darknavy);
+  font-family: Poppins, Roboto, Ubuntu;
+  position: relative;
 }
 
 #mainnavbar nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #mainnavbar img {
-    height: 150%;
-    padding: 5px;
+  height: 150%;
+  padding: 5px;
 }
 
 /* Underline on .active and :hover */
 
 #mainnavbar a:before {
-    content: "";
-    height: 0px;
-    width: 100%;
-    position: absolute;
-    bottom: -3;
-    background: var(--darknavy);
-    transition-property: height;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-out;
+  content: "";
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: -3;
+  background: var(--darknavy);
+  transition-property: height;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
 }
 
 #mainnavbar a.active:before,
 #mainnavbar a:hover:before {
-    height: 2px;
+  height: 2px;
 }

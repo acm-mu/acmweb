@@ -47,10 +47,10 @@
         <h3>Method Signature</h3>
 
         <h4>Java</h4>
-        <pre>public static void execute(int code, int startX, int startY, int width, int height)</pre>
+        <pre class="prettyprint">public static void execute(int code, int startX, int startY, int width, int height)</pre>
 
         <h4>Python</h4>
-        <pre>def execute(code, startX, startY, width, height):</pre>
+        <pre class="prettyprint">def execute(code, startX, startY, width, height):</pre>
 
         <h3>Sample Method Calls</h3>
         <p><code>execute(1, 0, 0, 10, 10)</code></p>
@@ -109,7 +109,7 @@
 </script>
 
 <script type="text/template" id="python-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Scanner;
 
 public class ToggleGrid {
@@ -171,7 +171,7 @@ public class ToggleGrid {
 </script>
 
 <script type="text/template" id="java-skeleton-template">
-    <pre>
+    <pre class="prettyprint">
 grid = [[0 for _ in range(100)] for _ in range(100)]
 
 def execute(code, startX, startY, width, height):

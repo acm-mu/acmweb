@@ -59,7 +59,7 @@ Case 5: 12,2
 </script>
 
 <script type="text/template" id="java-solution-template">
-    <pre>
+    <pre class="prettyprint">
 import java.util.Arrays;
 import java.util.Scanner;
 
