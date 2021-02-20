@@ -1,6 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";  ?>
 
-<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?css_version=1">
+<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?css_version=2">
 <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 <div class="sidebar">

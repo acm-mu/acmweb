@@ -1,5 +1,5 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
-<link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=1">
+<link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
 
 <h1 class="title" page="competition">
     2021 Wisconsin-Dairyland Programming Competition
@@ -33,7 +33,7 @@
     Contest. Teams of three or four students will have three hours to work collaboratively to solve
     problems similar in scope to Advanced Placement Computer Science exam questions. Points will be awarded based on the
     number of problems correctly solved and the time taken to solve, with appropriate penalties for incorrect
-    submissions. With a completely virtual competition this year, any preferred development environment can be used. 
+    submissions. With a completely virtual competition this year, any preferred development environment can be used.
     <!-- <a href="https://www.eclipse.org/">Eclipse</a>, 
     <a href="https://netbeans.org/">NetBeans</a>, 
     WordPad + JDK, 
@@ -49,8 +49,7 @@
 </p>
 <h2>Open/Scratch Division (Gold)</h2>
 <p>
-    Teams of two or three students will have three hours to implement a themed <a
-        href='http://scratch.mit.edu/'>Scratch</a> project. Submissions will be judged on creativity, use of key Scratch
+    Teams of two or three students will have three hours to implement a themed <a href='http://scratch.mit.edu/'>Scratch</a> project. Submissions will be judged on creativity, use of key Scratch
     constructs, and theme correspondence. This division will be suitable for introductory students familiar with
     Scratch.
 </p>
@@ -58,8 +57,8 @@
 <h2>AP Computer Science Principles (Eagle)</h2>
 <p>
     Teams of two or three students will be working together to solve challenges and present their results, similar to
-    the concepts tested in the AP Computer Science Principles exam. The details surrounding how students will present their 
-    projects are being finalized. We will most likely have a Microsoft Teams channel where students can present and Marquette 
+    the concepts tested in the AP Computer Science Principles exam. The details surrounding how students will present their
+    projects are being finalized. We will most likely have a Microsoft Teams channel where students can present and Marquette
     professors can browse all the different projects.
 </p>
 <h2>Logistics</h2>

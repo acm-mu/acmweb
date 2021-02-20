@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/events.css?css_version=1">
+<link rel="stylesheet" type="text/css" href="/css/events.css?css_version=2">
 
 <h1 class="title" page="events"> Events </h1>
 
@@ -46,7 +46,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
       for (const year of years)
         yearSelector.appendChild(createElement(
           `<a class='item ${year == selectedYear ? 'active' : ''}' href='?year=${year}'>${year} - ${parseInt(year)+1}</a>`
-          ));
+        ));
 
       for (const event of events[selectedYear]) {
         const d = moment(event.date);

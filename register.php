@@ -1,12 +1,12 @@
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php"; ?>
 
-<link rel="stylesheet" type="text/css" href="/css/form.css?css_version=1">
+<link rel="stylesheet" type="text/css" href="/css/form.css?css_version=2">
 <script src="/js/form.js" defer></script>
 
 <form action="/php/register.php" method="POST" id="registerform">
     <h1 class="title">2021 Wisconsin-Dairyland Programming Competition Registration</h1>
-    <p><em><b>Please disable any ad-blockers for this page as they can alter your 
-    registration record by not allowing access to our databases. Thank you!</b></em></p>
+    <p><em><b>Please disable any ad-blockers for this page as they can alter your
+                registration record by not allowing access to our databases. Thank you!</b></em></p>
 
     <!----------------------------------
     -         SCHOOL INFORMATION       -
@@ -15,96 +15,95 @@
         <h2>School Information</h2>
         <p>We are taking a different approach to invoicing this year to help expedite the registration process! This
             information will be used on your auto-generated invoice.
+        <div class="input-group">
+            <label>School Name <b class="req">*</b></label>
+            <input name="sname" class="double" required>
+        </div>
+
+        <div class="input-group">
+            <label>School Address Line 1 <b class="req">*</b></label>
+            <input name="saddl1" class="double" required>
+        </div>
+
+        <div class="input-group">
+            <label>School Address Line 2</label>
+            <input name="saddl2" class="double">
+        </div>
+
+        <span class='one-line'>
             <div class="input-group">
-                <label>School Name <b class="req">*</b></label>
-                <input name="sname" class="double" required>
-            </div>
-
-            <div class="input-group">
-                <label>School Address Line 1 <b class="req">*</b></label>
-                <input name="saddl1" class="double" required>
-            </div>
-
-            <div class="input-group">
-                <label>School Address Line 2</label>
-                <input name="saddl2" class="double">
-            </div>
-
-            <span class='one-line'>
-                <div class="input-group">
-                    <label>School City <b class="req">*</b></label>
-                    <input name="scity" required>
-                </div>
-
-                <div class="input-group">
-                    <label>School State <b class="req">*</b></label>
-                    <input name="sstate" value="WI" disabled required>
-                </div>
-
-                <div class="input-group">
-                    <label>School Zip Code <b class="req">*</b></label>
-                    <input name="szip" type="number" required>
-                </div>
-            </span>
-
-            <h2>Coach Information</h2>
-            <div class="input-group">
-                <label>Coach Name <b class="req">*</b></label>
-                <input name="cname" required>
+                <label>School City <b class="req">*</b></label>
+                <input name="scity" required>
             </div>
 
             <div class="input-group">
-                <label>Email Address <b class="req">*</b></label>
-                <input name="email" type="email" class="double" required>
+                <label>School State <b class="req">*</b></label>
+                <input name="sstate" value="WI" disabled required>
             </div>
 
             <div class="input-group">
-                <label>Coach Telephone <b class="req">*</b></label>
-                <input id="phone" name="phone" type="tel" required>
+                <label>School Zip Code <b class="req">*</b></label>
+                <input name="szip" type="number" required>
             </div>
+        </span>
 
-            <div class="input-group">
-                <label>Coach T-Shirt Size <b class="req">*</b></label>
-                <select name="coach_shirt" class="custom-select" required>
-                    <option disabled="" selected="" value="">Shirt Size</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xlarge">X-Large</option>
-                    <option value="xxlarge">XX-Large</option>
-                </select>
-            </div>
+        <h2>Coach Information</h2>
+        <div class="input-group">
+            <label>Coach Name <b class="req">*</b></label>
+            <input name="cname" required>
+        </div>
 
-            <div class="input-group">
-                <label>Would you like any additional t-shirts for classroom volunteers (max 2)?</label>
-                <label class="switch">
-                    <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section"
-                        toggle-required="true">
-                    <span class="slider"></span>
-                </label>
-            </div>
+        <div class="input-group">
+            <label>Email Address <b class="req">*</b></label>
+            <input name="email" type="email" class="double" required>
+        </div>
 
-            <div class="form-hidden-section" id="additional-shirts-section">
-                <table class="form-table">
-                    <thead>
-                        <tr>
-                            <th>Small</th>
-                            <th>Medium</th>
-                            <th>Large</th>
-                            <th>X-Large</th>
-                            <th>XX-Large</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="number" value="0" min="0" name="additional_small" class="required"></td>
-                            <td><input type="number" value="0" min="0" name="additional_medium" class="required"></td>
-                            <td><input type="number" value="0" min="0" name="additional_large" class="required"></td>
-                            <td><input type="number" value="0" min="0" name="additional_xlarge" class="required"></td>
-                            <td><input type="number" value="0" min="0" name="additional_xxlarge" class="required"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="input-group">
+            <label>Coach Telephone <b class="req">*</b></label>
+            <input id="phone" name="phone" type="tel" required>
+        </div>
+
+        <div class="input-group">
+            <label>Coach T-Shirt Size <b class="req">*</b></label>
+            <select name="coach_shirt" class="custom-select" required>
+                <option disabled="" selected="" value="">Shirt Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+                <option value="xxlarge">XX-Large</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Would you like any additional t-shirts for classroom volunteers (max 2)?</label>
+            <label class="switch">
+                <input name="additional_shirts" type="checkbox" data-toggle="additional-shirts-section" toggle-required="true">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="form-hidden-section" id="additional-shirts-section">
+            <table class="form-table">
+                <thead>
+                    <tr>
+                        <th>Small</th>
+                        <th>Medium</th>
+                        <th>Large</th>
+                        <th>X-Large</th>
+                        <th>XX-Large</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" value="0" min="0" name="additional_small" class="required"></td>
+                        <td><input type="number" value="0" min="0" name="additional_medium" class="required"></td>
+                        <td><input type="number" value="0" min="0" name="additional_large" class="required"></td>
+                        <td><input type="number" value="0" min="0" name="additional_xlarge" class="required"></td>
+                        <td><input type="number" value="0" min="0" name="additional_xxlarge" class="required"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!----------------------------------
@@ -316,8 +315,7 @@
             </div> -->
 
             <h4>Any additional questions/comments/concerns?</h4>
-            <textarea name="concerns"
-                placeholder="e.g. How will we get our shirts?"></textarea>
+            <textarea name="concerns" placeholder="e.g. How will we get our shirts?"></textarea>
             <br />
             <input type="submit" class="register" value="Register" id="register">
 
