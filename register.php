@@ -267,9 +267,9 @@
                 <input name="eagle_devices" type="number" value="0" min="0"> -->
 
                 <h4>Teams</h4>
-                <label class="sub"><b>Note:</b> A maximum of <b>3</b> teams can be registered per school. Each team
+                <label class="sub"><b>Note:</b> A maximum of <b>5</b> teams can be registered per school. Each team
                     limited to <b>4</b> members.</label>
-                <table class="form-table" division="eagle" max-rows="3">
+                <table class="form-table" division="eagle" max-rows="5">
                     <thead>
                         <tr>
                             <th></th>
