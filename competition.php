@@ -64,7 +64,7 @@
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Virtual! The main portion of the contest will take place through codeabac.us (link coming soon!).
+    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us">codeabac.us</a>, a web application built specifically for this competition.
 </p>
 
 <h3>Date:</h3>
