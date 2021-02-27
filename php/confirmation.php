@@ -48,7 +48,7 @@ $count = $row['teams'];
     </tr>
 </table>
 <p>Something look wrong? <a href="mailto:acm-registration@mscs.mu.edu?subject=Incorrect Registration">Let us know!</a></p>
-<p>Your newly registered teams should appear on our <a href="https://codeabac.us">competition website</a> within a few minutes!</p>
+<p>Your newly registered teams should appear on our <a href="https://codeabac.us" target="_blank">competition website</a> within a few minutes!</p>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 
