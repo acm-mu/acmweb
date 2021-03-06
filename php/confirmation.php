@@ -22,7 +22,7 @@ $count = $row['teams'];
 <h1 class="title" page="confirmation">Thank You!</h1>
 
 <p>Thank you for registering,
-    <? echo $cname; ?>. We can't wait to have you and your compete in <b>Mid April</b>!</p>
+    <? echo $cname; ?>. We can't wait to have you and your teams compete on <b>April 15, 2021</b>!</p>
 <h2>Confirmation Details</h2>
 <p>Here are your confirmation details:</p>
 <table id="conf">
@@ -47,7 +47,8 @@ $count = $row['teams'];
         </td>
     </tr>
 </table>
-<p>Something look wrong? <a href="mailto:acm-officers@mscs.mu.edu?subject=Incorrect Registration">Let us know!</a></p>
+<p>Something look wrong? <a href="mailto:acm-registration@mscs.mu.edu?subject=Incorrect Registration">Let us know!</a></p>
+<p>Your newly registered teams should appear on our <a href="https://codeabac.us" target="_blank">competition website</a> within a few minutes!</p>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 
