@@ -25,10 +25,15 @@
             title: 'Are you sure?',
             text: `Are you sure you'd like to to mark ${school.sname} as sent?`,
             icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085D6',
-            cancelButtonColor: '#DD333',
-            confirmButtonText: 'Yes, please!'
+            buttons: {
+                cancel: {
+                    color: '#DD3333',
+                },
+                confirm: {
+                    text: 'Yes, please!',
+                    color: '#3085D6'
+                }
+            }
         }).then((result) => {
             if (result) {
                 this.classList.add('loading');
@@ -46,12 +51,17 @@
 
         swal({
             title: 'Are you sure?',
-            text: `Are you sure you'd like to to mark ${school.sname} as sent?`,
+            text: `Are you sure you'd like to to mark ${school.sname} as paid?`,
             icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085D6',
-            cancelButtonColor: '#DD3333',
-            confirmButtonText: 'Yes, please!'
+            buttons: {
+                cancel: {
+                    color: '#DD3333',
+                },
+                confirm: {
+                    text: 'Yes, please!',
+                    color: '#3085D6'
+                }
+            }
         }).then((result) => {
             if (result) {
                 this.classList.add('loading');
