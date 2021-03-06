@@ -28,6 +28,7 @@
             buttons: {
                 cancel: {
                     color: '#DD3333',
+                    visible: true
                 },
                 confirm: {
                     text: 'Yes, please!',
@@ -56,6 +57,7 @@
             buttons: {
                 cancel: {
                     color: '#DD3333',
+                    visible: true,
                 },
                 confirm: {
                     text: 'Yes, please!',
