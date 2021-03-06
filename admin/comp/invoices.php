@@ -30,7 +30,7 @@
             cancelButtonColor: '#DD333',
             confirmButtonText: 'Yes, please!'
         }).then((result) => {
-            if (result.value) {
+            if (result) {
                 this.classList.add('loading');
 
                 fetch(`/admin/comp/php/update?schoolid=${schoolid}&key=datesent`)
@@ -53,7 +53,7 @@
             cancelButtonColor: '#DD3333',
             confirmButtonText: 'Yes, please!'
         }).then((result) => {
-            if (result.value) {
+            if (result) {
                 this.classList.add('loading');
 
                 fetch(`/admin/comp/php/update?schoolid=${schoolid}&key=datepaid`)
