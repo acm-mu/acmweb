@@ -1,5 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
+<meta abacus-link='I' />
+
 <script type="text/template" id="description-template">
     <h1 id="page" page="calculator">Calculator</h1>
     <div>

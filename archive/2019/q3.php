@@ -1,5 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
+<meta abacus-link='D' />
+
 <script type="text/template" id="description-template">
     <h1 id="page" page="taylorseries">Taylor Series</h1>
     <div>

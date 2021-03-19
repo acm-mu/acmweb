@@ -3,3 +3,4 @@
 cgi-bin
 error_log
 .DS_Store
+.vscode

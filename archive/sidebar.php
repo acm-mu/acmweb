@@ -1,6 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";  ?>
 
-<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?css_version=2">
+<link rel="stylesheet" type="text/css" href="/archive/sidebar.css?css_version=2.1">
 <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 <div class="sidebar">
@@ -44,6 +44,7 @@
     <button class="swatch" id="python-solution">Python Solution</button>
     <button class="swatch" id="java-skeleton">Java Skeleton</button>
     <button class="swatch" id="java-solution">Java Solution</button>
+    <a href='#' id="abacus-link">>_ Try on Abacus</a>
 
     <div id="content"></div>
 </div>

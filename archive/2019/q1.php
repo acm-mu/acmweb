@@ -1,5 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
+<meta abacus-link='B' />
+
 <script type="text/template" id="description-template">
     <h1 id="page" page="flighttime">Flight Time</h1>
 

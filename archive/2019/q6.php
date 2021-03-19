@@ -1,5 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
+<meta abacus-link='G' />
+
 <script type="text/template" id="description-template">
     <div>
         <h1 id="page" page="basebounds">Base Bounds</h1>
