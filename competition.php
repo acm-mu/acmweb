@@ -5,7 +5,11 @@
     2021 Wisconsin-Dairyland Programming Competition
 </h1>
 
+
+
 <center>
+    <h2 class="reg_remind" style="color: red;">Registration closes <em>this Friday</em>, March 26th, 2021</h2>
+    <br />
     <a href="/archive/prep/q0">
         <button class="java">Java Preparation</button>
     </a>
@@ -29,11 +33,19 @@
 
 <h2>Java/Python Division (Blue)</h2>
 <p>
-    A traditional team-based programming competition, modeled on the ACM International Collegiate Programming
-    Contest. Teams of three or four students will have three hours to work collaboratively to solve
-    problems similar in scope to Advanced Placement Computer Science exam questions. Points will be awarded based on the
-    number of problems correctly solved and the time taken to solve, with appropriate penalties for incorrect
-    submissions. With a completely virtual competition this year, any preferred development environment can be used.
+    A traditional team-based programming competition, modeled on the ACM International Collegiate Programming Contest.
+    Teams of three or four students will have three hours and two computers to work collaboratively to solve problems
+    similar in scope to Advanced Placement Computer Science exam questions. Points will be awarded based on the number of
+    problems correctly solved and the time taken to solve, with appropriate penalties for incorrect submissions.
+</p>
+
+<p>
+    The International Collegiate Programming Contest is an algorithmic programming contest for college students. Teams of
+    three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity,
+    innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to
+    raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in
+    the world.
+</p>
     <!-- <a href="https://www.eclipse.org/">Eclipse</a>, 
     <a href="https://netbeans.org/">NetBeans</a>, 
     WordPad + JDK, 
@@ -46,25 +58,31 @@
         You may find it useful to review our <a href="/assets/2019bluerules.pdf">Competition Rules</a>, and Java
         Preparation Notes <i>(Python Preparation Notes coming soon)</i>.
     </p> -->
-</p>
+<!-- </p> -->
 <h2>Open/Scratch Division (Gold)</h2>
 <p>
-    Teams of two or three students will have three hours to implement a themed <a href='http://scratch.mit.edu/'>Scratch</a> project. Submissions will be judged on creativity, use of key Scratch
-    constructs, and theme correspondence. This division will be suitable for introductory students familiar with
-    Scratch.
+    A team-based programming competition for high school students just beginning their programming education.
+    Teams of two or three students will have three hours to work collaboratively to solve problems focused on
+    logic, mathematics, and creativity. Points will be awarded based on the number of problems correctly solved
+    and original creative ideas. Appropriate penalties will be deducted for incorrect submissions or academic
+    dishonesty. Each question is written using <a href="https://scratch.mit.edu/" target="_blank" rel="noreferrer">Scratch</a>,
+    an event driven, block-based, visual programming language developed at
+    the <a href="https://www.media.mit.edu/" target="_blank" rel="noreferrer">MIT Media Lab</a> at the Massachusetts Institute of Technology.
 </p>
 <!-- <p>You may find it useful to review our Scratch Preparation Notes.</p> -->
 <h2>AP Computer Science Principles (Eagle)</h2>
 <p>
-    Teams of two or three students will be working together to solve challenges and present their results, similar to
-    the concepts tested in the AP Computer Science Principles exam. The details surrounding how students will present their
-    projects are being finalized. We will most likely have a Microsoft Teams channel where students can present and Marquette
-    professors can browse all the different projects.
+    Teams of two to four students will be working together to solve a problem that is present in society and is awaiting a technological 
+    solution. The students then have three hours to develop a solution using their knowledge of computer science principles and technologies. Students are 
+    not required to write code or create a working prototype, but rather have a flushed out, technical solution. At the end of the three hours, each team will 
+    present (5 – 10 minutes) their solution to a small board of faculty members. The faculty will ask a few questions and ultimately vote on a winner. We will 
+    have a Google Meet call where students will present and gain feedback the feedback mentioned earlier.
 </p>
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">codeabac.us</a>, a web application built specifically for this competition.
+    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">codeabac.us</a>, a web application built 
+    specifically for this competition.
 </p>
 
 <h3>Date:</h3>
