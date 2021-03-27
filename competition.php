@@ -1,14 +1,30 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 <link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
 
+<style>
+    .reg_message {
+        border-radius: .28rem;
+        padding: 1em 1.5em;
+        line-height: 20px;
+        background: rgb(255, 250, 243);
+        color: rgb(87, 58, 8);
+        box-shadow: rgb(201, 186, 155) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+
+    .reg_message h2 {
+        color: rgb(87, 58, 8);
+    }
+</style>
+
 <h1 class="title" page="competition">
     2021 Wisconsin-Dairyland Programming Competition
 </h1>
 
-
-
 <center>
-    <h2 class="reg_remind" style="color: red;">Registration closes <em>this Friday</em>, March 26th, 2021</h2>
+    <div class='reg_message'>
+        <h2>Registration has ended!</h2>
+        <p>If you would still like to register, please email <a href='mailto:acm-registration@mscs.mu.edu'>acm-registration@mscs.mu.edu</a></p>
+    </div>
     <br />
     <a href="/archive/prep/q0">
         <button class="java">Java Preparation</button>
@@ -46,7 +62,7 @@
     raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in
     the world.
 </p>
-    <!-- <a href="https://www.eclipse.org/">Eclipse</a>, 
+<!-- <a href="https://www.eclipse.org/">Eclipse</a>, 
     <a href="https://netbeans.org/">NetBeans</a>, 
     WordPad + JDK, 
     <a href="https://www.cygwin.com/">Cygwin tools</a>, 
@@ -72,16 +88,16 @@
 <!-- <p>You may find it useful to review our Scratch Preparation Notes.</p> -->
 <h2>AP Computer Science Principles (Eagle)</h2>
 <p>
-    Teams of two to four students will be working together to solve a problem that is present in society and is awaiting a technological 
-    solution. The students then have three hours to develop a solution using their knowledge of computer science principles and technologies. Students are 
-    not required to write code or create a working prototype, but rather have a flushed out, technical solution. At the end of the three hours, each team will 
-    present (5 – 10 minutes) their solution to a small board of faculty members. The faculty will ask a few questions and ultimately vote on a winner. We will 
+    Teams of two to four students will be working together to solve a problem that is present in society and is awaiting a technological
+    solution. The students then have three hours to develop a solution using their knowledge of computer science principles and technologies. Students are
+    not required to write code or create a working prototype, but rather have a flushed out, technical solution. At the end of the three hours, each team will
+    present (5 – 10 minutes) their solution to a small board of faculty members. The faculty will ask a few questions and ultimately vote on a winner. We will
     have a Google Meet call where students will present and gain feedback the feedback mentioned earlier.
 </p>
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">codeabac.us</a>, a web application built 
+    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">codeabac.us</a>, a web application built
     specifically for this competition.
 </p>
 
@@ -108,9 +124,9 @@
 
 <!-- <h3>Register</h3>
 <p>Registration coming soon!</p> -->
-<a href="/register">
+<!-- <a href="/register">
     <button class="register">Register</button>
-</a>
+</a> -->
 <p>
     <i>Registration closes March 26th, 2021</i>
 </p>

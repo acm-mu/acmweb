@@ -1,4 +1,7 @@
-<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php"; ?>
+<?php
+header('Location: /competition');
+require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php";
+?>
 
 <link rel="stylesheet" type="text/css" href="/css/form.css?css_version=2">
 <script src="/js/form.js" defer></script>
