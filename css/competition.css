@@ -1,6 +1,6 @@
 button {
   font-size: 20px;
-  width: 250px;
+  width: auto;
   margin: 0 20px;
   padding: 10px 24px;
   color: var(--darknavy);
@@ -23,8 +23,8 @@ button:hover {
 
 button:before {
   position: absolute;
+  background: var(--black);
   content: "";
-  background: var(--darknavy);
   width: 100%;
   height: 100%;
   bottom: 0;
@@ -40,6 +40,11 @@ button:hover:before {
   top: 0;
 }
 
+button.java:after,
+button.java:before {
+  background: var(--darknavy);
+}
+
 button.scratch:after,
 button.scratch:before {
   background: var(--gold);
@@ -47,4 +52,13 @@ button.scratch:before {
 
 button.scratch:hover {
   border: 2px var(--gold) solid;
+}
+
+button.abacus:after,
+button.abacus:before {
+  background: var(--teal);
+}
+
+button.abacus:hover {
+  border: 2px var(--teal) solid;
 }

@@ -23,13 +23,15 @@
 <center>
     <div class='reg_message'>
         <h2>Registration has ended!</h2>
-        <p>If you would still like to register, please email <a href='mailto:acm-registration@mscs.mu.edu'>acm-registration@mscs.mu.edu</a></p>
+        <p>Head over to <a href="https://codeabac.us" target="_blank">Abacus</a> to start practicing for the big day!</p>
     </div>
     <br />
     <a href="/archive/prep/q0">
         <button class="java">Java Preparation</button>
     </a>
-
+    <a href="https://codeabac.us/blue/practice">
+        <button class="abacus">>_ Abacus</button>
+    </a>
     <a href="/scratch_prep">
         <button class="scratch">Scratch Preparation</button>
     </a>
@@ -97,7 +99,7 @@
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">codeabac.us</a>, a web application built
+    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">Abacus</a>, a web application built
     specifically for this competition.
 </p>
 
