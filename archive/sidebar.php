@@ -6,7 +6,7 @@
 <div class="sidebar">
     <select onchange="location = this.value;">
         <option <?php if (strpos($_SERVER['REQUEST_URI'], 'prep')) echo "selected" ?> value='/archive/prep/q0.php'>
-            Java Prep</option>
+            Welcome!</option>
         <option <?php if (strpos($_SERVER['REQUEST_URI'], '2021')) echo "selected" ?> value='/archive/2021/q0.php'>
             2021</option>
         <option <?php if (strpos($_SERVER['REQUEST_URI'], '2019')) echo "selected" ?> value='/archive/2019/q0.php'>
