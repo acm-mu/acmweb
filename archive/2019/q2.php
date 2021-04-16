@@ -110,7 +110,7 @@
     </div>
 </script>
 
-<script type="text/template" id="python-skeleton-template">
+<script type="text/template" id="java-skeleton-template">
     <pre class="prettyprint">
 import java.util.Scanner;
 
@@ -168,11 +168,10 @@ public class ToggleGrid {
         }
         in.close();
     }
-}     
-    </pre>
+}</pre>
 </script>
 
-<script type="text/template" id="java-skeleton-template">
+<script type="text/template" id="python-skeleton-template">
     <pre class="prettyprint">
 grid = [[0 for _ in range(100)] for _ in range(100)]
 
@@ -211,6 +210,5 @@ def main():
             execute(int(inp[0]), int(inp[1]), int(inp[2]), int(inp[3]), int(inp[4]))
         print(count())
 
-main()    
-    </pre>
+main()</pre>
 </script>
