@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
         abacusButton.style.display = 'inline'
         abacusButton.href = `https://codeabac.us/blue/practice/${abacusLink}`
     }
+
+    const videoSolutionLink = document.querySelector('meta[yt-link]').getAttribute('yt-link')
+    if(videoSolutionLink) {
+        const ytButton = document.querySelector('#yt-link')
+        ytButton.style.display = 'inline'
+        ytButton.href = `${videoSolutionLink}`
+    }
 })
 
 onEvent('click', 'button.swatch', function() {

@@ -239,7 +239,7 @@ public class HanksHarvest {
 		double numTotal = 0;
 		String holder = "";
 		
-		for(int i=0; i<harvest.length(); i++) {
+		for(int i=0; i< harvest.length(); i++) {
 			holder = harvest.substring(i, i+1);
 			if(holder.equals("C")) {
 				numCorn++;
