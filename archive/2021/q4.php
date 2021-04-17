@@ -3,8 +3,9 @@
 <!-- <meta abacus-link='A' /> -->
 
 <script type="text/template" id="description-template">
-	<h1 id="page" page="outofwater">Out of Water!</h1>
     <div>
+        <h1 id="page" page="outofwater">Out of Water!</h1>
+        
         <p>Space Captain Zap B has been traveling the galaxy for several years. However, his water supplies are exhausted and he needs to find a place to land. Using his ship, he was able to identify ten planets that have the necessary elements to replenish his reserves. Due to the ship traveling at the speed of light, it's imperative Zap knows exactly how long he should travel towards a planet. Too short of a time and Zap would undershoot. Too long and Zap would overshoot. Given these planets, their distances calculate how many seconds Zap needs to travel to reach each planet based on his starting position.</p>
         <p>To solve this problem, <strong>calculate and sort (smallest value first) the time (in minutes) it will take Captain Zap to get to each planet.</strong></p>
         

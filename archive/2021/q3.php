@@ -3,8 +3,9 @@
 <!-- <meta abacus-link='D' /> -->
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="vendingmachine">Vending Machine</h1>
     <div>
+        <h1 id="page" page="vendingmachine">Vending Machine</h1>
+    
         <h3>Problem Description</h3>
 
         <p>Alex and her friends are studying (while practicing social distancing) for their exam next week. Alex, being the good friend that she is, offered to buy the entire group snacks from the vending machine. To keep it simple for Alex, they all decided to choose the same item. Alex only a set amount of cash in her wallet. The group needs to calculate how many of each item she can buy with the cash in her wallet. </p>

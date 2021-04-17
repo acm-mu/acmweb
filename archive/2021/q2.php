@@ -3,8 +3,9 @@
 <!-- <meta abacus-link='C' /> -->
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="hanksharvest">Hank's Harvest</h1>
     <div>
+        <h1 id="page" page="hanksharvest">Hank's Harvest</h1>
+    
         <h3>Problem Description</h3>
 
         <p>Farmer Hank owns a farm that grows corn, potatoes, and zucchini. Hank has recently upgraded his tracking system to determine if he had a good harvest this year. He has very specific criteria on what he determines to be a good harvest. For a harvest to be considered good, Farmer Hank needs the following out of his harvest:</p>

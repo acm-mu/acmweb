@@ -3,9 +3,10 @@
 <!-- <meta abacus-link='A' /> -->
 
 <script type="text/template" id="description-template">
-	<h1 id="page" page="packingformars">Packing for Mars</h1>
     <div>
-    <p>You and your friend Elon are really into astronomy and space travel. Matter of fact, you two have created a company together to travel to Mars called OrbitalExpress, or OE for short. OE is getting ready to launch on its first route to the Red Planet and they want to advise their passengers what type of clothes to pack. </p>
+        <h1 id="page" page="packingformars">Packing for Mars</h1>
+    
+        <p>You and your friend Elon are really into astronomy and space travel. Matter of fact, you two have created a company together to travel to Mars called OrbitalExpress, or OE for short. OE is getting ready to launch on its first route to the Red Planet and they want to advise their passengers what type of clothes to pack. </p>
 		<p>Because of atmospheric differences, there is no great way to figure out the temperature on the planet using our current standards for temperature (Celsius and Fahrenheit). Elon has done enough research and created a new unit of measure for temperature on the Martian Planet. He calls it Martian Units, or MU for short. He has also developed an equivalent measure for here on Earth called Global Overtemps, or GO for short.</p>
 		<p>At first, Elon thought these two units were standardized and were a direct conversion. But you, being the math wizard you are, realized that they are <strong>not</strong> standardized and need some sort of conversion tool.</p>
 		

@@ -3,9 +3,9 @@
 <!-- <meta abacus-link='F' /> -->
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="hiketothepeak">Hike to the Peak</h1>
-
     <div>
+        <h1 id="page" page="hiketothepeak">Hike to the Peak</h1>
+
         <h3>Problem Description</h3>
 
         <p>During the pandemic, Brad has discovered his love for hiking. He has recently been tracking the elevations of his hikes he takes. He is using characters to track an increase, decrease, or no change in elevation. <code>u</code> represents an increase in 1 unit of elevation, <code>d</code> represents a decrease in 1 unit of elevation, and <code>_</code> represents no change. Given a string of characters <code>u</code>, <code>d</code>, and <code>_</code> find the maximum elevation Brad reaches during a hike. </p>

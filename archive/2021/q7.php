@@ -3,8 +3,9 @@
 <!-- <meta abacus-link='H' /> -->
 
 <script type="text/template" id="description-template">
-    <h1 id="page" page="citygrid">City Grid</h1>
     <div>
+        <h1 id="page" page="citygrid">City Grid</h1>
+    
         <h3>Problem Description</h3>
 
         <p>Recently, the City of Xinu passed a law that limits uses for specific plots in the city (cities generally restrict how the land can be used, called zoning). In the same law, the mayor decided that in order for a new subdivision to be valid, all zones of the same type must be touching. He has given you a proposed grid of the new subdivision. Your job is to determine if the grid complies with the requirement that all zones of the same type must be touching. The grid is filled with integers which represent each zone: <code>1</code> = Residential, <code>2</code> = Commercial, and <code>3</code> = Industrial. <code>0</code> represents an empty plot. The empty plots do not need to be touching.</p>
