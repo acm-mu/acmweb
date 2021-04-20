@@ -145,7 +145,7 @@ td {
 }
 
 #yt-link {
-    display: inline;
+    display: none;
     float: right;
     border: 2px solid red;
     color: red;
