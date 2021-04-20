@@ -143,3 +143,20 @@ td {
     background: var(--darkblue);
     color: white;
 }
+
+#yt-link {
+    display: inline;
+    float: right;
+    border: 2px solid red;
+    color: red;
+    /* font-size: 12px; */
+    padding: 6px 20px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    /* animation: blue 5s linear; */
+}
+
+#yt-link:hover {
+    background: red;
+    color: white;
+}

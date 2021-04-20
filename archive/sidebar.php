@@ -46,6 +46,7 @@
     <button class="swatch" id="python-solution">Python Solution</button>
     <button class="swatch" id="java-skeleton">Java Skeleton</button>
     <button class="swatch" id="java-solution">Java Solution</button>
+    <a href="#" id="yt-link" target="_blank">Watch Solution</a>
     <a href='#' id="abacus-link">>_ Try on Abacus</a>
 
     <div id="content"></div>
