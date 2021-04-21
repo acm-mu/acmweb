@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/archive/sidebar.php"; ?>
 
 <!-- <meta abacus-link='A' /> -->
-<meta yt-link='https://youtu.be/5IsCt4NytDM' />
+<!-- <meta yt-link='https://youtu.be/5IsCt4NytDM' /> -->
 
 <script type="text/template" id="description-template">
     <div>
