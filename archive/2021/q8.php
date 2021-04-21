@@ -113,16 +113,16 @@ Ahoya!</pre>
                 <p>The hextext <code>9c6880249e32</code> encrypted using <code>p = 13</code> and <code>q = 17</code> and unknown value <em>e</em> is <strong><code>Ahoya!</code></strong> in plaintext.</p>
                 <ul>
                     <li>
-                        <p>The main method will translate <code>9c6880249e32</code> to an integer array <a href=""><code>156</code>, <code>104</code>, <code>128</code>, <code>36</code>, <code>158</code>, <code>50</code></a> to pass to <em>codebreak</em>.</p>
+                        <p>The main method will translate <code>9c6880249e32</code> to an integer array [<code>156</code>, <code>104</code>, <code>128</code>, <code>36</code>, <code>158</code>, <code>50</code>] to pass to <em>codebreak</em>.</p>
                     </li>
                     <li>
                         <p><em>codebreak</em> should determine that when <code>e = 41</code> and the calculated value <code>d = 89</code> the following will be true.</p>
                         <ul>
                             <li>
-                                <p>Applying the decrypt algorithm on <a href=""><code>156</code>, <code>104</code>, <code>128</code>, <code>36</code>, <code>158</code>, <code>50</code></a> using <code>d = 89</code> and the provided <code>p=13</code> and <code>q=17</code> values will become <a href=""><code>65</code>, <code>104</code>, <code>111</code>, <code>121</code>, <code>97</code>, <code>33</code></a></p>
+                                <p>Applying the decrypt algorithm on [<code>156</code>, <code>104</code>, <code>128</code>, <code>36</code>, <code>158</code>, <code>50</code>] using <code>d = 89</code> and the provided <code>p=13</code> and <code>q=17</code> values will become [<code>65</code>, <code>104</code>, <code>111</code>, <code>121</code>, <code>97</code>, <code>33</code>]</p>
                             </li>
                             <li>
-                                <p>Passing the array <a href=""><code>65</code>, <code>104</code>, <code>111</code>, <code>121</code>, <code>97</code>, <code>33</code></a> to <code>decode()</code> will return the text <code>Ahoya!</code></p>
+                                <p>Passing the array [<code>65</code>, <code>104</code>, <code>111</code>, <code>121</code>, <code>97</code>, <code>33</code>] to <code>decode()</code> will return the text <code>Ahoya!</code></p>
                             </li>
                         </ul>
                     </li>

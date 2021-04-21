@@ -24,8 +24,8 @@
         <h4>Java</h4>
         <code>public static int[] vendingOptions(int numberOfItemsInMachine, int[] itemQuantities, double[] itemPrices, double cash)</code>
 
-        <h4>Java</h4>
-        <code>def vendingOptions(numberOfItemsInMachine, itemQuantities, itemPrices, cash):</code>
+        <h4>Python</h4>
+        <code>def vendingOptions(numberOfItemsInMachine, itemQuantities, itemPrices, cash)</code>
 
         <h3>Sample Method Calls</h3>
 
@@ -51,7 +51,7 @@
             <li>The first line will contain the number of items in the vending machine</li>
             <li>The second line will contain the price of each item separated by a space</li>
             <li>The third line will contain the quantity of each item separated by a space</li>
-            <li>The fourth line will contain the total allowance</li>
+            <li>The fourth line will contain the total cash</li>
         </ul>
         <h3>Assumptions</h3>
         <ul>
@@ -59,7 +59,7 @@
             <li>The number of elements in <code>itemQuantities</code> and <code>itemPrices</code> will always be equal to <code>numberOfItemsInMachine</code></li>
             <li>Every price in <code>itemPrices</code> &gt; 0</li>
             <li>Every quantity in <code>itemQuantities</code> ≥ 0</li>
-            <li><code>totalAllowance</code> ≥ 0</li>
+            <li><code>cash</code> ≥ 0</li>
         </ul>
         <h3>Console Output Format</h3>
         <ul>
@@ -204,19 +204,19 @@ Parameters:
 numberOfItemsInMachine --> (integer) The number of items in the vending machine.
 itemQuantities --> (integer array) The quantities of each item in the vending machine
 itemPrices --> (float array) The price of each item in the vending machine
-totalAllowance --> (float) The amount of money you have to spend
+cash --> (float) The amount of money you have to spend
 
 Returns:
 new integer array --> an integer array containing the number of each item you can buy.
 
 """
-def vendingOptions(numberOfItemsInMachine, itemQuantities, itemPrices, totalAllowance):
+def vendingOptions(numberOfItemsInMachine, itemQuantities, itemPrices, cash):
     counter = 0.0
     buyable = [0] * numberOfItemsInMachine
 
     for x in range(numberOfItemsInMachine):
-        while counter <= totalAllowance and (counter/itemPrices[x]) < itemQuantities[x]:
-            if (counter+itemPrices[x]) > totalAllowance:
+        while counter <= cash and (counter/itemPrices[x]) < itemQuantities[x]:
+            if (counter+itemPrices[x]) > cash:
                 break
             else:
                 counter += itemPrices[x]
@@ -239,14 +239,14 @@ def main():
         itemCount = int(numOfItems)
         itemPrices = [0] * itemCount
         itemQuantities = [0] * itemCount
-        totalAllowance = float(allowance)
+        cash = float(allowance)
 
         for x in range(itemCount):
             itemPrices[x] = float(prices[x])
             itemQuantities[x] = int(quantities[x])
 
         # Function Call
-        canBuy = vendingOptions(itemCount, itemQuantities, itemPrices, totalAllowance)
+        canBuy = vendingOptions(itemCount, itemQuantities, itemPrices, cash)
 
         # Terminal Output #
         print(*canBuy, sep=' ')
@@ -272,14 +272,14 @@ public class VendingMachine {
             int itemCount = Integer.parseInt(numOfItems);
             double[] itemPrices = new double[itemCount];
             int[] itemQuantities = new int[itemCount];
-            double totalAllowance = Double.parseDouble(allowance);
+            double cash = Double.parseDouble(allowance);
 
             for (int i = 0; i < itemCount; i++) {
                 itemPrices[i] = Double.parseDouble(prices[i]);
                 itemQuantities[i] = Integer.parseInt(quantities[i]);
             }
 
-            int[] canBuy = vendingOptions(itemCount, itemQuantities, itemPrices, totalAllowance);
+            int[] canBuy = vendingOptions(itemCount, itemQuantities, itemPrices, cash);
 
             for (int i = 0; i < itemCount; i++){
             	if (i != itemCount - 1){
@@ -309,15 +309,15 @@ public class VendingMachine {
 	 * 
 	 * 
 	 */
-	public static int[] vendingOptions(int numberOfItemsInMachine, int[] itemquantities, double[] itemPrices, double availableMoney)
+	public static int[] vendingOptions(int numberOfItemsInMachine, int[] itemquantities, double[] itemPrices, double cash)
 	{
 		double counter = 0.0;
 		int[] buyable =new int[numberOfItemsInMachine];
 		for(int x = 0; x < numberOfItemsInMachine; x++)
 		{
-			while(counter <= availableMoney && (counter/itemPrices[x]) < itemquantities[x])
+			while(counter <= cash && (counter/itemPrices[x]) < itemquantities[x])
 			{
-				if((counter+itemPrices[x])>availableMoney)
+				if((counter+itemPrices[x])>cash)
 					break;
 				else
 					counter+= itemPrices[x];
