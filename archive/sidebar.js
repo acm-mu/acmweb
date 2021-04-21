@@ -18,18 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const archive = createElement(`<a class='nav_item active' id='archive'>Archive</a>`);
     navbar.appendChild(archive);
 
-    const abacusLink = document.querySelector('meta[abacus-link]').getAttribute('abacus-link')
+    const abacusLink = document.querySelector('meta[abacus-link]')
     if (abacusLink) {
         const abacusButton = document.querySelector('#abacus-link')
         abacusButton.style.display = 'inline'
-        abacusButton.href = `https://codeabac.us/blue/practice/${abacusLink}`
+        abacusButton.href = `https://codeabac.us/blue/practice/${abacusLink.getAttribute('abacus-link')}`
     }
 
-    const videoSolutionLink = document.querySelector('meta[yt-link]').getAttribute('yt-link')
-    if(videoSolutionLink) {
+    const videoSolutionLink = document.querySelector('meta[yt-link]')
+    console.log(document.querySelector('meta[yt-link]'))
+    if (videoSolutionLink) {
         const ytButton = document.querySelector('#yt-link')
         ytButton.style.display = 'inline'
-        ytButton.href = `${videoSolutionLink}`
+        ytButton.href = `${videoSolutionLink.getAttribute('yt-link')}`
     }
 })
 
