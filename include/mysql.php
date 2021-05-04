@@ -66,13 +66,30 @@ function send_mail($to, $subject, $body) {
 
 function login($arr) {
     global $config;
-    if (md5($arr['username']) == $config['dashboard']['username'] && md5($arr['password']) == $config['dashboard']['password']) {
-        $_SESSION['ADMIN_KEY'] = $config['dashboard']['password'];
-        if(isset($_SERVER['HTTP_REFERER']))  
-            echo '<meta http-equiv="refresh" content="0; URL='.$_SERVER['HTTP_REFERER'].'">';
-        else
-            echo '<meta http-equiv="refresh" content="0; URL=/admin/">';
+    global $mysql;
+
+    $mysql->query("USE muhostin_acm;");
+
+    $stmt = $mysql->prepare('SELECT uid, username, password FROM users where username = ?');
+    $stmt->bind_param("s", $arr['username']);
+    
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        if (password_verify("password", password_hash("password", PASSWORD_DEFAULT))) {
+            $_SESSION['ADMIN_KEY'] = $config['dashboard']['password'];
+            if(isset($_SERVER['HTTP_REFERER']))  
+                echo '<meta http-equiv="refresh" content="0; URL='.$_SERVER['HTTP_REFERER'].'">';
+            else
+                echo '<meta http-equiv="refresh" content="0; URL=/admin/">';
+        } else {
+            echo "Password verification failed!";
+        }
     }
+
+    $stmt->close();
     return false;
 }
 ?>

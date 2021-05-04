@@ -1,4 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php date_default_timezone_set("America/Chicago"); ?>
+
 <h1>Events</h1>
 <div>
   <div class="ui secondary menu" style="float: left">

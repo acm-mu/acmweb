@@ -5,6 +5,19 @@ CREATE DATABASE IF NOT EXISTS `muhostin_acm`;
 USE muhostin_acm;
 
 --
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `uid` int(16) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  `username` varchar(32) NOT NULL,
+  `full_name` varchar(32) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `last_login_date` datetime DEFAULT NULL,
+  `role` varchar(64) NOT NULL
+);
+
+--
 -- Table structure for table `events`
 --
 
@@ -151,3 +164,6 @@ CREATE TABLE `team` (
     ON DELETE CASCADE 
     ON UPDATE CASCADE
 );
+
+USE muhostin_acm;
+INSERT INTO `users` (`uid`, `username`, `full_name`, `password`, `last_login_date`, `role`) VALUES (1, "agebhard", "Alex Gebhard", "$2y$10$qpiAzt7LjWK42DPWt/IJeuqMdXe7J7EMNXm7erh37Z10B.0hNB1dS" , NULL, "Admin")
