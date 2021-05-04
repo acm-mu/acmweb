@@ -166,4 +166,4 @@ CREATE TABLE `team` (
 );
 
 USE muhostin_acm;
-INSERT INTO `users` (`uid`, `username`, `full_name`, `password`, `last_login_date`, `role`) VALUES (1, "agebhard", "Alex Gebhard", "$2y$10$qpiAzt7LjWK42DPWt/IJeuqMdXe7J7EMNXm7erh37Z10B.0hNB1dS" , NULL, "Admin")
+INSERT INTO `users` (`uid`, `username`, `full_name`, `password`, `last_login_date`, `role`) VALUES (1, "admin", "Administrator", "$2y$10$u2hsYJSKtmklGaMceBXdD.UFepJBc3HMeYPUcLfNtzbml74LAG4Sa" , NULL, "Admin")

@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set("America/Chicago");
 
 $config = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . "../../config.ini", true);
 
@@ -15,11 +16,14 @@ ini_set("include_path", '/home/muhosting/php:' . ini_get("include_path") );
 
 function loggedin() {
     global $config;
-    return isset($_SESSION['ADMIN_KEY']) && $_SESSION['ADMIN_KEY'] == $config['dashboard']['password'];
+    return isset($_SESSION['USER_SESSION']) && $_SESSION['USER_SESSION'] == hash('sha256', $_SESSION['USER_ID'] . $_SESSION['USER_NAME'] . $_SESSION['USER_ROLE']);
 }
 
 function logout() {
-    unset($_SESSION['ADMIN_KEY']);
+    unset($_SESSION['USER_SESSION']);
+    unset($_SESSION['USER_ID']);
+    unset($_SESSION['USER_NAME']);
+    unset($_SESSION['USER_ROLE']);
     echo '<meta http-equiv="refresh" content="0; URL=/admin">';
 }
 
@@ -70,7 +74,7 @@ function login($arr) {
 
     $mysql->query("USE muhostin_acm;");
 
-    $stmt = $mysql->prepare('SELECT uid, username, password FROM users where username = ?');
+    $stmt = $mysql->prepare('SELECT uid, username, role, password FROM users where username = ?');
     $stmt->bind_param("s", $arr['username']);
     
     $stmt->execute();
@@ -78,14 +82,23 @@ function login($arr) {
     
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
-        if (password_verify("password", password_hash("password", PASSWORD_DEFAULT))) {
-            $_SESSION['ADMIN_KEY'] = $config['dashboard']['password'];
+        if (password_verify($arr['password'], $row['password'])) {
+            $_SESSION['USER_ID'] = $row['uid'];
+            $_SESSION['USER_NAME'] = $row['username'];
+            $_SESSION['USER_ROLE'] = $row['role'];
+            
+            $_SESSION['USER_SESSION'] = hash('sha256', $row['uid'] . $row['username'] . $row['role']);
+
+            $mysql->query("USE muhostin_acm;");
+            $upd_stmt = $mysql->prepare("UPDATE users SET last_login_date=? WHERE uid=?");
+            $upd_stmt->bind_param("si", date('Y-m-d H:i:s'), $row['uid']);
+            $upd_stmt->execute();
+            $upd_stmt->close();
+
             if(isset($_SERVER['HTTP_REFERER']))  
                 echo '<meta http-equiv="refresh" content="0; URL='.$_SERVER['HTTP_REFERER'].'">';
             else
                 echo '<meta http-equiv="refresh" content="0; URL=/admin/">';
-        } else {
-            echo "Password verification failed!";
         }
     }
 
