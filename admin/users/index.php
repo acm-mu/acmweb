@@ -42,7 +42,17 @@
             if(resp.ok) {
                 location.reload();
             } else {
-                alert("The user was not deleted successfully!");
+                swal({
+                    title: 'Error',
+                    text: 'The user was not deleted successfully!',
+                    icon: 'error',
+                    buttons: {
+                        confirm: {
+                            text: 'OK',
+                            color: '#3085D6'
+                        }
+                    }
+                });
             }
         });
     }
