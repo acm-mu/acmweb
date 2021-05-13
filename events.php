@@ -48,15 +48,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
           `<a class='item ${year == selectedYear ? 'active' : ''}' href='?year=${year}'>${year} - ${parseInt(year)+1}</a>`
         ));
 
-      for (const event of events[selectedYear]) {
-        const d = moment(event.date);
-        const date =
-          `<div class='date'> <h1 class='month'>${d.format('MMM')}</h1> <h1 class='day'>${d.format('DD')}</h1> </div>`;
-        const desc =
-          `<div class='details'> <p class='title'>${event.title}</p> <p class='desc'>${event.desc}</p></div>`;
+      if(data.length != 0){
+        for (const event of events[selectedYear]) {
+          const d = moment(event.date);
+          const date =
+            `<div class='date'> <h1 class='month'>${d.format('MMM')}</h1> <h1 class='day'>${d.format('DD')}</h1> </div>`;
+          const desc =
+            `<div class='details'> <p class='title'>${event.title}</p> <p class='desc'>${event.desc}</p></div>`;
 
-        eventList.prepend(createElement(
-          `<div class='event ${d.isBefore(moment()) ? 'passed': ''}'>${date} ${desc}</div>`));
+          eventList.prepend(createElement(
+            `<div class='event ${d.isBefore(moment()) ? 'passed': ''}'>${date} ${desc}</div>`));
+        }
       }
     });
 </script>
