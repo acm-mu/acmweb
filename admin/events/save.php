@@ -1,37 +1,42 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/admin/include/header.php"; ?>
+<?php 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/mysql.php";
 
-<?php
 if (!loggedin()) {
     require_once "login.php";
     exit();
 }
 
-if(!isset($_POST["name"]) || !isset($_POST["edate"]) || !isset($_POST["pdate"])) {
+$inputJSON = file_get_contents('php://input');
+$input = json_decode($inputJSON, TRUE);
+
+$event_id = $input["id"];
+$event_datetime = $input["edate"];
+$event_publish_datetime = $input["pdate"];
+$event_title = $input["name"];
+$event_description = $input["description"];
+
+if(strlen($input["name"]) > 64 || strlen($input["description"]) > 1024) {
+    echo json_response(400, "Data is too long");
     return;
 }
-
-if(strlen($_POST["name"]) > 64 || strlen($_POST["description"]) > 1024) {
-    return;
-}
-
-$event_id = $_POST["id"];
-$event_datetime = $_POST["edate"];
-$event_publish_datetime = $_POST["pdate"];
-$event_title = $_POST["name"];
-$event_description = $_POST["description"];
 
 $mysql->query("USE muhostin_acm");
 
 $stmt = $mysql->prepare("UPDATE events SET date = ?, publish_date = ?, title = ?, description = ? WHERE eventid = ?");
-$success = $stmt->bind_param("ssssi", $event_datetime, $event_publish_datetime, $event_title, $event_description, $event_id);
+$success = $stmt->bind_param("ssssi", date("Y-m-d H:i:s",strtotime($event_datetime)), date("Y-m-d H:i:s",strtotime($event_publish_datetime)), $event_title, $event_description, $event_id);
+
+if (!$success){
+    echo json_response(400, "Error updating database. Please check the data.");
+    return;
+}
 
 $success = $stmt->execute();
-
-echo $success . "\n";
-echo $mysql->error;
+if (!$success){
+    echo json_response(400, "Error updating database. Please check the data.");
+    return;
+}
 
 $stmt->close();
-
-echo "<meta http-equiv='refresh' content='0; URL=index.php'>";
+echo json_response(200, "Success");
 
 ?>

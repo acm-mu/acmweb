@@ -105,4 +105,20 @@ function login($arr) {
     $stmt->close();
     return false;
 }
+
+function json_response($code = 200, $message = null)
+{
+    // clear the old headers
+    header_remove();
+    // set the actual code
+    http_response_code($code);
+    // treat this as json
+    header('Content-Type: application/json');
+    // return the encoded json
+    return json_encode(array(
+        'status' => $code < 300, // success or not?
+        'message' => $message
+        ));
+}
+
 ?>

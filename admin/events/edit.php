@@ -49,7 +49,7 @@
 
 ?>
 
-<form action="save.php" method="POST">
+<form id="event-form">
     <?php echo '<input name="id" type="hidden" value="' . $event_id . '">'; ?>
     <div>
         <div class="input-group">
@@ -82,4 +82,30 @@
 <script>
 var simplemde = new SimpleMDE({ element: document.getElementById("desc") });
 simplemde.value(document.getElementById("original-desc").value);
+const formElem = document.getElementById('event-form');
+
+formElem.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Default options are marked with *
+    const data = new FormData(e.target);
+
+    const value = Object.fromEntries(data.entries());
+
+    fetch('save.php', {
+        method: 'POST',
+        cache: 'no-cache',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(value)
+    }).then(response => response.json())
+      .then(resp => {
+          if(!resp.status) {
+              alert(resp.message);
+          } else {
+            window.location.href = "/admin/events";
+          }
+    });
+});
+
 </script>
