@@ -4,6 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/css/events.css?css_version=2">
 
 <h1 class="title" page="events"> Events </h1>
@@ -41,6 +42,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 
       // Get all the years from events, and sort.
       let years = Object.keys(events).sort();
+      let converter = new showdown.Converter();
 
       // Create button for each school year.
       for (const year of years)
@@ -54,7 +56,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
           const date =
             `<div class='date'> <h1 class='month'>${d.format('MMM')}</h1> <h1 class='day'>${d.format('DD')}</h1> </div>`;
           const desc =
-            `<div class='details'> <p class='title'>${event.title}</p> <p class='desc'>${event.desc}</p></div>`;
+            `<div class='details'> <p class='title'>${event.title}</p> <p class='desc'>${converter.makeHtml(event.description)}</p></div>`;
 
           eventList.prepend(createElement(
             `<div class='event ${d.isBefore(moment()) ? 'passed': ''}'>${date} ${desc}</div>`));

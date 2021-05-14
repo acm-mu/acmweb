@@ -51,11 +51,11 @@
     $title = $row['title'];
     $created = date('M d, Y', strtotime($row['creation_date']));
     $publish = date('M d, Y', strtotime($row['publish_date']));
-    $desc = $row['desc'];
+    $id = $row['eventid'];
 
     echo "<tr> <td>$date</td> <td>$title</td> <td>$created</td> <td>$publish</td>";
     echo "<td>";
-    echo "<button class='ui inverted secondary icon button'><i class='pencil icon'></i></button>";
+    echo "<a href='edit?id=$id'><button class='ui inverted secondary icon button'><i class='pencil icon'></i></button></a>";
     echo "<button class='ui inverted red icon button'><i class='trash icon'></i></button>";
     echo "</td></tr>";
   }

@@ -23,11 +23,13 @@ CREATE TABLE `users` (
 
 CREATE TABLE `events` (
   `eventid` int(16) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-  `date` datetime DEFAULT NULL,
-  `creation_date` timestamp(6) NULL DEFAULT CURRENT_TIMESTAMP(6),
-  `publish_date` timestamp(6) NULL DEFAULT CURRENT_TIMESTAMP(6),
-  `title` varchar(32) DEFAULT NULL,
-  `desc` varchar(512) DEFAULT NULL
+  `title` varchar(128) NOT NULL,
+  `type` varchar(128) NOT NULL,
+  `description` varchar(4096) NOT NULL
+  `start` datetime DEFAULT NOT NULL,
+  `end` datetime DEFAULT NOT NULL,
+  `creation_date` datetime NULL DEFAULT NOW(),
+  `publish_date` datetime NULL DEFAULT NOW(),
 );
 
 --
