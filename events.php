@@ -34,7 +34,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
     .then(response => response.json())
     .then(data => {
       events = data.reduce((r, e) => {
-        const year = moment(e.date).year();
+        const year = moment(e.start).year();
         r[year] = r[year] || [];
         r[year].push(e);
         return r;
@@ -52,9 +52,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php";
 
       if(data.length != 0){
         for (const event of events[selectedYear]) {
-          const d = moment(event.date);
+          const d = moment(event.start);
+          const e = moment(event.end);
           const date =
-            `<div class='date'> <h1 class='month'>${d.format('MMM')}</h1> <h1 class='day'>${d.format('DD')}</h1> </div>`;
+            `<div class='date'> <h1 class='month'>${d.format('MMM')}</h1> <h1 class='day'>${d.format('DD')}</h1> <h4>${d.format('LT')} - ${e.format('LT')}</h4> </div>`;
           const desc =
             `<div class='details'> <p class='title'>${event.title}</p> <p class='desc'>${converter.makeHtml(event.description)}</p></div>`;
 

@@ -25,11 +25,11 @@ CREATE TABLE `events` (
   `eventid` int(16) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `title` varchar(128) NOT NULL,
   `type` varchar(128) NOT NULL,
-  `description` varchar(4096) NOT NULL
-  `start` datetime DEFAULT NOT NULL,
-  `end` datetime DEFAULT NOT NULL,
+  `description` varchar(4096) NOT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL,
   `creation_date` datetime NULL DEFAULT NOW(),
-  `publish_date` datetime NULL DEFAULT NOW(),
+  `publish_date` datetime NULL DEFAULT NOW()
 );
 
 --

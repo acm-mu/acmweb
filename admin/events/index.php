@@ -14,10 +14,10 @@
 
       $years = array();
 
-      $sql = "SELECT date FROM events";
+      $sql = "SELECT start FROM events";
       $res = $mysql->query($sql);
       while($row = $res->fetch_assoc()) {
-        $y = date('Y', strtotime($row['date']));
+        $y = date('Y', strtotime($row['start']));
         if (!in_array($y, $years)) $years[] = $y;
       }
 
@@ -43,11 +43,11 @@
   $startdate = "$year-08-01 00:00:00";
   $enddate = date(($year + 1).'-7-31 23:59:59');
 
-  $sql = "SELECT * FROM events WHERE date > '$startdate' AND date < '$enddate' ORDER BY date DESC";
+  $sql = "SELECT * FROM events WHERE start > '$startdate' AND start < '$enddate' ORDER BY start DESC";
   $res = $mysql->query($sql);
 
   while($row = $res->fetch_assoc()) {
-    $date = date('M d, Y', strtotime($row['date']));
+    $date = date('M d, Y', strtotime($row['start']));
     $title = $row['title'];
     $created = date('M d, Y', strtotime($row['creation_date']));
     $publish = date('M d, Y', strtotime($row['publish_date']));

@@ -5,7 +5,7 @@ $mysql->query("USE muhostin_acm;");
 
 $filter = "";
 
-$sql = "SELECT * FROM events $filter ORDER BY date DESC";
+$sql = "SELECT * FROM events $filter ORDER BY start DESC";
 
 $res = $mysql->query($sql);
 

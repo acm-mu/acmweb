@@ -39,7 +39,8 @@
 
     $event_id = $event['eventid'];
     $event_name = $event["title"];
-    $event_date = $event["date"];
+    $event_start = $event["start"];
+    $event_end = $event["end"];
     $event_publish_date = $event["publish_date"];
     $event_description = $event["description"];
 
@@ -60,7 +61,12 @@
         <span class='one-line'>
             <div class="input-group">
                 <label>Event Start <b class="req">*</b></label>
-                <?php echo '<input name="edate" type="datetime-local" value="' . date("Y-m-d\TH:i:s", strtotime($event_date)) . '" required>'; ?>
+                <?php echo '<input name="estartdate" type="datetime-local" value="' . date("Y-m-d\TH:i:s", strtotime($event_start)) . '" required>'; ?>
+            </div>
+
+            <div class="input-group">
+                <label>Event End <b class="req">*</b></label>
+                <?php echo '<input name="eenddate" type="datetime-local" value="' . date("Y-m-d\TH:i:s", strtotime($event_end)) . '" required>'; ?>
             </div>
 
             <div class="input-group">
