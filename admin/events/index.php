@@ -60,7 +60,7 @@
     echo "</td></tr>";
   }
 
-  echo '<tr> <td colspan=5 style="text-align: center"> <a href="">Create New Event</a></td> </tr>';
+  echo '<tr> <td colspan=5 style="text-align: center"> <a href="create">Create New Event</a></td> </tr>';
 ?>
 </table>
 <script>
