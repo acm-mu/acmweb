@@ -56,10 +56,34 @@
     echo "<tr> <td>$date</td> <td>$title</td> <td>$created</td> <td>$publish</td>";
     echo "<td>";
     echo "<a href='edit?id=$id'><button class='ui inverted secondary icon button'><i class='pencil icon'></i></button></a>";
-    echo "<button class='ui inverted red icon button'><i class='trash icon'></i></button>";
+    echo "<button class='ui inverted red icon button' onclick='deleteEvent($id)'><i class='trash icon'></i></button>";
     echo "</td></tr>";
   }
 
   echo '<tr> <td colspan=5 style="text-align: center"> <a href="">Create New Event</a></td> </tr>';
 ?>
-  </table>
+</table>
+<script>
+    function deleteEvent(eventid){
+        fetch('/admin/events/delete', {
+            method: 'DELETE',
+            body: eventid
+        }).then(resp => {
+            if(resp.ok) {
+                location.reload();
+            } else {
+                swal({
+                    title: 'Error',
+                    text: 'The user was not deleted successfully!',
+                    icon: 'error',
+                    buttons: {
+                        confirm: {
+                            text: 'OK',
+                            color: '#3085D6'
+                        }
+                    }
+                });
+            }
+        });
+    }
+</script>
