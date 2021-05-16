@@ -167,5 +167,19 @@ CREATE TABLE `team` (
     ON UPDATE CASCADE
 );
 
+--
+-- Table structure for table `competition_settings`
+--
+
+CREATE TABLE `competition_settings` (
+  `setting` varchar(100) NOT NULL,
+  `value` varchar(100) NOT NULL
+);
+
 USE muhostin_acm;
-INSERT INTO `users` (`uid`, `username`, `full_name`, `password`, `last_login_date`, `role`) VALUES (1, "admin", "Administrator", "$2y$10$u2hsYJSKtmklGaMceBXdD.UFepJBc3HMeYPUcLfNtzbml74LAG4Sa" , NULL, "Admin")
+INSERT INTO `users` (`uid`, `username`, `full_name`, `password`, `last_login_date`, `role`) VALUES (1, "admin", "Administrator", "$2y$10$u2hsYJSKtmklGaMceBXdD.UFepJBc3HMeYPUcLfNtzbml74LAG4Sa" , NULL, "Admin");
+
+USE muhostin_registration;
+INSERT INTO `competition_settings` (`setting`, `value`) VALUES ("COMPETITION_DATE", "1970-01-01 0:00:00");
+INSERT INTO `competition_settings` (`setting`, `value`) VALUES ("REGISTRATION_START", "1970-01-01 0:00:00");
+INSERT INTO `competition_settings` (`setting`, `value`) VALUES ("REGISTRATION_END", "1970-01-01 0:00:00");

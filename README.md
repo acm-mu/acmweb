@@ -41,4 +41,3 @@ basic directory structure:
 ## Todo
 - [ ] Toggle Registration on and off.
 - [ ] Edit Team Information on Dashboard.
-- [ ] Event Creation.

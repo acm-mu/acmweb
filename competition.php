@@ -1,5 +1,6 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 <link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 <style>
     .reg_message {
@@ -17,7 +18,7 @@
 </style>
 
 <h1 class="title" page="competition">
-    2021 Wisconsin-Dairyland Programming Competition
+    <span id="competition-year"></span> Wisconsin-Dairyland Programming Competition
 </h1>
 
 <center>
@@ -104,9 +105,7 @@
 </p>
 
 <h3>Date:</h3>
-<p>
-    April 15, 2021
-</p>
+<p id="competition-date"></p>
 
 <h3>Schedule:</h3>
 <p><em>This is a tentative schedule and could change at any time. We will try our best to notify you of any
@@ -130,6 +129,45 @@
     <button class="register">Register</button>
 </a> -->
 <p>
-    <i>Registration closes March 26th, 2021</i>
+    <i>Registration closes <span id="reg-end"></span> Central Time</i>
 </p>
+
+<script>
+function setRegistrationDate(sDate, eDate) {
+    var startDate = moment(sDate, "YYYY/MM/DD hh:mm:ss");
+    var endDate = moment(eDate, "YYYY/MM/DD hh:mm:ss");
+
+    document.getElementById("reg-end").textContent = endDate.format("MMMM Do YYYY, h:mm A");
+}
+
+function setCompetitionDate(date) {
+    var parsedDate = moment(date, "YYYY/MM/DD hh:mm:ss");
+    var year = parsedDate.year();
+    document.getElementById("competition-year").textContent = year;
+
+    document.getElementById("competition-date").textContent = parsedDate.format("dddd, MMMM Do YYYY");
+}
+
+fetch('/api/competition')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        var regStartDate = "";
+        var regEndDate = "";
+
+        Object.entries(data).forEach((entry) => {
+            const [key, value] = entry;
+            if(value.setting === "COMPETITION_DATE") {
+                setCompetitionDate(value.value);
+            } else if (value.setting === "REGISTRATION_START") {
+                regStartDate = value.value;
+            } else if (value.setting === "REGISTRATION_END") {
+                regEndDate = value.value;
+            }
+        });
+
+        setRegistrationDate(regStartDate, regEndDate);
+    });
+</script>
+
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>

@@ -67,7 +67,7 @@ formElem.addEventListener('submit', (e) => {
           if(!resp.status) {
               alert(resp.message);
           } else {
-            //window.location.href = "/admin/events";
+            window.location.href = "/admin/events";
           }
     });
 });

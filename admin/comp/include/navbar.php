@@ -17,6 +17,9 @@
     <a class="nav_item item" id="invoices" href="/admin/comp/invoices">
         Invoices
     </a>
+    <a class="nav_item item" id="settings" href="/admin/comp/settings">
+        Settings
+    </a>
     <div class="right menu">
         <div class="item">
             <form class="ui transparent icon input" action="/admin/comp/search.php" method="GET">
