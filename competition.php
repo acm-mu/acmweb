@@ -2,29 +2,30 @@
 <link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-<style>
-    .reg_message {
-        border-radius: .28rem;
-        padding: 1em 1.5em;
-        line-height: 20px;
-        background: rgb(255, 250, 243);
-        color: rgb(87, 58, 8);
-        box-shadow: rgb(201, 186, 155) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-    }
-
-    .reg_message h2 {
-        color: rgb(87, 58, 8);
-    }
-</style>
-
 <h1 class="title" page="competition">
-    <span id="competition-year"></span> Wisconsin-Dairyland Programming Competition
+    <span class="competition-year"></span> Wisconsin-Dairyland Programming Competition
 </h1>
 
 <center>
-    <div class='reg_message'>
+    <div class='reg_message' style="display: none" id="reg-open-soon">
+        <h2>Registration will open soon!</h2>
+        <p>Registration for the <span class="competition-year"></span> competition will open on <span class="regStarts"></span> Central Time!</p>
+    </div>
+    <div class='reg_message' style="display: none" id="reg-open">
+        <h2>Registration is open!</h2>
+        <p>Registration for the <span class="competition-year"></span> competition is now open.  Teams can register here.  Registration is open until <span class="reg-end"></span> Central Time!</p>
+    </div>
+    <div class='reg_message' style="display: none" id="reg-live">
+        <h2>Competition Day!</h2>
+        <p>Head over to <a href="https://codeabac.us" target="_blank">Abacus</a></p>
+    </div>
+    <div class='reg_message' style="display: none" id="reg-ended">
         <h2>Registration has ended!</h2>
         <p>Head over to <a href="https://codeabac.us" target="_blank">Abacus</a> to start practicing for the big day!</p>
+    </div>
+    <div class='reg_message' style="display: none" id="comp-end">
+        <h2>The <span class="competition-year"></span> Wisconsin-Dairyland Programming Competition has ended!</h2>
+        <p>Check back here next year for more information on next year's competition!</p>
     </div>
     <br />
     <a href="/archive/prep/q0">
@@ -123,27 +124,55 @@
     <li>Awards: <b>1:00 PM - 2:00 PM</b></li>
 </ul>
 
-<!-- <h3>Register</h3>
-<p>Registration coming soon!</p> -->
-<!-- <a href="/register">
-    <button class="register">Register</button>
-</a> -->
-<p>
-    <i>Registration closes <span id="reg-end"></span> Central Time</i>
-</p>
+<div id="reg-section" style="display: none">
+    <h3>Register</h3>
+    <p id="reg-coming-soon" style="display: none">Registration coming soon!</p>
+    <div id="reg-button" style="display: none">
+        <a href="/register"><button class="register">Register</button></a>
+        <p><i>Registration closes <span class="reg-end"></span> Central Time</i></p>
+    </div>
+</div>
 
 <script>
-function setRegistrationDate(sDate, eDate) {
+function setRegistrationDate(sDate, eDate, cDate) {
     var startDate = moment(sDate, "YYYY/MM/DD hh:mm:ss");
     var endDate = moment(eDate, "YYYY/MM/DD hh:mm:ss");
+    var compDate = moment(cDate, "YYYY/MM/DD hh:mm:ss");
+    var today = moment();
 
-    document.getElementById("reg-end").textContent = endDate.format("MMMM Do YYYY, h:mm A");
+    var regEnds = document.getElementsByClassName("reg-end");
+    for (ele in regEnds) {
+        regEnds[ele].textContent = endDate.format("MMMM Do YYYY, h:mm A");
+    }
+
+    var regStarts = document.getElementsByClassName("reg-start");
+    for (ele in regStarts) {
+        regStarts[ele].textContent = startDate.format("MMMM Do YYYY, h:mm A");
+    }
+
+    if(today.isBefore(startDate)) {
+        document.getElementById("reg-section").style.display = "block";
+        document.getElementById("reg-coming-soon").style.display = "block";
+        document.getElementById("reg-open-soon").style.display = "block";
+    } else if (today.isAfter(startDate) && today.isBefore(endDate)) {
+        document.getElementById("reg-section").style.display = "block";
+        document.getElementById("reg-button").style.display = "block";
+        document.getElementById("reg-open").style.display = "block";
+    } else if (today.isAfter(endDate) && today.isBefore(compDate)) {
+        document.getElementById("reg-ended").style.display = "block";
+    } else if(today.isAfter(compDate.add(1, 'days'))) {
+        document.getElementById("comp-end").style.display = "block";
+    }
 }
 
 function setCompetitionDate(date) {
     var parsedDate = moment(date, "YYYY/MM/DD hh:mm:ss");
     var year = parsedDate.year();
-    document.getElementById("competition-year").textContent = year;
+
+    var compYears = document.getElementsByClassName("competition-year");
+    for (ele in compYears) {
+        compYears[ele].textContent = year;
+    }    
 
     document.getElementById("competition-date").textContent = parsedDate.format("dddd, MMMM Do YYYY");
 }
@@ -154,10 +183,12 @@ fetch('/api/competition')
         console.log(data);
         var regStartDate = "";
         var regEndDate = "";
+        var compDate = "";
 
         Object.entries(data).forEach((entry) => {
             const [key, value] = entry;
             if(value.setting === "COMPETITION_DATE") {
+                compDate = value.value;
                 setCompetitionDate(value.value);
             } else if (value.setting === "REGISTRATION_START") {
                 regStartDate = value.value;
@@ -166,7 +197,7 @@ fetch('/api/competition')
             }
         });
 
-        setRegistrationDate(regStartDate, regEndDate);
+        setRegistrationDate(regStartDate, regEndDate, compDate);
     });
 </script>
 

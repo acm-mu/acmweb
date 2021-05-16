@@ -62,3 +62,16 @@ button.abacus:before {
 button.abacus:hover {
   border: 2px var(--teal) solid;
 }
+
+.reg_message {
+  border-radius: .28rem;
+  padding: 1em 1.5em;
+  line-height: 20px;
+  background: rgb(255, 250, 243);
+  color: rgb(87, 58, 8);
+  box-shadow: rgb(201, 186, 155) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.reg_message h2 {
+  color: rgb(87, 58, 8);
+}
