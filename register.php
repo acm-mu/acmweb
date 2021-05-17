@@ -1,5 +1,28 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/include/mysql.php";
 require_once $_SERVER["DOCUMENT_ROOT"] . "/include/header.php";
+?>
+
+<?php
+
+$mysql->query("USE muhostin_registration;");
+
+$res = $mysql->query("SELECT * from competition_settings");
+
+$comp_date = "";
+$reg_end = "";
+$reg_start = "";
+
+while($row = $res->fetch_assoc()) {
+    if($row['setting'] == "COMPETITION_DATE"){
+        $comp_date = $row['value'];
+    } else if ($row['setting'] == "REGISTRATION_START") {
+        $reg_start = new DateTime($row['value']);
+    } else if ($row['setting'] == "REGISTRATION_END") {
+        $reg_end = new DateTime($row['value']);
+    }
+}
+
 ?>
 
 <link rel="stylesheet" type="text/css" href="/css/form.css?css_version=2">
