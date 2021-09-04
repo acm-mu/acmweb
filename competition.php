@@ -9,7 +9,7 @@
 <center>
     <div class='reg_message' style="display: none" id="reg-open-soon">
         <h2>Registration will open soon!</h2>
-        <p>Registration for the <span class="competition-year"></span> competition will open on <span class="reg-start"></span> Central Time!</p>
+        <p>Registration for the <span class="competition-year"></span> competition will open soon!</p>
     </div>
     <div class='reg_message' style="display: none" id="reg-open">
         <h2>Registration is open!</h2>
@@ -101,8 +101,7 @@
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Virtual! The main portion of the contest will take place through <a href="https://codeabac.us" target="_blank">Abacus</a>, a web application built
-    specifically for this competition.
+    TBA
 </p>
 
 <h3>Date:</h3>
