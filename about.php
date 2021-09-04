@@ -10,7 +10,7 @@
     information. If you would like to receive these emails, please <a href="/subscribe">subscribe to our email list!</a>
 </p>
 <p>For detailed information about how ACM is run here at Marquette, take a look at our <a
-        href="/constitution">constitution</a>. If you would like to contact us, you can do so <a href="/contact">
+        href="/constitution.pdf">constitution</a>. If you would like to contact us, you can do so <a href="mailto:acm-officers@mscs.mu.edu">
         here</a>.
 </p>
 
