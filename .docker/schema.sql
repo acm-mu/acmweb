@@ -5,16 +5,31 @@ CREATE DATABASE IF NOT EXISTS `muhostin_acm`;
 USE muhostin_acm;
 
 --
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `uid` int(16) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  `username` varchar(32) NOT NULL,
+  `full_name` varchar(32) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `last_login_date` datetime DEFAULT NULL,
+  `role` varchar(64) NOT NULL
+);
+
+--
 -- Table structure for table `events`
 --
 
 CREATE TABLE `events` (
   `eventid` int(16) AUTO_INCREMENT NOT NULL PRIMARY KEY,
-  `date` datetime DEFAULT NULL,
-  `creation_date` timestamp(6) NULL DEFAULT CURRENT_TIMESTAMP(6),
-  `publish_date` timestamp(6) NULL DEFAULT CURRENT_TIMESTAMP(6),
-  `title` varchar(32) DEFAULT NULL,
-  `desc` varchar(512) DEFAULT NULL
+  `title` varchar(128) NOT NULL,
+  `type` varchar(128) NOT NULL,
+  `description` varchar(4096) NOT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL,
+  `creation_date` datetime NULL DEFAULT NOW(),
+  `publish_date` datetime NULL DEFAULT NOW()
 );
 
 --
@@ -151,3 +166,20 @@ CREATE TABLE `team` (
     ON DELETE CASCADE 
     ON UPDATE CASCADE
 );
+
+--
+-- Table structure for table `competition_settings`
+--
+
+CREATE TABLE `competition_settings` (
+  `setting` varchar(100) NOT NULL,
+  `value` varchar(100) NOT NULL
+);
+
+USE muhostin_acm;
+INSERT INTO `users` (`uid`, `username`, `full_name`, `password`, `last_login_date`, `role`) VALUES (1, "admin", "Administrator", "$2y$10$u2hsYJSKtmklGaMceBXdD.UFepJBc3HMeYPUcLfNtzbml74LAG4Sa" , NULL, "Admin");
+
+USE muhostin_registration;
+INSERT INTO `competition_settings` (`setting`, `value`) VALUES ("COMPETITION_DATE", "1970-01-01 0:00:00");
+INSERT INTO `competition_settings` (`setting`, `value`) VALUES ("REGISTRATION_START", "1970-01-01 0:00:00");
+INSERT INTO `competition_settings` (`setting`, `value`) VALUES ("REGISTRATION_END", "1970-01-01 0:00:00");

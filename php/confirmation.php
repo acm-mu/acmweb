@@ -17,12 +17,14 @@ $email = $row['email'];
 $sname = $row['sname'];
 $count = $row['teams'];
 
+$sql = "SELECT * FROM competition_settings WHERE setting = 'COMPETITION_DATE'";
+
 ?>
 
 <h1 class="title" page="confirmation">Thank You!</h1>
 
 <p>Thank you for registering,
-    <? echo $cname; ?>. We can't wait to have you and your teams compete on <b>April 15, 2021</b>!</p>
+    <? echo $cname; ?>. We can't wait to have you and your teams compete on <b><? echo $sql; ?></b>!</p>
 <h2>Confirmation Details</h2>
 <p>Here are your confirmation details:</p>
 <table id="conf">

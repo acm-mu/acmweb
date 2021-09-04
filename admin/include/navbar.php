@@ -6,6 +6,9 @@
     <a class="nav_item item" id="events" href="/admin/events">
       Events
     </a>
+    <a class="nav_item item" id="users" href="/admin/users">
+      Users
+    </a>
     <!-- <a class="nav_item" href="/admin/members">
       Members
     </a> -->
