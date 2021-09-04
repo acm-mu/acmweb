@@ -9,7 +9,7 @@
 <center>
     <div class='reg_message' style="display: none" id="reg-open-soon">
         <h2>Registration will open soon!</h2>
-        <p>Registration for the <span class="competition-year"></span> competition will open on <span class="regStarts"></span> Central Time!</p>
+        <p>Registration for the <span class="competition-year"></span> competition will open on <span class="reg-start"></span> Central Time!</p>
     </div>
     <div class='reg_message' style="display: none" id="reg-open">
         <h2>Registration is open!</h2>
