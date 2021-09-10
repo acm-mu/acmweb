@@ -36,7 +36,7 @@ basic directory structure:
     a. To stop the containers, run `docker-compose down`
 6.  There will now be 3 containers running (MySQL, PhpMyAdmin, and an Apache Web Server)
     a. You can access the website at http://localhost or http://127.0.0.1
-    b. You can access the phpmyadmin site at http://localhost:5000 or http://127.0.0.1:5000
+    b. You can access the phpmyadmin site at http://localhost:8080 or http://127.0.0.1:8080
 
 ## Todo
 - [ ] Toggle Registration on and off.
