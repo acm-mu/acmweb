@@ -2,7 +2,6 @@
 
 ## Directory Structure
 
-Once you have downloaded and extracted the xinu tarball, you will see a
 basic directory structure:
 
     admin/  archive/  assets/  members/  ./docker/  include/  php/
