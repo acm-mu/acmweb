@@ -1,4 +1,4 @@
-<div<
+<div>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 <link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
