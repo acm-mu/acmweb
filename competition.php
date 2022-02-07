@@ -1,3 +1,4 @@
+<div<
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/header.php"; ?>
 <link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -130,6 +131,9 @@
         <a href="/register"><button class="register">Register</button></a>
         <p><i>Registration closes <span class="reg-end"></span> Central Time</i></p>
     </div>
+
+</div>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 </div>
 
 <script>
@@ -200,4 +204,3 @@ fetch('/api/competition')
     });
 </script>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
