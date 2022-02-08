@@ -102,7 +102,7 @@
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    TBA
+    Hybrid (Virtual and In-Person competition)
 </p>
 
 <h3>Date:</h3>
