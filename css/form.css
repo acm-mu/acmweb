@@ -107,6 +107,14 @@ input.submit:hover {
   display: none;
 }
 
+.in-person-only {
+    display: none;
+}
+
+.show-in-person-options {
+    display: block;
+}
+
 /*************
 *   Select   *
 *************/

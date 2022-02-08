@@ -119,10 +119,29 @@ function dataToggle() {
   }
 }
 
+function compFormatSelect(event) {
+    console.log(event.target.value);
+
+    if (event.target.value === "in-person"){
+        var elements = document.querySelectorAll('.in-person-only');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.remove('in-person-only');
+            elements[i].classList.add('show-in-person-options');
+        }
+    } else {
+        var elements = document.querySelectorAll('.show-in-person-options');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.remove('show-in-person-options');
+            elements[i].classList.add('in-person-only');
+        }
+    }
+}
+
 (() => {
   onEvent('click', '.add', addTeam);
   onEvent('click', '.del', delTeam);
   onEvent('click', 'input', dataToggle);
+  onEvent('change', '#comp-format', compFormatSelect);
   onEvent('click', '#register', confirm);
 
   onEvent('change', '.shirts', maxNumber);

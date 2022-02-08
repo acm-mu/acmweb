@@ -29,7 +29,7 @@ while($row = $res->fetch_assoc()) {
 <script src="/js/form.js" defer></script>
 
 <form action="/php/register.php" method="POST" id="registerform">
-    <h1 class="title">2021 Wisconsin-Dairyland Programming Competition Registration</h1>
+    <h1 class="title">2022 Wisconsin-Dairyland Programming Competition Registration</h1>
     <p><em><b>Please disable any ad-blockers for this page as they can alter your
                 registration record by not allowing access to our databases. Thank you!</b></em></p>
 
@@ -129,6 +129,7 @@ while($row = $res->fetch_assoc()) {
                 </tbody>
             </table>
         </div>
+
     </div>
 
     <!----------------------------------
@@ -144,8 +145,8 @@ while($row = $res->fetch_assoc()) {
             the Eagle Division (a competition based on concepts in AP Computer Science Principles). We are currently limiting
             teams to give as many schools a chance to register. We may expand this team limit in early March depending on demand.
 
-            Registration cost for the Blue Division (Java/Python) is $60 per team, cost for the Gold Division
-            (Scratch) is $50 per team, and $50 per team for the Eagle Division (AP CSP).
+            Registration cost for the Blue Division (Java/Python) is $60 per team for virtual teams or $80 per team for in-person teams.  The cost for the Gold Division
+            (Scratch) is $50 per team for a virtual team or $60 per team for in person teams.  The cost for the Eagle Division (AP CSP) is $50 per team for virtual teams or $60 per team for in person teams.
         </p>
 
         <label class="checkbox-container">I Agree
@@ -154,6 +155,17 @@ while($row = $res->fetch_assoc()) {
         </label>
 
         <div class="form-hidden-section" id="post-terms-section">
+
+            <div class="input-group" id="competition-format">
+                <h4>How do you plan to attend the competition this year? <b class="req">*</b></h4>
+                <h5>If the pandemic forces us to cancel the in-person competition, we will move all schools virtually.</h5>
+                <select id="comp-format" name="comp-format" class="custom-select" required>
+                    <option disabled="" selected="" value="">Format</option>
+                    <option value="in-person" data-selected-toggle="in-person-comp">In-Person</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+            </div>
+
             <h3>Blue Division</h3>
 
             <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
@@ -163,43 +175,46 @@ while($row = $res->fetch_assoc()) {
             </label>
 
             <div class="form-hidden-section" id="blue-section">
-                <!-- <h4>Preferred Java Environments</h4>
-                <label class="checkbox-container">Eclipse
-                    <input name="java_eclipse" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <label class="checkbox-container">NetBeans
-                    <input name="java_netbeans" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <label class="checkbox-container">BlueJ
-                    <input name="java_bluej" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <label class="checkbox-container">JGrasp
-                    <input name="java_jgrasp" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <label class="checkbox-container">Notepad / Notepad++ and JDK CLI
-                    <input name="java_notepad" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <input name="java_other" placeholder="Other">
+                <div class="in-person-only">
 
-                <h4>Preferred Python Environments</h4>
-                <label class="checkbox-container">IDLE
-                    <input name="python_idle" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <label class="checkbox-container">PyCharm
-                    <input name="python_pycharm" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <label class="checkbox-container">Notepad / Notepad++ and Python CLI
-                    <input name="python_notepad" type="checkbox">
-                    <span class="checkmark">
-                </label>
-                <input name="python_other" placeholder="Other"> -->
+                <h4>Preferred Java Environments</h4>
+                    <label class="checkbox-container">Eclipse
+                        <input name="java_eclipse" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <label class="checkbox-container">NetBeans
+                        <input name="java_netbeans" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <label class="checkbox-container">BlueJ
+                        <input name="java_bluej" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <label class="checkbox-container">JGrasp
+                        <input name="java_jgrasp" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <label class="checkbox-container">Notepad / Notepad++ and JDK CLI
+                        <input name="java_notepad" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <input name="java_other" placeholder="Other">
+
+                    <h4>Preferred Python Environments</h4>
+                    <label class="checkbox-container">IDLE
+                        <input name="python_idle" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <label class="checkbox-container">PyCharm
+                        <input name="python_pycharm" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <label class="checkbox-container">Notepad / Notepad++ and Python CLI
+                        <input name="python_notepad" type="checkbox">
+                        <span class="checkmark">
+                    </label>
+                    <input name="python_other" placeholder="Other">
+                </div>
 
                 <h4>Teams</h4>
                 <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registered per school. Each team
@@ -242,8 +257,10 @@ while($row = $res->fetch_assoc()) {
                 <span class="slider"></span>
             </label>
             <div class="form-hidden-section" id="gold-section">
-                <!-- <label>How many devices can you bring?</label>
-                <input name="gold_devices" type="number" min="0" value="0"> -->
+                <div class="in-person-only">
+                    <label>How many devices can you bring?</label>
+                    <input name="gold_devices" type="number" min="0" value="0">
+                </div>
 
                 <h4>Teams</h4>
                 <label class="sub"><b>Note:</b> A maximum of <b>8</b> teams can be registered per school. Each team
@@ -276,7 +293,7 @@ while($row = $res->fetch_assoc()) {
                 </table>
             </div>
 
-            <!--         EAGLE DIVISION       -->
+            <!--    EAGLE DIVISION       -->
             <h3>Eagle Division</h3>
             <label>Are you bringing teams for the Eagle Division?</label>
 
@@ -287,9 +304,11 @@ while($row = $res->fetch_assoc()) {
             <div class="form-hidden-section" id="eagle-section">
                 <label>Describe the platform you use for your AP CSP class.</label>
                 <input name="eagle_platform" type="text" style="width: 50em">
-
-                <!-- <label>How many devices can you bring?</label>
-                <input name="eagle_devices" type="number" value="0" min="0"> -->
+                
+                <div class="in-person-only">
+                    <label>How many devices can you bring?</label>
+                    <input name="eagle_devices" type="number" value="0" min="0">
+                </div>
 
                 <h4>Teams</h4>
                 <label class="sub"><b>Note:</b> A maximum of <b>5</b> teams can be registered per school. Each team
@@ -322,29 +341,28 @@ while($row = $res->fetch_assoc()) {
                 </table>
             </div>
 
-            <h2>Additional Information</h2>
+            <div class="in-person-only">
+                <h2>Additional Information</h2>
 
-            <!-- <h4>Will any attending student require special accommodations due to a disability, a food allergy, or
-                another
-                medical condition?</h4>
-            <label>If you answer Yes, please list them below and we will contact you to coordinate the details
-                of accommodating these students closer to the competition.</label>
+                <h4>Will any attending student require special accommodations due to a disability, a food allergy, or another medical condition?</h4>
+                <label>If you answer Yes, please list them below and we will contact you to coordinate the details
+                    of accommodating these students closer to the competition.</label>
 
-            <label class="switch">
-                <input name="special_accommodations_toggle" type="checkbox" data-toggle="accommodations-section">
-                <span class="slider"></span>
-            </label>
-            <div class="form-hidden-section" id="accommodations-section">
-                <textarea name="special_accommodations"
-                    placeholder="e.g. I have a student with a gluten allergy."></textarea>
-            </div> -->
+                <label class="switch">
+                    <input name="special_accommodations_toggle" type="checkbox" data-toggle="accommodations-section">
+                    <span class="slider"></span>
+                </label>
+                <div class="form-hidden-section" id="accommodations-section">
+                    <textarea name="special_accommodations"
+                        placeholder="e.g. I have a student with a gluten allergy."></textarea>
+                </div>
+            </div>
 
             <h4>Any additional questions/comments/concerns?</h4>
-            <textarea name="concerns" placeholder="e.g. How will we get our shirts?"></textarea>
+            <textarea name="concerns"></textarea>
             <br />
             <input type="submit" class="register" value="Register" id="register">
 
         </div>
     </div>
 </form>
-<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/footer.php"; ?>
