@@ -366,3 +366,4 @@ while($row = $res->fetch_assoc()) {
         </div>
     </div>
 </form>
+<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/footer.php"; ?>
