@@ -73,6 +73,8 @@ $divisions = array("blue", "gold", "eagle");
 
 $teamcount = 0;
 
+$format = validate('comp-format');
+
 foreach ($divisions as $division) {
     if (array_key_exists($division."_division", $_POST) && $_POST[$division."_division"] == "on") {
         $n = 0;
@@ -86,7 +88,7 @@ foreach ($divisions as $division) {
             $xlarge = post_get($division."_xlarge_$n", 0);
             $xxlarge = post_get($division."_xxlarge_$n", 0);
             
-            $sql_team = "INSERT INTO team(tname, division, schoolid, small, medium, large, xlarge, xxlarge) VALUES ('$tname', '$division', $schoolid, $small, $medium, $large, $xlarge, $xxlarge)";
+            $sql_team = "INSERT INTO team(tname, division, format, schoolid, small, medium, large, xlarge, xxlarge) VALUES ('$tname', '$division', '$format', $schoolid, $small, $medium, $large, $xlarge, $xxlarge)";
             $mysql->query($sql_team);
             
             $n++;
@@ -103,10 +105,13 @@ foreach ($divisions as $division) {
  $eagle_platform = NULL;
  $eagle_devices = 0;
 
+
  if (array_key_exists('eagle_division', $_POST) && $_POST['eagle_division'] == "on") {
      $eagle = 1; // True
      $eagle_platform = addslashes(post_get('eagle_platform', NULL));
-    //  $eagle_devices = addslashes(post_get('eagle_devices', 0));
+     if ($format == "in-person") {
+         $eagle_devices = addslashes(post_get('eagle_devices', 0));
+     }
  } 
 
  $gold = 0; // False
@@ -114,7 +119,9 @@ $gold_devices = 0;
 
 if (array_key_exists('gold_division', $_POST) && $_POST['gold_division'] == "on") {
     $gold = 1; // True
-    // $gold_devices = post_get('gold_devices', 0);
+    if ($format == "in-person") {
+        $gold_devices = post_get('gold_devices', 0);
+    }
 }
 
 $blue = 0; // False
@@ -127,11 +134,13 @@ $java_other = NULL;
 
 if (array_key_exists('blue_division', $_POST) && $_POST['blue_division'] == "on") {
     $blue = 1; // True
-    // $java_eclipse = post_get("java_eclipse", "off") == "off" ? 0 : 1;
-    // $java_netbeans = post_get("java_netbeans", "off") == "off" ? 0 : 1;
-    // $java_bluej = post_get("java_bluej", "off") == "off" ? 0 : 1;
-    // $java_jgrasp = post_get("java_jgrasp", "off") == "off" ? 0 : 1;
-    // $java_other = addslashes(post_get("java_other", NULL));
+    if ($format == "in-person") {
+        $java_eclipse = post_get("java_eclipse", "off") == "off" ? 0 : 1;
+        $java_netbeans = post_get("java_netbeans", "off") == "off" ? 0 : 1;
+        $java_bluej = post_get("java_bluej", "off") == "off" ? 0 : 1;
+        $java_jgrasp = post_get("java_jgrasp", "off") == "off" ? 0 : 1;
+        $java_other = addslashes(post_get("java_other", NULL));
+    }
 }
 
 $python_idle = 0;
@@ -141,16 +150,20 @@ $python_other = NULL;
 
 if (array_key_exists("blue_division", $_POST) && $_POST["blue_division"] == "on") {
     $blue = 1; // True
-    // $python_idle = post_get("python_idle", "off") == "off" ? 0 : 1;
-    // $python_pycharm = post_get("python_pycharm", "off") == "off" ? 0 : 1;
-    // $python_notepad = post_get("python_notepad", "off") == "off" ? 0 : 1;
-    // $python_other = addslashes(post_get("python_other", NULL));
+    if ($format == "in-person") {
+        $python_idle = post_get("python_idle", "off") == "off" ? 0 : 1;
+        $python_pycharm = post_get("python_pycharm", "off") == "off" ? 0 : 1;
+        $python_notepad = post_get("python_notepad", "off") == "off" ? 0 : 1;
+        $python_other = addslashes(post_get("python_other", NULL));
+    }
 }
 
 $accommodations = NULL;
-// if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special_accommodations_toggle"] == "on") {
-//     $accommodations = addslashes(post_get("special_accommodations", NULL));
-// }
+if ($format == "in-person") {
+    if (array_key_exists("special_accommodations_toggle", $_POST) && $_POST["special_accommodations_toggle"] == "on") {
+        $accommodations = addslashes(post_get("special_accommodations", NULL));
+    }
+}
 
 $concerns = validate("concerns");
 

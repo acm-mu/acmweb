@@ -155,6 +155,7 @@ CREATE TABLE `invoice` (
 CREATE TABLE `team` (
   `tname` varchar(100) DEFAULT NULL,
   `division` varchar(40) DEFAULT NULL,
+  `format` varchar(40) NOT NULL,
   `schoolid` int(11) DEFAULT NULL,
   `small` int(11) DEFAULT '0',
   `medium` int(11) DEFAULT '0',

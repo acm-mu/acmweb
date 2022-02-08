@@ -9,6 +9,12 @@ function confirm(e) {
     if (!input.checkValidity()) return;
   }
 
+  const selects = document.querySelectorAll('select[required]');
+  // eslint-disable-next-line no-restricted-syntax
+  for (const select of selects) {
+    if (!select.checkValidity()) return;
+  }
+
   e.preventDefault();
   swal({
     customClass: {

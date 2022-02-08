@@ -32,9 +32,9 @@
     <a href="/archive/prep/q0">
         <button class="java">Java Preparation</button>
     </a>
-    <a href="https://codeabac.us/blue/practice">
+    <!--<a href="https://codeabac.us/blue/practice">
         <button class="abacus">>_ Abacus</button>
-    </a>
+    </a>-->
     <a href="/scratch_prep">
         <button class="scratch">Scratch Preparation</button>
     </a>

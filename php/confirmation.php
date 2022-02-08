@@ -17,14 +17,17 @@ $email = $row['email'];
 $sname = $row['sname'];
 $count = $row['teams'];
 
-$sql = "SELECT * FROM competition_settings WHERE setting = 'COMPETITION_DATE'";
+$sql = "SELECT value FROM competition_settings WHERE setting = 'COMPETITION_DATE'";
+$res = $mysql->query($sql);
+$row = $res->fetch_assoc();
 
+$date = date_create($row['value']);
 ?>
 
 <h1 class="title" page="confirmation">Thank You!</h1>
 
 <p>Thank you for registering,
-    <? echo $cname; ?>. We can't wait to have you and your teams compete on <b><? echo $sql; ?></b>!</p>
+    <? echo $cname; ?>. We can't wait to have you and your teams compete on <b><? echo date_format($date, 'm/d/Y'); ?></b>!</p>
 <h2>Confirmation Details</h2>
 <p>Here are your confirmation details:</p>
 <table id="conf">
@@ -49,8 +52,8 @@ $sql = "SELECT * FROM competition_settings WHERE setting = 'COMPETITION_DATE'";
         </td>
     </tr>
 </table>
-<p>Something look wrong? <a href="mailto:acm-registration@mscs.mu.edu?subject=Incorrect Registration">Let us know!</a></p>
-<p>Your newly registered teams should appear on our <a href="https://codeabac.us" target="_blank">competition website</a> within a few minutes!</p>
+<p>Something look wrong? <a href="mailto:acm@marquette.edu?subject=Incorrect Registration">Let us know!</a></p>
+<!--<p>Your newly registered teams should appear on our <a href="https://codeabac.us" target="_blank">competition website</a> within a few minutes!</p>-->
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 
