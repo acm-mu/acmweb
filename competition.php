@@ -102,7 +102,7 @@
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Hybrid (Virtual and In-Person competition)
+    Hybrid (Virtual and In-Person)
 </p>
 
 <h3>Date:</h3>
@@ -120,7 +120,6 @@
         <li>Scoreboard Turns Off: <b>11:30 AM</b></li>
     </ul>
     <li>Lunch Break: <b>12:15 PM - 1:00 PM</b></li>
-    <li>Student Panel: <b>12:30 PM - 1:00 PM</b></li>
     <li>Awards: <b>1:00 PM - 2:00 PM</b></li>
 </ul>
     
