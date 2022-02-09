@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const videoSolutionLink = document.querySelector('meta[yt-link]')
-    console.log(document.querySelector('meta[yt-link]'))
     if (videoSolutionLink) {
         const ytButton = document.querySelector('#yt-link')
         ytButton.style.display = 'inline'

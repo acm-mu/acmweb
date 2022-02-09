@@ -126,8 +126,6 @@ function dataToggle() {
 }
 
 function compFormatSelect(event) {
-    console.log(event.target.value);
-
     if (event.target.value === "in-person"){
         var elements = document.querySelectorAll('.in-person-only');
         for (var i = 0; i < elements.length; i++) {

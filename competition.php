@@ -183,7 +183,6 @@ function setCompetitionDate(date) {
 fetch('/api/competition')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         var regStartDate = "";
         var regEndDate = "";
         var compDate = "";
