@@ -35,8 +35,7 @@
         ------------------------------------>
         <div>
             <h2>School Information</h2>
-            <p>We are taking a different approach to invoicing this year to help expedite the registration process! This
-                information will be used on your auto-generated invoice.
+            <p>
             <div class="input-group">
                 <label>School Name <b class="req">*</b></label>
                 <input name="sname" class="double" required>
