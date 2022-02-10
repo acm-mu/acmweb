@@ -53,6 +53,7 @@ $date = date_create($row['value']);
     </tr>
 </table>
 <p>Something look wrong? <a href="mailto:acm@marquette.edu?subject=Incorrect Registration">Let us know!</a></p>
+<p>The Wisconsin Dairyland-Programming Competition team will send you an invoice soon with instructions on how to pay.</p>
 <!--<p>Your newly registered teams should appear on our <a href="https://codeabac.us" target="_blank">competition website</a> within a few minutes!</p>-->
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
