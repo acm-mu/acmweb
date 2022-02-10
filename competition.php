@@ -102,7 +102,7 @@
 <h2>Logistics</h2>
 <h3>Location</h3>
 <p>
-    Hybrid (Virtual and In-Person competition)
+    Hybrid (Virtual and In-Person)
 </p>
 
 <h3>Date:</h3>
@@ -113,16 +113,16 @@
         changes.</em>
 </p>
 <ul>
-    <li>Welcome: <b>8:00 AM - 8:10 AM</b></li>
-    <li>Practice Problem: <b>8:10 AM - 9:00 AM</b></li>
+    <li>Registration/Welcome: <b>8:00 AM - 8:30 AM</b></li>
+    <li>Practice Problem: <b>8:30 AM - 9:00 AM</b></li>
     <li>Competition: <b>9:00 AM - 12:00 PM</b></li>
     <ul>
         <li>Scoreboard Turns Off: <b>11:30 AM</b></li>
     </ul>
     <li>Lunch Break: <b>12:15 PM - 1:00 PM</b></li>
-    <li>Student Panel: <b>12:30 PM - 1:00 PM</b></li>
     <li>Awards: <b>1:00 PM - 2:00 PM</b></li>
 </ul>
+    
 
 <div id="reg-section" style="display: none">
     <h3>Register</h3>

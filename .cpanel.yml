@@ -19,4 +19,4 @@ deployment:
     - /bin/cp -R include $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp -R members $DEPLOYPATH
-    - /bin/cp -R php $DEPLOYPATH
+    - /bin/cp -R php/ $DEPLOYPATH
