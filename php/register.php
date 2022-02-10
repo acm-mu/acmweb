@@ -139,6 +139,7 @@ if (array_key_exists('blue_division', $_POST) && $_POST['blue_division'] == "on"
         $java_netbeans = post_get("java_netbeans", "off") == "off" ? 0 : 1;
         $java_bluej = post_get("java_bluej", "off") == "off" ? 0 : 1;
         $java_jgrasp = post_get("java_jgrasp", "off") == "off" ? 0 : 1;
+        $java_notepad = post_get("java_notepad", "off") == "off" ? 0 : 1;
         $java_other = addslashes(post_get("java_other", NULL));
     }
 }
