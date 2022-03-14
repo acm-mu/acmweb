@@ -108,13 +108,25 @@
         for (const team of school.teams)
             switch (team.division) {
                 case "eagle":
-                    amount_due += 50;
+                    if(team.format == 'in-person'){
+                        amount_due += 60;
+                    } else {
+                        amount_due += 50;
+                    }
                     break;
                 case "gold":
-                    amount_due += 50;
+                    if(team.format == 'in-person'){
+                        amount_due += 60;
+                    } else {
+                        amount_due += 50;
+                    }
                     break;
                 case "blue":
-                    amount_due += 60;
+                    if(team.format == 'in-person'){
+                        amount_due += 80;
+                    } else {
+                        amount_due += 60;
+                    }
                     break;
             }
 

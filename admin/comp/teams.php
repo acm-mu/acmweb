@@ -5,6 +5,7 @@
         <tr>
             <th col='tname'>Team Name</th>
             <th col='division'>Division</th>
+            <th col='format'>Format</th>
             <th col='sname'>School</th>
             <th col='scity'>City</th>
             <th>Members</th>
@@ -25,12 +26,14 @@ function makeTeamRow(team) {
 
     let clazz = team.division == 'eagle' ? 'teal' : (team.division == 'gold' ? 'yellow' : 'blue')
     const division = `<a class='ui label ${clazz}' href='/admin/comp/teams?division=${team.division}'>${capitalize(team.division)}</a>`;
+    const format = team.format == 'in-person' ? 'In-Person' : 'Virtual'
 
     const schoolLink = `<a href='/admin/comp/school?schoolid=${team.schoolid}'>${team.sname}</a>`;
 
     const row = document.createElement('tr');
     row.appendChild(createElement(`<td>${team.tname}</td>`));
     row.appendChild(createElement(`<td>${division}</td>`));
+    row.appendChild(createElement(`<td>${format}</td>`));
     row.appendChild(createElement(`<td>${schoolLink}</td>`));
     row.appendChild(createElement(`<td>${team.scity}</td>`));
     row.appendChild(createElement(`<td>${total}</td>`));

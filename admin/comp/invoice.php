@@ -11,9 +11,12 @@ $mysql->query("USE muhostin_registration;");
 $schoolid = $_GET['schoolid'];
 
 $sql = "SELECT school.*, cname," .
-    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='blue') AS blue, " .
-    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='gold') AS gold, " .
-    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='eagle') AS eagle " .
+    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='blue' AND format='in-person') AS blue_inperson, " .
+    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='gold' AND format='in-person') AS gold_inperson, " .
+    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='eagle' AND format='in-person') AS eagle_inperson, " .
+    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='blue' AND format='virtual') AS blue_virtual, " .
+    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='gold' AND format='virtual') AS gold_virtual, " .
+    "(SELECT COUNT(*) FROM team WHERE schoolid = school.schoolid AND division='eagle' AND format='virtual') AS eagle_virtual " .
     "FROM school INNER JOIN coach ON school.schoolid = coach.schoolid " .
     "WHERE school.schoolid=$schoolid";
 

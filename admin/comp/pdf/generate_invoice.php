@@ -3,9 +3,13 @@ date_default_timezone_set('America/Chicago');
 
 require(dirname(__FILE__) . "/fpdf.php");
 
-$BLUE_PRICE = 60;
-$GOLD_PRICE = 50;
-$EAGLE_PRICE = 50;
+$BLUE_PRICE_INPERSON = 80;
+$GOLD_PRICE_INPERSON = 60;
+$EAGLE_PRICE_INPERSON = 60;
+
+$BLUE_PRICE_VIRTUAL = 60;
+$GOLD_PRICE_VIRTUAL = 50;
+$EAGLE_PRICE_VIRTUAL = 50;
 /* 
     Page Size 210x297
 */
@@ -21,9 +25,12 @@ class Invoice extends FPDF {
         $this->saddl2 = $data['saddl2'];
         $this->scity = $data['scity'];
         $this->szip = $data['szip'];
-        $this->blue = $data['blue'];
-        $this->gold = $data['gold'];
-        $this->eagle = $data['eagle'];
+        $this->blue_inperson = $data['blue_inperson'];
+        $this->gold_inperson = $data['gold_inperson'];
+        $this->eagle_inperson = $data['eagle_inperson'];
+        $this->blue_virtual = $data['blue_virtual'];
+        $this->gold_virtual = $data['gold_virtual'];
+        $this->eagle_virtual = $data['eagle_virtual'];
 
         $this->AddPage();
         $this->SetLeftMargin(20);
@@ -127,7 +134,7 @@ class Invoice extends FPDF {
     }
 
     function PrintTable() {
-        global $BLUE_PRICE, $GOLD_PRICE, $EAGLE_PRICE;
+        global $BLUE_PRICE_INPERSON, $GOLD_PRICE_INPERSON, $EAGLE_PRICE_INPERSON, $BLUE_PRICE_VIRTUAL, $GOLD_PRICE_VIRTUAL, $EAGLE_PRICE_VIRTUAL;
 
         $this->HR();
         $this->Cell(78, 5, "Description of Service");
@@ -138,14 +145,14 @@ class Invoice extends FPDF {
         $this->HR();
 
         $total = 0;
-        if ($this->blue > 0) {
-            $quantity = $this->blue;
-            $unit_price = number_format($BLUE_PRICE, 2);
-            $amount = number_format($quantity * $BLUE_PRICE, 2);
+        if ($this->blue_inperson > 0) {
+            $quantity = $this->blue_inperson;
+            $unit_price = number_format($BLUE_PRICE_INPERSON, 2);
+            $amount = number_format($quantity * $BLUE_PRICE_INPERSON, 2);
             $total += $amount;
             $this->HR();
             $this->Ln(0.5);
-            $this->Cell(78, 6, "Team Registration, Blue Division");
+            $this->Cell(78, 6, "Team Registration, Blue Division (in-person)");
             $this->Cell(16, 6, $quantity, 0, 0, 'R');
             $this->Cell(38, 6, "$$unit_price", 0, 0, 'R');
             $this->Cell(32, 6, "$$amount", 0, 0, 'R');
@@ -153,14 +160,14 @@ class Invoice extends FPDF {
             $this->HR();
         }
 
-        if ($this->gold > 0) {
-            $quantity = $this->gold;
-            $unit_price = number_format($GOLD_PRICE, 2);
-            $amount = number_format($quantity * $GOLD_PRICE, 2);
+        if ($this->gold_inperson > 0) {
+            $quantity = $this->gold_inperson;
+            $unit_price = number_format($GOLD_PRICE_INPERSON, 2);
+            $amount = number_format($quantity * $GOLD_PRICE_INPERSON, 2);
             $total += $amount;
             $this->HR();
             $this->Ln(0.5);
-            $this->Cell(78, 6, "Team Registration, Gold Division");
+            $this->Cell(78, 6, "Team Registration, Gold Division (in-person)");
             $this->Cell(16, 6, $quantity, 0, 0, 'R');
             $this->Cell(38, 6, "$$unit_price", 0, 0, 'R');
             $this->Cell(32, 6, "$$amount", 0, 0, 'R');
@@ -168,14 +175,59 @@ class Invoice extends FPDF {
             $this->HR();
         }
 
-        if ($this->eagle > 0) {
-            $quantity = $this->eagle;
-            $unit_price = number_format($EAGLE_PRICE, 2);
-            $amount = number_format($quantity * $EAGLE_PRICE, 2);
+        if ($this->eagle_inperson > 0) {
+            $quantity = $this->eagle_inperson;
+            $unit_price = number_format($EAGLE_PRICE_INPERSON, 2);
+            $amount = number_format($quantity * $EAGLE_PRICE_INPERSON, 2);
             $total += $amount;
             $this->HR();
             $this->Ln(0.5);
-            $this->Cell(78, 6, "Team Registration, Eagle Division");
+            $this->Cell(78, 6, "Team Registration, Eagle Division (in-person)");
+            $this->Cell(16, 6, $quantity, 0, 0, 'R');
+            $this->Cell(38, 6, "$$unit_price", 0, 0, 'R');
+            $this->Cell(32, 6, "$$amount", 0, 0, 'R');
+            $this->Ln(6);
+            $this->HR();
+        }
+
+        if ($this->blue_virtual > 0) {
+            $quantity = $this->blue_virtual;
+            $unit_price = number_format($BLUE_PRICE_VIRTUAL, 2);
+            $amount = number_format($quantity * $BLUE_PRICE_VIRTUAL, 2);
+            $total += $amount;
+            $this->HR();
+            $this->Ln(0.5);
+            $this->Cell(78, 6, "Team Registration, Blue Division (virtual)");
+            $this->Cell(16, 6, $quantity, 0, 0, 'R');
+            $this->Cell(38, 6, "$$unit_price", 0, 0, 'R');
+            $this->Cell(32, 6, "$$amount", 0, 0, 'R');
+            $this->Ln(6);
+            $this->HR();
+        }
+
+        if ($this->gold_virtual > 0) {
+            $quantity = $this->gold_virtual;
+            $unit_price = number_format($GOLD_PRICE_VIRTUAL, 2);
+            $amount = number_format($quantity * $GOLD_PRICE_VIRTUAL, 2);
+            $total += $amount;
+            $this->HR();
+            $this->Ln(0.5);
+            $this->Cell(78, 6, "Team Registration, Gold Division (virtual)");
+            $this->Cell(16, 6, $quantity, 0, 0, 'R');
+            $this->Cell(38, 6, "$$unit_price", 0, 0, 'R');
+            $this->Cell(32, 6, "$$amount", 0, 0, 'R');
+            $this->Ln(6);
+            $this->HR();
+        }
+
+        if ($this->eagle_virtual > 0) {
+            $quantity = $this->eagle_virtual;
+            $unit_price = number_format($EAGLE_PRICE_VIRTUAL, 2);
+            $amount = number_format($quantity * $EAGLE_PRICE_VIRTUAL, 2);
+            $total += $amount;
+            $this->HR();
+            $this->Ln(0.5);
+            $this->Cell(78, 6, "Team Registration, Eagle Division (virtual)");
             $this->Cell(16, 6, $quantity, 0, 0, 'R');
             $this->Cell(38, 6, "$$unit_price", 0, 0, 'R');
             $this->Cell(32, 6, "$$amount", 0, 0, 'R');
