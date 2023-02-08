@@ -26,7 +26,7 @@
     <script src="/js/form.js" defer></script>
 
     <form action="/php/register.php" method="POST" id="registerform">
-        <h1 class="title">2022 Wisconsin-Dairyland Programming Competition Registration</h1>
+        <h1 class="title">2023 Wisconsin-Dairyland Programming Competition Registration</h1>
         <p><em><b>Please disable any ad-blockers for this page as they can alter your
                     registration record by not allowing access to our databases. Thank you!</b></em></p>
 
