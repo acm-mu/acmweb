@@ -109,9 +109,6 @@
 <p id="competition-date"></p>
 
 <h3>Schedule:</h3>
-<p><em>This is a tentative schedule and could change at any time. We will try our best to notify you of any
-        changes.</em>
-</p>
 <ul>
     <li>Registration/Welcome: <b>8:00 AM - 8:30 AM</b></li>
     <li>Practice Problem: <b>8:30 AM - 9:00 AM</b></li>
