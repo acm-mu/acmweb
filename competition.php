@@ -130,6 +130,11 @@
     </div>
 
 </div>
+<div>
+    <h3>Our Sponsors</h3>
+    <img src="/assets/nmspons.png" alt="NM Sponsor" style="width: 100%; max-width: 500px;">
+    <img src="/assets/ulinespons.png" alt="Uline Sponsor" style="width: 100%; max-width: 500px;">
+</div>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 </div>
 
