@@ -3,6 +3,17 @@
 <link rel="stylesheet" type="text/css" href="/css/competition.css?css_version=2">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
+<style>
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+</style>
+
 <h1 class="title" page="competition">
     <span class="competition-year"></span> Wisconsin-Dairyland Programming Competition
 </h1>
@@ -131,10 +142,19 @@
 
 </div>
 <div>
-    <h3>Our Sponsors</h3>
-    <img src="/assets/nmspons.png" alt="NM Sponsor" style="width: 100%; max-width: 500px;">
-    <img src="/assets/ulinespons.png" alt="Uline Sponsor" style="width: 100%; max-width: 500px;">
+    <center>
+        <h3>Our Sponsors</h3>
+        <div class="row">
+            <div class="column">
+                <img src="/assets/nmspons.png" alt="NM Sponsor" style="width: 100%; max-width: 500px;">
+            </div>
+            <div class="column">
+                <img src="/assets/ulinespons.png" alt="Uline Sponsor" style="width: 100%; max-width: 500px;">
+            </div>    
+        </div>
+    </center>
 </div>
+
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 </div>
 
