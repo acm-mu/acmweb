@@ -290,6 +290,7 @@
                 </div>
 
                 <!--    EAGLE DIVISION       -->
+                                <!--
                 <h3>Eagle Division</h3>
                 <label>Are you bringing teams for the Eagle Division?</label>
 
@@ -363,6 +364,7 @@
         </div>
     </form>
 </div>
+                                -->
 <div>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/footer.php"; ?>
 </div>
