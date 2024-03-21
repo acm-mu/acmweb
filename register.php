@@ -339,7 +339,7 @@
                         </tbody>
                     </table>
                 </div>
-
+-->
                 <div class="in-person-only">
                     <h2>Additional Information</h2>
 
@@ -366,7 +366,7 @@
         </div>
     </form>
 </div>
-                                -->
+                            
 <div>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/footer.php"; ?>
 </div>
