@@ -292,7 +292,7 @@
                 <!--    EAGLE DIVISION       -->
                                 
                 <h3>Eagle Division</h3>
-                                <h4>Team Capacity Reached</h4>
+                                <h5>Team Capacity Reached</h5>
                                 <!--
                 <label>Are you bringing teams for the Eagle Division?</label>
 
