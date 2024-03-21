@@ -290,8 +290,10 @@
                 </div>
 
                 <!--    EAGLE DIVISION       -->
-                                <!--
+                                
                 <h3>Eagle Division</h3>
+                                <h4>Team Capacity Reached</h4>
+                                <!--
                 <label>Are you bringing teams for the Eagle Division?</label>
 
                 <label class="switch">
