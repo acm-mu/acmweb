@@ -292,8 +292,8 @@
                 <!--    EAGLE DIVISION       -->
                                 
                 <h3>Eagle Division</h3>
-                               <!-- <h4 style="color: red;">Team Capacity Reached</h4> -->
-                                
+                                <h4 style="color: red;">Team Capacity Reached</h4> 
+                                <!--
                 <label>Are you bringing teams for the Eagle Division?</label>
 
                 <label class="switch">
@@ -339,7 +339,7 @@
                         </tbody>
                     </table>
                 </div>
-
+-->
                 <div class="in-person-only">
                     <h2>Additional Information</h2>
 
