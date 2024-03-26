@@ -163,7 +163,8 @@
                 </div>
 
                 <h3>Blue Division</h3>
-
+                    <h4 style="color: red;">Team Capacity Reached</h4>
+                <!--
                 <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
                 <label class="switch">
                     <input name="blue_division" type="checkbox" data-toggle="blue-section" toggle-required="true">
@@ -243,9 +244,11 @@
                         </tbody>
                     </table>
                 </div>
-
+-->
                 <!--         GOLD DIVISION       -->
                 <h3>Gold Division</h3>
+                                <h4 style="color: red;">Team Capacity Reached</h4>
+                                <!--
                 <label>Are you bringing teams for the Gold (Scratch) Division?</label>
 
                 <label class="switch">
@@ -288,7 +291,7 @@
                         </tbody>
                     </table>
                 </div>
-
+    -->
                 <!--    EAGLE DIVISION       -->
                                 
                 <h3>Eagle Division</h3>
