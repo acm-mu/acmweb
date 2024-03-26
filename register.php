@@ -21,7 +21,7 @@
             $reg_end = new DateTime($row['value']);
         }
     }?>
-    
+
     <link rel="stylesheet" type="text/css" href="/css/form.css?css_version=2">
     <script src="/js/form.js" defer></script>
 
@@ -293,7 +293,7 @@
                 </div>
     -->
                 <!--    EAGLE DIVISION       -->
-                                
+
                 <h3>Eagle Division</h3>
                                 <h4 style="color: red;">Team Capacity Reached</h4>
                                 <!--
@@ -306,7 +306,7 @@
                 <div class="form-hidden-section" id="eagle-section">
                     <label>Describe the platform you use for your AP CSP class.</label>
                     <input name="eagle_platform" type="text" style="width: 50em">
-                    
+
                     <div class="in-person-only">
                         <label>How many devices can you bring?</label>
                         <input name="eagle_devices" type="number" value="0" min="0">
@@ -343,6 +343,8 @@
                     </table>
                 </div>
 -->
+
+<!--
                 <div class="in-person-only">
                     <h2>Additional Information</h2>
 
@@ -359,17 +361,20 @@
                             placeholder="e.g. I have a student with a gluten allergy."></textarea>
                     </div>
                 </div>
+-->
 
+
+<!--
                 <h4>Any additional questions/comments/concerns?</h4>
                 <textarea name="concerns"></textarea>
                 <br />
                 <input type="submit" class="register" value="Register" id="register">
-
+-->
             </div>
         </div>
     </form>
 </div>
-                            
+
 <div>
 <?php require_once $_SERVER["DOCUMENT_ROOT"] . "/include/footer.php"; ?>
 </div>
