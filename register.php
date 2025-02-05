@@ -162,9 +162,9 @@
                     </select>
                 </div>
 
-                <h3>Blue Division</h3>
-                    <h4 style="color: red;">Team Capacity Reached</h4>
-                <!--
+                 <h3>Blue Division</h3>
+                    <!-- <h4 style="color: red;">Team Capacity Reached</h4>  -->
+                
                 <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
                 <label class="switch">
                     <input name="blue_division" type="checkbox" data-toggle="blue-section" toggle-required="true">
@@ -244,11 +244,11 @@
                         </tbody>
                     </table>
                 </div>
--->
-                <!--         GOLD DIVISION       -->
+
+                        
                 <h3>Gold Division</h3>
-                                <h4 style="color: red;">Team Capacity Reached</h4>
-                                <!--
+                                <!-- <h4 style="color: red;">Team Capacity Reached</h4> -->
+                                
                 <label>Are you bringing teams for the Gold (Scratch) Division?</label>
 
                 <label class="switch">
@@ -291,12 +291,12 @@
                         </tbody>
                     </table>
                 </div>
-    -->
+    
                 <!--    EAGLE DIVISION       -->
 
                 <h3>Eagle Division</h3>
-                                <h4 style="color: red;">Team Capacity Reached</h4>
-                                <!--
+                                <!-- <h4 style="color: red;">Team Capacity Reached</h4> -->
+                                
                 <label>Are you bringing teams for the Eagle Division?</label>
 
                 <label class="switch">
@@ -342,9 +342,9 @@
                         </tbody>
                     </table>
                 </div>
--->
 
-<!--
+
+
                 <div class="in-person-only">
                     <h2>Additional Information</h2>
 
@@ -361,15 +361,15 @@
                             placeholder="e.g. I have a student with a gluten allergy."></textarea>
                     </div>
                 </div>
--->
 
 
-<!--
+
+
                 <h4>Any additional questions/comments/concerns?</h4>
                 <textarea name="concerns"></textarea>
                 <br />
                 <input type="submit" class="register" value="Register" id="register">
--->
+
             </div>
         </div>
     </form>
