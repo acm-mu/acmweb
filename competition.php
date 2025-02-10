@@ -15,7 +15,7 @@
 </style>
 
 <h1 class="title" page="competition">
-    <span class="competition-year"></span> Wisconsin-Dairyland Programming Competition
+    2025 Wisconsin-Dairyland Programming Competition
 </h1>
 
 <center>
@@ -25,7 +25,7 @@
     </div> -->
     <div class='reg_message' style="display: block" id="reg-open">
         <h2>Registration is open!</h2>
-        <p>Registration for the <span class="competition-year"></span> competition is now open.  Teams can register here.  Registration is open until <span class="reg-end"></span> Central Time!</p>
+        <p>Registration for the 2025 competition is now open.  Teams can register here.  Registration is open until January 1st 2025 Central Time!</p>
     </div>
     <!-- <div class='reg_message' style="display: none" id="reg-live">
         <h2>Competition Day!</h2>
@@ -117,7 +117,7 @@
 </p>
 
 <h3>Date:</h3>
-<p id="competition-date"></p>
+<p>2025</p>
 
 <h3>Schedule:</h3>
 <ul>
@@ -132,10 +132,10 @@
 </ul>
     
 
-<div id="reg-section" style="display: none">
+<div id="reg-section" style="display: block">
     <h3>Register</h3>
     <p id="reg-coming-soon" style="display: none">Registration coming soon!</p>
-    <div id="reg-button" style="display: none">
+    <div id="reg-button" style="display: block">
         <a href="/register"><button class="register">Register</button></a>
         <p><i>Registration closes <span class="reg-end"></span> Central Time</i></p>
     </div>
