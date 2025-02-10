@@ -117,7 +117,7 @@
 </p>
 
 <h3>Date:</h3>
-<p>2025</p>
+<p>April 16th 2025</p>
 
 <h3>Schedule:</h3>
 <ul>
