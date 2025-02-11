@@ -141,7 +141,7 @@
     </div>
 
 </div>
-<div>
+<!-- <div>
     <center>
         <h3>Our Sponsors</h3>
         <div class="row">
@@ -153,7 +153,7 @@
             </div>    
         </div>
     </center>
-</div>
+</div> -->
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/include/footer.php"; ?>
 </div>
