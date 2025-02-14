@@ -140,9 +140,11 @@
                 up to 8 teams in the Blue Division (Java/Python), 8 teams in the Gold Division (Scratch), and 5 teams in
                 the Eagle Division (a competition based on concepts in AP Computer Science Principles). We are currently limiting
                 teams to give as many schools a chance to register. We may expand this team limit in early March depending on demand.
-
-                Registration cost for the Blue Division (Java/Python) is $60 per team for a virtual team or $80 per team for an in-person team.  The cost for the Gold Division
-                (Scratch) is $50 per team for a virtual team or $60 per team for an in-person team.  The cost for the Eagle Division (AP CSP) is $50 per team for a virtual team or $60 per team for an in-person team.
+                
+                Registration cost for the Blue Division (Java/Python) is $80 per team for an in-person team.  The cost for the Gold Division
+                (Scratch) is $60 per team for an in-person team.  The cost for the Eagle Division (AP CSP) is $60 per team for an in-person team.
+                <!-- Registration cost for the Blue Division (Java/Python) is $60 per team for a virtual team or $80 per team for an in-person team.  The cost for the Gold Division
+                (Scratch) is $50 per team for a virtual team or $60 per team for an in-person team.  The cost for the Eagle Division (AP CSP) is $50 per team for a virtual team or $60 per team for an in-person team. -->
             </p>
 
             <label class="checkbox-container">I Agree
