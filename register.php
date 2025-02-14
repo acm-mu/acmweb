@@ -154,11 +154,11 @@
 
                 <div class="input-group" id="competition-format">
                     <h4>How do you plan to attend the competition this year? <b class="req">*</b></h4>
-                    <h5>If the pandemic forces us to cancel the in-person competition, we will move all schools virtually.</h5>
+                    <!-- <h5>If the pandemic forces us to cancel the in-person competition, we will move all schools virtually.</h5> -->
                     <select id="comp-format" name="comp-format" class="custom-select" required>
                         <option disabled="" selected="" value="">Format</option>
                         <option value="in-person" data-selected-toggle="in-person-comp">In-Person</option>
-                        <option value="virtual">Virtual</option>
+                        <!-- <option value="virtual">Virtual</option> -->
                     </select>
                 </div>
 
