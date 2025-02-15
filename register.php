@@ -141,10 +141,8 @@
                 the Eagle Division (a competition based on concepts in AP Computer Science Principles). We are currently limiting
                 teams to give as many schools a chance to register. We may expand this team limit in early March depending on demand.
                 
-                Registration cost for the Blue Division (Java/Python) is $80 per team for an in-person team.  The cost for the Gold Division
-                (Scratch) is $60 per team for an in-person team.  The cost for the Eagle Division (AP CSP) is $60 per team for an in-person team.
-                <!-- Registration cost for the Blue Division (Java/Python) is $60 per team for a virtual team or $80 per team for an in-person team.  The cost for the Gold Division
-                (Scratch) is $50 per team for a virtual team or $60 per team for an in-person team.  The cost for the Eagle Division (AP CSP) is $50 per team for a virtual team or $60 per team for an in-person team. -->
+                Registration cost for the Blue Division (Java/Python) is $60 per team for a virtual team or $80 per team for an in-person team.  The cost for the Gold Division
+                (Scratch) is $50 per team for a virtual team or $60 per team for an in-person team.  The cost for the Eagle Division (AP CSP) is $50 per team for a virtual team or $60 per team for an in-person team.
             </p>
 
             <label class="checkbox-container">I Agree
@@ -160,7 +158,7 @@
                     <select id="comp-format" name="comp-format" class="custom-select" required>
                         <option disabled="" selected="" value="">Format</option>
                         <option value="in-person" data-selected-toggle="in-person-comp">In-Person</option>
-                        <!-- <option value="virtual">Virtual</option> -->
+                        <option value="virtual">Virtual</option>
                     </select>
                 </div>
 
