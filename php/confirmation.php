@@ -27,7 +27,7 @@ $date = date_create($row['value']);
 <h1 class="title" page="confirmation">Thank You!</h1>
 
 <p>Thank you for registering,
-    <? echo $cname; ?>. We can't wait to have you and your teams compete on <b><? echo date_format($date, 'm/d/Y'); ?></b>!</p>
+    <? echo $cname; ?>. We can't wait to have you and your teams compete on April 16th, 2025!</p>
 <h2>Confirmation Details</h2>
 <p>Here are your confirmation details:</p>
 <table id="conf">
