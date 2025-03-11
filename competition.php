@@ -25,7 +25,7 @@
     </div> -->
     <div class='reg_message' style="display: block" id="reg-open">
         <h2>Registration is open!</h2>
-        <p>Registration for the 2025 competition is now open.  Teams can register here.  Registration is open until March 17th, 2025 12:00 AM Central Time!</p>
+        <p>Registration for the 2025 competition is now open.  Teams can register here.  Registration is open until March 17th, 2025 11:59 PM Central Time!</p>
     </div>
     <!-- <div class='reg_message' style="display: none" id="reg-live">
         <h2>Competition Day!</h2>
@@ -137,7 +137,7 @@
     <p id="reg-coming-soon" style="display: none">Registration coming soon!</p>
     <div id="reg-button" style="display: block">
         <a href="/register"><button class="register">Register</button></a>
-        <p><i>Registration closes March 17th, 2025 12:00 AM Central Time</i></p>
+        <p><i>Registration closes March 17th, 2025 11:59 PM Central Time</i></p>
         <!-- <p><i>Registration closes <span class="reg-end"></span> Central Time</i></p> -->
     </div>
 
