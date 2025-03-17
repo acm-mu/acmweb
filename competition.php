@@ -19,26 +19,26 @@
 </h1>
 
 <center>
-    <!-- <div class='reg_message' style="display: none" id="reg-open-soon">
+    <div class='reg_message' style="display: none" id="reg-open-soon">
         <h2>Registration will open soon!</h2>
         <p>Registration for the <span class="competition-year"></span> competition will open soon!</p>
-    </div> -->
-    <div class='reg_message' style="display: block" id="reg-open">
+    </div>
+    <div class='reg_message' style="display: none" id="reg-open">
         <h2>Registration is open!</h2>
         <p>Registration for the 2025 competition is now open.  Teams can register here.  Registration is open until March 17th, 2025 11:59 PM Central Time!</p>
     </div>
-    <!-- <div class='reg_message' style="display: none" id="reg-live">
+    <div class='reg_message' style="display: none" id="reg-live">
         <h2>Competition Day!</h2>
         <p>Head over to <a href="https://codeabac.us" target="_blank">Abacus</a></p>
     </div>
-    <div class='reg_message' style="display: none" id="reg-ended">
+    <div class='reg_message' style="display: block" id="reg-ended">
         <h2>Registration has ended!</h2>
-        <p>Head over to <a href="https://codeabac.us" target="_blank">Abacus</a> to start practicing for the big day!</p>
+        <!-- <p>Head over to <a href="https://codeabac.us" target="_blank">Abacus</a> to start practicing for the big day!</p> -->
     </div>
     <div class='reg_message' style="display: none" id="comp-end">
         <h2>The <span class="competition-year"></span> Wisconsin-Dairyland Programming Competition has ended!</h2>
         <p>Check back here next year for more information on next year's competition!</p>
-    </div> -->
+    </div>
     <br />
     <a href="/archive/prep/q0">
         <button class="java">Java Preparation</button>
@@ -135,10 +135,9 @@
 <div id="reg-section" style="display: block">
     <h3>Register</h3>
     <p id="reg-coming-soon" style="display: none">Registration coming soon!</p>
-    <div id="reg-button" style="display: block">
+    <div id="reg-button" style="display: none">
         <a href="/register"><button class="register">Register</button></a>
-        <p><i>Registration closes March 17th, 2025 11:59 PM Central Time</i></p>
-        <!-- <p><i>Registration closes <span class="reg-end"></span> Central Time</i></p> -->
+        <p><i>Registration closes <span class="reg-end"></span> Central Time</i></p>
     </div>
 
 </div>

@@ -163,9 +163,9 @@
                 </div>
 
                 <h3>Blue Division</h3>
-                    <!-- <h4 style="color: red;">Team Capacity Reached</h4> -->
+                <h4 style="color: red;">Team Capacity Reached</h4>
                 
-                <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
+                <!-- <label>Are you bringing teams for the Blue (Java/Python) Division?</label>
                 <label class="switch">
                     <input name="blue_division" type="checkbox" data-toggle="blue-section" toggle-required="true">
                     <span class="slider"></span>
@@ -243,13 +243,13 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
 
                 <!--         GOLD DIVISION       -->
                 <h3>Gold Division</h3>
-                                <!-- <h4 style="color: red;">Team Capacity Reached</h4> -->
+                <h4 style="color: red;">Team Capacity Reached</h4>
                                 
-                <label>Are you bringing teams for the Gold (Scratch) Division?</label>
+                <!-- <label>Are you bringing teams for the Gold (Scratch) Division?</label>
 
                 <label class="switch">
                     <input name="gold_division" type="checkbox" data-toggle="gold-section" toggle-required="true">
@@ -290,14 +290,14 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
    
                 <!--    EAGLE DIVISION       -->
 
                 <h3>Eagle Division</h3>
-                                <!-- <h4 style="color: red;">Team Capacity Reached</h4> -->
+                <h4 style="color: red;">Team Capacity Reached</h4>
                                 
-                <label>Are you bringing teams for the Eagle Division?</label>
+                <!-- <label>Are you bringing teams for the Eagle Division?</label>
 
                 <label class="switch">
                     <input name="eagle_division" type="checkbox" data-toggle="eagle-section" toggle-required="true">
@@ -341,11 +341,11 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
 
 
 
-                <div class="in-person-only">
+                <!-- <div class="in-person-only">
                     <h2>Additional Information</h2>
 
                     <h4>Will any attending student require special accommodations due to a disability, a food allergy, or another medical condition?</h4>
@@ -360,7 +360,7 @@
                         <textarea name="special_accommodations"
                             placeholder="e.g. I have a student with a gluten allergy."></textarea>
                     </div>
-                </div>
+                </div> -->
 
 
 
